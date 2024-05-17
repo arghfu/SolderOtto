@@ -1,0 +1,40 @@
+LTspice 24.0.9 for Windows
+Circuit: * C:\workspace\SolderOtto\simulations\JBC Soldering Station Simulations\Power Supply.asc
+Start Time: Sun Mar 10 22:03:30 2024
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+solver = Normal
+Maximum thread count: 32
+
+
+
+Per .tran options, skipping operating point for transient analysis.
+.step r=11000
+
+
+
+.step r=16000
+
+
+
+.step r=21000
+
+
+
+.step r=26000
+
+
+
+.step r=31000
+
+
+
+.step r=36000
+tnom = 27
+temp = 27
+method = modified trap
+.step r=39000
+Total elapsed time: 0.255 seconds.
+

@@ -1,0 +1,21 @@
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 392:Plugin executed on: 'linux'
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 393:Plugin executed with python version: '3.12.3 (main, Apr 23 2024, 09:16:07) [GCC 13.2.1 20240417]'
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 394:KiCad build version: 8.0.2
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 395:Plugin version: 3.0.2
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 396:Frame repr: <wx._core.Frame object at 0x71598e594290>
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 420:Preparing replicator with R627 as a reference
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.replicate_layout 117:getting a list of all footprints on board
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 468:source anchor footprint is 'R627'
+Located on: ['Channel1', 'channel_meas']
+With filenames: ['channel.kicad_sch', 'channel_meas.kicad_sch']
+With sheet_id:['Channel1', 'channel_meas']
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 475:Corresponding footprints are 
+[('R627', ['Channel1', 'channel_meas'])]
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 487:Showing dialog
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.replicate_layout 462:constructing a list of sheets suitable for replication on level:'channel_meas', file:'channel_meas.kicad_sch'
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.replicate_layout 499:suitable sheets are:[]
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1503:Level selected: ['Channel1', 'channel_meas']
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.replicate_layout 1327:Filtering list of tracks
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 493:Toolbar position: wx.Point(1246, 61)
+05-01 14:17:30 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 498:Dialog position: wx.Point(807, 61)
+05-01 14:17:43 com_github_MitjaNemec_ReplicateLayout.action_replicate_layout 321:User canceled the dialog

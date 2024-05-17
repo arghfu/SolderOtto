@@ -1,0 +1,137 @@
+LTspice 24.0.11 for Windows
+Circuit: * Z:\home\arghfu\workspace\SolderOtto\simulations\Draft1.asc
+Start Time: Thu Apr 11 19:07:40 2024
+Warning: Multiple definitions of model "2scr375p" Type: BJT
+Warning: Multiple definitions of model "bc857b" Type: BJT
+Warning: Multiple definitions of model "bc847c" Type: BJT
+Warning: Multiple definitions of model "bc847b" Type: BJT
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+WARNING: Specified period is not longer than the sum of Trise, Tfall, and Ton for v6.  Increasing period to 10
+WARNING: Node N is floating.
+
+WARNING: Less than two connections to node sw.  This node is used by v2.
+WARNING: Less than two connections to node l.  This node is used by v7.
+WARNING: Less than two connections to node n.  This node is used by v7.
+Direct Newton iteration failed to find .op point.  (Use ".option noopiter" to skip.)
+Starting Gmin stepping
+Gmin = 10
+vernier = 0.5
+Gmin = 2.07126
+vernier = 0.25
+vernier = 0.125
+Gmin = 1.48707
+vernier = 0.166667
+vernier = 0.0833333
+vernier = 0.0416667
+Gmin = 1.30089
+vernier = 0.0555555
+vernier = 0.0277778
+Gmin = 1.21399
+vernier = 0.037037
+vernier = 0.0185185
+vernier = 0.0246913
+Gmin = 1.16013
+vernier = 0.0123457
+vernier = 0.0164609
+Gmin = 1.1284
+vernier = 0.00823044
+vernier = 0.0109739
+Gmin = 1.10772
+vernier = 0.00548696
+vernier = 0.00731595
+Gmin = 1.09314
+vernier = 0.00975459
+vernier = 0.0048773
+Gmin = 1.0799
+vernier = 0.00650306
+vernier = 0.00325153
+vernier = 0.00433537
+Gmin = 1.07189
+vernier = 0.00578049
+vernier = 0.00289025
+Gmin = 1.06418
+vernier = 0.00385366
+vernier = 0.00192683
+Gmin = 1.0583
+vernier = 0.00256911
+vernier = 0.00342548
+vernier = 0.00171274
+Gmin = 1.05327
+vernier = 0.00228365
+Gmin = 1.04787
+vernier = 0.00304487
+vernier = 0.00152243
+vernier = 0.00202991
+Gmin = 1.04429
+vernier = 0.00101495
+vernier = 0.00135327
+Gmin = 1.04173
+vernier = 0.00180436
+vernier = 0.000902182
+Gmin = 1.03939
+vernier = 0.00120291
+vernier = 0.00160388
+vernier = 0.000801939
+Gmin = 1.03707
+vernier = 0.00106925
+Gmin = 1.03458
+vernier = 0.00142567
+vernier = 0.000712834
+vernier = 0.000950445
+Gmin = 1.03292
+vernier = 0.00126726
+vernier = 0.00063363
+Gmin = 1.03137
+vernier = 0.00084484
+vernier = 0.00112645
+vernier = 0.000563226
+Gmin = 1.02977
+vernier = 0.000750968
+vernier = 0.00100129
+Gmin = 1.02792
+vernier = 0.000500645
+vernier = 0.000667527
+Gmin = 1.02685
+vernier = 0.000890036
+vernier = 0.000445018
+vernier = 0.000593357
+Gmin = 1.02579
+vernier = 0.000791143
+vernier = 0.000593357
+Gmin = 1.02457
+vernier = 0.000791143
+vernier = 0.000593357
+vernier = 0.000791142
+Gmin = 1.0233
+vernier = 0.000593357
+vernier = 0.000445018
+vernier = 0.000593357
+Gmin = 1.02263
+vernier = 0.000445017
+vernier = 0.000593356
+vernier = 0.000445017
+Gmin = 1.02199
+vernier = 0.000593356
+vernier = 0.000445017
+Gmin = 1.02108
+vernier = 0.000593356
+vernier = 0.000445017
+vernier = 0.000593356
+vernier = 0.000445017
+Gmin = 1.0204
+Gmin = 0
+Gmin stepping failed
+
+Starting source stepping with srcstepmethod=0
+Source Step = 3.0303%
+Source Step = 33.3333%
+Source Step = 63.6364%
+Source Step = 93.9394%
+Source stepping succeeded in finding the operating point.
+
+Total elapsed time: 0.563 seconds.
+
