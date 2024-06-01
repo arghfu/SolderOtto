@@ -1,0 +1,85 @@
+/*
+ * Copyright (c) 2017 Linaro Limited
+ *
+ * SPDX-License-Identifier: Apache-2.0
+ */
+
+/dts-v1/;
+#include <st/l4/stm32l496Xg.dtsi>
+#include <st/l4/stm32l496r(e-g)tx-pinctrl.dtsi>
+#include <zephyr/dt-bindings/input/input-event-codes.h>
+
+/ {
+	model = "Vendor solderotto board";
+	compatible = "st,solderotto";
+
+	chosen {
+		//zephyr,console = &rtt0;
+		zephyr,sram = &sram0;
+		zephyr,flash = &flash0;
+	};
+
+
+
+   	leds {
+   		compatible = "gpio-leds";
+   		sel2: sel_2 {
+   			gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
+                };
+		sel3: sel_3 {
+   			gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
+                };
+   	};
+
+	aliases {
+		ch0-sel2 = &sel2;
+		ch0-sel3 = &sel3;
+		volt-sensor0 = &vref;
+		volt-sensor1 = &vbat;
+	};
+
+};
+
+&clk_lsi {
+	status = "okay";
+};
+
+&clk_hsi48 {
+	status = "okay";
+};
+
+&clk_hsi {
+	status = "okay";
+};
+
+&pll {
+	div-m = <1>;
+	mul-n = <20>;
+	div-p = <7>;
+	div-q = <2>;
+	div-r = <4>;
+	clocks = <&clk_hsi>;
+	status = "okay";
+};
+
+&rcc {
+	clocks = <&pll>;
+	clock-frequency = <DT_FREQ_M(80)>;
+	ahb-prescaler = <1>;
+	apb1-prescaler = <1>;
+	apb2-prescaler = <1>;
+};
+
+&rtc {
+	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x10000000>,
+		 <&rcc STM32_SRC_LSI RTC_SEL(2)>;
+	status = "okay";
+};
+
+&vref {
+	status = "okay";
+};
+
+&vbat {
+	status = "okay";
+};

@@ -1,32 +1,19 @@
-# Prerequisites
-*.d
+# editors
+.vscode
+*.swp
+*~
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# python
+.venv
 
-# Precompiled Headers
-*.gch
-*.pch
+# build
+**/build
+/twister-out*
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+__pycache__/
 
-# Fortran module files
-*.mod
-*.smod
+# docs
+/doc/_build*
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# misc
+.directory

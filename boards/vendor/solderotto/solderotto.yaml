@@ -1,0 +1,19 @@
+identifier: solderotto
+name: SolderOtto soldering board
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 320
+flash: 1024
+supported:
+  - pwm
+  - i2c
+  - spi
+  - gpio
+  - counter
+  - adc
+  - qspi
+vendor: vendor
