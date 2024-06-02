@@ -14,30 +14,80 @@
 	compatible = "st,solderotto";
 
 	chosen {
-		//zephyr,console = &rtt0;
+//		zephyr,console = &rtt0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 	};
 
+//	rtt0: rtt_chan0 {
+//		compatible = "segger,rtt-uart";
+//	};
 
-
-   	leds {
+	channel_out {
    		compatible = "gpio-leds";
    		sel2: sel_2 {
    			gpios = <&gpiob 12 GPIO_ACTIVE_HIGH>;
-                };
+		};
 		sel3: sel_3 {
    			gpios = <&gpiob 13 GPIO_ACTIVE_HIGH>;
-                };
+		};
+		loadHigh: load_high {
+			gpios = <&gpioc 9 GPIO_ACTIVE_HIGH>;
+		};
+		loadLow: load_low {
+			gpios = <&gpioc 8 GPIO_ACTIVE_HIGH>;
+		};
+		comHigh: com_high {
+			gpios = <&gpioc 6 GPIO_ACTIVE_HIGH>;
+		};
+		comLow: com_low {
+			gpios = <&gpioc 7 GPIO_ACTIVE_HIGH>;
+		};
    	};
+
+	buttons {
+		compatible = "gpio-keys";
+		zcd0: zcd_0 {
+			gpios = <&gpiod 2 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+		handle: handle_sense {
+			gpios = <&gpioa 11 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+		stand0: stand_sense0 {
+			gpios = <&gpioa 12 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+		stand1: stand_sense1 {
+			gpios = <&gpioa 15 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+		tip: tip_sense {
+			gpios = <&gpioc 10 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+	};
 
 	aliases {
 		ch0-sel2 = &sel2;
 		ch0-sel3 = &sel3;
+		ch0-load-high = &loadHigh;
+		ch0-load-low = &loadLow;
+		ch0-com-high = &comHigh;
+		ch0-com-low = &comLow;
+		zcd = &zcd0;
+		ch0-handle= &handle;
+		ch0-stand0= &stand0;
+		ch0-stand1= &stand1;
+		ch0-tip= &tip;
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
 	};
-
+//	zephyr,user {
+//		/* adjust channel number according to pinmux in board.dts */
+//		io-channels = <&adc1 0x0 &adc1 0x1 &adc1 0x2 &adc1 0x3 &adc1 0xd>;
+//	};
 };
 
 &clk_lsi {
@@ -83,3 +133,70 @@
 &vbat {
 	status = "okay";
 };
+
+//&dma2 {
+//	status = "okay";
+//};
+//
+//&quadspi {
+//	pinctrl-0 = <&quadspi_bk1_io0_pb1 &quadspi_bk1_io1_pb0
+//				 &quadspi_bk1_io2_pa7 &quadspi_bk1_io3_pa6
+//				 &quadspi_bk1_ncs_pa2 &quadspi_clk_pa3>;
+//	pinctrl-names = "default";
+//
+//	dmas = <&dma2 7 3 0x480>; /* channel 7 request 3 on DMA2 */
+//	dma-names = "tx_rx";
+//
+//	status = "okay";
+//};
+
+//&adc1 {
+//	pinctrl-0 = <&adc1_in1_pc0 &adc1_in2_pc1 &adc1_in3_pc2 &adc1_in4_pc3 &adc1_in13_pc4>;
+//	pinctrl-names = "default";
+//	st,adc-clock-source = <ASYNC>;
+//	st,adc-prescaler = <1>;
+//	status = "okay";
+//
+//	#address-cells = <1>;
+//	#size-cells = <0>;
+//
+//	channel@0 {
+//		reg = <0x0>;
+//		zephyr,gain = "ADC_GAIN_1";
+//		zephyr,reference = "ADC_REF_INTERNAL";
+//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+//		zephyr,resolution = <14>;
+//	};
+//
+//	channel@1 {
+//		reg = <0x1>;
+//		zephyr,gain = "ADC_GAIN_1";
+//		zephyr,reference = "ADC_REF_INTERNAL";
+//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+//		zephyr,resolution = <14>;
+//	};
+//
+//	channel@2 {
+//		reg = <0x2>;
+//		zephyr,gain = "ADC_GAIN_1";
+//		zephyr,reference = "ADC_REF_INTERNAL";
+//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+//		zephyr,resolution = <14>;
+//	};
+//
+//	channel@3 {
+//		reg = <0x3>;
+//		zephyr,gain = "ADC_GAIN_1";
+//		zephyr,reference = "ADC_REF_INTERNAL";
+//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+//		zephyr,resolution = <14>;
+//	};
+//
+//	channel@d {
+//		reg = <0xd>;
+//		zephyr,gain = "ADC_GAIN_1";
+//		zephyr,reference = "ADC_REF_INTERNAL";
+//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+//		zephyr,resolution = <14>;
+//	};
+//};

@@ -12,6 +12,9 @@ CONFIG_SERIAL=n
 # enable GPIOs
 CONFIG_GPIO=y
 
+# enable adc
+CONFIG_ADC=y
+
 # Enable Clocks
 CONFIG_CLOCK_CONTROL=y
 
