@@ -18,17 +18,5 @@ CONFIG_ADC=y
 # Enable Clocks
 CONFIG_CLOCK_CONTROL=y
 
-# console
-CONFIG_CONSOLE=y
-CONFIG_RTT_CONSOLE=y
-CONFIG_USE_SEGGER_RTT=y
-
 # enable pin controller
 CONFIG_PINCTRL=y
-
-# Enable logging
-CONFIG_LOG=y
-CONFIG_LOG_PRINTK=y
-
-
-

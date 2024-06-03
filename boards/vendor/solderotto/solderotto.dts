@@ -14,14 +14,14 @@
 	compatible = "st,solderotto";
 
 	chosen {
-//		zephyr,console = &rtt0;
+		zephyr,console = &rtt0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 	};
 
-//	rtt0: rtt_chan0 {
-//		compatible = "segger,rtt-uart";
-//	};
+	rtt0: rtt_chan0 {
+		compatible = "segger,rtt-uart";
+	};
 
 	channel_out {
    		compatible = "gpio-leds";
@@ -84,10 +84,11 @@
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
 	};
-//	zephyr,user {
-//		/* adjust channel number according to pinmux in board.dts */
-//		io-channels = <&adc1 0x0 &adc1 0x1 &adc1 0x2 &adc1 0x3 &adc1 0xd>;
-//	};
+
+	zephyr,user {
+		/* adjust channel number according to pinmux in board.dts */
+		io-channels = <&adc1 1>;
+	};
 };
 
 &clk_lsi {
@@ -150,53 +151,21 @@
 //	status = "okay";
 //};
 
-//&adc1 {
-//	pinctrl-0 = <&adc1_in1_pc0 &adc1_in2_pc1 &adc1_in3_pc2 &adc1_in4_pc3 &adc1_in13_pc4>;
-//	pinctrl-names = "default";
-//	st,adc-clock-source = <ASYNC>;
-//	st,adc-prescaler = <1>;
-//	status = "okay";
-//
-//	#address-cells = <1>;
-//	#size-cells = <0>;
-//
-//	channel@0 {
-//		reg = <0x0>;
-//		zephyr,gain = "ADC_GAIN_1";
-//		zephyr,reference = "ADC_REF_INTERNAL";
-//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//		zephyr,resolution = <14>;
-//	};
-//
-//	channel@1 {
-//		reg = <0x1>;
-//		zephyr,gain = "ADC_GAIN_1";
-//		zephyr,reference = "ADC_REF_INTERNAL";
-//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//		zephyr,resolution = <14>;
-//	};
-//
-//	channel@2 {
-//		reg = <0x2>;
-//		zephyr,gain = "ADC_GAIN_1";
-//		zephyr,reference = "ADC_REF_INTERNAL";
-//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//		zephyr,resolution = <14>;
-//	};
-//
-//	channel@3 {
-//		reg = <0x3>;
-//		zephyr,gain = "ADC_GAIN_1";
-//		zephyr,reference = "ADC_REF_INTERNAL";
-//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//		zephyr,resolution = <14>;
-//	};
-//
-//	channel@d {
-//		reg = <0xd>;
-//		zephyr,gain = "ADC_GAIN_1";
-//		zephyr,reference = "ADC_REF_INTERNAL";
-//		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
-//		zephyr,resolution = <14>;
-//	};
-//};
+&adc1 {
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	pinctrl-0 = <&adc1_in2_pc1>;
+	pinctrl-names = "default";
+	st,adc-clock-source = <SYNC>;
+	st,adc-prescaler = <4>;
+	status = "okay";
+
+	channel@1 {
+		reg = <1>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+};
