@@ -8726,7 +8726,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "497-2522-1-ND"
+		(property "Mouser" "511-BAT54SFILM"
 			(at 165.354 182.118 90)
 			(effects
 				(font
@@ -10436,6 +10436,14 @@
 				)
 				(justify right)
 				(hide yes)
+			)
+		)
+		(property "Mouser" "511-BAT54SFILM"
+			(at 101.6 173.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 			)
 		)
 		(pin "3"
@@ -13453,7 +13461,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "MCP9701T-E/TTCT-ND"
+		(property "Digikey" "MCP9701T-E/TTDKR-ND"
 			(at 150.368 181.102 0)
 			(effects
 				(font
@@ -16899,7 +16907,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/ds30849.pdf"
+		(property "Datasheet" "~"
 			(at 228.6 30.48 0)
 			(effects
 				(font
@@ -18029,7 +18037,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "668-SMI-1027-T-5V-RCT-ND"
+		(property "Digikey" "668-SMI-1027-T-5V-RDKR-ND"
 			(at 266.7 125.7299 0)
 			(effects
 				(font

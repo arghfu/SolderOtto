@@ -5547,7 +5547,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "497-2522-1-ND"
+		(property "Mouser" "511-BAT54SFILM"
 			(at 164.084 55.118 90)
 			(effects
 				(font
@@ -7414,6 +7414,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser" "511-BAT54SFILM"
+			(at 118.618 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "c4d24ff6-c5c1-4f76-bad5-ce891fd3dad3")
 		)
@@ -7666,6 +7675,15 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Mouser" "511-BAT54SFILM"
+			(at 254 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)
