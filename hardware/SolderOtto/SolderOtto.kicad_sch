@@ -426,124 +426,6 @@
 		(uuid "fe2ebab3-8b21-4af0-9378-d02cd87d3ed7")
 	)
 	(sheet
-		(at 90.17 102.87)
-		(size 27.94 12.7)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "1be905ad-e645-4d96-915b-9416f5f3d20b")
-		(property "Sheetname" "power_latch"
-			(at 90.17 102.1584 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_latch.kicad_sch"
-			(at 90.17 116.1546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "IN_LOAD_L" input
-			(at 118.11 107.95 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "268d523f-0ff2-43c1-82fc-bad5bc0cb32d")
-		)
-		(pin "IN_LOAD_H" input
-			(at 118.11 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "aa48154b-21c0-47d7-9209-3ddb55cb385e")
-		)
-		(pin "IN_COM_L" input
-			(at 118.11 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "0cc58628-f555-439f-8c64-41814067e24a")
-		)
-		(pin "IN_COM_H" input
-			(at 118.11 110.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5d0c2e35-e7d4-492c-9b0e-f455e912b0d7")
-		)
-		(pin "OUT_LOAD_H" output
-			(at 90.17 105.41 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "3e24376c-9f4a-4185-ad84-a1ed4d6ddf72")
-		)
-		(pin "OUT_COM_H" output
-			(at 90.17 110.49 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "61d30806-22bc-4fac-89c3-091d9e4a37eb")
-		)
-		(pin "OUT_LOAD_L" output
-			(at 90.17 107.95 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "e938771f-a389-49d3-9b1a-3f1480a5a89c")
-		)
-		(pin "OUT_COM_L" output
-			(at 90.17 113.03 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9a254b75-298c-41c4-ba35-fcdb05b9e2b6")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 90.17 66.04)
 		(size 27.94 21.59)
 		(fields_autoplaced yes)
@@ -832,7 +714,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "7")
+					(page "6")
 				)
 			)
 		)

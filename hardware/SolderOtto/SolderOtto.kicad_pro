@@ -711,12 +711,12 @@
       "Display"
     ],
     [
-      "1be905ad-e645-4d96-915b-9416f5f3d20b",
-      "power_latch"
-    ],
-    [
       "57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1",
       "Channel1"
+    ],
+    [
+      "38c12336-e051-4519-b2f1-090dafa1bb9e",
+      "power_latch"
     ],
     [
       "1807ce44-453b-46b0-b8fc-698b650e1609",

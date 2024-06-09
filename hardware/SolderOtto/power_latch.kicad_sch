@@ -867,7 +867,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "10dc2db1-c1e4-43f7-97b1-04cea1360471")
-		(property "Reference" "#PWR0501"
+		(property "Reference" "#PWR0616"
 			(at 92.71 96.52 0)
 			(effects
 				(font
@@ -912,12 +912,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "dfec5388-04da-4019-84a6-7f93007f0266")
+			(uuid "dec19daa-3f72-41ce-9028-31ec234aeb65")
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "#PWR0501")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0616")
 					(unit 1)
 				)
 			)
@@ -933,7 +933,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "47bfdac6-037b-42f8-a6c3-7ae2de08e919")
-		(property "Reference" "U501"
+		(property "Reference" "U601"
 			(at 151.13 86.36 0)
 			(effects
 				(font
@@ -998,21 +998,21 @@
 			(uuid "90f0aa34-86ae-4dcf-b084-5ab2aaa7278a")
 		)
 		(pin "1"
-			(uuid "f255ccef-8975-4a00-aef3-7b6a8ba0bed8")
+			(uuid "ca11b2f1-7f8e-4618-b612-788aa1f43b27")
 		)
 		(pin "7"
 			(uuid "097f7129-3f3c-413c-9edc-b67e7e428524")
 		)
 		(pin "2"
-			(uuid "b83ba80e-5849-48b2-a50d-1763f14cbc8b")
+			(uuid "41167f29-35df-46bc-98c5-2a3e5abb0fd5")
 		)
 		(pin "6"
-			(uuid "053f8ea3-4d07-4b5f-93ba-e933bc1bcf3b")
+			(uuid "1921aadb-0989-46eb-baf5-18ff99e00b33")
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "U501")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "U601")
 					(unit 1)
 				)
 			)
@@ -1028,7 +1028,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7c23c7a9-d1b1-459b-993b-c78ba7dbdadd")
-		(property "Reference" "#PWR0502"
+		(property "Reference" "#PWR0617"
 			(at 92.71 119.38 0)
 			(effects
 				(font
@@ -1073,12 +1073,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "33e76e20-3c7c-4e35-85c3-c693bbe27c7f")
+			(uuid "aace6524-f29b-4cee-aca5-7cf56dc29c7c")
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "#PWR0502")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0617")
 					(unit 1)
 				)
 			)
@@ -1094,7 +1094,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8d7a4b42-e7cb-427b-a598-ed8fa1fc0a75")
-		(property "Reference" "U501"
+		(property "Reference" "U601"
 			(at 96.52 101.5999 0)
 			(effects
 				(font
@@ -1155,10 +1155,10 @@
 			(uuid "a02d8e5b-5ffa-41ce-9d16-0c27a6ce6f90")
 		)
 		(pin "8"
-			(uuid "168e5d6b-6919-4e2f-ba97-46d5f325dfb6")
+			(uuid "841c72fe-d5ae-4282-b990-47a1fe82c4a5")
 		)
 		(pin "4"
-			(uuid "fb57a2d6-d762-4891-b3ae-2e78ce04f805")
+			(uuid "84a11255-85a3-4dc3-8029-4c95b9a1e0ef")
 		)
 		(pin "1"
 			(uuid "bb630933-02cd-4002-895f-bfe1c5085a4b")
@@ -1174,8 +1174,8 @@
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "U501")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "U601")
 					(unit 3)
 				)
 			)
@@ -1190,7 +1190,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a03789e2-7a26-4a04-a807-2c89cfa69807")
-		(property "Reference" "#FLG0502"
+		(property "Reference" "#FLG0602"
 			(at 166.37 112.395 0)
 			(effects
 				(font
@@ -1235,12 +1235,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "686b9eba-0a00-4971-8892-e03b9fb2ae18")
+			(uuid "6249abb6-f977-4d18-b08c-49348dce5d2e")
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "#FLG0502")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#FLG0602")
 					(unit 1)
 				)
 			)
@@ -1256,7 +1256,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c21caf13-7d2e-46c3-83ca-4f5a8097c559")
-		(property "Reference" "U501"
+		(property "Reference" "U601"
 			(at 151.13 110.49 0)
 			(effects
 				(font
@@ -1309,10 +1309,10 @@
 			)
 		)
 		(pin "3"
-			(uuid "6e3762af-3a18-415e-ab95-9f7e14cf5dcd")
+			(uuid "203637af-dcce-456a-a011-7476820142a2")
 		)
 		(pin "5"
-			(uuid "a690dba9-b18e-4954-8eb2-6ebbcd482522")
+			(uuid "332b4677-4ba7-4abd-9b68-3033d70263ae")
 		)
 		(pin "8"
 			(uuid "2bed3414-2a9b-414e-9204-a48c363bb572")
@@ -1324,7 +1324,7 @@
 			(uuid "bb630933-02cd-4002-895f-bfe1c5085a4a")
 		)
 		(pin "7"
-			(uuid "5e0205e7-dca5-4307-b314-3f5f9ffda8e0")
+			(uuid "13bf29e1-dcc7-4867-a85c-40e181a78157")
 		)
 		(pin "2"
 			(uuid "bfa268dd-9450-4d57-b677-58ba9a177157")
@@ -1334,8 +1334,8 @@
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "U501")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "U601")
 					(unit 2)
 				)
 			)
@@ -1350,7 +1350,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d55b04de-9c30-472a-8337-c653a088cb32")
-		(property "Reference" "#FLG0501"
+		(property "Reference" "#FLG0601"
 			(at 166.37 88.265 0)
 			(effects
 				(font
@@ -1395,12 +1395,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "d1729e35-8d6e-4260-9fde-445655dd7778")
+			(uuid "fc9b6e0f-feb3-4843-a25b-546945359a25")
 		)
 		(instances
 			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1be905ad-e645-4d96-915b-9416f5f3d20b"
-					(reference "#FLG0501")
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#FLG0601")
 					(unit 1)
 				)
 			)

@@ -9362,7 +9362,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 223.52 57.658 90)
 			(effects
 				(font
@@ -11523,7 +11523,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "mylib_connector:USB_C_Receptacle_Molex_C_24P_SMD_RA"
 			(at 260.35 121.92 0)
 			(effects
 				(font

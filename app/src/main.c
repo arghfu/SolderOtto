@@ -110,7 +110,7 @@ int main(void)
 	gpio_pin_set_dt(&load_low, GPIO_PIN_RESET);
 
 	gpio_pin_set_dt(&com_high, GPIO_PIN_RESET);
-	gpio_pin_set_dt(&com_low, GPIO_PIN_RESET);
+	gpio_pin_set_dt(&com_low, GPIO_PIN_SET);
 
 	while (1)
 	{
