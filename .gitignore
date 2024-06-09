@@ -22,3 +22,8 @@ __pycache__/
 # KI-CAD
 **/*-backups*/
 *.lck
+*.kicad_prl
+*.xml
+*.csv
+*.net
+fp-info-cache
