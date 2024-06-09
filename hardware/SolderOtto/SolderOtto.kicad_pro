@@ -79,6 +79,7 @@
         "footprint_type_mismatch": "ignore",
         "hole_clearance": "error",
         "hole_near_hole": "error",
+        "holes_co_located": "warning",
         "invalid_outline": "error",
         "isolated_copper": "warning",
         "item_on_disabled_layer": "error",
@@ -694,6 +695,10 @@
       "Root"
     ],
     [
+      "91b14389-ec0a-47af-810b-46ccb7872547",
+      "overview"
+    ],
+    [
       "1f74b07f-4a28-48ba-be90-ad5de8d466f3",
       "Supply"
     ],
@@ -722,8 +727,8 @@
       "channel_power"
     ],
     [
-      "91b14389-ec0a-47af-810b-46ccb7872547",
-      "overview"
+      "1ff1c976-1b24-492b-9e8e-5bae276856ae",
+      "ethernet"
     ]
   ],
   "text_variables": {}

@@ -538,7 +538,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "5")
+					(page "6")
 				)
 			)
 		)
@@ -616,7 +616,45 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "2")
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 200.66 67.31)
+		(size 57.785 47.625)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 255 255 194 1.0000)
+		)
+		(uuid "1ff1c976-1b24-492b-9e8e-5bae276856ae")
+		(property "Sheetname" "ethernet"
+			(at 200.66 66.5984 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "ethernet.kicad_sch"
+			(at 200.66 115.5196 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
+					(page "16")
 				)
 			)
 		)
@@ -794,7 +832,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "6")
+					(page "7")
 				)
 			)
 		)
@@ -1372,13 +1410,13 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "3")
+					(page "4")
 				)
 			)
 		)
 	)
 	(sheet
-		(at 223.52 80.645)
+		(at 19.05 18.415)
 		(size 32.385 22.225)
 		(fields_autoplaced yes)
 		(stroke
@@ -1390,7 +1428,7 @@
 		)
 		(uuid "91b14389-ec0a-47af-810b-46ccb7872547")
 		(property "Sheetname" "overview"
-			(at 223.52 79.9334 0)
+			(at 19.05 17.7034 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1398,8 +1436,8 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "untitled.kicad_sch"
-			(at 223.52 103.4546 0)
+		(property "Sheetfile" "overview.kicad_sch"
+			(at 19.05 41.2246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1410,7 +1448,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "9")
+					(page "2")
 				)
 			)
 		)
@@ -1547,7 +1585,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3"
-					(page "4")
+					(page "5")
 				)
 			)
 		)
