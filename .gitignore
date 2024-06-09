@@ -18,3 +18,14 @@ __pycache__/
 
 # misc
 .directory
+
+# KI-CAD
+**/*-backups*/
+*.lck
+*.kicad_prl
+*.xml
+*.csv
+*.net
+fp-info-cache
+_autosave-*
+\#auto_saved_files\#
