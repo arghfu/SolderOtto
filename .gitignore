@@ -18,3 +18,7 @@ __pycache__/
 
 # misc
 .directory
+
+# KI-CAD
+**/*-backups*/
+*.lck
