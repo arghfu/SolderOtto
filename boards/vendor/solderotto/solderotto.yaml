@@ -6,14 +6,21 @@ toolchain:
   - zephyr
   - gnuarmemb
   - xtools
-ram: 320
-flash: 1024
+ram: 128
+flash: 512
 supported:
+  - nvs
   - pwm
   - i2c
-  - spi
   - gpio
+  - usb device
   - counter
+  - spi
+  - watchdog
   - adc
+  - dac
+  - dma
+  - can
+  - rtc
   - qspi
-vendor: vendor
+vendor: st

@@ -2,4 +2,4 @@ board:
   name: solderotto
   vendor: vendor
   socs:
-    - name: stm32l496xx
+    - name: stm32g474xx

@@ -1,5 +1,5 @@
-# Copyright (c) 2019 Centaur Analytics, Inc
+# Copyright (c) 2019 STMicroelectronics.
 # SPDX-License-Identifier: Apache-2.0
 
 config BOARD_SOLDEROTTO
-	select SOC_STM32L496XX
+	select SOC_STM32G474XX

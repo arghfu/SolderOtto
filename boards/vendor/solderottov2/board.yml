@@ -1,5 +1,0 @@
-board:
-  name: solderottov2
-  vendor: vendor
-  socs:
-    - name: stm32g474xx
