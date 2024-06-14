@@ -695,10 +695,6 @@
       "Root"
     ],
     [
-      "91b14389-ec0a-47af-810b-46ccb7872547",
-      "overview"
-    ],
-    [
       "1f74b07f-4a28-48ba-be90-ad5de8d466f3",
       "Supply"
     ],
@@ -725,10 +721,6 @@
     [
       "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
       "channel_power"
-    ],
-    [
-      "1ff1c976-1b24-492b-9e8e-5bae276856ae",
-      "ethernet"
     ]
   ],
   "text_variables": {}

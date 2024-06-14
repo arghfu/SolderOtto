@@ -3690,7 +3690,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 46.99) (xy 69.85 46.99)
+			(xy 63.5 46.99) (xy 72.39 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3927,6 +3927,16 @@
 			(type default)
 		)
 		(uuid "7a2b01c6-6d6c-404d-aaab-095f3e261105")
+	)
+	(wire
+		(pts
+			(xy 16.51 52.07) (xy 27.94 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b859d28-49e6-4faf-9b55-aefa5a140172")
 	)
 	(wire
 		(pts
@@ -4770,16 +4780,6 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 52.07) (xy 27.94 52.07)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e71ec3f6-a91f-4272-8c4a-01cbcdd0a055")
-	)
-	(wire
-		(pts
 			(xy 106.68 118.11) (xy 106.68 121.92)
 		)
 		(stroke
@@ -4938,8 +4938,8 @@
 		)
 		(uuid "fecc5d89-20f9-4bd0-b9b3-9cbcff81b0e1")
 	)
-	(label "aaa"
-		(at 69.85 46.99 180)
+	(label "select"
+		(at 72.39 46.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4949,8 +4949,8 @@
 		)
 		(uuid "b067247e-58b3-48b3-bece-cb889b098b8d")
 	)
-	(label "aaa"
-		(at 19.05 52.07 0)
+	(label "select"
+		(at 16.51 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4967,6 +4967,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 0 255 0 1)
 			)
 			(justify right)
 		)
@@ -4991,6 +4992,7 @@
 		(effects
 			(font
 				(size 1.27 1.27)
+				(color 0 255 0 1)
 			)
 			(justify right)
 		)
@@ -5032,7 +5034,7 @@
 		)
 		(uuid "420f97ef-198b-4c2b-8218-2e5ef211f19e")
 	)
-	(hierarchical_label "LOAD"
+	(hierarchical_label "LOAD0"
 		(shape bidirectional)
 		(at 22.86 44.45 180)
 		(fields_autoplaced yes)
@@ -5069,6 +5071,19 @@
 			(justify left)
 		)
 		(uuid "6a9e4ea8-8cec-4da6-9de7-e488d2e6b204")
+	)
+	(hierarchical_label "LOAD1"
+		(shape bidirectional)
+		(at 22.86 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 153 0 1)
+			)
+			(justify right)
+		)
+		(uuid "6d2df672-e69b-49f8-a4ae-b670cae0d835")
 	)
 	(hierarchical_label "DET"
 		(shape input)
@@ -8565,7 +8580,7 @@
 				)
 			)
 		)
-		(property "Value" "11k3"
+		(property "Value" "20k"
 			(at 37.084 43.18 90)
 			(effects
 				(font
@@ -8600,7 +8615,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "P22.6KHCT-ND"
+		(property "Digikey" "P20.0KHCT-ND"
 			(at 31.75 44.45 0)
 			(effects
 				(font
@@ -9422,7 +9437,7 @@
 				)
 			)
 		)
-		(property "Value" "11k3"
+		(property "Value" "2k55"
 			(at 37.084 50.8 90)
 			(effects
 				(font
@@ -9457,7 +9472,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "P22.6KHCT-ND"
+		(property "Digikey" "311-2.55KHRCT-ND"
 			(at 31.75 52.07 0)
 			(effects
 				(font
@@ -9708,7 +9723,7 @@
 				)
 			)
 		)
-		(property "Value" "11k3"
+		(property "Value" "20k"
 			(at 37.084 48.514 90)
 			(effects
 				(font
@@ -9743,7 +9758,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "P22.6KHCT-ND"
+		(property "Digikey" "P20.0KHCT-ND"
 			(at 31.75 46.99 0)
 			(effects
 				(font
