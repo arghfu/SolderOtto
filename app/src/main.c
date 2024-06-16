@@ -17,6 +17,20 @@ uint64_t last_time = 0;
 
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
+struct half_wave_control {
+	uint16_t ton;
+	uint16_t tperiod;
+	uint16_t count;
+};
+
+struct half_wave_control control = {
+	.ton = 0,
+	.tperiod = 100,
+	.count = 0
+};
+
+void update_control(struct half_wave_control* control);
+
 static const struct gpio_dt_spec sel2 = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_sel2), gpios);
 static const struct gpio_dt_spec sel3 = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_sel3), gpios);
 
@@ -30,32 +44,65 @@ static const struct gpio_dt_spec stand0 = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_stand0),
 static const struct gpio_dt_spec stand1 = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_stand1), gpios);
 static const struct gpio_dt_spec tip = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_tip), gpios);
 
+static const struct gpio_dt_spec dbg_pin = GPIO_DT_SPEC_GET(DT_ALIAS(dbg_0), gpios);
+
 static const struct gpio_dt_spec zeroCross = GPIO_DT_SPEC_GET(DT_ALIAS(zcd), gpios);
+
+
+static const struct adc_dt_spec adc_tip_temp =
+	ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tip);
+
+adc_sequence_callback adc_callback;
 
 struct gpio_callback zcd_cb_data;
 
 void zcd_callback(const struct device *dev,
 	struct gpio_callback *cb, uint32_t pins)
 {
+	int state = gpio_pin_get_dt(&zeroCross);
 	uint64_t now = k_cycle_get_64();
-
-	//TODO do stuff
 
 	uint64_t diff = now - last_time;
 	last_time = now;
 
 	diff = k_cyc_to_us_floor64(diff);
-	// printk("half wave time: %"PRId64" us\n", diff);
+
+	if (state == GPIO_PIN_RESET)
+	{
+		update_control(&control);
+	}
+
+
+	printk("half wave time: %"PRId64" us\n", diff);
 }
 
-static const struct adc_dt_spec adc_tip_temp =
-	ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tip);
+void update_control(struct half_wave_control* control)
+{
+	if (control->count < control->ton)
+	{
+		gpio_pin_set_dt(&dbg_pin, GPIO_PIN_SET);
+		gpio_pin_set_dt(&com_high, GPIO_PIN_SET);
+	}
+	else
+	{
+		gpio_pin_set_dt(&com_high, GPIO_PIN_RESET);
+		gpio_pin_set_dt(&dbg_pin, GPIO_PIN_RESET);
+	}
+	++control->count;
+
+	if (control->count >= control->tperiod)
+	{
+		control->count = 0;
+	}
+}
 
 int main(void)
 {
 	bool led_state = false;
 	int err;
+
 	uint16_t buf;
+
 	struct adc_sequence sequence = {
 		.buffer = &buf,
 		/* buffer size in bytes, not number of samples */
@@ -79,11 +126,7 @@ int main(void)
 
 	(void)adc_sequence_init_dt(&adc_tip_temp, &sequence);
 
-	// configure button pin as input
-	gpio_pin_configure_dt(&zeroCross, GPIO_INPUT);
-	gpio_pin_interrupt_configure_dt(&zeroCross, GPIO_INT_EDGE_TO_ACTIVE);
-	gpio_init_callback(&zcd_cb_data, zcd_callback, BIT(zeroCross.pin));
-	gpio_add_callback_dt(&zeroCross, &zcd_cb_data);
+
 
 	gpio_pin_configure_dt(&handle, GPIO_INPUT);
 	gpio_pin_configure_dt(&stand0, GPIO_INPUT);
@@ -98,29 +141,28 @@ int main(void)
 	gpio_pin_configure_dt(&com_high, GPIO_OUTPUT_LOW);
 	gpio_pin_configure_dt(&com_low, GPIO_OUTPUT_LOW);
 
+	gpio_pin_configure_dt(&dbg_pin, GPIO_OUTPUT_LOW);
+
 	gpio_pin_set_dt(&sel2, GPIO_PIN_RESET);
 	gpio_pin_set_dt(&sel3, GPIO_PIN_RESET);
 
 	gpio_pin_set_dt(&load_high, GPIO_PIN_RESET);
-	gpio_pin_set_dt(&load_low, GPIO_PIN_RESET);
+	gpio_pin_set_dt(&load_low, GPIO_PIN_SET);
 
 	gpio_pin_set_dt(&com_high, GPIO_PIN_RESET);
 	gpio_pin_set_dt(&com_low, GPIO_PIN_RESET);
 
+	gpio_pin_set_dt(&dbg_pin, GPIO_PIN_RESET);
+
+	// configure button pin as input
+	gpio_pin_configure_dt(&zeroCross, GPIO_INPUT);
+	gpio_pin_interrupt_configure_dt(&zeroCross, GPIO_INT_EDGE_BOTH);
+	gpio_init_callback(&zcd_cb_data, zcd_callback, BIT(zeroCross.pin));
+	gpio_add_callback_dt(&zeroCross, &zcd_cb_data);
+
 	while (1)
 	{
-		// // // T245
-		// if(led_state == true)
-		// {
-		// 	gpio_pin_set_dt(&load_low, GPIO_PIN_SET);
-		// 	gpio_pin_set_dt(&com_high, GPIO_PIN_SET);
-		// 	k_sleep(K_MSEC(40));
-		// }
-		// else
-		// {
-		// 	gpio_pin_set_dt(&com_high, GPIO_PIN_RESET);
-		// 	k_sleep(K_MSEC(5000));
-		// }
+
 
 		// // T210
 		// if(led_state == true)
@@ -137,24 +179,19 @@ int main(void)
 
 		led_state = !led_state;
 
+
 		int32_t val_mv;
-			printk("- %s, channel %d: ",
-				   adc_tip_temp.dev->name,
-				   adc_tip_temp.channel_id);
-
-
 
 		uint64_t begin = k_cycle_get_64();
-		err = adc_read_dt(&adc_tip_temp, &sequence);
+		int err = adc_read_dt(&adc_tip_temp, &sequence);
 		uint64_t end = k_cycle_get_64();
 		uint64_t diff = k_cyc_to_us_floor64(end - begin);
 
 		if (err < 0) {
 			printk("Could not read (%d)\n", err);
-			continue;
 		}
 
-		printk("time to covert: %"PRId64" \n", diff);
+		printk("time to convert: %"PRId64" \n", diff);
 		val_mv = (int32_t)buf;
 
 		printk("%"PRId32, val_mv);
@@ -167,7 +204,7 @@ int main(void)
 			printk(" = %"PRId32" mV\n", val_mv);
 		}
 
-		k_sleep(K_MSEC(1));
+		k_sleep(K_MSEC(2000));
 	}
 
 	return 0;

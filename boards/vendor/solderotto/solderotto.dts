@@ -44,6 +44,9 @@
 		comLow: com_low {
 			gpios = <&gpioc 7 GPIO_ACTIVE_HIGH>;
 		};
+		dbg_0: dbg_0 {
+			gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
+		};
    	};
 
 	buttons {
@@ -71,6 +74,7 @@
 	};
 
 	aliases {
+		dbg-0 = &dbg_0;
 		ch0-sel2 = &sel2;
 		ch0-sel3 = &sel3;
 		ch0-load-high = &loadHigh;
@@ -181,9 +185,9 @@
 	#address-cells = <1>;
 	#size-cells = <0>;
 
-	dmas = <&dma1 1 0 (STM32_DMA_MODE_NORMAL | STM32_DMA_PERIPH_TO_MEMORY |
-	STM32_DMA_MEM_INC |  STM32_DMA_MEM_16BITS | STM32_DMA_PERIPH_16BITS)>; /* channel 1 request 0 on DMA2 */
-	dma-names = "rx";
+//	dmas = <&dma1 1 0 (STM32_DMA_MODE_NORMAL | STM32_DMA_PERIPH_TO_MEMORY |
+//	STM32_DMA_MEM_INC |  STM32_DMA_MEM_16BITS | STM32_DMA_PERIPH_16BITS)>; /* channel 1 request 0 on DMA2 */
+//	dma-names = "rx";
 
 	pinctrl-0 = <&adc1_in1_pc0 &adc1_in2_pc1 &adc1_in3_pc2 &adc1_in4_pc3 &adc1_in13_pc4>;
 	pinctrl-names = "default";
