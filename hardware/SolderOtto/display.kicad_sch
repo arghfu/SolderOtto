@@ -1073,7 +1073,7 @@
 	)
 	(wire
 		(pts
-			(xy 151.13 63.5) (xy 151.13 71.12)
+			(xy 138.43 53.34) (xy 138.43 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1123,6 +1123,26 @@
 	)
 	(wire
 		(pts
+			(xy 138.43 63.5) (xy 129.54 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "599470f3-4618-427d-b3a2-50650617f209")
+	)
+	(wire
+		(pts
+			(xy 138.43 53.34) (xy 142.24 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "62623dda-1745-4c50-8e05-49deb5d6aa3a")
+	)
+	(wire
+		(pts
 			(xy 137.16 78.74) (xy 129.54 78.74)
 		)
 		(stroke
@@ -1130,6 +1150,16 @@
 			(type default)
 		)
 		(uuid "62f3d583-56de-47fb-9d59-c3f79f04eb05")
+	)
+	(wire
+		(pts
+			(xy 129.54 71.12) (xy 137.16 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65837e43-2528-45d9-9479-826cce646edd")
 	)
 	(wire
 		(pts
@@ -1153,13 +1183,13 @@
 	)
 	(wire
 		(pts
-			(xy 129.54 63.5) (xy 151.13 63.5)
+			(xy 129.54 68.58) (xy 137.16 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "75e69e3c-8c43-463a-850c-a837091ee789")
+		(uuid "807b193b-d9c5-4f0c-af6e-fa6946590207")
 	)
 	(wire
 		(pts
@@ -1193,13 +1223,13 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 71.12) (xy 129.54 71.12)
+			(xy 142.24 53.34) (xy 142.24 54.61)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ab9433f1-53ac-46d9-b89e-829e45191fad")
+		(uuid "a5a17634-ea84-41f9-a87c-d4ae21589dde")
 	)
 	(wire
 		(pts
@@ -1240,16 +1270,6 @@
 			(type default)
 		)
 		(uuid "e9ad0531-ece7-4c89-ab35-a4137a5f648b")
-	)
-	(wire
-		(pts
-			(xy 137.16 68.58) (xy 129.54 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5bb425e-385d-47c1-ab2a-95173e618d98")
 	)
 	(hierarchical_label "QSPI_CLK"
 		(shape input)
@@ -1299,18 +1319,6 @@
 		)
 		(uuid "824cfac2-20fe-4f16-977b-611d58c18680")
 	)
-	(hierarchical_label "QSPI_IO1"
-		(shape bidirectional)
-		(at 137.16 68.58 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "99318364-3dee-4bd3-a0cb-927109aa4115")
-	)
 	(hierarchical_label "QSPI_CS"
 		(shape input)
 		(at 137.16 73.66 0)
@@ -1323,18 +1331,6 @@
 		)
 		(uuid "adcbaa76-a310-422c-a147-a512e7e92d31")
 	)
-	(hierarchical_label "QSPI_IO0"
-		(shape bidirectional)
-		(at 137.16 71.12 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "aecb48f0-5f37-4f33-a03e-43c6901bde27")
-	)
 	(hierarchical_label "~{INT}"
 		(shape output)
 		(at 137.16 76.2 0)
@@ -1346,6 +1342,18 @@
 			(justify left)
 		)
 		(uuid "c0c4cb7c-5be7-49f0-98a8-47c0e7f1495e")
+	)
+	(hierarchical_label "SPI_MISO"
+		(shape bidirectional)
+		(at 137.16 68.58 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d15e16f6-3d1a-4daf-b425-df6ad3c75263")
 	)
 	(hierarchical_label "AUDIO_OUT"
 		(shape output)
@@ -1370,6 +1378,18 @@
 			(justify left)
 		)
 		(uuid "e2128429-6280-41a9-b040-23686d1f20ab")
+	)
+	(hierarchical_label "SPI_MOSI"
+		(shape bidirectional)
+		(at 137.16 71.12 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "fe259855-8131-4b07-a90f-c94899c41bb7")
 	)
 	(symbol
 		(lib_id "power:+3V3")
@@ -1703,7 +1723,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 151.13 71.12 0)
+		(at 142.24 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1712,7 +1732,7 @@
 		(fields_autoplaced yes)
 		(uuid "ce60a189-14f0-4015-9c9b-0ec45b5f2328")
 		(property "Reference" "#PWR0402"
-			(at 151.13 77.47 0)
+			(at 142.24 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1721,7 +1741,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 151.13 76.2 0)
+			(at 142.24 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1729,7 +1749,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 151.13 71.12 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1738,7 +1758,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 151.13 71.12 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +1767,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 151.13 71.12 0)
+			(at 142.24 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)

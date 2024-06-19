@@ -6,6 +6,7 @@
 	(paper "A4")
 	(lib_symbols
 		(symbol "BAT54SFILM_1"
+			(pin_numbers hide)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -243,6 +244,301 @@
 				)
 			)
 			(symbol "BAT54SFILM_1_1_1"
+				(pin passive line
+					(at -7.62 0 0)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 7.62 0 180)
+					(length 3.81)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 0)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
+		(symbol "BAT54SFILM_2"
+			(pin_numbers hide)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 5.588 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "BAT54SFILM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Mouser" "511-BAT54SFILM"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "BAT54SFILM_2_0_1"
+				(polyline
+					(pts
+						(xy -3.81 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -3.175 -1.27) (xy -3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 -1.27) (xy -2.54 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.54 1.27) (xy -1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 0) (xy 1.905 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -1.905 1.27) (xy -1.905 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 3.81 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.175 -1.27) (xy 3.175 -1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.175 -1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 -1.27) (xy 3.81 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.81 1.27) (xy 4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.445 1.27) (xy 4.445 1.016)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -4.445 1.27) (xy -4.445 -1.27) (xy -2.54 0) (xy -4.445 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.905 1.27) (xy 1.905 -1.27) (xy 3.81 0) (xy 1.905 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "BAT54SFILM_2_1_1"
 				(pin passive line
 					(at -7.62 0 0)
 					(length 3.81)
@@ -1622,6 +1918,7 @@
 			)
 		)
 		(symbol "mylib_connectors:JBC-AM120"
+			(pin_names hide)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board no)
@@ -4053,7 +4350,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 33.02) (xy 201.93 33.02)
+			(xy 193.04 33.02) (xy 205.74 33.02)
 		)
 		(stroke
 			(width 0)
@@ -4211,7 +4508,17 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 35.56) (xy 201.93 35.56)
+			(xy 193.04 38.1) (xy 205.74 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47176811-c4b0-4ef1-b752-d6f80e666933")
+	)
+	(wire
+		(pts
+			(xy 193.04 35.56) (xy 205.74 35.56)
 		)
 		(stroke
 			(width 0)
@@ -5178,7 +5485,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 30.48) (xy 201.93 30.48)
+			(xy 193.04 30.48) (xy 205.74 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5497,7 +5804,7 @@
 		(uuid "bc6fa712-5339-4f4c-b7b0-b76f93e2d0a5")
 	)
 	(label "LOAD"
-		(at 201.93 35.56 180)
+		(at 205.74 35.56 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5521,7 +5828,7 @@
 		(uuid "1a66e023-1228-4a32-94b3-47b4a97c8a51")
 	)
 	(label "TC"
-		(at 201.93 30.48 180)
+		(at 205.74 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5601,7 +5908,7 @@
 		(uuid "5fad6976-e639-44f6-a38f-ff8192ca39b8")
 	)
 	(label "COM"
-		(at 201.93 33.02 180)
+		(at 205.74 33.02 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5611,6 +5918,18 @@
 			(justify right bottom)
 		)
 		(uuid "6f3b9a51-0052-46bf-bb82-be093fa2d6d2")
+	)
+	(label "_iron_sense"
+		(at 205.74 38.1 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 153 0 1)
+			)
+			(justify right bottom)
+		)
+		(uuid "771e9308-cece-49a7-81d3-49e533081e60")
 	)
 	(label "_iron_sense"
 		(at 222.25 90.17 180)
@@ -5928,12 +6247,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "24f3389a-6f92-4fc4-828c-b931003138a9")
+			(uuid "64326607-14e7-4734-9686-2a1e7245d9bf")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01001")
 					(unit 1)
 				)
 			)
@@ -6004,15 +6335,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "6dc7f76d-8142-4638-8ebd-449d5c86d389")
+			(uuid "c112a257-92b9-43bf-b55f-dc6005b9cd4a")
 		)
 		(pin "2"
-			(uuid "033aa63a-a011-449c-9d50-93d6e426a340")
+			(uuid "f2986184-3035-48d6-a9e2-1f5ffe1a7a89")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R605")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1805")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1405")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1005")
 					(unit 1)
 				)
 			)
@@ -6081,15 +6424,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "ee274cca-7b92-4cce-bbdf-ec07ef768682")
+			(uuid "799ee06f-f0da-44b4-936d-a1235f122b0c")
 		)
 		(pin "2"
-			(uuid "36f5a5df-0914-4dd6-9d36-584d3017e677")
+			(uuid "0a439321-3ff1-4088-9f86-de6442a372f2")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R607")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1807")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1407")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1007")
 					(unit 1)
 				)
 			)
@@ -6160,15 +6515,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb69aceb-ff12-480b-9da5-16f7ed563e52")
+			(uuid "1280f790-e535-43e4-961d-944f74acceb4")
 		)
 		(pin "2"
-			(uuid "277e329b-efa1-4d86-a951-70b4b80de1c6")
+			(uuid "ab1c24f5-fb0c-4d3c-8eb5-c2f82ee4734c")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "C604")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "C1804")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "C1404")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "C1004")
 					(unit 1)
 				)
 			)
@@ -6230,27 +6597,39 @@
 			)
 		)
 		(pin "6"
-			(uuid "729d302b-ba48-405d-8b89-aeae5d0ddcea")
+			(uuid "d7c1575c-ffbf-4505-bd57-bea1c498cd1f")
 		)
 		(pin "3"
-			(uuid "548ffd96-56ef-4223-80b5-7b92d0347be1")
+			(uuid "b5cebd09-26e5-4abc-a6dd-3563766a99de")
 		)
 		(pin "4"
-			(uuid "8f6e6a8f-ac1b-44dd-b34b-a9fbefbb83e4")
+			(uuid "d6b64e7a-fdd4-48c1-b09e-437d707168e6")
 		)
 		(pin "5"
-			(uuid "21a7686d-dec6-4988-a63d-0b50252caec3")
+			(uuid "77e573a3-553a-4877-9545-c12a10f6128b")
 		)
 		(pin "2"
-			(uuid "e9a84d4f-3992-4b75-98e6-cb0f9fc20a5f")
+			(uuid "5a508981-69ec-4211-bfcc-b8191f63b9e8")
 		)
 		(pin "1"
-			(uuid "67e46b89-d252-4ddd-8344-c7541dcae64e")
+			(uuid "9f634a9c-5597-4e9f-a63f-d31db4c9d2a3")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X606")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1806")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1406")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1006")
 					(unit 1)
 				)
 			)
@@ -6331,18 +6710,30 @@
 			)
 		)
 		(pin "3"
-			(uuid "4d5a4ab4-299e-4826-8f37-789551f1736c")
+			(uuid "7308d77e-5b66-4c0f-8789-e54fa62040d5")
 		)
 		(pin "2"
-			(uuid "3f1404d8-6ec9-4112-aa02-371786be4b90")
+			(uuid "5ed5d423-b7c2-4926-ac9b-1def76ab0756")
 		)
 		(pin "1"
-			(uuid "db884b34-cbfc-4be4-a46d-6765daf546e1")
+			(uuid "282b88a2-6b2d-45f1-a37f-943cfad97824")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1805")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1405")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1005")
 					(unit 1)
 				)
 			)
@@ -6404,27 +6795,39 @@
 			)
 		)
 		(pin "6"
-			(uuid "29555a8e-68b0-4a61-90b8-d29b995a0e8e")
+			(uuid "c98bdbdd-527b-4424-9002-2de3eb2fcf99")
 		)
 		(pin "3"
-			(uuid "cdf0e2de-d209-4c11-9ea1-09fde51165a5")
+			(uuid "8554cce7-ea18-4a48-bd8d-a72a8455b5fe")
 		)
 		(pin "4"
-			(uuid "fed357e3-59c8-42af-87ff-a4609a645cf4")
+			(uuid "bcc36597-4b8f-42b4-b1b8-3d25c6624145")
 		)
 		(pin "5"
-			(uuid "40e23b55-7262-4361-b2bd-e0840bd34dfd")
+			(uuid "da483734-6fa2-4020-b908-f1d89578aef2")
 		)
 		(pin "2"
-			(uuid "3ab103a9-9252-4d00-8c13-7a3b69456531")
+			(uuid "ccc7f52d-1d9f-4bd0-8046-9146fb727195")
 		)
 		(pin "1"
-			(uuid "7922cb82-749c-4f87-81eb-0459f1eb6ac5")
+			(uuid "fe461e3e-db19-4810-b93e-4e18bf007827")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X604")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1804")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1404")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1004")
 					(unit 1)
 				)
 			)
@@ -6495,15 +6898,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "5c459e77-4c90-4cb7-a231-30596b336054")
+			(uuid "624543e9-7cfb-4a12-9e40-aa4caa364d3d")
 		)
 		(pin "2"
-			(uuid "1cb44199-90c4-4e3e-bb8f-ebe6c946183d")
+			(uuid "84a1ff53-ecc3-4517-939b-8e157e178107")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1001")
 					(unit 1)
 				)
 			)
@@ -6564,12 +6979,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "81e22e31-f09d-4896-8d39-d7ea2a6b0662")
+			(uuid "3170d408-3375-40a1-9d56-0ce3c0ecfbac")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0605")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01805")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01405")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01005")
 					(unit 1)
 				)
 			)
@@ -6630,12 +7057,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "e6522491-84b9-4b96-8016-426aaca59d07")
+			(uuid "dee04249-330e-4dd7-93e3-fcdd4ce0774b")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01002")
 					(unit 1)
 				)
 			)
@@ -6706,30 +7145,42 @@
 			)
 		)
 		(pin "1"
-			(uuid "68f27fa2-9b62-4ebd-b6da-5dd645768f93")
+			(uuid "e24a6b0a-6b67-421a-a521-4a279150e7de")
 		)
 		(pin "3"
-			(uuid "a9d29aec-bfb8-4b8f-8394-a85cd6eaea7a")
+			(uuid "50e24f6f-80a5-4ba9-a836-871372af82bf")
 		)
 		(pin "4"
-			(uuid "76fed3a2-d264-4d7e-aa26-94ce84801484")
+			(uuid "3b7f4383-d56a-42e2-8aea-5641cf14f76d")
 		)
 		(pin "7"
-			(uuid "bec731ab-95de-4da1-a1ca-48fa3ae824a9")
+			(uuid "8ce5d4f9-8923-46b6-a5fa-9ec7c471d09d")
 		)
 		(pin "2"
-			(uuid "409706df-6070-4ddb-83d7-8ca21fcfcde1")
+			(uuid "b35b157e-f15e-4898-860f-1776979bbc1d")
 		)
 		(pin "5"
-			(uuid "98b8f971-124a-448c-8e9e-68ae94354341")
+			(uuid "459d6835-8f44-405d-bdd0-75c688ce101b")
 		)
 		(pin "6"
-			(uuid "2a3694df-0825-4fe8-8f3f-9d8230d385a4")
+			(uuid "5edc149e-02e1-4214-8d81-0e479892d024")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "J601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "J1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "J1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "J1001")
 					(unit 1)
 				)
 			)
@@ -6809,15 +7260,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "841e266d-f71b-490f-87e4-c926a214985e")
+			(uuid "3ee41d12-10e2-4dff-b05f-47f1f44b967e")
 		)
 		(pin "1"
-			(uuid "d51cd40a-3d4a-46fb-a4a9-1ef2fe9d293c")
+			(uuid "1ea8ed5b-bba3-4403-87c3-31b94ce73f68")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D605")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1001")
 					(unit 1)
 				)
 			)
@@ -6879,21 +7342,33 @@
 			)
 		)
 		(pin "1"
-			(uuid "1a156b09-958a-4ba9-ba72-2cbe2d8e6e9b")
+			(uuid "11132dd4-23a7-44c3-84b4-faefc41c9aa2")
 		)
 		(pin "6"
-			(uuid "06f42bc4-70d8-4fec-b05b-07a2d6f17ab0")
+			(uuid "6d64c9b0-9484-4fb7-9c62-5fc72e451538")
 		)
 		(pin "5"
-			(uuid "bb2b0e33-4b52-40eb-9940-14af0eb8ef6e")
+			(uuid "2bbe93f9-ce7d-4e47-8061-c2d4fa1c36cf")
 		)
 		(pin "2"
-			(uuid "d98aa0b7-f98b-4824-b6ae-be3530fc7f89")
+			(uuid "14596f66-d6f8-4fb9-8efc-2e68504ed9e1")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "HEATER603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "HEATER1803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "HEATER1403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "HEATER1003")
 					(unit 1)
 				)
 			)
@@ -6954,12 +7429,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "7b41de6c-15c0-446c-a0c9-dd02133db024")
+			(uuid "aca0ddbf-2974-4643-ae0c-27390179e5e6")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01003")
 					(unit 1)
 				)
 			)
@@ -7030,15 +7517,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "0d1c282a-5423-4f42-bde9-0c58bead8b51")
+			(uuid "ce2821a8-08aa-4b5d-834c-3e66bef74273")
 		)
 		(pin "2"
-			(uuid "c6943992-8f0f-4ed2-8612-1b9ad7ca4ab2")
+			(uuid "86599d27-5b08-46bd-977c-caee06afbc9b")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "C602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "C1802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "C1402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "C1002")
 					(unit 1)
 				)
 			)
@@ -7109,10 +7608,10 @@
 			)
 		)
 		(pin "1"
-			(uuid "024ed221-d759-46c7-80be-90fba51e3ea0")
+			(uuid "60ffc1d2-eefc-4e11-95f7-01313c760cb3")
 		)
 		(pin "2"
-			(uuid "70fbad0b-92d8-466a-901c-b9176930f76e")
+			(uuid "28786dc1-900e-4505-aa35-0412c71f4ec1")
 		)
 		(instances
 			(project "SolderOtto"
@@ -7120,10 +7619,23 @@
 					(reference "C601")
 					(unit 1)
 				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "C1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "C1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "C1001")
+					(unit 1)
+				)
 			)
 		)
 	)
 	(symbol
+		(lib_name "BAT54SFILM_2")
 		(lib_id "mylib_diodes:BAT54SFILM")
 		(at 246.38 135.89 90)
 		(unit 1)
@@ -7197,18 +7709,30 @@
 			)
 		)
 		(pin "3"
-			(uuid "776c6eca-1ae1-490b-ad94-697006d02151")
+			(uuid "fa14333f-9ddd-422f-91a6-4ef9801273e9")
 		)
 		(pin "2"
-			(uuid "a9e2466a-2499-4c97-ac97-fbc251421b40")
+			(uuid "38e33a75-ffb8-4ce1-80ff-0bc59032d8ea")
 		)
 		(pin "1"
-			(uuid "a8b4fbb3-6d11-40c8-a21d-fc0a446a244c")
+			(uuid "241f8aeb-ec90-457d-b4e9-81775b9903b1")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D604")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1806")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1406")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1006")
 					(unit 1)
 				)
 			)
@@ -7270,18 +7794,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "b9d5940a-84de-43b2-bee3-de71cd1c0c4b")
+			(uuid "b76f9ffd-71fd-48af-8c9e-a43ee3164831")
 		)
 		(pin "5"
-			(uuid "feeff6d5-8c0d-4032-8d43-26969d2d7c14")
+			(uuid "3f91f227-3856-4723-b48a-9af63797b6fc")
 		)
 		(pin "1"
-			(uuid "8f4500d6-a4a8-4f40-9133-29018b02bacb")
+			(uuid "11d45d63-b598-43f0-9e6c-9da71c903e0b")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "HEATER602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "HEATER1802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "HEATER1402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "HEATER1002")
 					(unit 1)
 				)
 			)
@@ -7342,12 +7878,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "10b3aa35-80e6-4c63-8e33-068b57ffc881")
+			(uuid "b74bab1c-a793-4aea-82bb-56d0f608ef38")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0613")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01813")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01413")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01013")
 					(unit 1)
 				)
 			)
@@ -7409,30 +7957,42 @@
 			)
 		)
 		(pin "4"
-			(uuid "0aeca18e-e6b8-44a1-8aba-e2a6ecd86466")
+			(uuid "cd1ba38c-cb48-418c-ad71-fd1a864491c8")
 		)
 		(pin "6"
-			(uuid "80d1e461-9a16-4f34-bfd3-88b4fd52edb4")
+			(uuid "e3715968-5ede-48c9-a1fb-d0e0c74f6ce7")
 		)
 		(pin "1"
-			(uuid "7ef14418-bfb3-42b1-8d80-200fe2c52436")
+			(uuid "a1c36fca-0024-45a7-95cd-1f030a6cfe88")
 		)
 		(pin "5"
-			(uuid "bc554a50-a351-4a57-97b7-75c7fa612fd4")
+			(uuid "29d58f75-79fa-421c-81aa-7b40c12aa330")
 		)
 		(pin "7"
-			(uuid "b9cd72b8-c889-4d03-9f50-1d4d83974fa6")
+			(uuid "7f95a484-7879-4f35-b346-e7f8fcfc4922")
 		)
 		(pin "2"
-			(uuid "aeb8dfdb-1951-43c6-b8be-e0e634e6459d")
+			(uuid "d4f36a06-b6bc-4f1d-926b-f72fe2a514f1")
 		)
 		(pin "3"
-			(uuid "5b355305-2e51-4f7d-b30e-3ef4602cc1cd")
+			(uuid "13ac272d-51c2-4d79-9061-9e0c63d9ee2a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X605")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1805")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1405")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1005")
 					(unit 1)
 				)
 			)
@@ -7512,15 +8072,27 @@
 			)
 		)
 		(pin "2"
-			(uuid "f30377da-8b6f-457c-9df9-b38714e759aa")
+			(uuid "a96e26dd-905d-45b4-ab29-5d99d1ebb3dc")
 		)
 		(pin "1"
-			(uuid "38352fff-d459-4b36-8485-992ca322098a")
+			(uuid "d8d76a01-7f45-4533-a900-3a9f975d7103")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D606")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1002")
 					(unit 1)
 				)
 			)
@@ -7581,12 +8153,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "b9b99376-f727-420a-b4bf-bf6308f8ca84")
+			(uuid "d0d8bc8e-ff7c-4ac1-ba2a-8fe2e8ff9d52")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0606")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01806")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01406")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01006")
 					(unit 1)
 				)
 			)
@@ -7657,15 +8241,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "17a7a351-c1c5-4be1-a4d4-fbc3453091f7")
+			(uuid "0a3b2252-20e4-4238-8830-b62cfd753381")
 		)
 		(pin "2"
-			(uuid "ae30ba61-ac44-4a95-8ca4-e81c1ce680f1")
+			(uuid "93b0959a-e324-4403-b4c3-47e4d93fbaa9")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "C603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "C1803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "C1403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "C1003")
 					(unit 1)
 				)
 			)
@@ -7745,18 +8341,30 @@
 			)
 		)
 		(pin "3"
-			(uuid "d6dcf5ff-e8ab-40f3-a17e-f2f6427713e4")
+			(uuid "d4caafdf-f15f-4f78-a3c8-55f0ac1e5c77")
 		)
 		(pin "2"
-			(uuid "497c3507-167e-41ce-97f1-c73087031783")
+			(uuid "77a4324a-f9b4-4aa6-8cd7-79ec250adc15")
 		)
 		(pin "1"
-			(uuid "19f72af0-124f-4f35-9a77-dfaf6cd82494")
+			(uuid "a2681570-7f29-401f-850d-b2ac8b1af332")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1804")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1404")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1004")
 					(unit 1)
 				)
 			)
@@ -7817,12 +8425,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "1f919926-67ab-4f9e-8fe9-cc614d98196a")
+			(uuid "c981ec8d-9275-4e57-9328-e0cbd00b786a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0609")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01809")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01409")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01009")
 					(unit 1)
 				)
 			)
@@ -7891,15 +8511,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "124fbc87-923b-404c-ba5e-510e5809dcb0")
+			(uuid "8af63493-f73d-42e8-bb3f-9ad6f28b1085")
 		)
 		(pin "2"
-			(uuid "bd90fdef-c2bf-48e7-890b-69e391952177")
+			(uuid "63ea4108-f5ef-4688-ae57-88f9c9082153")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R606")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1806")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1406")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1006")
 					(unit 1)
 				)
 			)
@@ -7960,12 +8592,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "6907cc1b-92b6-4ccd-bd6d-a01586ce1067")
+			(uuid "deb05e1c-18ab-49ad-a696-ceabdeca09bf")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0608")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01808")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01408")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01008")
 					(unit 1)
 				)
 			)
@@ -8034,15 +8678,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "1adc3739-1822-4677-832a-c36dab73614f")
+			(uuid "b2263ca5-2879-4b80-ba53-3ef69c8c6510")
 		)
 		(pin "2"
-			(uuid "b98dd56a-0aa2-438c-9faf-507645d8f9e9")
+			(uuid "db77ceae-f123-4e65-a31e-598897555137")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1003")
 					(unit 1)
 				)
 			)
@@ -8104,30 +8760,42 @@
 			)
 		)
 		(pin "2"
-			(uuid "52948246-eb86-4921-82ed-4d7b82b25458")
+			(uuid "d3fa68f1-3331-4e07-9c60-a6bb3da87b1f")
 		)
 		(pin "1"
-			(uuid "0e08162d-42a3-4910-9224-31d28d3b4898")
+			(uuid "4b48103c-6cf6-4016-b3c4-1afe5b7ea538")
 		)
 		(pin "1"
-			(uuid "1f25032a-8a5e-4488-85cc-8e8c19e04015")
+			(uuid "f80b3292-bc33-48ea-a5bf-2082654930d5")
 		)
 		(pin "3"
-			(uuid "3ec4d857-45b4-4c52-afd0-ecbc3ec2620f")
+			(uuid "2b08d591-0b96-4d27-b59f-b38809eaa1d3")
 		)
 		(pin "4"
-			(uuid "b1bdf5b0-001e-494f-935d-672dc4391afe")
+			(uuid "b92faff7-e576-42f8-9ec8-93d7e9b5a897")
 		)
 		(pin "5"
-			(uuid "ca9b33da-7d18-4541-a1e7-2dc7531d405c")
+			(uuid "0a87457b-49e3-4e16-8417-690f563b4e8b")
 		)
 		(pin "6"
-			(uuid "8ccb31c5-8252-4ad8-b710-ba5acd1d5b84")
+			(uuid "faede7c0-7d75-4502-bd11-8a4dac24e1f5")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "HEATER601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "HEATER1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "HEATER1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "HEATER1001")
 					(unit 1)
 				)
 			)
@@ -8189,30 +8857,42 @@
 			)
 		)
 		(pin "4"
-			(uuid "3be167ad-765a-4258-84bc-8d7a6b73de48")
+			(uuid "87f230c1-56c0-464c-8a5b-2616cc80a292")
 		)
 		(pin "6"
-			(uuid "97f8ed14-cfad-462f-b8e6-2df0bb93af89")
+			(uuid "0063dc71-8f0a-445e-bd4a-2cb7886a972b")
 		)
 		(pin "1"
-			(uuid "bdb7f04c-823a-46c2-974f-e24ab364d8d9")
+			(uuid "3ad14ec1-3262-4f1e-bef1-049f0bcc1766")
 		)
 		(pin "5"
-			(uuid "82389389-d98e-48db-8e71-bacd1feb6765")
+			(uuid "26db8123-d66c-4745-adae-b5643799f133")
 		)
 		(pin "7"
-			(uuid "60fb8534-be07-4b74-84e7-2ff116dec4d3")
+			(uuid "52290645-41cf-45c9-b104-843d25ec690f")
 		)
 		(pin "2"
-			(uuid "2f18e726-9ab9-4a7a-a521-369421142efc")
+			(uuid "5215a5ce-a404-4a6e-a9e9-eb4d9d38467c")
 		)
 		(pin "3"
-			(uuid "028e4aa4-230a-44b1-8af2-510b50d267a3")
+			(uuid "23c60b3f-31c0-4849-8ded-0a1b27a7468a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1801")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1401")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1001")
 					(unit 1)
 				)
 			)
@@ -8273,12 +8953,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "fb37dd64-3e2e-4c16-ad08-e873b725bf71")
+			(uuid "d3d8e858-4366-4132-a94e-d65a2dcb0a89")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0610")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01810")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01410")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01010")
 					(unit 1)
 				)
 			)
@@ -8339,12 +9031,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "f0b0765f-d4ce-49b0-ae00-df5caa5fbdb1")
+			(uuid "b77eee76-61d1-44cd-80e0-e20537b3718a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0604")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01804")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01404")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01004")
 					(unit 1)
 				)
 			)
@@ -8405,12 +9109,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "e7efcf4f-cb5e-40c9-8297-00e8d79b5821")
+			(uuid "e50eb4ec-6f10-45f9-8e1c-32172c403f39")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0611")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01811")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01411")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01011")
 					(unit 1)
 				)
 			)
@@ -8479,15 +9195,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "95f98b60-6236-4c65-9be6-b1948bb2caaf")
+			(uuid "974a214a-dd5f-47fd-8868-b8fd9a005e7c")
 		)
 		(pin "2"
-			(uuid "b3c353ff-5b57-4742-8041-c617d0328abc")
+			(uuid "a21c36fc-16df-4572-bb0c-989f06c9741b")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1002")
 					(unit 1)
 				)
 			)
@@ -8548,12 +9276,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "08ab4b47-5cdd-4b5b-a163-2b5d2eb7205d")
+			(uuid "9830f3d3-ecbd-4377-adc0-310c4fe56082")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0607")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01807")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01407")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01007")
 					(unit 1)
 				)
 			)
@@ -8633,18 +9373,30 @@
 			)
 		)
 		(pin "3"
-			(uuid "c7c87a50-20f2-4be6-b9d3-9a517d7d4ae6")
+			(uuid "963ef198-3bcb-44c0-9f30-5a96f1bbe094")
 		)
 		(pin "2"
-			(uuid "3f068206-1bf6-4465-98ed-536982bc9f4f")
+			(uuid "3c14d9f7-d650-4442-b215-2ea16503fd5c")
 		)
 		(pin "1"
-			(uuid "518234e6-ab27-43d8-932a-4288ea066f59")
+			(uuid "87461313-2d8f-48a1-b400-5ee2daddd9e5")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "D601")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "D1803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "D1403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "D1003")
 					(unit 1)
 				)
 			)
@@ -8705,12 +9457,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "7b853b58-e611-4068-9ae2-ce1cca8dd2c3")
+			(uuid "e3223ff5-11df-4e73-a41a-a1994f36f821")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0615")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01815")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01415")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01015")
 					(unit 1)
 				)
 			)
@@ -8781,15 +9545,27 @@
 			)
 		)
 		(pin "1"
-			(uuid "39e7ef54-86d3-4c2d-a387-dff03e10b558")
+			(uuid "3c9e0720-a216-482b-990e-5918f9aed603")
 		)
 		(pin "2"
-			(uuid "492bfd6f-ea87-4827-a896-d9bd763d7ed8")
+			(uuid "25941562-61e7-4a27-ac25-466520778f1f")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R604")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "R1804")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "R1404")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "R1004")
 					(unit 1)
 				)
 			)
@@ -8850,12 +9626,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "26954cfb-8837-41fb-9ef9-717c59363793")
+			(uuid "4703213b-2a71-4f4d-9371-6d3b130d9b81")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0614")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01814")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01414")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01014")
 					(unit 1)
 				)
 			)
@@ -8917,30 +9705,42 @@
 			)
 		)
 		(pin "4"
-			(uuid "cfc67d77-65c1-429e-b588-3340f66e1c82")
+			(uuid "8e7bef39-4a38-4e72-9f94-f37bd5589eea")
 		)
 		(pin "6"
-			(uuid "7197f4c2-39f1-4a2e-b89b-63dfae39e778")
+			(uuid "187f22ac-9b8f-4e56-88da-577788e65f6f")
 		)
 		(pin "1"
-			(uuid "f189e7fc-771a-4484-beaa-12897f85a31b")
+			(uuid "130a9080-8ea0-49a5-bb27-8d8452820d2b")
 		)
 		(pin "5"
-			(uuid "8cbc816d-3194-4433-b5f1-5be7b410a79e")
+			(uuid "0438e149-d38a-4e5c-8de3-0b2b761e7ff6")
 		)
 		(pin "7"
-			(uuid "2760add6-24bf-441f-8cd7-eb58023775fd")
+			(uuid "a02f9c7a-b388-45e8-98a7-88dce8d788c1")
 		)
 		(pin "2"
-			(uuid "598e2da1-12d1-4586-b859-1f4cd5d0f6db")
+			(uuid "b847909e-d141-4d90-8b4a-721471af410e")
 		)
 		(pin "3"
-			(uuid "2c9c3953-abe1-43d2-b512-f065ed18dc67")
+			(uuid "1c6826ac-499a-4f8d-a574-e030c5ea5140")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X603")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1803")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1403")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1003")
 					(unit 1)
 				)
 			)
@@ -9001,12 +9801,24 @@
 			)
 		)
 		(pin "1"
-			(uuid "bcf114c0-e4ef-4c20-99b4-4c97b5cdcc11")
+			(uuid "705ca9b8-fee1-496b-8a37-e69787c3ab3a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0612")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "#PWR01812")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "#PWR01412")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "#PWR01012")
 					(unit 1)
 				)
 			)
@@ -9068,27 +9880,39 @@
 			)
 		)
 		(pin "3"
-			(uuid "1ca2dd85-e414-4ab3-adbb-481ad0fc3438")
+			(uuid "f1bc9883-7524-41e1-8ce5-5c3993a1d9b6")
 		)
 		(pin "2"
-			(uuid "6dc285da-bbe5-4569-81ad-b896f6d89bca")
+			(uuid "a0e1c198-7190-43aa-bae0-8e2d1d018d5f")
 		)
 		(pin "1"
-			(uuid "e9b7b353-6b05-4194-ac05-f1f03c92fe84")
+			(uuid "6e01048c-24a8-4e88-bed7-30c4b0735712")
 		)
 		(pin "5"
-			(uuid "64fd3032-6929-4dad-bfa7-64a96926d604")
+			(uuid "1b5e308b-1572-47ba-8450-cd4923bbd10b")
 		)
 		(pin "4"
-			(uuid "9ae5dd6d-0d0d-4dac-8726-e97aabecfbd7")
+			(uuid "22907067-db1d-4828-b211-579f2aa76dbd")
 		)
 		(pin "6"
-			(uuid "5c38ee77-8109-4a0e-b905-b0ce3ee583d0")
+			(uuid "38377e28-9104-4112-a188-cafa47048f06")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "X602")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(reference "X1802")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(reference "X1402")
+					(unit 1)
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(reference "X1002")
 					(unit 1)
 				)
 			)
@@ -9132,7 +9956,7 @@
 				)
 				(justify left)
 			)
-			(uuid "038bcf4d-232a-405b-ae44-7dfe4c95608a")
+			(uuid "fa2525f0-00ae-436a-82fa-933543a2bbab")
 		)
 		(pin "COM" bidirectional
 			(at 193.04 33.02 0)
@@ -9142,7 +9966,7 @@
 				)
 				(justify right)
 			)
-			(uuid "cae1a326-959d-4d4d-8c1f-8f8d2451abef")
+			(uuid "50c2db72-466f-4188-9711-ed460ea7016a")
 		)
 		(pin "TC" bidirectional
 			(at 193.04 30.48 0)
@@ -9152,7 +9976,7 @@
 				)
 				(justify right)
 			)
-			(uuid "8f3956f7-a9cb-4d82-b98a-01c79a28580d")
+			(uuid "c8a0ff61-0c5a-42f4-a171-23e6346093d5")
 		)
 		(pin "DET" input
 			(at 193.04 49.53 0)
@@ -9162,7 +9986,7 @@
 				)
 				(justify right)
 			)
-			(uuid "4481e379-76f8-44ec-a6d5-8b8ed3dc78fa")
+			(uuid "27fd3c77-b54a-4bfa-b0d1-dd495ca0dc92")
 		)
 		(pin "SEL3" input
 			(at 157.48 34.29 180)
@@ -9172,7 +9996,7 @@
 				)
 				(justify left)
 			)
-			(uuid "2e45a25e-69ff-43f6-a647-5d8612182a34")
+			(uuid "87836521-b98c-4b0e-afce-e4fb9c76499a")
 		)
 		(pin "SEL2" input
 			(at 157.48 31.75 180)
@@ -9182,7 +10006,7 @@
 				)
 				(justify left)
 			)
-			(uuid "5816d8c9-20f9-4ffe-b697-656c12df6936")
+			(uuid "ecc41f9b-60ee-465e-a057-fc5765772905")
 		)
 		(pin "I_{LEAK}" input
 			(at 193.04 44.45 0)
@@ -9192,7 +10016,7 @@
 				)
 				(justify right)
 			)
-			(uuid "91fda95c-8ae2-4f5f-8896-7e92550dedc8")
+			(uuid "2d9bb2e9-9c78-4d58-a8a8-9d3d10b2d979")
 		)
 		(pin "I_{LOAD}" input
 			(at 193.04 41.91 0)
@@ -9202,7 +10026,7 @@
 				)
 				(justify right)
 			)
-			(uuid "56940675-6bea-471a-93f0-23adc52735a4")
+			(uuid "233142f5-1cc0-4180-9c0a-b403e2406fc9")
 		)
 		(pin "T_{TIP}" input
 			(at 193.04 46.99 0)
@@ -9212,7 +10036,7 @@
 				)
 				(justify right)
 			)
-			(uuid "deb3f672-fd7b-4539-b827-b3b0bc10b2bf")
+			(uuid "e689777e-a195-4f41-8f44-ffa3041c5cd9")
 		)
 		(pin "SEL1" input
 			(at 157.48 29.21 180)
@@ -9222,7 +10046,7 @@
 				)
 				(justify left)
 			)
-			(uuid "9874ce3b-707d-42f9-8630-b8057e8ba810")
+			(uuid "e5f6186e-c1ed-45ad-b9b4-e1d097861c21")
 		)
 		(pin "LOAD1" bidirectional
 			(at 193.04 38.1 0)
@@ -9232,7 +10056,7 @@
 				)
 				(justify right)
 			)
-			(uuid "94f2d570-94dc-4dab-8e39-76fd14a65acd")
+			(uuid "f4ae8623-374d-4933-863a-a8223fb1519c")
 		)
 		(pin "LOAD0" bidirectional
 			(at 193.04 35.56 0)
@@ -9242,12 +10066,21 @@
 				)
 				(justify right)
 			)
-			(uuid "6f1513d8-6d49-482d-9e5f-20a38ed97b32")
+			(uuid "d5c9c568-e5a2-4512-aaeb-78f0ac866f08")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(page "8")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(page "13")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(page "17")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(page "19")
 				)
 			)
 		)
@@ -9290,7 +10123,7 @@
 				)
 				(justify left)
 			)
-			(uuid "77749302-b35e-4c56-897d-6413d56ea731")
+			(uuid "01b77c44-68e3-473f-8201-daf4cb4afaf1")
 		)
 		(pin "OUT_COM_H" output
 			(at 74.93 38.1 0)
@@ -9300,7 +10133,7 @@
 				)
 				(justify right)
 			)
-			(uuid "a0fab0a2-db59-42e9-be60-e11718bcb4f2")
+			(uuid "a82166ea-3696-4745-90cc-e76d29f2afdf")
 		)
 		(pin "OUT_LOAD_L" output
 			(at 74.93 45.72 0)
@@ -9310,7 +10143,7 @@
 				)
 				(justify right)
 			)
-			(uuid "39733588-2832-477b-b987-72eeeaa228b2")
+			(uuid "26d67962-328f-4b5f-9473-4cd0a9db922d")
 		)
 		(pin "OUT_COM_L" output
 			(at 74.93 49.53 0)
@@ -9320,7 +10153,7 @@
 				)
 				(justify right)
 			)
-			(uuid "10b5e72e-4d93-43cd-ae68-f14ad6fc7032")
+			(uuid "1e23464a-3066-4a08-b023-bfd98a292f4f")
 		)
 		(pin "OUT_LOAD0_H" output
 			(at 74.93 30.48 0)
@@ -9330,7 +10163,7 @@
 				)
 				(justify right)
 			)
-			(uuid "c09ce0a4-d0e9-46eb-b4d9-3be1c481992a")
+			(uuid "5f46036f-0e71-4a75-8e25-3f6b795222df")
 		)
 		(pin "IN_LOAD1_H" input
 			(at 41.91 34.29 180)
@@ -9340,7 +10173,7 @@
 				)
 				(justify left)
 			)
-			(uuid "08b158b0-8f02-44e3-b3b9-1dad44c98e59")
+			(uuid "68250ec5-a19e-43f0-9252-1f0029d2270f")
 		)
 		(pin "IN_LOAD0_H" input
 			(at 41.91 30.48 180)
@@ -9350,9 +10183,9 @@
 				)
 				(justify left)
 			)
-			(uuid "fbe29a89-bda6-4cd3-a8ae-5cd035a1f042")
+			(uuid "05b957f2-33bc-4ab4-90b8-2793230c590f")
 		)
-		(pin "COM_SW" input
+		(pin "LOW_SIDE_SW" input
 			(at 41.91 46.99 180)
 			(effects
 				(font
@@ -9360,7 +10193,7 @@
 				)
 				(justify left)
 			)
-			(uuid "a5b06fc0-aba2-40b7-a826-363ea805de84")
+			(uuid "76ab9a08-d93d-4227-8f21-b57e13439b43")
 		)
 		(pin "OUT_LOAD1_H" output
 			(at 74.93 34.29 0)
@@ -9370,12 +10203,21 @@
 				)
 				(justify right)
 			)
-			(uuid "cbb86513-0c3f-42ae-89ec-b4ebf83325b5")
+			(uuid "94304498-68b7-44cc-bdc6-a4d0a333f734")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(page "7")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(page "12")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(page "16")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(page "20")
 				)
 			)
 		)
@@ -9418,7 +10260,7 @@
 				)
 				(justify right)
 			)
-			(uuid "e8429348-fada-4721-81a9-5cf3b7e1f98c")
+			(uuid "57f50379-0b8f-4817-8249-a15737224e3b")
 		)
 		(pin "LOAD_SW_LOW" input
 			(at 100.33 45.72 180)
@@ -9428,7 +10270,7 @@
 				)
 				(justify left)
 			)
-			(uuid "ef72f4e6-816c-4d7d-85ee-acec099c45ba")
+			(uuid "bb6499c1-ca11-448f-bd65-eb7e453c14e4")
 		)
 		(pin "COM_SW_HIGH" input
 			(at 100.33 38.1 180)
@@ -9438,7 +10280,7 @@
 				)
 				(justify left)
 			)
-			(uuid "6f6e3be4-a4a0-40c6-aea6-0c973252dcd9")
+			(uuid "c5ccad83-ca4f-4019-b882-d046030c6f19")
 		)
 		(pin "COM_SW_LOW" input
 			(at 100.33 49.53 180)
@@ -9448,7 +10290,7 @@
 				)
 				(justify left)
 			)
-			(uuid "1e475563-3b70-44c8-bdc7-0788b3246a6a")
+			(uuid "b34bf23f-23a5-47d2-92b0-0b318de4d92a")
 		)
 		(pin "COM" input
 			(at 134.62 44.45 0)
@@ -9458,7 +10300,7 @@
 				)
 				(justify right)
 			)
-			(uuid "3b65c6d2-6e05-4bb6-ad4e-d7a76c06e070")
+			(uuid "cd529ea7-87fb-48f4-9663-95bf5a5b445e")
 		)
 		(pin "LOAD0" input
 			(at 134.62 46.99 0)
@@ -9468,7 +10310,7 @@
 				)
 				(justify right)
 			)
-			(uuid "7f2b6406-dae8-43e1-b5ef-21a8417a1758")
+			(uuid "db495b3c-5b44-43a3-966c-64cb4d3d735d")
 		)
 		(pin "LOAD1" input
 			(at 134.62 49.53 0)
@@ -9478,7 +10320,7 @@
 				)
 				(justify right)
 			)
-			(uuid "d8f30a93-a9f7-4a6b-beda-c67b05636b19")
+			(uuid "4041e7ba-52c3-499b-a572-5925768378a9")
 		)
 		(pin "LOAD1_SW_HIGH" input
 			(at 100.33 34.29 180)
@@ -9488,7 +10330,7 @@
 				)
 				(justify left)
 			)
-			(uuid "773ef2ea-5825-49c8-9d7c-466e66697c53")
+			(uuid "adbf81bf-215f-4910-9fbc-9bc9affcfa67")
 		)
 		(pin "LOAD0_SW_HIGH" input
 			(at 100.33 30.48 180)
@@ -9498,12 +10340,21 @@
 				)
 				(justify left)
 			)
-			(uuid "b0642586-54a0-413e-905e-33d2a66a95a2")
+			(uuid "529445ab-b189-4c8c-b129-14fcd8a77b32")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(page "9")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466"
+					(page "11")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227"
+					(page "15")
+				)
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9"
+					(page "21")
 				)
 			)
 		)

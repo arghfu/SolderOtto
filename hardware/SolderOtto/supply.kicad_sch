@@ -4779,6 +4779,12 @@
 		(uuid "24fe9902-aafc-4bf9-859b-a44edf21716c")
 	)
 	(junction
+		(at 57.15 30.48)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "264e6a9a-7b24-455b-8d3e-15d341b63614")
+	)
+	(junction
 		(at 40.64 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5252,6 +5258,16 @@
 	)
 	(wire
 		(pts
+			(xy 66.04 26.67) (xy 66.04 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "10182257-d6c7-4f8d-950f-f5963aa7c8a5")
+	)
+	(wire
+		(pts
 			(xy 50.8 170.18) (xy 50.8 156.21)
 		)
 		(stroke
@@ -5532,6 +5548,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 30.48) (xy 57.15 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21f7943b-d7db-487a-89ea-4d8be9e80398")
+	)
+	(wire
+		(pts
 			(xy 68.58 151.13) (xy 71.12 151.13)
 		)
 		(stroke
@@ -5612,7 +5638,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 31.75) (xy 57.15 27.94)
+			(xy 57.15 31.75) (xy 57.15 30.48)
 		)
 		(stroke
 			(width 0)
@@ -6229,6 +6255,16 @@
 			(type default)
 		)
 		(uuid "7295441d-d872-417d-9335-2782ddd10b7e")
+	)
+	(wire
+		(pts
+			(xy 66.04 30.48) (xy 57.15 30.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "731c59af-ce74-4fe3-bec5-51a8f67cd09a")
 	)
 	(wire
 		(pts
@@ -12265,6 +12301,71 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
 					(reference "#PWR0213")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 66.04 26.67 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "587b5024-739a-4d7e-a4f6-f0b2047d797b")
+		(property "Reference" "#FLG0210"
+			(at 66.04 24.765 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 66.04 22.352 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 66.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 66.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 66.04 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7e1446a3-1570-45a5-9f53-9b195b1bb8c4")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
+					(reference "#FLG0210")
 					(unit 1)
 				)
 			)

@@ -6,7 +6,7 @@
         "apply_defaults_to_fp_fields": false,
         "apply_defaults_to_fp_shapes": false,
         "apply_defaults_to_fp_text": false,
-        "board_outline_line_width": 0.1,
+        "board_outline_line_width": 0.05,
         "copper_line_width": 0.2,
         "copper_text_italic": false,
         "copper_text_size_h": 1.5,
@@ -30,7 +30,7 @@
         "fab_text_size_v": 1.0,
         "fab_text_thickness": 0.15,
         "fab_text_upright": false,
-        "other_line_width": 0.15,
+        "other_line_width": 0.1,
         "other_text_italic": false,
         "other_text_size_h": 1.0,
         "other_text_size_v": 1.0,
@@ -41,11 +41,11 @@
           "height": 1.524,
           "width": 1.524
         },
-        "silk_line_width": 0.15,
+        "silk_line_width": 0.1,
         "silk_text_italic": false,
         "silk_text_size_h": 1.0,
         "silk_text_size_v": 1.0,
-        "silk_text_thickness": 0.15,
+        "silk_text_thickness": 0.1,
         "silk_text_upright": false,
         "zones": {
           "min_clearance": 0.3
@@ -121,16 +121,16 @@
         "min_copper_edge_clearance": 0.3,
         "min_hole_clearance": 0.25,
         "min_hole_to_hole": 0.3,
-        "min_microvia_diameter": 0.2,
-        "min_microvia_drill": 0.1,
-        "min_resolved_spokes": 1,
+        "min_microvia_diameter": 0.0,
+        "min_microvia_drill": 0.0,
+        "min_resolved_spokes": 2,
         "min_silk_clearance": 0.0,
         "min_text_height": 0.8,
         "min_text_thickness": 0.15,
-        "min_through_hole_diameter": 0.1,
+        "min_through_hole_diameter": 0.25,
         "min_track_width": 0.125,
-        "min_via_annular_width": 0.2,
-        "min_via_diameter": 0.5,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.45,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -179,10 +179,17 @@
       ],
       "track_widths": [
         0.0,
+        0.125,
+        0.15,
+        0.175,
         0.2,
         0.25,
         0.3,
+        0.35,
         0.4,
+        0.45,
+        0.5,
+        0.55,
         0.6,
         0.8,
         1.0
@@ -219,16 +226,36 @@
           "drill": 0.0
         },
         {
-          "diameter": 0.7,
+          "diameter": 0.45,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.5,
+          "drill": 0.25
+        },
+        {
+          "diameter": 0.55,
           "drill": 0.3
         },
         {
-          "diameter": 0.8,
+          "diameter": 0.6,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.65,
+          "drill": 0.3
+        },
+        {
+          "diameter": 0.7,
           "drill": 0.4
         },
         {
-          "diameter": 0.9,
-          "drill": 0.5
+          "diameter": 0.75,
+          "drill": 0.45
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.45
         }
       ],
       "zones_allow_external_fillets": false
@@ -248,7 +275,9 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      "pin_to_pin|190500|444500|94cebd16-1d22-433a-9234-34d047e9420c|c162470b-6c08-45cf-8b0a-cbda713f2397|/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3|/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3|/04e99464-bf33-4a4f-8397-d26b5ec904f3/884179ac-e5b2-4774-935d-cb1e08eb2d75"
+    ],
     "meta": {
       "version": 0
     },
@@ -485,7 +514,7 @@
     "classes": [
       {
         "bus_width": 12,
-        "clearance": 0.2,
+        "clearance": 0.15,
         "diff_pair_gap": 0.25,
         "diff_pair_via_gap": 0.25,
         "diff_pair_width": 0.2,
@@ -495,9 +524,9 @@
         "name": "Default",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.25,
-        "via_diameter": 0.8,
-        "via_drill": 0.4,
+        "track_width": 0.2,
+        "via_diameter": 0.6,
+        "via_drill": 0.3,
         "wire_width": 6
       }
     ],
@@ -707,8 +736,12 @@
       "Display"
     ],
     [
+      "cd418f0e-1056-4277-8df0-d16a810128a6",
+      "External connection"
+    ],
+    [
       "57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1",
-      "Channel1"
+      "Channel0"
     ],
     [
       "38c12336-e051-4519-b2f1-090dafa1bb9e",
@@ -717,6 +750,54 @@
     [
       "1807ce44-453b-46b0-b8fc-698b650e1609",
       "channel_meas"
+    ],
+    [
+      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
+      "channel_power"
+    ],
+    [
+      "f0644068-9cea-4f5a-9e8d-4d25867b6466",
+      "Channel1"
+    ],
+    [
+      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
+      "channel_power"
+    ],
+    [
+      "38c12336-e051-4519-b2f1-090dafa1bb9e",
+      "power_latch"
+    ],
+    [
+      "1807ce44-453b-46b0-b8fc-698b650e1609",
+      "channel_meas"
+    ],
+    [
+      "85667223-c6ef-4fb2-893e-ef6b43c9d227",
+      "Channel2"
+    ],
+    [
+      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
+      "channel_power"
+    ],
+    [
+      "38c12336-e051-4519-b2f1-090dafa1bb9e",
+      "power_latch"
+    ],
+    [
+      "1807ce44-453b-46b0-b8fc-698b650e1609",
+      "channel_meas"
+    ],
+    [
+      "6d77385f-e3a1-4e55-9add-80db8e1d6ba9",
+      "Channel3"
+    ],
+    [
+      "1807ce44-453b-46b0-b8fc-698b650e1609",
+      "channel_meas"
+    ],
+    [
+      "38c12336-e051-4519-b2f1-090dafa1bb9e",
+      "power_latch"
     ],
     [
       "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
