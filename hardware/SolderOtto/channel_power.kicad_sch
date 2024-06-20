@@ -2964,18 +2964,6 @@
 					(reference "#PWR0801")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02101")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01501")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3058,18 +3046,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "Q807")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2109")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1509")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1109")
 					(unit 1)
 				)
 			)
@@ -3170,18 +3146,6 @@
 					(reference "Q801")
 					(unit 2)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2101")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1501")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1101")
-					(unit 2)
-				)
 			)
 		)
 	)
@@ -3263,18 +3227,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "U801")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U2101")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1501")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1101")
 					(unit 1)
 				)
 			)
@@ -3375,18 +3327,6 @@
 					(reference "Q806")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2108")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1508")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1108")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3483,18 +3423,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "Q901")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2103")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1503")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1103")
 					(unit 2)
 				)
 			)
@@ -3595,18 +3523,6 @@
 					(reference "Q802")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2102")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1502")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3689,18 +3605,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "Q902")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2106")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1506")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1106")
 					(unit 1)
 				)
 			)
@@ -3786,18 +3690,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "Q804")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2105")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1505")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1105")
 					(unit 1)
 				)
 			)
@@ -3897,18 +3789,6 @@
 					(reference "Q801")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2101")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1501")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1101")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -3972,18 +3852,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0804")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02107")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01507")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01107")
 					(unit 1)
 				)
 			)
@@ -4083,18 +3951,6 @@
 					(reference "Q806")
 					(unit 2)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2108")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1508")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1108")
-					(unit 2)
-				)
 			)
 		)
 	)
@@ -4159,18 +4015,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0903")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02103")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01503")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01103")
 					(unit 1)
 				)
 			)
@@ -4270,18 +4114,6 @@
 					(reference "Q805")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2107")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1507")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1107")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4348,18 +4180,6 @@
 					(reference "#PWR0904")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02102")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01502")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4424,18 +4244,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0806")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02110")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01510")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01110")
 					(unit 1)
 				)
 			)
@@ -4522,18 +4330,6 @@
 					(reference "U804")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U2105")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1505")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1105")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4616,18 +4412,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "Q803")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2104")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1504")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1104")
 					(unit 1)
 				)
 			)
@@ -4713,18 +4497,6 @@
 					(reference "U803")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U2104")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1504")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1104")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4792,18 +4564,6 @@
 					(reference "#PWR0803")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02105")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01505")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01105")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -4868,18 +4628,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0802")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02104")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01504")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01104")
 					(unit 1)
 				)
 			)
@@ -4960,18 +4708,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "R803")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R2104")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1504")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1104")
 					(unit 1)
 				)
 			)
@@ -5071,18 +4807,6 @@
 					(reference "Q802")
 					(unit 2)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2102")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1502")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1102")
-					(unit 2)
-				)
 			)
 		)
 	)
@@ -5163,18 +4887,6 @@
 					(reference "R901")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R2103")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1503")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1103")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5239,18 +4951,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0901")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02106")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01506")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01106")
 					(unit 1)
 				)
 			)
@@ -5338,18 +5038,6 @@
 					(reference "Q808")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2110")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1510")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1110")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5433,18 +5121,6 @@
 					(reference "U901")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U2103")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1503")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1103")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5523,18 +5199,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "R801")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R2101")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1501")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1101")
 					(unit 1)
 				)
 			)
@@ -5634,18 +5298,6 @@
 					(reference "Q901")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2103")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1503")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1103")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -5709,18 +5361,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0809")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02113")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01513")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01113")
 					(unit 1)
 				)
 			)
@@ -5788,18 +5428,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0807")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02111")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01511")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01111")
 					(unit 1)
 				)
 			)
@@ -5879,18 +5507,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "R804")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R2105")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1505")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1105")
 					(unit 1)
 				)
 			)
@@ -5991,18 +5607,6 @@
 					(reference "Q805")
 					(unit 2)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q2107")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1507")
-					(unit 2)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q1107")
-					(unit 2)
-				)
 			)
 		)
 	)
@@ -6087,18 +5691,6 @@
 					(reference "U802")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U2102")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1502")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U1102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6162,18 +5754,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0902")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02109")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01509")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01109")
 					(unit 1)
 				)
 			)
@@ -6256,18 +5836,6 @@
 					(reference "R802")
 					(unit 1)
 				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R2102")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1502")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R1102")
-					(unit 1)
-				)
 			)
 		)
 	)
@@ -6331,18 +5899,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0808")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02112")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01512")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01112")
 					(unit 1)
 				)
 			)
@@ -6409,18 +5965,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
 					(reference "#PWR0805")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/6d77385f-e3a1-4e55-9add-80db8e1d6ba9/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR02108")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/85667223-c6ef-4fb2-893e-ef6b43c9d227/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01508")
-					(unit 1)
-				)
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/f0644068-9cea-4f5a-9e8d-4d25867b6466/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR01108")
 					(unit 1)
 				)
 			)

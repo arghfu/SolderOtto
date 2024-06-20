@@ -754,54 +754,6 @@
     [
       "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
       "channel_power"
-    ],
-    [
-      "f0644068-9cea-4f5a-9e8d-4d25867b6466",
-      "Channel1"
-    ],
-    [
-      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
-      "channel_power"
-    ],
-    [
-      "38c12336-e051-4519-b2f1-090dafa1bb9e",
-      "power_latch"
-    ],
-    [
-      "1807ce44-453b-46b0-b8fc-698b650e1609",
-      "channel_meas"
-    ],
-    [
-      "85667223-c6ef-4fb2-893e-ef6b43c9d227",
-      "Channel2"
-    ],
-    [
-      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
-      "channel_power"
-    ],
-    [
-      "38c12336-e051-4519-b2f1-090dafa1bb9e",
-      "power_latch"
-    ],
-    [
-      "1807ce44-453b-46b0-b8fc-698b650e1609",
-      "channel_meas"
-    ],
-    [
-      "6d77385f-e3a1-4e55-9add-80db8e1d6ba9",
-      "Channel3"
-    ],
-    [
-      "1807ce44-453b-46b0-b8fc-698b650e1609",
-      "channel_meas"
-    ],
-    [
-      "38c12336-e051-4519-b2f1-090dafa1bb9e",
-      "power_latch"
-    ],
-    [
-      "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",
-      "channel_power"
     ]
   ],
   "text_variables": {}
