@@ -1918,7 +1918,6 @@
 			)
 		)
 		(symbol "mylib_connectors:JBC-AM120"
-			(pin_names hide)
 			(exclude_from_sim yes)
 			(in_bom no)
 			(on_board no)
@@ -4033,6 +4032,14 @@
 	(no_connect
 		(at 38.1 118.11)
 		(uuid "118edd54-51e1-4ff4-8f01-eb9f26e215fa")
+	)
+	(no_connect
+		(at 35.56 87.63)
+		(uuid "1c083c77-7dc3-4631-91e6-fabaec3c344c")
+	)
+	(no_connect
+		(at 38.1 83.82)
+		(uuid "4de8be27-5fea-499f-9127-8f3e0fc34ed3")
 	)
 	(no_connect
 		(at 58.42 121.92)
@@ -6494,6 +6501,91 @@
 		)
 	)
 	(symbol
+		(lib_id "mylib_connectors:JBC-AM120")
+		(at 100.33 86.36 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom no)
+		(on_board no)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b7d27fe-ff5d-44c5-a152-ad8c1276f349")
+		(property "Reference" "HEATER601"
+			(at 111.76 85.4074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "AM120"
+			(at 111.76 87.9474 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 49.53 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "3a522f81-ec94-4086-9bb3-db3b86b0ae2f")
+		)
+		(pin "3"
+			(uuid "184c5998-f091-4d82-89b3-2811bf5cbc25")
+		)
+		(pin "4"
+			(uuid "a80d1068-77c8-4460-b6a1-f7008409be33")
+		)
+		(pin "5"
+			(uuid "1ccabeb6-1912-4c06-96c2-b749cd3e8325")
+		)
+		(pin "1"
+			(uuid "37ea5366-0a83-432e-81bb-289d1b8e618c")
+		)
+		(pin "1"
+			(uuid "756664c8-888e-41b0-a961-e5effb1ecd27")
+		)
+		(pin "6"
+			(uuid "2a9f9a5d-a0bd-48eb-89c1-f1174189d4d6")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
+					(reference "HEATER601")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mylib_connectors:Hirose RPC1-12RB-6P")
 		(at 62.23 157.48 90)
 		(unit 1)
@@ -8363,91 +8455,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "R603")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mylib_connectors:JBC-AM120")
-		(at 100.33 86.36 0)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom no)
-		(on_board no)
-		(dnp no)
-		(uuid "bcaf4849-6e3f-4d5a-96ea-f9bf2267460f")
-		(property "Reference" "HEATER601"
-			(at 111.76 85.4074 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Value" "AM120"
-			(at 97.028 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 49.53 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "d3fa68f1-3331-4e07-9c60-a6bb3da87b1f")
-		)
-		(pin "1"
-			(uuid "4b48103c-6cf6-4016-b3c4-1afe5b7ea538")
-		)
-		(pin "1"
-			(uuid "f80b3292-bc33-48ea-a5bf-2082654930d5")
-		)
-		(pin "3"
-			(uuid "2b08d591-0b96-4d27-b59f-b38809eaa1d3")
-		)
-		(pin "4"
-			(uuid "b92faff7-e576-42f8-9ec8-93d7e9b5a897")
-		)
-		(pin "5"
-			(uuid "0a87457b-49e3-4e16-8417-690f563b4e8b")
-		)
-		(pin "6"
-			(uuid "faede7c0-7d75-4502-bd11-8a4dac24e1f5")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
-					(reference "HEATER601")
 					(unit 1)
 				)
 			)

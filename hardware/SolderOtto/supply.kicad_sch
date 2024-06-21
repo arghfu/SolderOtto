@@ -4995,6 +4995,12 @@
 		(uuid "b57668f6-13bb-41d1-b2a1-4612f9e23a6d")
 	)
 	(junction
+		(at 19.05 45.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bfb347a6-fb10-4ab7-b6d9-1c11f4670503")
+	)
+	(junction
 		(at 223.52 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5125,6 +5131,16 @@
 			(type default)
 		)
 		(uuid "01d65091-4551-4bbb-a28b-17dd61a2374a")
+	)
+	(wire
+		(pts
+			(xy 19.05 44.45) (xy 19.05 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "033b9d72-ea94-4a75-88b8-e846a6e938dc")
 	)
 	(wire
 		(pts
@@ -5695,16 +5711,6 @@
 			(type default)
 		)
 		(uuid "37f0b48c-67b9-4f0c-b755-df98e7632bc0")
-	)
-	(wire
-		(pts
-			(xy 166.37 35.56) (xy 166.37 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "381a3b63-ff74-4a22-97a4-14e5f1ae8ede")
 	)
 	(wire
 		(pts
@@ -7188,16 +7194,6 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 44.45) (xy 19.05 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c9a4deba-a31a-48c0-84f8-812d167dff49")
-	)
-	(wire
-		(pts
 			(xy 101.6 173.99) (xy 110.49 173.99)
 		)
 		(stroke
@@ -7205,6 +7201,16 @@
 			(type default)
 		)
 		(uuid "ca4b7562-7f43-433e-bcd0-05fd190b1846")
+	)
+	(wire
+		(pts
+			(xy 166.37 35.56) (xy 166.37 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "caa456f0-76a2-4eae-be1d-2dbe8a56e0e4")
 	)
 	(wire
 		(pts
@@ -10332,6 +10338,82 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
 					(reference "C212")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 19.05 45.72 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "31699d78-dce8-4003-b291-dcb3b80b4b2f")
+		(property "Reference" "TP208"
+			(at 22.098 51.308 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "ZCD"
+			(at 16.51 47.7521 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
+			(at 13.97 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 13.97 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 19.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "36-5015CT-ND"
+			(at 19.05 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a109234-6933-4c72-b9d9-7bf962f9ff2c")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
+					(reference "TP208")
 					(unit 1)
 				)
 			)
@@ -14619,71 +14701,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 19.05 44.45 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9657d02b-602b-4653-9f05-754312f1a6aa")
-		(property "Reference" "#FLG0205"
-			(at 19.05 42.545 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "PWR_FLAG"
-			(at 19.05 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 19.05 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 19.05 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 19.05 44.45 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "94cebd16-1d22-433a-9234-34d047e9420c")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#FLG0205")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 243.84 25.4 270)
 		(mirror x)
@@ -16372,6 +16389,71 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
 					(reference "#PWR0246")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 19.05 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "be461a39-661e-4226-b518-11caba6ef022")
+		(property "Reference" "#FLG0205"
+			(at 19.05 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 19.05 40.132 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 19.05 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 19.05 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 19.05 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5f1f5970-05e8-4e9c-9416-31288e2404be")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
+					(reference "#FLG0205")
 					(unit 1)
 				)
 			)
