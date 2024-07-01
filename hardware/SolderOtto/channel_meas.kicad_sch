@@ -3270,7 +3270,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 54.61) (xy 27.94 54.61)
+			(xy 22.86 46.99) (xy 27.94 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3370,7 +3370,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 46.99) (xy 43.18 46.99)
+			(xy 35.56 39.37) (xy 43.18 39.37)
 		)
 		(stroke
 			(width 0)
@@ -3410,7 +3410,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 52.07) (xy 43.18 52.07)
+			(xy 35.56 44.45) (xy 43.18 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3660,7 +3660,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 54.61) (xy 43.18 54.61)
+			(xy 35.56 46.99) (xy 43.18 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3687,16 +3687,6 @@
 			(type default)
 		)
 		(uuid "52be28c1-2518-4971-9cae-5e211669732a")
-	)
-	(wire
-		(pts
-			(xy 63.5 46.99) (xy 72.39 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "53978c41-2ded-418b-ae60-fe309f8680f8")
 	)
 	(wire
 		(pts
@@ -3800,7 +3790,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 44.45) (xy 43.18 44.45)
+			(xy 35.56 36.83) (xy 43.18 36.83)
 		)
 		(stroke
 			(width 0)
@@ -3850,7 +3840,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 46.99) (xy 86.36 46.99)
+			(xy 63.5 46.99) (xy 86.36 46.99)
 		)
 		(stroke
 			(width 0)
@@ -3870,7 +3860,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 54.61) (xy 77.47 54.61)
+			(xy 63.5 54.61) (xy 81.28 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3920,7 +3910,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 52.07) (xy 69.85 52.07)
+			(xy 63.5 44.45) (xy 69.85 44.45)
 		)
 		(stroke
 			(width 0)
@@ -3930,7 +3920,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 52.07) (xy 27.94 52.07)
+			(xy 16.51 44.45) (xy 27.94 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4150,7 +4140,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 39.37) (xy 43.18 39.37)
+			(xy 35.56 54.61) (xy 43.18 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4160,7 +4150,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 44.45) (xy 69.85 44.45)
+			(xy 63.5 36.83) (xy 69.85 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4247,6 +4237,16 @@
 			(type default)
 		)
 		(uuid "a5551cb2-c86a-486f-ac40-892b8443ea3d")
+	)
+	(wire
+		(pts
+			(xy 63.5 39.37) (xy 72.39 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a8e5b327-6f4a-4143-89c7-425696b63830")
 	)
 	(wire
 		(pts
@@ -4400,16 +4400,6 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 39.37) (xy 63.5 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b6fb6b1a-2672-4d39-82ad-4319489815b7")
-	)
-	(wire
-		(pts
 			(xy 86.36 20.32) (xy 86.36 39.37)
 		)
 		(stroke
@@ -4470,7 +4460,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 36.83) (xy 27.94 36.83)
+			(xy 22.86 52.07) (xy 27.94 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4487,16 +4477,6 @@
 			(type default)
 		)
 		(uuid "c1b467bc-37bd-400d-9c34-e24ab3a34bf6")
-	)
-	(wire
-		(pts
-			(xy 77.47 54.61) (xy 77.47 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c2147ce3-739e-49c6-865b-9d916c626e42")
 	)
 	(wire
 		(pts
@@ -4590,7 +4570,7 @@
 	)
 	(wire
 		(pts
-			(xy 63.5 36.83) (xy 69.85 36.83)
+			(xy 63.5 52.07) (xy 69.85 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4730,7 +4710,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 36.83) (xy 43.18 36.83)
+			(xy 35.56 52.07) (xy 43.18 52.07)
 		)
 		(stroke
 			(width 0)
@@ -4740,7 +4720,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 44.45) (xy 27.94 44.45)
+			(xy 22.86 36.83) (xy 27.94 36.83)
 		)
 		(stroke
 			(width 0)
@@ -4800,7 +4780,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 46.99) (xy 27.94 46.99)
+			(xy 22.86 39.37) (xy 27.94 39.37)
 		)
 		(stroke
 			(width 0)
@@ -4817,6 +4797,16 @@
 			(type default)
 		)
 		(uuid "eb12571b-5438-4a13-855b-c85c900a19d5")
+	)
+	(wire
+		(pts
+			(xy 81.28 39.37) (xy 86.36 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec6832ef-6751-4f10-af2a-85d6857b51b8")
 	)
 	(wire
 		(pts
@@ -4880,7 +4870,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 39.37) (xy 27.94 39.37)
+			(xy 22.86 54.61) (xy 27.94 54.61)
 		)
 		(stroke
 			(width 0)
@@ -4938,8 +4928,19 @@
 		)
 		(uuid "fecc5d89-20f9-4bd0-b9b3-9cbcff81b0e1")
 	)
+	(label "IN-"
+		(at 81.28 39.37 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4514f34f-3bb9-4c2d-beed-cf790d0ba944")
+	)
 	(label "select"
-		(at 72.39 46.99 180)
+		(at 72.39 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -4949,8 +4950,19 @@
 		)
 		(uuid "b067247e-58b3-48b3-bece-cb889b098b8d")
 	)
+	(label "IN-"
+		(at 81.28 54.61 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "dd0e1e40-f989-4281-8562-3918145bd968")
+	)
 	(label "select"
-		(at 16.51 52.07 0)
+		(at 16.51 44.45 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5000,7 +5012,7 @@
 	)
 	(hierarchical_label "SEL1"
 		(shape input)
-		(at 69.85 52.07 0)
+		(at 69.85 36.83 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5012,7 +5024,7 @@
 	)
 	(hierarchical_label "SEL3"
 		(shape input)
-		(at 69.85 36.83 0)
+		(at 69.85 52.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5036,7 +5048,7 @@
 	)
 	(hierarchical_label "LOAD0"
 		(shape bidirectional)
-		(at 22.86 44.45 180)
+		(at 22.86 46.99 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5049,7 +5061,7 @@
 	)
 	(hierarchical_label "TC"
 		(shape bidirectional)
-		(at 22.86 46.99 180)
+		(at 22.86 39.37 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5074,7 +5086,7 @@
 	)
 	(hierarchical_label "LOAD1"
 		(shape bidirectional)
-		(at 22.86 54.61 180)
+		(at 22.86 36.83 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5099,7 +5111,7 @@
 	)
 	(hierarchical_label "TC"
 		(shape bidirectional)
-		(at 22.86 36.83 180)
+		(at 22.86 52.07 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5124,7 +5136,7 @@
 	)
 	(hierarchical_label "COM"
 		(shape bidirectional)
-		(at 22.86 39.37 180)
+		(at 22.86 54.61 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5464,7 +5476,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 54.61 90)
+		(at 31.75 46.99 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5472,7 +5484,7 @@
 		(dnp no)
 		(uuid "11d010e2-e7f2-4f9c-9541-c643428f330f")
 		(property "Reference" "R910"
-			(at 26.416 56.134 90)
+			(at 26.416 48.514 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5480,7 +5492,7 @@
 			)
 		)
 		(property "Value" "22k6"
-			(at 37.084 56.134 90)
+			(at 37.084 48.514 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5488,7 +5500,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 56.388 90)
+			(at 31.75 48.768 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5497,7 +5509,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 54.61 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5506,7 +5518,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 54.61 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5515,7 +5527,7 @@
 			)
 		)
 		(property "Digikey" "P22.6KHCT-ND"
-			(at 31.75 54.61 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8565,7 +8577,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 44.45 90)
+		(at 31.75 36.83 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8573,7 +8585,7 @@
 		(dnp no)
 		(uuid "74514224-ed31-4260-ac9f-de52f0fda55e")
 		(property "Reference" "R906"
-			(at 26.416 43.18 90)
+			(at 26.416 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8581,7 +8593,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 37.084 43.18 90)
+			(at 37.084 35.56 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8589,7 +8601,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 46.228 90)
+			(at 31.75 38.608 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8598,7 +8610,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 44.45 0)
+			(at 31.75 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8607,7 +8619,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 44.45 0)
+			(at 31.75 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8616,7 +8628,7 @@
 			)
 		)
 		(property "Digikey" "P20.0KHCT-ND"
-			(at 31.75 44.45 0)
+			(at 31.75 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8783,7 +8795,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 39.37 90)
+		(at 31.75 54.61 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8791,7 +8803,7 @@
 		(dnp no)
 		(uuid "75e9588e-be1e-44c3-87a1-4b5c119f7b75")
 		(property "Reference" "R904"
-			(at 26.416 40.894 90)
+			(at 26.416 56.134 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8799,7 +8811,7 @@
 			)
 		)
 		(property "Value" "22k6"
-			(at 37.084 40.894 90)
+			(at 37.084 56.134 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8807,7 +8819,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 41.148 90)
+			(at 31.75 56.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8816,7 +8828,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 39.37 0)
+			(at 31.75 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8825,7 +8837,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 39.37 0)
+			(at 31.75 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8834,7 +8846,7 @@
 			)
 		)
 		(property "Digikey" "P22.6KHCT-ND"
-			(at 31.75 39.37 0)
+			(at 31.75 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9422,7 +9434,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 52.07 90)
+		(at 31.75 44.45 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9430,7 +9442,7 @@
 		(dnp no)
 		(uuid "86b4a66c-d066-43e8-b830-f10add3577da")
 		(property "Reference" "R909"
-			(at 26.416 50.8 90)
+			(at 26.416 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9438,7 +9450,7 @@
 			)
 		)
 		(property "Value" "2k55"
-			(at 37.084 50.8 90)
+			(at 37.084 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9446,7 +9458,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 53.848 90)
+			(at 31.75 46.228 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9455,7 +9467,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 52.07 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9464,7 +9476,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 52.07 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9473,7 +9485,7 @@
 			)
 		)
 		(property "Digikey" "311-2.55KHRCT-ND"
-			(at 31.75 52.07 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9708,7 +9720,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 46.99 90)
+		(at 31.75 39.37 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9716,7 +9728,7 @@
 		(dnp no)
 		(uuid "92594f44-5e9a-4ca5-84f0-b012bfcdba65")
 		(property "Reference" "R908"
-			(at 26.416 48.514 90)
+			(at 26.416 40.894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9724,7 +9736,7 @@
 			)
 		)
 		(property "Value" "20k"
-			(at 37.084 48.514 90)
+			(at 37.084 40.894 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9732,7 +9744,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 48.768 90)
+			(at 31.75 41.148 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9741,7 +9753,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 46.99 0)
+			(at 31.75 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9750,7 +9762,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 46.99 0)
+			(at 31.75 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9759,7 +9771,7 @@
 			)
 		)
 		(property "Digikey" "P20.0KHCT-ND"
-			(at 31.75 46.99 0)
+			(at 31.75 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10005,7 +10017,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 36.83 90)
+		(at 31.75 52.07 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10013,7 +10025,7 @@
 		(dnp no)
 		(uuid "952e6d3e-487f-4831-88cc-29d334425ddb")
 		(property "Reference" "R903"
-			(at 26.416 35.56 90)
+			(at 26.416 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10021,7 +10033,7 @@
 			)
 		)
 		(property "Value" "22k6"
-			(at 37.084 35.56 90)
+			(at 37.084 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10029,7 +10041,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 38.608 90)
+			(at 31.75 53.848 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10038,7 +10050,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 36.83 0)
+			(at 31.75 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10047,7 +10059,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 36.83 0)
+			(at 31.75 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10056,7 +10068,7 @@
 			)
 		)
 		(property "Digikey" "P22.6KHCT-ND"
-			(at 31.75 36.83 0)
+			(at 31.75 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
