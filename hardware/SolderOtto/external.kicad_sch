@@ -1272,7 +1272,7 @@
 	)
 	(hierarchical_label "EXT_0"
 		(shape bidirectional)
-		(at 69.85 49.53 180)
+		(at 69.85 81.28 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1284,7 +1284,7 @@
 	)
 	(hierarchical_label "EXT_2"
 		(shape bidirectional)
-		(at 69.85 62.23 180)
+		(at 69.85 68.58 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1296,7 +1296,7 @@
 	)
 	(hierarchical_label "EXT_4"
 		(shape bidirectional)
-		(at 69.85 74.93 180)
+		(at 69.85 55.88 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1308,7 +1308,7 @@
 	)
 	(hierarchical_label "EXT_1"
 		(shape bidirectional)
-		(at 69.85 55.88 180)
+		(at 69.85 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1320,7 +1320,7 @@
 	)
 	(hierarchical_label "EXT_5"
 		(shape bidirectional)
-		(at 69.85 81.28 180)
+		(at 69.85 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -1332,7 +1332,7 @@
 	)
 	(hierarchical_label "EXT_3"
 		(shape bidirectional)
-		(at 69.85 68.58 180)
+		(at 69.85 62.23 180)
 		(fields_autoplaced yes)
 		(effects
 			(font

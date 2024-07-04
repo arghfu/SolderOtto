@@ -6781,7 +6781,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41d19a46-593b-4ff9-bdef-27323145ea00")
-		(property "Reference" "R919"
+		(property "Reference" "R920"
 			(at 142.24 100.3299 0)
 			(effects
 				(font
@@ -6844,7 +6844,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R919")
+					(reference "R920")
 					(unit 1)
 				)
 			)
@@ -7542,7 +7542,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59f76d2c-29ef-4f0b-8079-4ae91135d2bd")
-		(property "Reference" "R920"
+		(property "Reference" "R919"
 			(at 52.07 100.3299 0)
 			(effects
 				(font
@@ -7605,7 +7605,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R920")
+					(reference "R919")
 					(unit 1)
 				)
 			)
