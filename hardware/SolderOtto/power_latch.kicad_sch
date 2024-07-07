@@ -439,6 +439,142 @@
 				)
 			)
 		)
+		(symbol "Device:C"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0.254)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "C"
+				(at 0.635 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "C"
+				(at 0.635 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" ""
+				(at 0.9652 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Unpolarized capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "cap capacitor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "C_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "C_0_1"
+				(polyline
+					(pts
+						(xy -2.032 -0.762) (xy 2.032 -0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy -2.032 0.762) (xy 2.032 0.762)
+					)
+					(stroke
+						(width 0.508)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "C_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 2.794)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "mylib_ic:SN74LVC125A"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1091,6 +1227,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 44.45) (xy 49.53 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2622a7be-ae2a-4a73-9f28-8a0c9ba862f3")
+	)
+	(wire
+		(pts
 			(xy 115.57 82.55) (xy 143.51 82.55)
 		)
 		(stroke
@@ -1098,6 +1244,16 @@
 			(type default)
 		)
 		(uuid "3065d2e1-ff62-4c18-b34f-1012ad55f12a")
+	)
+	(wire
+		(pts
+			(xy 49.53 33.02) (xy 49.53 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3bc955b9-8005-4357-bb65-da2001b47b10")
 	)
 	(wire
 		(pts
@@ -1231,6 +1387,16 @@
 	)
 	(wire
 		(pts
+			(xy 115.57 44.45) (xy 115.57 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d482d37-9d0a-4a1d-b5d9-7061b5d3b0dd")
+	)
+	(wire
+		(pts
 			(xy 115.57 104.14) (xy 115.57 95.25)
 		)
 		(stroke
@@ -1308,6 +1474,16 @@
 			(type default)
 		)
 		(uuid "e83651d4-ae52-41ad-b420-063937247c2f")
+	)
+	(wire
+		(pts
+			(xy 115.57 33.02) (xy 115.57 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e8488677-f108-4482-bed5-419a4333b756")
 	)
 	(wire
 		(pts
@@ -1560,6 +1736,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 49.53 40.64 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "0f0b1dfc-c955-40bd-828b-6d575c849059")
+		(property "Reference" "C702"
+			(at 53.34 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 53.34 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 50.4952 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 49.53 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 49.53 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 49.53 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ac2c2af-4d04-43e5-ab05-d26665fa21bd")
+		)
+		(pin "2"
+			(uuid "4ef85360-e9dd-4603-83b7-1ac555db14d6")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "C702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mylib_ic:SN74LVC125A")
 		(at 149.86 101.6 0)
 		(unit 2)
@@ -1665,6 +1920,72 @@
 	)
 	(symbol
 		(lib_id "power:GND")
+		(at 115.57 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "1b06412d-0d03-4dc9-a748-aa607edd9084")
+		(property "Reference" "#PWR0708"
+			(at 115.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 115.57 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 115.57 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc929ea5-6851-47d6-8237-c57135c8a678")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0708")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
 		(at 93.98 52.07 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -1731,7 +2052,7 @@
 	)
 	(symbol
 		(lib_id "mylib_ic:SN74LVC125A")
-		(at 149.86 54.61 0)
+		(at 149.86 80.01 0)
 		(unit 4)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1740,7 +2061,7 @@
 		(fields_autoplaced yes)
 		(uuid "4a7aa7e9-793e-4bd2-b130-6a026e07c6c0")
 		(property "Reference" "U701"
-			(at 149.86 45.72 0)
+			(at 149.86 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1748,7 +2069,7 @@
 			)
 		)
 		(property "Value" "SN74LVC125A"
-			(at 149.86 48.26 0)
+			(at 149.86 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1756,7 +2077,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 149.86 54.61 0)
+			(at 149.86 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +2086,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 54.61 0)
+			(at 149.86 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1774,7 +2095,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 54.61 0)
+			(at 149.86 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1829,6 +2150,138 @@
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
 					(reference "U701")
 					(unit 4)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 49.53 48.26 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "66f42741-f4f3-42b9-a148-1f54d5d3cce4")
+		(property "Reference" "#PWR0709"
+			(at 49.53 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 49.53 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 49.53 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "dc339618-2caf-464e-8a53-73f0b47757f4")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0709")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 49.53 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6c6c612d-3779-40bd-855b-87a3b8ea5c64")
+		(property "Reference" "#PWR0706"
+			(at 49.53 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 49.53 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 49.53 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 49.53 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 49.53 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ca7475bd-9b20-4ebb-82fa-e888629f9aff")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0706")
+					(unit 1)
 				)
 			)
 		)
@@ -2020,8 +2473,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 115.57 40.64 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9f2a9a0e-a081-43de-b2fc-7f72ef70c998")
+		(property "Reference" "C701"
+			(at 119.38 39.3699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 119.38 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 116.5352 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 115.57 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 115.57 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 115.57 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "79dbc15a-d943-4fe0-b76e-b70fd05bf462")
+		)
+		(pin "2"
+			(uuid "f8de4f3d-abd2-4e6c-a7cf-b6d476846e96")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "C701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mylib_ic:SN74LVC125A")
-		(at 149.86 80.01 0)
+		(at 149.86 54.61 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2030,7 +2562,7 @@
 		(fields_autoplaced yes)
 		(uuid "d3a34797-c41a-4493-9dd8-f78c15ea4223")
 		(property "Reference" "U701"
-			(at 149.86 71.12 0)
+			(at 149.86 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2038,7 +2570,7 @@
 			)
 		)
 		(property "Value" "SN74LVC125A"
-			(at 149.86 73.66 0)
+			(at 149.86 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2046,7 +2578,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 149.86 80.01 0)
+			(at 149.86 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2055,7 +2587,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 80.01 0)
+			(at 149.86 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2064,7 +2596,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 80.01 0)
+			(at 149.86 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2203,6 +2735,72 @@
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
 					(reference "U702")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3V3")
+		(at 115.57 33.02 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e10ff052-74cb-42e2-b6e4-80310d5dfd7c")
+		(property "Reference" "#PWR0707"
+			(at 115.57 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3V3"
+			(at 115.57 27.94 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3V3\""
+			(at 115.57 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "987b072d-ce8f-45d5-8442-c99c72670aaa")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/38c12336-e051-4519-b2f1-090dafa1bb9e"
+					(reference "#PWR0707")
+					(unit 1)
 				)
 			)
 		)
