@@ -3312,7 +3312,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 46.99) (xy 27.94 46.99)
+			(xy 22.86 44.45) (xy 27.94 44.45)
 		)
 		(stroke
 			(width 0)
@@ -4022,7 +4022,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 44.45) (xy 27.94 44.45)
+			(xy 16.51 46.99) (xy 27.94 46.99)
 		)
 		(stroke
 			(width 0)
@@ -5154,7 +5154,7 @@
 		(uuid "dd0e1e40-f989-4281-8562-3918145bd968")
 	)
 	(label "select"
-		(at 16.51 44.45 0)
+		(at 16.51 46.99 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5240,7 +5240,7 @@
 	)
 	(hierarchical_label "LOAD0"
 		(shape bidirectional)
-		(at 22.86 46.99 180)
+		(at 22.86 44.45 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5682,7 +5682,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 83.82 106.68 0)
 			(effects
 				(font
@@ -5820,7 +5820,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 46.99 90)
+		(at 31.75 44.45 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5828,7 +5829,7 @@
 		(dnp no)
 		(uuid "11d010e2-e7f2-4f9c-9541-c643428f330f")
 		(property "Reference" "R907"
-			(at 26.416 48.514 90)
+			(at 26.416 42.926 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5836,7 +5837,7 @@
 			)
 		)
 		(property "Value" "22k6"
-			(at 37.084 48.514 90)
+			(at 37.084 42.926 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5844,7 +5845,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 48.768 90)
+			(at 31.75 42.672 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5853,7 +5854,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 46.99 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5862,7 +5863,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 46.99 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5871,7 +5872,7 @@
 			)
 		)
 		(property "Digikey" "P22.6KHCT-ND"
-			(at 31.75 46.99 0)
+			(at 31.75 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7137,7 +7138,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 97.79 43.18 0)
 			(effects
 				(font
@@ -8017,7 +8018,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 40.64 111.76 0)
 			(effects
 				(font
@@ -8424,7 +8425,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 184.15 107.95 0)
 			(effects
 				(font
@@ -8510,7 +8511,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 116.84 109.22 0)
 			(effects
 				(font
@@ -9646,7 +9647,8 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 31.75 44.45 90)
+		(at 31.75 46.99 90)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9654,7 +9656,7 @@
 		(dnp no)
 		(uuid "86b4a66c-d066-43e8-b830-f10add3577da")
 		(property "Reference" "R905"
-			(at 26.416 43.18 90)
+			(at 26.416 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9662,7 +9664,7 @@
 			)
 		)
 		(property "Value" "2k55"
-			(at 37.084 43.18 90)
+			(at 37.084 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9670,7 +9672,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 31.75 46.228 90)
+			(at 31.75 45.212 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9679,7 +9681,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 31.75 44.45 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9688,7 +9690,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 31.75 44.45 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9697,7 +9699,7 @@
 			)
 		)
 		(property "Digikey" "311-2.55KHRCT-ND"
-			(at 31.75 44.45 0)
+			(at 31.75 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10266,7 +10268,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 177.8 44.45 0)
 			(effects
 				(font
@@ -10497,7 +10499,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 130.81 45.72 0)
 			(effects
 				(font
@@ -11709,7 +11711,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 86.36 168.91 0)
 			(effects
 				(font
@@ -13649,7 +13651,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:VSSOP-8_3x3mm_P0.65mm"
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
 			(at 154.94 170.18 0)
 			(effects
 				(font
