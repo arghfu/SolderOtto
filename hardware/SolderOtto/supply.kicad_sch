@@ -8694,16 +8694,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 165.354 182.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
 		(property "Digikey" "497-2522-1-ND"
 			(at 163.83 172.72 0)
 			(effects
@@ -10403,15 +10393,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 108.712 178.308 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -18082,7 +18063,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "668-SMI-1027-T-5V-RDKR-ND"
+		(property "Digikey" "668-SMI-1027-T-5V-RCT-ND"
 			(at 266.7 125.7299 0)
 			(effects
 				(font

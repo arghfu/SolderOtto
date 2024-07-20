@@ -3318,6 +3318,12 @@
 		(uuid "266d521b-18ef-43b5-a769-2cdf0dfe48ff")
 	)
 	(junction
+		(at 190.5 90.17)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2f73e2aa-8622-485c-bb53-e3e86a2cba4a")
+	)
+	(junction
 		(at 262.89 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3400,12 +3406,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfefb267-0a75-46c3-ad72-5bc004576e0d")
-	)
-	(junction
-		(at 190.5 90.17)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "c236067f-0881-48ab-a5b3-30ed9d448c85")
 	)
 	(junction
 		(at 60.96 153.67)
@@ -3611,7 +3611,7 @@
 	)
 	(wire
 		(pts
-			(xy 190.5 90.17) (xy 195.58 90.17)
+			(xy 186.69 90.17) (xy 190.5 90.17)
 		)
 		(stroke
 			(width 0)
@@ -4031,6 +4031,16 @@
 			(color 255 153 0 1)
 		)
 		(uuid "54c57728-deb5-4dfa-8258-3f36d8c98abe")
+	)
+	(wire
+		(pts
+			(xy 190.5 90.17) (xy 195.58 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5505a7dc-f117-4181-82e3-45c254f3d39a")
 	)
 	(wire
 		(pts
@@ -4785,16 +4795,6 @@
 			(color 255 0 255 1)
 		)
 		(uuid "c31f1345-5ba6-4e9c-a1c5-dd4264664222")
-	)
-	(wire
-		(pts
-			(xy 186.69 90.17) (xy 190.5 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c7b6140b-d49d-4099-a5e7-792d332b2796")
 	)
 	(wire
 		(pts
@@ -5913,6 +5913,88 @@
 		)
 	)
 	(symbol
+		(lib_id "mylib_diodes:BAT54SFILM")
+		(at 190.5 90.17 90)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "19853cbf-5664-4bf6-a6cc-10f79c942a99")
+		(property "Reference" "D603"
+			(at 191.008 85.09 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "BAT54SFILM"
+			(at 191.262 96.012 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 190.5 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "497-2522-1-ND"
+			(at 193.04 92.7099 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "6c61a8fa-da8d-4f43-99dd-1b76bed38ed0")
+		)
+		(pin "2"
+			(uuid "eaf2d077-9693-41bc-9c00-7172dcab1cd4")
+		)
+		(pin "1"
+			(uuid "ce29c777-61c1-41dc-9379-4e8e581afec7")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
+					(reference "D603")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "mylib_connectors:JBC-AM120")
 		(at 100.33 86.36 0)
 		(unit 1)
@@ -6140,15 +6222,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 190.5 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -7009,15 +7082,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 246.38 135.89 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "fa14333f-9ddd-422f-91a6-4ef9801273e9")
 		)
@@ -7554,15 +7618,6 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 246.38 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
 				(hide yes)
 			)
 		)
@@ -8291,97 +8346,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(reference "#PWR0607")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mylib_diodes:BAT54SFILM")
-		(at 190.5 90.17 90)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e4206760-5ba7-41b6-8f10-02eb2c74eeb7")
-		(property "Reference" "D603"
-			(at 191.008 85.09 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "BAS70S"
-			(at 191.262 96.012 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 190.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 190.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 190.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "497-2522-1-ND"
-			(at 193.04 92.7099 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 190.5 90.17 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "963ef198-3bcb-44c0-9f30-5a96f1bbe094")
-		)
-		(pin "2"
-			(uuid "3c14d9f7-d650-4442-b215-2ea16503fd5c")
-		)
-		(pin "1"
-			(uuid "87461313-2d8f-48a1-b400-5ee2daddd9e5")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
-					(reference "D603")
 					(unit 1)
 				)
 			)

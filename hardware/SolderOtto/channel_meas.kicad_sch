@@ -5709,6 +5709,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
+			(at 82.55 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "d7140a83-a522-4927-a67e-0cd36693e794")
 		)
@@ -6090,16 +6099,6 @@
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
-			)
-		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 164.084 55.118 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
 				(hide yes)
 			)
 		)
@@ -7165,6 +7164,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
+			(at 96.52 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "914f1551-63cb-4f9e-ad3c-f98836c1ec0c")
 		)
@@ -7963,15 +7971,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 128.778 168.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "a38e9828-6ca6-4b36-874d-9e285e9126c8")
 		)
@@ -8227,15 +8226,6 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser" "511-BAT54SFILM"
-			(at 149.86 109.22 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
 		(pin "3"
 			(uuid "62fdd164-5b65-404c-942c-b7c0f9d039ff")
 		)
@@ -8445,6 +8435,15 @@
 		)
 		(property "Description" ""
 			(at 184.15 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
+			(at 182.88 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10295,6 +10294,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
+			(at 179.07 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "6"
 			(uuid "914f1551-63cb-4f9e-ad3c-f98836c1ec0d")
 		)
@@ -11426,7 +11434,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "283-MFHA1206R4000FCCT-ND"
+		(property "Digikey" "P19292CT-ND"
 			(at 49.53 113.03 0)
 			(effects
 				(font
@@ -11738,7 +11746,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "296-OPA202IDGKRCT-ND"
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
 			(at 86.36 168.91 0)
 			(effects
 				(font
@@ -13678,7 +13686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Field5" "296-OPA202IDGKRCT-ND"
+		(property "Digikey" "296-51494-1-ND;296-14626-1-ND;296-OPA206ADRCT-ND"
 			(at 154.94 170.18 0)
 			(effects
 				(font

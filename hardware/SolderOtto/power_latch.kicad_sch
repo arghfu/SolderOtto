@@ -1867,6 +1867,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-1222-1-ND"
+			(at 149.86 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "aac895a2-bf06-4c77-87d7-2635b8ca35c7")
 		)
@@ -2095,6 +2104,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 149.86 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-1222-1-ND"
 			(at 149.86 80.01 0)
 			(effects
 				(font
@@ -2339,6 +2357,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-1222-1-ND"
+			(at 149.86 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "aac895a2-bf06-4c77-87d7-2635b8ca35c9")
 		)
@@ -2437,6 +2464,15 @@
 			)
 		)
 		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SC-70-6"
+			(at 105.41 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-21188-1-ND"
 			(at 105.41 92.71 0)
 			(effects
 				(font
@@ -2604,6 +2640,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-1222-1-ND"
+			(at 149.86 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "13"
 			(uuid "aac895a2-bf06-4c77-87d7-2635b8ca35ca")
 		)
@@ -2704,6 +2749,15 @@
 			)
 		)
 		(property "Description" "Single SPDT Analog Switch, 1.65-V to 5.5-V Single-Supply Operation, 1Ohm Ron, SC-70-6"
+			(at 66.04 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-21188-1-ND"
 			(at 66.04 40.64 0)
 			(effects
 				(font
@@ -2984,6 +3038,15 @@
 			)
 		)
 		(property "Description" ""
+			(at 93.98 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-1222-1-ND"
 			(at 93.98 39.37 0)
 			(effects
 				(font

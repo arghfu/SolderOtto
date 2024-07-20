@@ -2410,6 +2410,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "WM16881-ND;WM16864CT-ND;WM14964-ND;WM15189-ND"
+			(at 160.02 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "5"
 			(uuid "41e1cd51-02c6-47ca-9d6e-d3a04b474e83")
 		)
