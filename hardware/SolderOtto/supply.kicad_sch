@@ -13452,7 +13452,7 @@
 				)
 			)
 		)
-		(property "Value" " MCP9701T-E/TT"
+		(property "Value" "MCP9701T-E/TT"
 			(at 149.86 165.1 0)
 			(effects
 				(font

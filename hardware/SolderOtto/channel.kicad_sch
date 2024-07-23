@@ -3790,6 +3790,16 @@
 	)
 	(wire
 		(pts
+			(xy 35.56 49.53) (xy 41.91 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30fda849-f7cb-42b5-bada-1cf5740c0c26")
+	)
+	(wire
+		(pts
 			(xy 62.23 81.28) (xy 62.23 83.82)
 		)
 		(stroke
@@ -3970,7 +3980,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 46.99) (xy 41.91 46.99)
+			(xy 35.56 45.72) (xy 41.91 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5431,6 +5441,18 @@
 		)
 		(uuid "bd694bec-4ff5-4f15-b952-355f5a0f4020")
 	)
+	(hierarchical_label "LOW_SIDE_COM"
+		(shape input)
+		(at 35.56 49.53 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "041205c0-9938-41a0-ab60-544f6a362708")
+	)
 	(hierarchical_label "T_{TIP}"
 		(shape output)
 		(at 201.93 46.99 0)
@@ -5551,9 +5573,9 @@
 		)
 		(uuid "dbeba3a7-1a6e-4797-ba0c-b327f8e20930")
 	)
-	(hierarchical_label "LOW_SIDE_SW"
+	(hierarchical_label "LOW_SIDE_LOAD"
 		(shape input)
-		(at 35.56 46.99 180)
+		(at 35.56 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -9053,16 +9075,6 @@
 			)
 			(uuid "05b957f2-33bc-4ab4-90b8-2793230c590f")
 		)
-		(pin "LOW_SIDE" input
-			(at 41.91 46.99 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "76ab9a08-d93d-4227-8f21-b57e13439b43")
-		)
 		(pin "OUT_LOAD1_H" output
 			(at 74.93 34.29 0)
 			(effects
@@ -9072,6 +9084,26 @@
 				(justify right)
 			)
 			(uuid "94304498-68b7-44cc-bdc6-a4d0a333f734")
+		)
+		(pin "LOW_SIDE_LOAD" input
+			(at 41.91 45.72 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "96cd415b-f900-43f5-8658-99a1859c6337")
+		)
+		(pin "LOW_SIDE_COM" input
+			(at 41.91 49.53 180)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+			(uuid "9fc51b03-a2c4-49f6-ba7d-adc99078cc86")
 		)
 		(instances
 			(project "SolderOtto"

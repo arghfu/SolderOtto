@@ -6731,10 +6731,6 @@
 		(uuid "120463d9-5927-4845-87a3-1fea3639867e")
 	)
 	(no_connect
-		(at 212.09 67.31)
-		(uuid "160683ce-74a7-42ce-86c6-938854ab04c2")
-	)
-	(no_connect
 		(at 161.29 107.95)
 		(uuid "186b3561-0bc1-4ec7-9a01-9067a5189c73")
 	)
@@ -8213,6 +8209,16 @@
 			(type default)
 		)
 		(uuid "9ec55013-2fc8-47f9-9ced-cac4f43abd20")
+	)
+	(wire
+		(pts
+			(xy 212.09 67.31) (xy 228.6 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a514ca29-393f-4bb1-a715-d7b33710e78d")
 	)
 	(wire
 		(pts
@@ -9904,7 +9910,7 @@
 		)
 		(uuid "3ea8c738-b238-4843-857c-25993fbcaf81")
 	)
-	(hierarchical_label "Channel0_LOW_SIDE_SW"
+	(hierarchical_label "Channel0_LOW_SIDE_LOAD"
 		(shape output)
 		(at 143.51 102.87 180)
 		(fields_autoplaced yes)
@@ -10383,6 +10389,18 @@
 			(justify right)
 		)
 		(uuid "cc32da78-dc28-4b4f-9c08-5264d74cd86a")
+	)
+	(hierarchical_label "Channel0_LOW_SIDE_COM"
+		(shape output)
+		(at 228.6 67.31 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "cea5dfd5-b92e-4232-b3e3-19410da7c957")
 	)
 	(hierarchical_label "Channel3_LOAD1_SW"
 		(shape output)

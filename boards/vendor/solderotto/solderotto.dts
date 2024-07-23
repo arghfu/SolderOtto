@@ -5,7 +5,7 @@
 
 /dts-v1/;
 #include <st/g4/stm32g474Xe.dtsi>
-#include <st/g4/stm32g474v(b-c-e)tx-pinctrl.dtsi>
+#include <st/g4/stm32g474q(b-c-e)tx-pinctrl.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
 
 / {
@@ -13,64 +13,65 @@
 	compatible = "st,solderotto";
 
 	chosen {
-		zephyr,console = &lpuart1;
-		zephyr,shell-uart = &lpuart1;
+//		zephyr,console = &lpuart1;
+//		zephyr,shell-uart = &lpuart1;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-		zephyr,canbus = &fdcan1;
 		zephyr,code-partition = &slot0_partition;
 		zephyr,flash-controller = &flash;
 	};
 
 	aliases {
-		watchdog0 = &iwdg;
-		die-temp0 = &die_temp;
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
 	};
 
-//	soc {
-//		quadspi: quadspi@a0001000 {
-//			compatible = "st,stm32-qspi";
-//			#address-cells = <1>;
-//			#size-cells = <0>;
-//			reg = <0xa0001000 0x400>;
-//			interrupts = <71 0>;
-//			clocks = <&rcc STM32_CLOCK_BUS_AHB3 0x00000100>;
-//			status = "disabled";
-//		};
-//	};
+	soc {
+		quadspi: quadspi@a0001000 {
+			compatible = "st,stm32-qspi";
+			#address-cells = <1>;
+			#size-cells = <0>;
+			reg = <0xa0001000 0x400>;
+			interrupts = <71 0>;
+			clocks = <&rcc STM32_CLOCK_BUS_AHB3 0x00000100>;
+			status = "disabled";
+		};
+	};
 };
 
-//&quadspi {
-//	pinctrl-0 = <&quadspi1_clk_pa3 &quadspi1_bk1_ncs_pa2
-//				 &quadspi1_bk1_io3_pa6 &quadspi1_bk1_io2_pa7
-//				 &quadspi1_bk1_io1_pb0 &quadspi1_bk1_io0_pb1>;
-//	pinctrl-names = "default";
-//
-//	status = "okay";
-//
-//	mx25r6435f: qspi-nor-flash@90000000 {
-//		compatible = "st,stm32-qspi-nor";
-//		reg = <0x90000000 DT_SIZE_M(8)>; /* 64 Mbits */
-//		qspi-max-frequency = <80000000>;
-//		reset-gpios = <&gpiod 3 GPIO_ACTIVE_LOW>;
-//		reset-gpios-duration = <1>;
-//		spi-bus-width = <4>;
-//		status = "okay";
-//
-//		foobar: partitions {
-//			compatible = "fixed-partitions";
-//			#address-cells = <1>;
-//			#size-cells = <1>;
-//
-//			partition@0 {
-//				label = "nor";
-//				reg = <0x00000000 DT_SIZE_M(4)>;
-//			};
-//		};
-//	};
-//};
+&dma2 {
+	status = "okay";
+};
+
+&quadspi {
+	pinctrl-0 = <&quadspi1_clk_pe10 &quadspi1_bk1_ncs_pe11
+				 &quadspi1_bk1_io3_pe15 &quadspi1_bk1_io2_pe14
+				 &quadspi1_bk1_io1_pe13 &quadspi1_bk1_io0_pe12>;
+	pinctrl-names = "default";
+
+	status = "okay";
+
+	mx25r6435f: qspi-nor-flash@90000000 {
+		compatible = "st,stm32-qspi-nor";
+		reg = <0x90000000 DT_SIZE_M(8)>; /* 64 Mbits */
+		qspi-max-frequency = <80000000>;
+		reset-gpios = <&gpiod 3 GPIO_ACTIVE_LOW>;
+		reset-gpios-duration = <1>;
+		spi-bus-width = <4>;
+		status = "okay";
+
+		foobar: partitions {
+			compatible = "fixed-partitions";
+			#address-cells = <1>;
+			#size-cells = <1>;
+
+			partition@0 {
+				label = "nor";
+				reg = <0x00000000 DT_SIZE_M(4)>;
+			};
+		};
+	};
+};
 
 &clk_lsi {
 	status = "okay";
@@ -80,10 +81,10 @@
 	status = "okay";
 };
 
-&clk_hse {
-	clock-frequency = <DT_FREQ_M(24)>;
-	status = "okay";
-};
+//&clk_hse {
+//	clock-frequency = <DT_FREQ_M(24)>;
+//	status = "okay";
+//};
 
 &pll {
 	div-m = <6>;
@@ -91,7 +92,7 @@
 	div-p = <7>;
 	div-q = <2>;
 	div-r = <2>;
-	clocks = <&clk_hse>;
+	clocks = <&clk_hsi48>;
 	status = "okay";
 };
 
@@ -103,80 +104,80 @@
 	apb2-prescaler = <1>;
 };
 
-&usart1 {
-	pinctrl-0 = <&usart1_tx_pc4 &usart1_rx_pc5>;
-	pinctrl-names = "default";
-	current-speed = <115200>;
-	status = "okay";
-};
+//&usart1 {
+//	pinctrl-0 = <&usart1_tx_pc4 &usart1_rx_pc5>;
+//	pinctrl-names = "default";
+//	current-speed = <115200>;
+//	status = "okay";
+//};
 
-&lpuart1 {
-	pinctrl-0 = <&lpuart1_tx_pa2 &lpuart1_rx_pa3>;
-	pinctrl-1 = <&analog_pa2 &analog_pa3>;
-	pinctrl-names = "default", "sleep";
-	current-speed = <115200>;
-	status = "okay";
-};
+//&lpuart1 {
+//	pinctrl-0 = <&lpuart1_tx_pa2 &lpuart1_rx_pa3>;
+//	pinctrl-1 = <&analog_pa2 &analog_pa3>;
+//	pinctrl-names = "default", "sleep";
+//	current-speed = <115200>;
+//	status = "okay";
+//};
 
-&i2c1 {
-	pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
-	pinctrl-names = "default";
-	status = "okay";
-};
+//&i2c1 {
+//	pinctrl-0 = <&i2c1_scl_pb8 &i2c1_sda_pb9>;
+//	pinctrl-names = "default";
+//	status = "okay";
+//};
 
-&spi1 {
-	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
-	pinctrl-names = "default";
-	cs-gpios = <&gpiob 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
-	status = "okay";
-};
+//&spi1 {
+//	pinctrl-0 = <&spi1_sck_pa5 &spi1_miso_pa6 &spi1_mosi_pa7>;
+//	pinctrl-names = "default";
+//	cs-gpios = <&gpiob 6 (GPIO_ACTIVE_LOW | GPIO_PULL_UP)>;
+//	status = "okay";
+//};
 
-&spi2 {
-	pinctrl-0 = <&spi2_nss_pb12 &spi2_sck_pb13
-		     &spi2_miso_pb14 &spi2_mosi_pb15>;
-	pinctrl-names = "default";
-	status = "okay";
-};
+//&spi2 {
+//	pinctrl-0 = <&spi2_nss_pb12 &spi2_sck_pb13
+//		     &spi2_miso_pb14 &spi2_mosi_pb15>;
+//	pinctrl-names = "default";
+//	status = "okay";
+//};
 
-&spi3 {
-	/* SPI3 on the ST Morpho Connector CN7 pins 17, 1, 2, 3*/
-	pinctrl-0 = <&spi3_nss_pa15 &spi3_sck_pc10
-		     &spi3_miso_pc11 &spi3_mosi_pc12>;
-	pinctrl-names = "default";
-	status = "okay";
-};
+//&spi3 {
+//	/* SPI3 on the ST Morpho Connector CN7 pins 17, 1, 2, 3*/
+//	pinctrl-0 = <&spi3_nss_pa15 &spi3_sck_pc10
+//		     &spi3_miso_pc11 &spi3_mosi_pc12>;
+//	pinctrl-names = "default";
+//	status = "okay";
+//};
 
-&timers2 {
-	status = "okay";
+//&timers2 {
+//	status = "okay";
+//
+//	pwm2: pwm {
+//		status = "okay";
+//		pinctrl-0 = <&tim2_ch1_pa5>;
+//		pinctrl-names = "default";
+//	};
+//};
 
-	pwm2: pwm {
-		status = "okay";
-		pinctrl-0 = <&tim2_ch1_pa5>;
-		pinctrl-names = "default";
-	};
-};
+//&timers3 {
+//	st,prescaler = <10000>;
+//	status = "okay";
+//	pwm3: pwm {
+//		status = "okay";
+//		pinctrl-0 = <&tim3_ch1_pb4>;
+//		pinctrl-names = "default";
+//	};
+//};
 
-&timers3 {
-	st,prescaler = <10000>;
-	status = "okay";
-	pwm3: pwm {
-		status = "okay";
-		pinctrl-0 = <&tim3_ch1_pb4>;
-		pinctrl-names = "default";
-	};
-};
-
-stm32_lp_tick_source: &lptim1 {
-	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x80000000>,
-		<&rcc STM32_SRC_LSI LPTIM1_SEL(1)>;
-	status = "okay";
-};
-
-&rtc {
-	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x00000400>,
-		 <&rcc STM32_SRC_LSI RTC_SEL(2)>;
-	status = "okay";
-};
+//stm32_lp_tick_source: &lptim1 {
+//	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x80000000>,
+//		<&rcc STM32_SRC_LSI LPTIM1_SEL(1)>;
+//	status = "okay";
+//};
+//
+//&rtc {
+//	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x00000400>,
+//		 <&rcc STM32_SRC_LSI RTC_SEL(2)>;
+//	status = "okay";
+//};
 
 &flash0 {
 	partitions {
@@ -206,43 +207,41 @@ stm32_lp_tick_source: &lptim1 {
 	};
 };
 
-&iwdg {
-	status = "okay";
-};
+//&iwdg {
+//	status = "okay";
+//};
+//
+//&rng {
+//	status = "okay";
+//};
 
-&rng {
-	status = "okay";
-};
+//&adc1 {
+//	pinctrl-0 = <&adc1_in1_pa0>;
+//	pinctrl-names = "default";
+//	st,adc-clock-source = <SYNC>;
+//	st,adc-prescaler = <4>;
+//	status = "okay";
+//};
 
-&adc1 {
-	pinctrl-0 = <&adc1_in1_pa0>;
-	pinctrl-names = "default";
-	st,adc-clock-source = <SYNC>;
-	st,adc-prescaler = <4>;
-	status = "okay";
-};
 
-&dma2 {
-	status = "okay";
-};
-
-&die_temp {
-	status = "okay";
-};
-
-&dac1 {
-	pinctrl-0 = <&dac1_out1_pa4>;
-	pinctrl-names = "default";
-	status = "okay";
-};
-
-&fdcan1 {
-	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x02000000>,
-		 <&rcc STM32_SRC_HSE FDCAN_SEL(0)>;
-	pinctrl-0 = <&fdcan1_rx_pa11 &fdcan1_tx_pa12>;
-	pinctrl-names = "default";
-	status = "okay";
-};
+//
+//&die_temp {
+//	status = "okay";
+//};
+//
+//&dac1 {
+//	pinctrl-0 = <&dac1_out1_pa4>;
+//	pinctrl-names = "default";
+//	status = "okay";
+//};
+//
+//&fdcan1 {
+//	clocks = <&rcc STM32_CLOCK_BUS_APB1 0x02000000>,
+//		 <&rcc STM32_SRC_HSE FDCAN_SEL(0)>;
+//	pinctrl-0 = <&fdcan1_rx_pa11 &fdcan1_tx_pa12>;
+//	pinctrl-names = "default";
+//	status = "okay";
+//};
 
 &vref {
 	status = "okay";
