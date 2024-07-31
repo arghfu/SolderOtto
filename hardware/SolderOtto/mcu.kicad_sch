@@ -6783,12 +6783,20 @@
 		(uuid "c9fa75ed-36e8-45e9-8982-a38280e969cd")
 	)
 	(no_connect
+		(at 161.29 199.39)
+		(uuid "cb4547f3-f1ad-442a-a666-36848f5f2401")
+	)
+	(no_connect
 		(at 212.09 176.53)
 		(uuid "d7dafa34-6482-4353-84db-fde6b9692a1c")
 	)
 	(no_connect
 		(at 53.34 248.92)
 		(uuid "dec391cb-53bc-4dea-8aae-6970d19b7434")
+	)
+	(no_connect
+		(at 161.29 201.93)
+		(uuid "ea07a432-f63e-429f-a394-d2372fe1b90f")
 	)
 	(wire
 		(pts
@@ -7649,16 +7657,6 @@
 			(type default)
 		)
 		(uuid "66a95dfa-d699-4704-84bb-f84f8b655979")
-	)
-	(wire
-		(pts
-			(xy 144.78 201.93) (xy 161.29 201.93)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "66ae98e5-7b42-4eb7-b0bd-a811d8d601f7")
 	)
 	(wire
 		(pts
@@ -9102,16 +9100,6 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 199.39) (xy 161.29 199.39)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f22e9cae-0326-4caa-b5aa-689204cdfcad")
-	)
-	(wire
-		(pts
 			(xy 378.46 76.2) (xy 378.46 78.74)
 		)
 		(stroke
@@ -9778,18 +9766,6 @@
 		)
 		(uuid "2aed2d54-88fc-4e62-8643-f0b0cd709ce7")
 	)
-	(hierarchical_label "EXT_5"
-		(shape bidirectional)
-		(at 144.78 201.93 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "2c93ddd0-1922-475b-b476-292409c13689")
-	)
 	(hierarchical_label "Channel2_handle"
 		(shape passive)
 		(at 144.78 163.83 180)
@@ -10317,18 +10293,6 @@
 			(justify left)
 		)
 		(uuid "ba5ee7ad-2dc5-4ea2-abac-fc8aa6f07e38")
-	)
-	(hierarchical_label "EXT_4"
-		(shape bidirectional)
-		(at 144.78 199.39 180)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "bb848307-f60f-4ba1-851a-b796673e4df0")
 	)
 	(hierarchical_label "Channel3_DET"
 		(shape input)
