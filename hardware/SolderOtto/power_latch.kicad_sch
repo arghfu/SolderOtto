@@ -1083,7 +1083,7 @@
 	)
 	(symbol
 		(lib_id "mylib_ic:SN74LVC125A")
-		(at 149.86 101.6 0)
+		(at 149.86 119.38 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1092,7 +1092,7 @@
 		(fields_autoplaced yes)
 		(uuid "19288cce-ef9f-4d5c-b027-b74f51024853")
 		(property "Reference" "U701"
-			(at 149.86 92.71 0)
+			(at 149.86 110.49 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1100,7 +1100,7 @@
 			)
 		)
 		(property "Value" "SN74LVC125A"
-			(at 149.86 95.25 0)
+			(at 149.86 113.03 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1108,7 +1108,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 149.86 101.6 0)
+			(at 149.86 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1117,7 +1117,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 101.6 0)
+			(at 149.86 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1126,7 +1126,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 101.6 0)
+			(at 149.86 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1135,7 +1135,7 @@
 			)
 		)
 		(property "Digikey" "296-1222-1-ND"
-			(at 149.86 101.6 0)
+			(at 149.86 119.38 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1441,7 +1441,7 @@
 	)
 	(symbol
 		(lib_id "mylib_ic:SN74LVC125A")
-		(at 149.86 119.38 0)
+		(at 149.86 101.6 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1450,7 +1450,7 @@
 		(fields_autoplaced yes)
 		(uuid "700c101e-8f1b-42d1-9ff6-8a2c052e937e")
 		(property "Reference" "U701"
-			(at 149.86 110.49 0)
+			(at 149.86 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1458,7 +1458,7 @@
 			)
 		)
 		(property "Value" "SN74LVC125A"
-			(at 149.86 113.03 0)
+			(at 149.86 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1466,7 +1466,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:TSSOP-14_4.4x5mm_P0.65mm"
-			(at 149.86 119.38 0)
+			(at 149.86 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1475,7 +1475,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 149.86 119.38 0)
+			(at 149.86 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1484,7 +1484,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 149.86 119.38 0)
+			(at 149.86 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1493,7 +1493,7 @@
 			)
 		)
 		(property "Digikey" "296-1222-1-ND"
-			(at 149.86 119.38 0)
+			(at 149.86 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)

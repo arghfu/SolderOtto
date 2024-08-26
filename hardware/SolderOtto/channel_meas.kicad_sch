@@ -2529,6 +2529,12 @@
 		(uuid "6f38123a-51d9-4b3c-b55b-42c490dac82b")
 	)
 	(junction
+		(at 193.04 83.82)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "725366db-dcaa-4a29-96a4-daf4fd531833")
+	)
+	(junction
 		(at 298.45 181.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2539,6 +2545,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "78e5c7ac-ef99-4101-a85a-45ce3d798942")
+	)
+	(junction
+		(at 193.04 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7ab908d0-bd92-4efe-bcc9-9d73f381f77e")
 	)
 	(junction
 		(at 355.6 55.88)
@@ -2671,6 +2683,10 @@
 		(uuid "158513dd-a856-451d-aae4-ee7ef660071d")
 	)
 	(no_connect
+		(at 299.72 143.51)
+		(uuid "21a5ddbe-b327-45b5-8eb4-59e3a120a5d2")
+	)
+	(no_connect
 		(at 57.15 64.77)
 		(uuid "22aabe24-4b04-4145-ab5d-232b293de5aa")
 	)
@@ -2693,6 +2709,14 @@
 	(no_connect
 		(at 267.97 64.77)
 		(uuid "bfab9c78-7839-4a47-aab6-ded89aaf5fa3")
+	)
+	(no_connect
+		(at 314.96 140.97)
+		(uuid "c7a04926-38b2-4b7c-8e14-70afd395aa4f")
+	)
+	(no_connect
+		(at 299.72 138.43)
+		(uuid "d4ba1941-258b-496a-987c-3bb6a587da1b")
 	)
 	(no_connect
 		(at 77.47 62.23)
@@ -3100,6 +3124,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 101.6) (xy 193.04 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "293776c1-94e1-4b47-b65c-ef1eedc22f2c")
+	)
+	(wire
+		(pts
 			(xy 288.29 170.18) (xy 290.83 170.18)
 		)
 		(stroke
@@ -3140,7 +3174,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 182.88) (xy 229.87 184.15)
+			(xy 193.04 100.33) (xy 193.04 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3490,6 +3524,26 @@
 	)
 	(wire
 		(pts
+			(xy 217.17 184.15) (xy 217.17 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5414ce82-bea9-4789-ab5b-674213a8d3bb")
+	)
+	(wire
+		(pts
+			(xy 193.04 83.82) (xy 193.04 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5632a817-0875-40a6-8922-aefbfea05fe0")
+	)
+	(wire
+		(pts
 			(xy 267.97 77.47) (xy 270.51 77.47)
 		)
 		(stroke
@@ -3557,6 +3611,16 @@
 			(type default)
 		)
 		(uuid "5ab33071-2b3d-460d-a8f2-efc41706e432")
+	)
+	(wire
+		(pts
+			(xy 204.47 92.71) (xy 204.47 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5afaa50b-d65e-4794-83aa-51f629cb2493")
 	)
 	(wire
 		(pts
@@ -3747,6 +3811,16 @@
 			(type default)
 		)
 		(uuid "71720de7-5b8b-4c0f-80c1-202aef490a3b")
+	)
+	(wire
+		(pts
+			(xy 204.47 85.09) (xy 204.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "719baafb-ac8a-4904-a6e4-0a1282add566")
 	)
 	(wire
 		(pts
@@ -4040,6 +4114,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 101.6) (xy 204.47 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d54f4fc-745e-44f3-b5c4-dee7c33a870b")
+	)
+	(wire
+		(pts
 			(xy 270.51 74.93) (xy 270.51 77.47)
 		)
 		(stroke
@@ -4300,7 +4384,7 @@
 	)
 	(wire
 		(pts
-			(xy 229.87 166.37) (xy 229.87 167.64)
+			(xy 193.04 82.55) (xy 193.04 83.82)
 		)
 		(stroke
 			(width 0)
@@ -4337,6 +4421,16 @@
 			(type default)
 		)
 		(uuid "b173e6e9-3bee-4458-8bbc-f0c066d46117")
+	)
+	(wire
+		(pts
+			(xy 204.47 102.87) (xy 204.47 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b17d964c-7715-435b-9ba9-a7c0797a8072")
 	)
 	(wire
 		(pts
@@ -4407,6 +4501,16 @@
 			(type default)
 		)
 		(uuid "b65d902c-0c45-4faa-843e-05cb8b7b52d9")
+	)
+	(wire
+		(pts
+			(xy 217.17 167.64) (xy 217.17 168.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b6748686-0f55-48b6-8550-5f34bc39083a")
 	)
 	(wire
 		(pts
@@ -4570,6 +4674,16 @@
 	)
 	(wire
 		(pts
+			(xy 193.04 83.82) (xy 204.47 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb3e8314-8275-4109-bed5-7719fd0b12d7")
+	)
+	(wire
+		(pts
 			(xy 309.88 53.34) (xy 313.69 53.34)
 		)
 		(stroke
@@ -4717,6 +4831,16 @@
 			(type default)
 		)
 		(uuid "d996597b-7021-49a4-8160-50eefada44af")
+	)
+	(wire
+		(pts
+			(xy 204.47 110.49) (xy 204.47 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d99c5d29-a792-4ab1-8c65-d7216c9ae1fb")
 	)
 	(wire
 		(pts
@@ -5172,7 +5296,7 @@
 		(uuid "06617aa8-9be8-4a3b-adcd-af39b1f98e69")
 	)
 	(hierarchical_label "I_{LOAD}"
-		(shape input)
+		(shape passive)
 		(at 137.16 168.91 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5183,7 +5307,7 @@
 		)
 		(uuid "0d2f4b29-1229-4335-b82d-5246b1445fb3")
 	)
-	(hierarchical_label "SEL1"
+	(hierarchical_label "SEL1_{a}"
 		(shape input)
 		(at 83.82 46.99 0)
 		(fields_autoplaced yes)
@@ -5222,7 +5346,7 @@
 		(uuid "4148f19c-6ba3-48f3-bc89-fadfbbe3294a")
 	)
 	(hierarchical_label "T_{TIP}_{a}"
-		(shape input)
+		(shape passive)
 		(at 181.61 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5233,7 +5357,7 @@
 		)
 		(uuid "420f97ef-198b-4c2b-8218-2e5ef211f19e")
 	)
-	(hierarchical_label "SEL2"
+	(hierarchical_label "SEL2_{b}"
 		(shape input)
 		(at 274.32 54.61 0)
 		(fields_autoplaced yes)
@@ -5271,7 +5395,7 @@
 		)
 		(uuid "572e4221-8cac-4ac0-bf08-3a4812caff36")
 	)
-	(hierarchical_label "SEL2"
+	(hierarchical_label "SEL2_{a}"
 		(shape input)
 		(at 83.82 54.61 0)
 		(fields_autoplaced yes)
@@ -5309,7 +5433,7 @@
 		)
 		(uuid "b66beb21-eaa9-4016-88ce-ed672bb9ed81")
 	)
-	(hierarchical_label "SEL1"
+	(hierarchical_label "SEL1_{b}"
 		(shape input)
 		(at 274.32 46.99 0)
 		(fields_autoplaced yes)
@@ -5335,7 +5459,7 @@
 		(uuid "cf64089d-cdf6-427c-a1fb-3a66ab08a4b8")
 	)
 	(hierarchical_label "I_{LEAK}"
-		(shape input)
+		(shape passive)
 		(at 353.06 172.72 0)
 		(fields_autoplaced yes)
 		(effects
@@ -5347,7 +5471,7 @@
 		(uuid "e909f87b-3b40-46eb-81a8-06563a25a4dc")
 	)
 	(hierarchical_label "T_{TIP}_{b}"
-		(shape input)
+		(shape passive)
 		(at 372.11 55.88 0)
 		(fields_autoplaced yes)
 		(effects
@@ -6437,6 +6561,72 @@
 	)
 	(symbol
 		(lib_id "power:+8V")
+		(at 217.17 167.64 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2bba7670-e5eb-4e59-8ec1-492e58a3f0b2")
+		(property "Reference" "#PWR0950"
+			(at 217.17 171.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+8V"
+			(at 217.17 162.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 217.17 167.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "238196f0-1c57-467b-9835-3f517e183f1b")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0950")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+8V")
 		(at 374.65 161.29 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -7225,7 +7415,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 335.28 55.88 0)
+		(at 308.61 172.72 0)
 		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7234,7 +7424,7 @@
 		(fields_autoplaced yes)
 		(uuid "4091749f-59ec-47b9-91d6-7f587ab465bc")
 		(property "Reference" "U907"
-			(at 335.28 45.72 0)
+			(at 308.61 162.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7242,7 +7432,7 @@
 			)
 		)
 		(property "Value" "LM358B"
-			(at 335.28 48.26 0)
+			(at 308.61 165.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7250,7 +7440,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 335.28 55.88 0)
+			(at 308.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7259,7 +7449,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 335.28 55.88 0)
+			(at 308.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7268,7 +7458,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 335.28 55.88 0)
+			(at 308.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7277,7 +7467,7 @@
 			)
 		)
 		(property "Digikey" "296-LM358BIDGKRCT-ND"
-			(at 335.28 55.88 0)
+			(at 308.61 172.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8443,7 +8633,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 232.41 175.26 0)
+		(at 195.58 92.71 0)
 		(unit 3)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8452,7 +8642,7 @@
 		(fields_autoplaced yes)
 		(uuid "5e1f77ea-acd3-4dd9-9866-3f4de907d2cd")
 		(property "Reference" "U902"
-			(at 231.14 173.9899 0)
+			(at 194.31 91.4399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8461,7 +8651,7 @@
 			)
 		)
 		(property "Value" "LM358B"
-			(at 231.14 176.5299 0)
+			(at 194.31 93.9799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8470,7 +8660,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 232.41 175.26 0)
+			(at 195.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8479,7 +8669,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 232.41 175.26 0)
+			(at 195.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8488,7 +8678,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 232.41 175.26 0)
+			(at 195.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8497,7 +8687,7 @@
 			)
 		)
 		(property "Digikey" "296-LM358BIDGKRCT-ND"
-			(at 232.41 175.26 0)
+			(at 195.58 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8928,7 +9118,7 @@
 	)
 	(symbol
 		(lib_id "Amplifier_Operational:LM358")
-		(at 308.61 172.72 0)
+		(at 335.28 55.88 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -8937,7 +9127,7 @@
 		(fields_autoplaced yes)
 		(uuid "6a7066c8-2698-4521-9118-6cca45be33a7")
 		(property "Reference" "U902"
-			(at 308.61 162.56 0)
+			(at 335.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8945,7 +9135,7 @@
 			)
 		)
 		(property "Value" "LM358B"
-			(at 308.61 165.1 0)
+			(at 335.28 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8953,7 +9143,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 308.61 172.72 0)
+			(at 335.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8962,7 +9152,7 @@
 			)
 		)
 		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
-			(at 308.61 172.72 0)
+			(at 335.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8971,7 +9161,7 @@
 			)
 		)
 		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
-			(at 308.61 172.72 0)
+			(at 335.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8980,7 +9170,7 @@
 			)
 		)
 		(property "Digikey" "296-LM358BIDGKRCT-ND"
-			(at 308.61 172.72 0)
+			(at 335.28 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9154,7 +9344,7 @@
 	)
 	(symbol
 		(lib_id "power:-5V")
-		(at 229.87 184.15 180)
+		(at 193.04 102.87 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9162,7 +9352,7 @@
 		(dnp no)
 		(uuid "74de8269-b03f-4537-b727-5cc1ae58ec89")
 		(property "Reference" "#PWR0920"
-			(at 229.87 180.34 0)
+			(at 193.04 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9171,7 +9361,7 @@
 			)
 		)
 		(property "Value" "-5V"
-			(at 229.87 187.96 0)
+			(at 193.04 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9179,7 +9369,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 184.15 0)
+			(at 193.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9188,7 +9378,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 184.15 0)
+			(at 193.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9197,7 +9387,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"-5V\""
-			(at 229.87 184.15 0)
+			(at 193.04 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9727,6 +9917,71 @@
 		)
 	)
 	(symbol
+		(lib_id "power:-5V")
+		(at 217.17 186.69 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7d2291f5-3b8d-4459-9505-1f22b85fd7fc")
+		(property "Reference" "#PWR0951"
+			(at 217.17 182.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 217.17 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 217.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 217.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 217.17 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6eb2ddce-e222-4152-b001-0792b7de46b1")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0951")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 66.04 168.91 0)
 		(unit 1)
@@ -9879,6 +10134,72 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "C908")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 111.76 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "803eaacd-9012-4ac4-ad25-734e29dbe04c")
+		(property "Reference" "#PWR0953"
+			(at 204.47 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 116.84 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "529e1d64-7bfd-4a66-918e-788a1ac41b44")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0953")
 					(unit 1)
 				)
 			)
@@ -10088,6 +10409,100 @@
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "#PWR0924")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 219.71 176.53 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "85558e86-4fe4-4df0-a570-682a680b196d")
+		(property "Reference" "U907"
+			(at 222.504 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358B"
+			(at 222.504 177.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 219.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 219.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 219.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-LM358BIDGKRCT-ND"
+			(at 219.71 176.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8f174dc9-b0ec-4d0d-a59f-2c40e6000f0c")
+		)
+		(pin "1"
+			(uuid "a5160541-90f7-42c4-934d-0f1fdcda9b79")
+		)
+		(pin "5"
+			(uuid "459c1b44-267b-4ddd-88c2-995e38f76b46")
+		)
+		(pin "2"
+			(uuid "89fd747c-13e1-4b1f-b7b4-87914492e425")
+		)
+		(pin "7"
+			(uuid "4589efb9-8179-44f0-a292-f5c118047f78")
+		)
+		(pin "8"
+			(uuid "9c07c48e-d865-4182-9578-0e04042fd2fa")
+		)
+		(pin "6"
+			(uuid "35b4b1be-f36f-4168-bb02-b203fa8db803")
+		)
+		(pin "3"
+			(uuid "96342dfd-dabd-4a16-9820-432db25ce9b3")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U907")
+					(unit 3)
 				)
 			)
 		)
@@ -11325,28 +11740,28 @@
 			)
 		)
 		(pin "4"
-			(uuid "8f174dc9-b0ec-4d0d-a59f-2c40e6000f0b")
+			(uuid "8f174dc9-b0ec-4d0d-a59f-2c40e6000f0d")
 		)
 		(pin "1"
-			(uuid "a5160541-90f7-42c4-934d-0f1fdcda9b78")
+			(uuid "a5160541-90f7-42c4-934d-0f1fdcda9b7a")
 		)
 		(pin "5"
 			(uuid "03925947-41f2-45b7-828d-da3c09787886")
 		)
 		(pin "2"
-			(uuid "89fd747c-13e1-4b1f-b7b4-87914492e424")
+			(uuid "89fd747c-13e1-4b1f-b7b4-87914492e426")
 		)
 		(pin "7"
 			(uuid "8a4b4381-3cf5-4f02-b061-58673368bd73")
 		)
 		(pin "8"
-			(uuid "9c07c48e-d865-4182-9578-0e04042fd2f9")
+			(uuid "9c07c48e-d865-4182-9578-0e04042fd2fb")
 		)
 		(pin "6"
 			(uuid "739afc1d-30b9-4a7e-86ee-fcf354b7f224")
 		)
 		(pin "3"
-			(uuid "96342dfd-dabd-4a16-9820-432db25ce9b2")
+			(uuid "96342dfd-dabd-4a16-9820-432db25ce9b4")
 		)
 		(instances
 			(project "SolderOtto"
@@ -11871,8 +12286,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C")
+		(at 204.47 106.68 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a85e9cef-d512-490f-897b-ef2d1089f86e")
+		(property "Reference" "C921"
+			(at 208.28 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 208.28 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 205.4352 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 204.47 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 204.47 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6adba98c-bc9c-4562-9058-a3f66661c159")
+		)
+		(pin "2"
+			(uuid "c5bd945a-5eae-4b45-bd2a-65cff22c8041")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "C921")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+8V")
-		(at 229.87 166.37 0)
+		(at 193.04 82.55 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11881,7 +12375,7 @@
 		(fields_autoplaced yes)
 		(uuid "aca4a3ea-b732-4eaa-ad47-15aae4e6fa65")
 		(property "Reference" "#PWR0917"
-			(at 229.87 170.18 0)
+			(at 193.04 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11890,7 +12384,7 @@
 			)
 		)
 		(property "Value" "+8V"
-			(at 229.87 161.29 0)
+			(at 193.04 77.47 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11898,7 +12392,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 229.87 166.37 0)
+			(at 193.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11907,7 +12401,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 229.87 166.37 0)
+			(at 193.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11916,7 +12410,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+8V\""
-			(at 229.87 166.37 0)
+			(at 193.04 82.55 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13362,34 +13856,113 @@
 			)
 		)
 		(pin "6"
-			(uuid "914f1551-63cb-4f9e-ad3c-f98836c1ec0d")
+			(uuid "914f1551-63cb-4f9e-ad3c-f98836c1ec0e")
 		)
 		(pin "7"
 			(uuid "263a313c-49f2-4146-857a-16c471a06c22")
 		)
 		(pin "5"
-			(uuid "5326f954-2deb-4451-8eb6-757c02ccd450")
+			(uuid "5326f954-2deb-4451-8eb6-757c02ccd451")
 		)
 		(pin "2"
-			(uuid "cf371da2-1ebe-4f42-86d1-a506cd41766e")
+			(uuid "cf371da2-1ebe-4f42-86d1-a506cd41766f")
 		)
 		(pin "4"
 			(uuid "babc2f73-79a8-4cb2-b5c4-09aeaa5222e0")
 		)
 		(pin "1"
-			(uuid "399e8156-9f6b-4280-a2ae-aea9c27b4c48")
+			(uuid "399e8156-9f6b-4280-a2ae-aea9c27b4c49")
 		)
 		(pin "8"
-			(uuid "86a17a0b-345d-4e24-9a33-63e06fbbe059")
+			(uuid "86a17a0b-345d-4e24-9a33-63e06fbbe05a")
 		)
 		(pin "3"
-			(uuid "3661370a-4603-41da-b97a-78ee7ef9895c")
+			(uuid "3661370a-4603-41da-b97a-78ee7ef9895d")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "U906")
 					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 204.47 88.9 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d3b3dd63-7b38-4156-99ce-ffe822a5cf04")
+		(property "Reference" "C922"
+			(at 208.28 87.6299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 208.28 90.1699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 205.4352 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 204.47 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "827fca1f-e3f1-4884-a6c8-5c5104f7a247")
+		)
+		(pin "2"
+			(uuid "c9a69ab2-8ce6-4955-81f5-7942791ef279")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "C922")
+					(unit 1)
 				)
 			)
 		)
@@ -13538,7 +14111,7 @@
 			(uuid "a954b15a-f400-4caa-81c0-54416805bc9c")
 		)
 		(pin "7"
-			(uuid "c42d3f60-c7e9-44b6-9abd-c88591bd92bf")
+			(uuid "c42d3f60-c7e9-44b6-9abd-c88591bd92c1")
 		)
 		(pin "5"
 			(uuid "f2946812-c347-4da8-acb8-2de2010ddba5")
@@ -13547,7 +14120,7 @@
 			(uuid "17a07dde-6ec8-4b19-b169-27cae1e83da2")
 		)
 		(pin "4"
-			(uuid "c0b5d888-50ce-4321-9bf9-a044031e699c")
+			(uuid "c0b5d888-50ce-4321-9bf9-a044031e699e")
 		)
 		(pin "1"
 			(uuid "715512c1-9ca4-4d9b-a075-9fb63f0326dc")
@@ -14639,6 +15212,101 @@
 		)
 	)
 	(symbol
+		(lib_id "Amplifier_Operational:LM358")
+		(at 307.34 140.97 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f47f1eda-daf2-4c4f-bea3-a6eff4bded2e")
+		(property "Reference" "U907"
+			(at 307.34 130.81 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "LM358B"
+			(at 307.34 133.35 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 307.34 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm2904-n.pdf"
+			(at 307.34 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Low-Power, Dual Operational Amplifiers, DIP-8/SOIC-8/TO-99-8"
+			(at 307.34 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-LM358BIDGKRCT-ND"
+			(at 307.34 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "8f174dc9-b0ec-4d0d-a59f-2c40e6000f0e")
+		)
+		(pin "1"
+			(uuid "a5160541-90f7-42c4-934d-0f1fdcda9b7b")
+		)
+		(pin "5"
+			(uuid "49f6c611-8cf6-4617-b89d-8c8a8cbed48b")
+		)
+		(pin "2"
+			(uuid "89fd747c-13e1-4b1f-b7b4-87914492e427")
+		)
+		(pin "7"
+			(uuid "7c2845bb-fb40-4b67-b045-2728984d7127")
+		)
+		(pin "8"
+			(uuid "9c07c48e-d865-4182-9578-0e04042fd2fc")
+		)
+		(pin "6"
+			(uuid "ff9641a1-dd29-487a-b3d5-af6cfeb2185c")
+		)
+		(pin "3"
+			(uuid "96342dfd-dabd-4a16-9820-432db25ce9b5")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U907")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3V3")
 		(at 341.63 158.75 0)
 		(unit 1)
@@ -15305,6 +15973,72 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "#PWR0904")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 204.47 93.98 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ff9ededd-9f11-4683-b049-d3a3da59ccea")
+		(property "Reference" "#PWR0952"
+			(at 204.47 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 204.47 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 204.47 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7415ae0e-9ec0-4592-ae08-8cbe9eda1911")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0952")
 					(unit 1)
 				)
 			)

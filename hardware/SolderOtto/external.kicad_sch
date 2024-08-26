@@ -1688,7 +1688,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.digikey.de/de/products/detail/molex/1053091105/7693149"
 			(at 160.02 59.69 0)
 			(effects
 				(font
@@ -1698,6 +1698,15 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 160.02 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "WM16868-ND"
 			(at 160.02 59.69 0)
 			(effects
 				(font

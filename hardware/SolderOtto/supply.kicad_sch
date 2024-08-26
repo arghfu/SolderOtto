@@ -9157,7 +9157,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "100u"
 			(at 279.4 33.4009 0)
 			(effects
 				(font
@@ -9166,7 +9166,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+		(property "Footprint" "mylib_common:CP_Elec_10x10.5_A768"
 			(at 276.5552 36.83 0)
 			(effects
 				(font
@@ -9193,7 +9193,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "399-A768EB226M1HLAE048CT-ND"
+		(property "Digikey" "399-A768MS107M1HLAE024CT-ND"
 			(at 275.59 33.02 0)
 			(effects
 				(font
@@ -12475,104 +12475,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
 					(reference "R209")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector_Generic:Conn_02x04_Top_Bottom")
-		(at 68.58 29.21 90)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6aab9582-a3ed-4ab2-964d-837642011801")
-		(property "Reference" "J202"
-			(at 63.754 31.75 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Conn_02x04_Counter_Clockwise"
-			(at 76.2 31.7499 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx10_2x05_P2.50mm_Vertical"
-			(at 68.58 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 68.58 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, double row, 02x04, top/bottom pin numbering scheme (row 1: 1...pins_per_row, row2: pins_per_row+1 ... num_pins), script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 68.58 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "WM17932-ND"
-			(at 68.58 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "6"
-			(uuid "d193b16f-81e1-4a94-b3fc-f23ed0785f72")
-		)
-		(pin "8"
-			(uuid "1f606e2e-b970-4323-9c42-65a7c7f053a1")
-		)
-		(pin "2"
-			(uuid "a3f569b4-6206-4fd6-81ec-dd5f5340f722")
-		)
-		(pin "1"
-			(uuid "e98963cf-c8d7-43ef-92db-2b50949533dc")
-		)
-		(pin "5"
-			(uuid "52a1c1ea-0493-4378-a208-b4472481515f")
-		)
-		(pin "3"
-			(uuid "9e7d2be3-8c05-419d-9d75-b345e8c29b6c")
-		)
-		(pin "4"
-			(uuid "f33e3219-9ffe-4e5c-9d4b-160145ee286c")
-		)
-		(pin "7"
-			(uuid "a53c2c31-58db-4898-acbe-f1f342ae7c61")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "J202")
 					(unit 1)
 				)
 			)
@@ -16687,7 +16589,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22u"
+		(property "Value" "100u"
 			(at 157.48 32.1309 0)
 			(effects
 				(font
@@ -16696,7 +16598,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:CP_Elec_10x10"
+		(property "Footprint" "mylib_common:CP_Elec_10x10.5_A768"
 			(at 154.6352 35.56 0)
 			(effects
 				(font
@@ -16723,7 +16625,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "399-A768EB226M1HLAE048CT-ND"
+		(property "Digikey" "399-A768MS107M1HLAE024CT-ND"
 			(at 153.67 31.75 0)
 			(effects
 				(font
