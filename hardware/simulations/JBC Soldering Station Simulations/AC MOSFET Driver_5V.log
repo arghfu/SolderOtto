@@ -1,6 +1,6 @@
 LTspice 24.0.11 for Windows
-Circuit: * Z:\home\arghfu\workspace\SolderOtto\simulations\JBC Soldering Station Simulations\AC MOSFET Driver_5V.asc
-Start Time: Sun Apr 14 17:41:27 2024
+Circuit: * Z:\home\arghfu\workspace\solderotto\SolderOtto\hardware\simulations\JBC Soldering Station Simulations\AC MOSFET Driver_5V.asc
+Start Time: Wed Aug 28 11:16:53 2024
 Warning: Multiple definitions of model "2scr375p" Type: BJT
 Warning: Multiple definitions of model "bc857b" Type: BJT
 Warning: Multiple definitions of model "bc847c" Type: BJT
@@ -240,6 +240,30 @@ Changing Tseed to 1e-15
 Changing Tseed to 0.0001
 Changing Tseed to 1e-16
 +Changing Tseed to 1e-09
+Changing Tseed to 1e-11
+Changing Tseed to 1e-08
+Changing Tseed to 1e-12
+Changing Tseed to 1e-07
+Changing Tseed to 1e-13
+Changing Tseed to 1e-06
+Changing Tseed to 1e-14
+Changing Tseed to 1e-05
+Changing Tseed to 1e-15
+Changing Tseed to 0.0001
+Changing Tseed to 1e-16
++Changing Tseed to 1e-09
+Changing Tseed to 1e-11
+Changing Tseed to 1e-08
+Changing Tseed to 1e-12
+Changing Tseed to 1e-07
+Changing Tseed to 1e-13
+Changing Tseed to 1e-06
+Changing Tseed to 1e-14
+Changing Tseed to 1e-05
+Changing Tseed to 1e-15
+Changing Tseed to 0.0001
+Changing Tseed to 1e-16
++Changing Tseed to 1e-09
 to 1.125e-09
-Total elapsed time: 0.371 seconds.
+Total elapsed time: 0.336 seconds.
 

@@ -12695,7 +12695,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10u"
+		(property "Value" "2u2"
 			(at 186.69 129.5399 0)
 			(effects
 				(font
@@ -12731,7 +12731,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "1276-2891-1-ND"
+		(property "Digikey" ""
 			(at 182.88 128.27 0)
 			(effects
 				(font

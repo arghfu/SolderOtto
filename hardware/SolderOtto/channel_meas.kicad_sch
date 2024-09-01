@@ -8686,7 +8686,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "296-LM358BIDGKRCT-ND"
+		(property "Digikey" "296-LM358BAIDRCT-ND"
 			(at 195.58 92.71 0)
 			(effects
 				(font
@@ -9169,7 +9169,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "296-LM358BIDGKRCT-ND"
+		(property "Digikey" "296-LM358BAIDRCT-ND"
 			(at 335.28 55.88 0)
 			(effects
 				(font
@@ -11730,7 +11730,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "296-LM358BIDGKRCT-ND"
+		(property "Digikey" "296-LM358BAIDRCT-ND"
 			(at 144.78 55.88 0)
 			(effects
 				(font
