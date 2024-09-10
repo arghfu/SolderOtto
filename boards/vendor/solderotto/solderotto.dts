@@ -18,7 +18,7 @@
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
-//		zephyr,flash-controller = &flash;
+		zephyr,flash-controller = &flash;
 	};
 
 	channel_out {
@@ -41,7 +41,6 @@
 		com: com {
 			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
 		};
-
 		load_low: low_load {
 			gpios = <&gpiof 2 GPIO_ACTIVE_HIGH>;
 		};
@@ -56,14 +55,14 @@
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-		ch0-sel1 = &sel1;
-		ch0-sel2 = &sel2;
-		ch0-sel3 = &sel3;
-		ch0-load0 = &load_0;
-		ch0-load1 = &load_1;
-		ch0-com = &com;
-		ch0-low-load = &load_low;
-		ch0-low-com = &com_low;
+//		ch0-sel1 = &sel1;
+//		ch0-sel2 = &sel2;
+//		ch0-sel3 = &sel3;
+//		ch0-load0 = &load_0;
+//		ch0-load1 = &load_1;
+//		ch0-com = &com;
+//		ch0-low-load = &load_low;
+//		ch0-low-com = &com_low;
 		dbg-0 = &dbg_0;
 	};
 
