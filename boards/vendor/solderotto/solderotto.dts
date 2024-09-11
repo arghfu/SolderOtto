@@ -17,8 +17,6 @@
 		zephyr,shell-uart = &usart1;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-		zephyr,code-partition = &slot0_partition;
-		zephyr,flash-controller = &flash;
 	};
 
 	channel_out {
@@ -48,7 +46,7 @@
 			gpios = <&gpioa 3 GPIO_ACTIVE_HIGH>;
 		};
 		dbg_0: dbg_0 {
-			gpios = <&gpiod 2 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpioc 12 (GPIO_OPEN_DRAIN)>;
 		};
 	};
 
@@ -126,10 +124,10 @@
 };
 
 &pll {
-	div-m = <6>;
+	div-m = <1>;
 	mul-n = <20>;
-	div-p = <7>;
-	div-q = <2>;
+	div-p = <2>;
+	div-q = <8>;
 	div-r = <2>;
 	clocks = <&clk_hsi>;
 	status = "okay";
@@ -147,35 +145,37 @@
 	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
 	pinctrl-names = "default";
 	current-speed = <115200>;
+	stop-bits = "1";
+	data-bits = <8>;
 	status = "okay";
 };
 
 
-&flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
-
-		boot_partition: partition@0 {
-			label = "mcuboot";
-			reg = <0x00000000 DT_SIZE_K(34)>;
-		};
-		slot0_partition: partition@8800 {
-			label = "image-0";
-			reg = <0x00008800 DT_SIZE_K(240)>;
-		};
-		slot1_partition: partition@44800 {
-			label = "image-1";
-			reg = <0x00044800 DT_SIZE_K(234)>;
-		};
-		/* Set 4Kb of storage at the end of the 512Kb of flash */
-		storage_partition: partition@7f000 {
-			label = "storage";
-			reg = <0x0007f000 DT_SIZE_K(4)>;
-		};
-	};
-};
+//&flash0 {
+//	partitions {
+//		compatible = "fixed-partitions";
+//		#address-cells = <1>;
+//		#size-cells = <1>;
+//
+//		boot_partition: partition@0 {
+//			label = "mcuboot";
+//			reg = <0x00000000 DT_SIZE_K(34)>;
+//		};
+//		slot0_partition: partition@8800 {
+//			label = "image-0";
+//			reg = <0x00008800 DT_SIZE_K(234)>;
+//		};
+//		slot1_partition: partition@44800 {
+//			label = "image-1";
+//			reg = <0x00044800 DT_SIZE_K(234)>;
+//		};
+//		/* Set 10Kb of storage at the end of the 512Kb of flash */
+//		storage_partition: partition@7f000 {
+//			label = "storage";
+//			reg = <0x0007f000 DT_SIZE_K(10)>;
+//		};
+//	};
+//};
 
 &iwdg {
 	status = "okay";
