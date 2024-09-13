@@ -9,8 +9,9 @@
 
 # build
 **/build*
-/twister-out*
-
+**/twister-out*
+**/.west
+deps/
 __pycache__/
 
 # docs

@@ -4,7 +4,7 @@
 manifest:
   self:
     west-commands: scripts/west-commands.yml
-
+    
   remotes:
     - name: zephyrproject-rtos
       url-base: https://github.com/zephyrproject-rtos
@@ -21,3 +21,4 @@ manifest:
           - hal_stm32  # required by the nucleo_f302r8 board (STM32 based)
           - segger     # required by Segger RTT
           - mcuboot
+        path-prefix: deps
