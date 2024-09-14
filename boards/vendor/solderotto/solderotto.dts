@@ -200,3 +200,62 @@
 &vbat {
 	status = "okay";
 };
+
+&spi4 {
+	pinctrl-0 = <&spi4_sck_pe2 &spi4_miso_pe5 &spi4_mosi_pe6>;
+	pinctrl-names = "default";
+
+	cs-gpios = <&gpioe 4 (GPIO_PULL_UP | GPIO_ACTIVE_LOW)>;
+
+	status = "okay";
+
+	ft800: ft800@0 {
+		compatible = "ftdi,ft800";
+		reg = <0x0>;
+		spi-max-frequency = <8000000>;
+		/*  D2 */
+		irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
+
+		pclk = <1>;
+		pclk_pol = <1>;
+		cspread = <0>;
+		swizzle = <0>;
+		vsize = <480>;
+		voffset = <8>;
+		vcycle = <496>;
+		vsync0 = <0>;
+		vsync1 = <4>;
+		hsize = <480>;
+		hoffset = <8>;
+		hcycle = <816>;
+		hsync0 = <0>;
+		hsync1 = <4>;
+
+		status = "okay";
+	};
+};
+
+//ft800: ft800@0 {
+//	compatible = "ftdi,ft800";
+//	reg = <0x0>;
+//	spi-max-frequency = <8000000>;
+//	/*  D2 */
+//	irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
+//
+//	pclk = <5>;
+//	pclk_pol = <1>;
+//	cspread = <1>;
+//	swizzle = <0>;
+//	vsize = <272>;
+//	voffset = <12>;
+//	vcycle = <292>;
+//	vsync0 = <0>;
+//	vsync1 = <10>;
+//	hsize = <480>;
+//	hoffset = <43>;
+//	hcycle = <548>;
+//	hsync0 = <0>;
+//	hsync1 = <41>;
+//
+//	status = "okay";
+//};

@@ -27,3 +27,4 @@ CONFIG_PINCTRL=y
 
 # enable adc
 CONFIG_ADC=y
+
