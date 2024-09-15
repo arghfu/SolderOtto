@@ -46,7 +46,7 @@
 			gpios = <&gpioa 3 GPIO_ACTIVE_HIGH>;
 		};
 		dbg_0: dbg_0 {
-			gpios = <&gpioc 12 (GPIO_OPEN_DRAIN)>;
+			gpios = <&gpioc 12 GPIO_OPEN_DRAIN>;
 		};
 	};
 
@@ -199,4 +199,37 @@
 
 &vbat {
 	status = "okay";
+};
+
+&spi4 {
+	pinctrl-0 = <&spi4_nss_pe4 &spi4_sck_pe2 &spi4_miso_pe5 &spi4_mosi_pe6>;
+	pinctrl-names = "default";
+
+	status = "okay";
+
+	bt81x: bt81x@0 {
+		compatible = "bridgetek,bt81x";
+
+		reg = <0x0>;
+		spi-max-frequency = <8000000>;
+		irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
+		rst-gpios = <&gpioe 3 GPIO_ACTIVE_LOW>;
+
+		pclk = <5>;
+		pclk_pol = <1>;
+		cspread = <1>;
+		swizzle = <0>;
+		vsize = <272>;
+		voffset = <12>;
+		vcycle = <292>;
+		vsync0 = <0>;
+		vsync1 = <10>;
+		hsize = <480>;
+		hoffset = <43>;
+		hcycle = <548>;
+		hsync0 = <0>;
+		hsync1 = <41>;
+
+		status = "okay";
+	};
 };
