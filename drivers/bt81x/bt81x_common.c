@@ -63,8 +63,3 @@ uint32_t bt81x_rd32(uint32_t address)
 
 	return sys_le32_to_cpu(*(const uint32_t *)buffer);
 }
-
-int bt81x_rst(uint32_t address)
-{
-	return bt81x_drv_reset();
-}

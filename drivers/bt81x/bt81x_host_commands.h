@@ -22,9 +22,10 @@ enum ft800_command_t {
 	SLEEP   = 0x42,
 	PWRDOWN = 0x50,
 
+	CLKINT	= 0x48,
 	CLKEXT  = 0x44,
 	CLK48M  = 0x62,
-	CLK36M  = 0x61,
+	CLKSEL  = 0x61,
 
 	CORERST = 0x68
 };

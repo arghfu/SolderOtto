@@ -25,9 +25,6 @@ static const struct spi_dt_spec spi = SPI_DT_SPEC_INST_GET(0,
 /* GPIO int line */
 static const struct gpio_dt_spec irq_gpio = GPIO_DT_SPEC_INST_GET(0, irq_gpios);
 
-/* GPIO rst line */
-static const struct gpio_dt_spec rst_gpio = GPIO_DT_SPEC_INST_GET(0, rst_gpios);
-
 static struct gpio_callback irq_cb_data;
 
 __weak void bt81x_drv_irq_triggered(const struct device *dev,
@@ -58,11 +55,6 @@ int bt81x_drv_init(void)
 {
 	int ret;
 
-	ret = gpio_pin_configure_dt(&rst_gpio, GPIO_OUTPUT_HIGH);
-	if (ret != 0) {
-		return ret;
-	}
-
 	if (!spi_is_ready_dt(&spi)) {
 		LOG_ERR("SPI bus %s not ready", spi.bus->name);
 		return -ENODEV;
@@ -91,7 +83,6 @@ int bt81x_drv_init(void)
 
 int bt81x_drv_write(uint32_t address, const uint8_t *data, unsigned int length)
 {
-	int ret;
 	uint8_t addr_buf[ADDR_SIZE];
 
 	insert_addr(address, addr_buf);
@@ -114,7 +105,7 @@ int bt81x_drv_write(uint32_t address, const uint8_t *data, unsigned int length)
 		.count = 2,
 	};
 
-	ret = spi_write_dt(&spi, &tx_bufs);
+	const int ret = spi_write_dt(&spi, &tx_bufs);
 	if (ret < 0) {
 		LOG_ERR("SPI write error: %d", ret);
 	}
@@ -165,7 +156,7 @@ int bt81x_drv_read(uint32_t address, uint8_t *data, unsigned int length)
 	return ret;
 }
 
-int bt81x_drv_command(uint8_t command)
+int bt81x_drv_command(uint8_t command, uint8_t parameter)
 {
 	int ret;
 	/* Most commands include COMMAND_OP bit. ACTIVE power mode command is
@@ -189,21 +180,4 @@ int bt81x_drv_command(uint8_t command)
 	}
 
 	return ret;
-}
-
-int bt81x_drv_reset()
-{
-	int ret = gpio_pin_set_dt(&rst_gpio, GPIO_PIN_SET);
-	if (ret < 0) {
-		return ret;
-	}
-
-	k_msleep(10);
-
-	ret = gpio_pin_set_dt(&rst_gpio, GPIO_PIN_RESET);
-	if (ret < 0) {
-		return ret;
-	}
-
-	return 0;
 }

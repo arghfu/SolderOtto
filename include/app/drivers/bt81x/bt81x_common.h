@@ -77,11 +77,6 @@ uint16_t bt81x_rd16(uint32_t address);
 uint32_t bt81x_rd32(uint32_t address);
 
 /**
- * @brief Performs a reset on the BT81x device
- */
-int bt81x_rst(uint32_t address);
-
-/**
  * @}
  */
 

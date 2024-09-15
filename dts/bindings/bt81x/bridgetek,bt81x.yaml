@@ -13,10 +13,6 @@ properties:
     required: true
     description: IRQ line of BT81X controller
 
-  rst-gpios:
-    type: phandle-array
-    description: Optional rst line of BT81X controller
-
   pclk:
     type: int
     required: true
@@ -109,3 +105,25 @@ properties:
     type: int
     required: true
     description: Number of PCLK cycles for HSYNC toggle during start of line.
+
+  dither:
+    type: int
+    required: true
+    description: |
+      Enables color dither. To improve the image quality, EVE applies a 2×2 color dither
+      matrix to output pixels. The dither option improves half-tone appearance on displays, even on 1-
+      bit displays.
+
+  pclk_freq:
+    type: int
+    required: true
+    description: |
+      To set the output PCLK as close as possible.
+
+  pclk_2x:
+    type: int
+    required: true
+    description: |
+      Wether the graphics engine outputs 1 or 2 pixels per PCLK.
+      0 means 1 pixel per clock,
+      1 means 2 pixel per clock.

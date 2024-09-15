@@ -24,8 +24,7 @@ extern "C" {
 int bt81x_drv_init(void);
 int bt81x_drv_read(uint32_t address, uint8_t *data, unsigned int length);
 int bt81x_drv_write(uint32_t address, const uint8_t *data, unsigned int length);
-int bt81x_drv_command(uint8_t command);
-int bt81x_drv_reset();
+int bt81x_drv_command(uint8_t command, uint8_t parameter);
 
 extern void bt81x_drv_irq_triggered(const struct device *dev,
 		struct gpio_callback *cb, uint32_t pins);

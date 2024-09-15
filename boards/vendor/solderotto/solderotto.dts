@@ -211,24 +211,26 @@
 		compatible = "bridgetek,bt81x";
 
 		reg = <0x0>;
-		spi-max-frequency = <8000000>;
+		spi-max-frequency = <30000000>;
 		irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
-		rst-gpios = <&gpioe 3 GPIO_ACTIVE_LOW>;
 
-		pclk = <5>;
-		pclk_pol = <1>;
-		cspread = <1>;
-		swizzle = <0>;
-		vsize = <272>;
-		voffset = <12>;
-		vcycle = <292>;
-		vsync0 = <0>;
-		vsync1 = <10>;
-		hsize = <480>;
-		hoffset = <43>;
-		hcycle = <548>;
+		hsize = <800>;
+		vsize = <480>;
+		hcycle = <816>;
+		hoffset = <8>;
 		hsync0 = <0>;
-		hsync1 = <41>;
+		hsync1 = <4>;
+		vcycle = <496>;
+		voffset = <8>;
+		vsync0 = <0>;
+		vsync1 = <4>;
+		pclk = <1>;
+		swizzle = <0>;
+		pclk_pol = <1>;
+		cspread = <0>;
+		dither = <0>;
+		pclk_freq = <3348>;
+		pclk_2x = <0>;
 
 		status = "okay";
 	};
