@@ -17,8 +17,6 @@
 		zephyr,shell-uart = &usart1;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
-		zephyr,code-partition = &slot0_partition;
-//		zephyr,flash-controller = &flash;
 	};
 
 	channel_out {
@@ -41,7 +39,6 @@
 		com: com {
 			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
 		};
-
 		load_low: low_load {
 			gpios = <&gpiof 2 GPIO_ACTIVE_HIGH>;
 		};
@@ -49,21 +46,21 @@
 			gpios = <&gpioa 3 GPIO_ACTIVE_HIGH>;
 		};
 		dbg_0: dbg_0 {
-			gpios = <&gpiod 2 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpioc 12 GPIO_OPEN_DRAIN>;
 		};
 	};
 
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-		ch0-sel1 = &sel1;
-		ch0-sel2 = &sel2;
-		ch0-sel3 = &sel3;
-		ch0-load0 = &load_0;
-		ch0-load1 = &load_1;
-		ch0-com = &com;
-		ch0-low-load = &load_low;
-		ch0-low-com = &com_low;
+//		ch0-sel1 = &sel1;
+//		ch0-sel2 = &sel2;
+//		ch0-sel3 = &sel3;
+//		ch0-load0 = &load_0;
+//		ch0-load1 = &load_1;
+//		ch0-com = &com;
+//		ch0-low-load = &load_low;
+//		ch0-low-com = &com_low;
 		dbg-0 = &dbg_0;
 	};
 
@@ -127,10 +124,10 @@
 };
 
 &pll {
-	div-m = <6>;
+	div-m = <1>;
 	mul-n = <20>;
-	div-p = <7>;
-	div-q = <2>;
+	div-p = <2>;
+	div-q = <8>;
 	div-r = <2>;
 	clocks = <&clk_hsi>;
 	status = "okay";
@@ -148,35 +145,37 @@
 	pinctrl-0 = <&usart1_tx_pa9 &usart1_rx_pa10>;
 	pinctrl-names = "default";
 	current-speed = <115200>;
+	stop-bits = "1";
+	data-bits = <8>;
 	status = "okay";
 };
 
 
-&flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
-
-		boot_partition: partition@0 {
-			label = "mcuboot";
-			reg = <0x00000000 DT_SIZE_K(34)>;
-		};
-		slot0_partition: partition@8800 {
-			label = "image-0";
-			reg = <0x00008800 DT_SIZE_K(240)>;
-		};
-		slot1_partition: partition@44800 {
-			label = "image-1";
-			reg = <0x00044800 DT_SIZE_K(234)>;
-		};
-		/* Set 4Kb of storage at the end of the 512Kb of flash */
-		storage_partition: partition@7f000 {
-			label = "storage";
-			reg = <0x0007f000 DT_SIZE_K(4)>;
-		};
-	};
-};
+//&flash0 {
+//	partitions {
+//		compatible = "fixed-partitions";
+//		#address-cells = <1>;
+//		#size-cells = <1>;
+//
+//		boot_partition: partition@0 {
+//			label = "mcuboot";
+//			reg = <0x00000000 DT_SIZE_K(34)>;
+//		};
+//		slot0_partition: partition@8800 {
+//			label = "image-0";
+//			reg = <0x00008800 DT_SIZE_K(234)>;
+//		};
+//		slot1_partition: partition@44800 {
+//			label = "image-1";
+//			reg = <0x00044800 DT_SIZE_K(234)>;
+//		};
+//		/* Set 10Kb of storage at the end of the 512Kb of flash */
+//		storage_partition: partition@7f000 {
+//			label = "storage";
+//			reg = <0x0007f000 DT_SIZE_K(10)>;
+//		};
+//	};
+//};
 
 &iwdg {
 	status = "okay";
@@ -200,4 +199,39 @@
 
 &vbat {
 	status = "okay";
+};
+
+&spi4 {
+	pinctrl-0 = <&spi4_nss_pe4 &spi4_sck_pe2 &spi4_miso_pe5 &spi4_mosi_pe6>;
+	pinctrl-names = "default";
+
+	status = "okay";
+
+	bt81x: bt81x@0 {
+		compatible = "bridgetek,bt81x";
+
+		reg = <0x0>;
+		spi-max-frequency = <30000000>;
+		irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
+
+		hsize = <800>;
+		vsize = <480>;
+		hcycle = <816>;
+		hoffset = <8>;
+		hsync0 = <0>;
+		hsync1 = <4>;
+		vcycle = <496>;
+		voffset = <8>;
+		vsync0 = <0>;
+		vsync1 = <4>;
+		pclk = <1>;
+		swizzle = <0>;
+		pclk_pol = <1>;
+		cspread = <0>;
+		dither = <0>;
+		pclk_freq = <3348>;
+		pclk_2x = <0>;
+
+		status = "okay";
+	};
 };
