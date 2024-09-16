@@ -2976,7 +2976,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0d2f15eb-be16-4d3b-9abf-45de4d283822")
-		(property "Reference" "#PWR0804"
+		(property "Reference" "#PWR0805"
 			(at 161.29 57.15 0)
 			(effects
 				(font
@@ -3026,7 +3026,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0804")
+					(reference "#PWR0805")
 					(unit 1)
 				)
 			)
@@ -3866,7 +3866,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5e41a5df-0c53-4d70-84e8-129776a3a85d")
-		(property "Reference" "#PWR0806"
+		(property "Reference" "#PWR0810"
 			(at 43.18 105.41 0)
 			(effects
 				(font
@@ -3916,7 +3916,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0806")
+					(reference "#PWR0810")
 					(unit 1)
 				)
 			)
@@ -4915,7 +4915,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "b61dd7ff-78dd-43a4-a067-1a75c012eeed")
-		(property "Reference" "#PWR0811"
+		(property "Reference" "#PWR0806"
 			(at 220.98 57.15 0)
 			(effects
 				(font
@@ -4965,7 +4965,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0811")
+					(reference "#PWR0806")
 					(unit 1)
 				)
 			)
@@ -5482,7 +5482,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "cf8118ad-816e-4520-9aef-b049c1666ad5")
-		(property "Reference" "#PWR0810"
+		(property "Reference" "#PWR0811"
 			(at 161.29 105.41 0)
 			(effects
 				(font
@@ -5532,7 +5532,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0810")
+					(reference "#PWR0811")
 					(unit 1)
 				)
 			)
@@ -5696,7 +5696,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e3f4518f-b564-49d7-bc72-f39c914d08b7")
-		(property "Reference" "#PWR0805"
+		(property "Reference" "#PWR0804"
 			(at 43.18 57.15 0)
 			(effects
 				(font
@@ -5746,7 +5746,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0805")
+					(reference "#PWR0804")
 					(unit 1)
 				)
 			)
