@@ -58,11 +58,7 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [
-        "hole_clearance|201400000|55550000|b752778a-2840-4565-8797-92e486234cae|a14fc060-f291-47f3-b1ec-19a8cb25ce5c",
-        "hole_clearance|203900000|55550000|b752778a-2840-4565-8797-92e486234cae|7a21c42e-81ce-4648-b5f1-8ee2d787406c",
-        "starved_thermal|149725000|72900000|9240822c-b6c8-4e7c-821d-d68b834011f5|b6ed2ac1-2112-470d-b6d0-0a27a3e2e041|F.Cu"
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -764,10 +760,6 @@
     [
       "57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1",
       "Channel0"
-    ],
-    [
-      "38c12336-e051-4519-b2f1-090dafa1bb9e",
-      "power_latch"
     ],
     [
       "62201fa0-ed5d-4773-9b2f-d2f1b9c97a45",

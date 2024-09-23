@@ -3481,7 +3481,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 30.48) (xy 41.91 30.48)
+			(xy 86.36 30.48) (xy 100.33 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3557,16 +3557,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 45.72) (xy 100.33 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0f15fa04-129d-4b10-98b8-6c99321b6d4a")
-	)
-	(wire
-		(pts
 			(xy 91.44 153.67) (xy 74.93 153.67)
 		)
 		(stroke
@@ -3620,7 +3610,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 38.1) (xy 41.91 38.1)
+			(xy 86.36 38.1) (xy 100.33 38.1)
 		)
 		(stroke
 			(width 0)
@@ -3738,7 +3728,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 49.53) (xy 41.91 49.53)
+			(xy 86.36 49.53) (xy 100.33 49.53)
 		)
 		(stroke
 			(width 0)
@@ -3918,7 +3908,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 45.72) (xy 41.91 45.72)
+			(xy 86.36 45.72) (xy 100.33 45.72)
 		)
 		(stroke
 			(width 0)
@@ -3928,7 +3918,7 @@
 	)
 	(wire
 		(pts
-			(xy 35.56 34.29) (xy 41.91 34.29)
+			(xy 86.36 34.29) (xy 100.33 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4183,16 +4173,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 34.29) (xy 100.33 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e41e0ad-611c-48af-818e-255638a6035f")
-	)
-	(wire
-		(pts
 			(xy 88.9 96.52) (xy 77.47 96.52)
 		)
 		(stroke
@@ -4277,26 +4257,6 @@
 			(color 255 153 0 1)
 		)
 		(uuid "81b3935b-8f7a-4d0c-8297-94f2bc013c12")
-	)
-	(wire
-		(pts
-			(xy 74.93 30.48) (xy 100.33 30.48)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "81cac559-a887-4841-9e54-5c0467baa8e1")
-	)
-	(wire
-		(pts
-			(xy 74.93 38.1) (xy 100.33 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "820bb8eb-aa19-4f60-a0eb-36d349319a23")
 	)
 	(wire
 		(pts
@@ -5056,16 +5016,6 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 49.53) (xy 100.33 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fe47e3ac-6423-4410-8c91-7245aa614ef1")
-	)
-	(wire
-		(pts
 			(xy 48.26 153.67) (xy 60.96 153.67)
 		)
 		(stroke
@@ -5350,7 +5300,7 @@
 	)
 	(hierarchical_label "LOW_SIDE_COM"
 		(shape input)
-		(at 35.56 49.53 180)
+		(at 86.36 49.53 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5374,7 +5324,7 @@
 	)
 	(hierarchical_label "LOAD0_SW"
 		(shape input)
-		(at 35.56 30.48 180)
+		(at 86.36 30.48 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5470,7 +5420,7 @@
 	)
 	(hierarchical_label "COM_SW"
 		(shape input)
-		(at 35.56 38.1 180)
+		(at 86.36 38.1 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5482,7 +5432,7 @@
 	)
 	(hierarchical_label "LOW_SIDE_LOAD"
 		(shape input)
-		(at 35.56 45.72 180)
+		(at 86.36 45.72 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5506,7 +5456,7 @@
 	)
 	(hierarchical_label "LOAD1_SW"
 		(shape input)
-		(at 35.56 34.29 180)
+		(at 86.36 34.29 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -8452,144 +8402,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
 					(page "9")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 41.91 25.4)
-		(size 33.02 27.94)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 255 255 194 1.0000)
-		)
-		(uuid "38c12336-e051-4519-b2f1-090dafa1bb9e")
-		(property "Sheetname" "power_latch"
-			(at 41.91 24.6884 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "power_latch.kicad_sch"
-			(at 41.91 53.9246 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "IN_COM" input
-			(at 41.91 38.1 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "01b77c44-68e3-473f-8201-daf4cb4afaf1")
-		)
-		(pin "OUT_COM_H" output
-			(at 74.93 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "a82166ea-3696-4745-90cc-e76d29f2afdf")
-		)
-		(pin "OUT_LOAD_L" output
-			(at 74.93 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "26d67962-328f-4b5f-9473-4cd0a9db922d")
-		)
-		(pin "OUT_COM_L" output
-			(at 74.93 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "1e23464a-3066-4a08-b023-bfd98a292f4f")
-		)
-		(pin "OUT_LOAD0_H" output
-			(at 74.93 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "5f46036f-0e71-4a75-8e25-3f6b795222df")
-		)
-		(pin "IN_LOAD1" input
-			(at 41.91 34.29 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "68250ec5-a19e-43f0-9252-1f0029d2270f")
-		)
-		(pin "IN_LOAD0" input
-			(at 41.91 30.48 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "05b957f2-33bc-4ab4-90b8-2793230c590f")
-		)
-		(pin "OUT_LOAD1_H" output
-			(at 74.93 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-			(uuid "94304498-68b7-44cc-bdc6-a4d0a333f734")
-		)
-		(pin "LOW_SIDE_LOAD" input
-			(at 41.91 45.72 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "96cd415b-f900-43f5-8658-99a1859c6337")
-		)
-		(pin "LOW_SIDE_COM" input
-			(at 41.91 49.53 180)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-			(uuid "9fc51b03-a2c4-49f6-ba7d-adc99078cc86")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1"
-					(page "7")
 				)
 			)
 		)
