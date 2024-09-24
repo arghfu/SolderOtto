@@ -6785,7 +6785,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0a3a954e-e398-4e98-9d55-47fd17233273")
-		(property "Reference" "#PWR0214"
+		(property "Reference" "#PWR0215"
 			(at 68.58 87.63 0)
 			(effects
 				(font
@@ -6835,7 +6835,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0214")
+					(reference "#PWR0215")
 					(unit 1)
 				)
 			)
@@ -7019,7 +7019,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "107465eb-0130-40ba-abec-a3d71afa5aa5")
-		(property "Reference" "C204"
+		(property "Reference" "C206"
 			(at 72.39 95.2499 0)
 			(effects
 				(font
@@ -7082,7 +7082,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "C204")
+					(reference "C206")
 					(unit 1)
 				)
 			)
@@ -8187,7 +8187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "417cfec8-0014-4b9d-88ae-2d6c1c322840")
-		(property "Reference" "#PWR0222"
+		(property "Reference" "#PWR0224"
 			(at 115.57 110.49 0)
 			(effects
 				(font
@@ -8237,7 +8237,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0222")
+					(reference "#PWR0224")
 					(unit 1)
 				)
 			)
@@ -8252,7 +8252,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4341ee68-cf7d-4868-af6f-9ebf5acdfa26")
-		(property "Reference" "#PWR0216"
+		(property "Reference" "#PWR0217"
 			(at 115.57 87.63 0)
 			(effects
 				(font
@@ -8302,7 +8302,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0216")
+					(reference "#PWR0217")
 					(unit 1)
 				)
 			)
@@ -8867,7 +8867,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4faa4196-98d8-47ae-accd-63ce72858b00")
-		(property "Reference" "C206"
+		(property "Reference" "C204"
 			(at 160.02 92.7099 0)
 			(effects
 				(font
@@ -8930,7 +8930,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "C206")
+					(reference "C204")
 					(unit 1)
 				)
 			)
@@ -9427,7 +9427,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5f52cdf1-0992-4c09-a629-bf15e30f200c")
-		(property "Reference" "#PWR0215"
+		(property "Reference" "#PWR0216"
 			(at 96.52 87.63 0)
 			(effects
 				(font
@@ -9477,7 +9477,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0215")
+					(reference "#PWR0216")
 					(unit 1)
 				)
 			)
@@ -9572,7 +9572,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "64fb96d8-0981-4f10-ad92-2243ec8db842")
-		(property "Reference" "C207"
+		(property "Reference" "C205"
 			(at 195.58 93.9799 0)
 			(effects
 				(font
@@ -9635,7 +9635,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "C207")
+					(reference "C205")
 					(unit 1)
 				)
 			)
@@ -9862,7 +9862,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "753f7a8d-bfe7-423a-8e20-a9ae817eeb6e")
-		(property "Reference" "C205"
+		(property "Reference" "C207"
 			(at 119.38 95.2499 0)
 			(effects
 				(font
@@ -9925,7 +9925,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "C205")
+					(reference "C207")
 					(unit 1)
 				)
 			)
@@ -10671,7 +10671,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "903ca0ea-5170-4980-8147-af8ad520ae1a")
-		(property "Reference" "#PWR0218"
+		(property "Reference" "#PWR0214"
 			(at 191.77 86.36 0)
 			(effects
 				(font
@@ -10721,7 +10721,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0218")
+					(reference "#PWR0214")
 					(unit 1)
 				)
 			)
@@ -11536,7 +11536,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a82f9ace-d057-4adb-8b1c-28a5c4e0da2c")
-		(property "Reference" "#PWR0217"
+		(property "Reference" "#PWR0218"
 			(at 143.51 87.63 0)
 			(effects
 				(font
@@ -11586,7 +11586,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0217")
+					(reference "#PWR0218")
 					(unit 1)
 				)
 			)
@@ -13852,7 +13852,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f2d44604-d960-4e86-b570-0eb1e7dbd87f")
-		(property "Reference" "#PWR0224"
+		(property "Reference" "#PWR0223"
 			(at 96.52 110.49 0)
 			(effects
 				(font
@@ -13902,7 +13902,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0224")
+					(reference "#PWR0223")
 					(unit 1)
 				)
 			)
@@ -14239,7 +14239,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fe52c3b5-a128-44f3-a57a-961d1dff4e6f")
-		(property "Reference" "#PWR0223"
+		(property "Reference" "#PWR0222"
 			(at 83.82 110.49 0)
 			(effects
 				(font
@@ -14289,7 +14289,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/1f74b07f-4a28-48ba-be90-ad5de8d466f3"
-					(reference "#PWR0223")
+					(reference "#PWR0222")
 					(unit 1)
 				)
 			)

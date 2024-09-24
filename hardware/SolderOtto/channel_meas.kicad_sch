@@ -5,259 +5,6 @@
 	(uuid "8b62c32e-0e40-4028-b2af-0df59a99dd89")
 	(paper "A3")
 	(lib_symbols
-		(symbol "Amplifier_Operational:OPA2277"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "OPA2277"
-				(at 0 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2277.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Dual High Precision Operational Amplifiers, DIP-8/SOIC-8"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_locked" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "dual opamp"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOIC*3.9x4.9mm*P1.27mm* DIP*W7.62mm* TO*99* OnSemi*Micro8* TSSOP*3x3mm*P0.65mm* TSSOP*4.4x3mm*P0.65mm* MSOP*3x3mm*P0.65mm* SSOP*3.9x4.9mm*P0.635mm* LFCSP*2x2mm*P0.5mm* *SIP* SOIC*5.3x6.2mm*P1.27mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "OPA2277_1_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OPA2277_2_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OPA2277_3_1"
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers hide)
 			(pin_names
@@ -1660,7 +1407,7 @@
 				)
 			)
 		)
-		(symbol "mylib_ic:OPA4186"
+		(symbol "mylib_ic:OPA2186"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -1672,7 +1419,7 @@
 					)
 				)
 			)
-			(property "Value" "OPA4186"
+			(property "Value" "OPA2186"
 				(at 1.016 -5.842 0)
 				(effects
 					(font
@@ -1680,7 +1427,7 @@
 					)
 				)
 			)
-			(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
+			(property "Footprint" ""
 				(at -1.27 0 0)
 				(effects
 					(font
@@ -1689,7 +1436,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4186.pdf"
+			(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
 				(at -1.27 0 0)
 				(effects
 					(font
@@ -1715,7 +1462,7 @@
 					)
 				)
 			)
-			(symbol "OPA4186_1_1"
+			(symbol "OPA2186_1_1"
 				(polyline
 					(pts
 						(xy -3.81 5.08) (xy -3.81 -5.08) (xy 6.35 0) (xy -3.81 5.08)
@@ -1783,7 +1530,7 @@
 					)
 				)
 			)
-			(symbol "OPA4186_2_1"
+			(symbol "OPA2186_2_1"
 				(polyline
 					(pts
 						(xy -3.81 5.08) (xy -3.81 -5.08) (xy 6.35 0) (xy -3.81 5.08)
@@ -1851,143 +1598,7 @@
 					)
 				)
 			)
-			(symbol "OPA4186_3_1"
-				(polyline
-					(pts
-						(xy -3.81 5.08) (xy -3.81 -5.08) (xy 6.35 0) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "10"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "8"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "9"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OPA4186_4_1"
-				(polyline
-					(pts
-						(xy -3.81 5.08) (xy -3.81 -5.08) (xy 6.35 0) (xy -3.81 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin input line
-					(at -6.35 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "12"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -6.35 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "13"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin output line
-					(at 8.89 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "14"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(symbol "OPA4186_5_1"
+			(symbol "OPA2186_3_1"
 				(pin power_in line
 					(at 0 -7.62 90)
 					(length 3.81)
@@ -1998,7 +1609,7 @@
 							)
 						)
 					)
-					(number "11"
+					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2016,7 +1627,7 @@
 							)
 						)
 					)
-					(number "4"
+					(number "8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3183,7 +2794,7 @@
 		(uuid "1adfa162-c9dd-4b26-a6da-514d6d087901")
 	)
 	(junction
-		(at 163.83 50.8)
+		(at 133.35 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2737149a-7c34-4c44-be7e-0d37ca6fb81f")
@@ -3207,7 +2818,7 @@
 		(uuid "4263948b-2e3c-4d2f-be7a-7c5e4cb367e7")
 	)
 	(junction
-		(at 217.17 49.53)
+		(at 186.69 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "472a8c54-656e-4121-a85d-30f08f0044f1")
@@ -3279,7 +2890,7 @@
 		(uuid "a3e17431-d69b-4a80-ac83-6a62fa217737")
 	)
 	(junction
-		(at 163.83 43.18)
+		(at 133.35 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a75ab2b7-5bbb-4d84-a5f6-b101d069d241")
@@ -3291,13 +2902,19 @@
 		(uuid "acaa2114-b720-4f97-85cd-f199567d2f5b")
 	)
 	(junction
+		(at 228.6 55.88)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b7bc19cf-4116-4feb-a59b-22116acad07a")
+	)
+	(junction
 		(at 281.94 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "be280102-9e14-4ca4-b62a-64451bbc4703")
 	)
 	(junction
-		(at 186.69 46.99)
+		(at 156.21 45.72)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "c05522a3-8a72-40b6-a1cf-fad1f6322377")
@@ -3321,19 +2938,25 @@
 		(uuid "d5a8a16b-6873-413a-aab5-ded91b96f292")
 	)
 	(junction
+		(at 228.6 38.1)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d72473bf-86d1-4c70-9566-91ae01550826")
+	)
+	(junction
 		(at 82.55 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ddfa8174-5a4b-47f7-8cda-08f4ffd77ef0")
 	)
 	(junction
-		(at 199.39 59.69)
+		(at 168.91 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e087836c-f120-4e93-9465-a6261d7736a4")
 	)
 	(junction
-		(at 240.03 49.53)
+		(at 209.55 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e234b848-2e94-475f-90cf-34c1ceac99f1")
@@ -3351,7 +2974,7 @@
 		(uuid "e8f35bda-783f-4c22-8eb8-7013db7a7914")
 	)
 	(junction
-		(at 228.6 49.53)
+		(at 198.12 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f22149de-a801-42dd-8764-1073c3467086")
@@ -3430,7 +3053,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 57.15) (xy 240.03 60.96)
+			(xy 209.55 55.88) (xy 209.55 59.69)
 		)
 		(stroke
 			(width 0)
@@ -3450,7 +3073,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 49.53) (xy 228.6 49.53)
+			(xy 195.58 48.26) (xy 198.12 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3460,7 +3083,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 31.75) (xy 186.69 31.75)
+			(xy 148.59 30.48) (xy 156.21 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3520,13 +3143,33 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 46.99) (xy 186.69 46.99)
+			(xy 152.4 45.72) (xy 156.21 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "11b42728-f1ab-409d-8153-8fe17c9e7fe1")
+	)
+	(wire
+		(pts
+			(xy 228.6 55.88) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "137d63be-87ac-487f-922c-911de974186f")
+	)
+	(wire
+		(pts
+			(xy 228.6 38.1) (xy 228.6 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "145f00a4-84ec-4f94-b502-55bb58b82313")
 	)
 	(wire
 		(pts
@@ -3550,7 +3193,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 49.53) (xy 228.6 55.88)
+			(xy 198.12 48.26) (xy 198.12 54.61)
 		)
 		(stroke
 			(width 0)
@@ -3620,7 +3263,17 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 50.8) (xy 163.83 57.15)
+			(xy 228.6 38.1) (xy 242.57 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1d8fa400-5f58-40d9-8484-91c2c255ad58")
+	)
+	(wire
+		(pts
+			(xy 133.35 49.53) (xy 133.35 55.88)
 		)
 		(stroke
 			(width 0)
@@ -3630,7 +3283,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 49.53) (xy 245.11 49.53)
+			(xy 209.55 48.26) (xy 214.63 48.26)
 		)
 		(stroke
 			(width 0)
@@ -3660,7 +3313,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 64.77) (xy 163.83 67.31)
+			(xy 133.35 63.5) (xy 133.35 66.04)
 		)
 		(stroke
 			(width 0)
@@ -3710,13 +3363,23 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 49.53) (xy 240.03 49.53)
+			(xy 198.12 48.26) (xy 209.55 48.26)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "29373b69-e8d2-42ee-aff0-0f8dd72da589")
+	)
+	(wire
+		(pts
+			(xy 242.57 57.15) (xy 242.57 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2968fab7-d254-4c89-86c6-cc9f93267b5b")
 	)
 	(wire
 		(pts
@@ -3740,13 +3403,23 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 43.18) (xy 163.83 43.18)
+			(xy 135.89 41.91) (xy 133.35 41.91)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "2c9ebc5d-58a7-4bad-92a4-0b41c8e7a10e")
+	)
+	(wire
+		(pts
+			(xy 242.57 46.99) (xy 242.57 49.53)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d6f1b9c-997b-4dc8-b6ed-ca4974f50d24")
 	)
 	(wire
 		(pts
@@ -3767,6 +3440,16 @@
 			(type default)
 		)
 		(uuid "2d9a0859-1fba-4664-ae19-ab0ffadabc6c")
+	)
+	(wire
+		(pts
+			(xy 242.57 64.77) (xy 242.57 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2dd093db-cd0f-41eb-8cb2-7b4b2dcdacf9")
 	)
 	(wire
 		(pts
@@ -3940,7 +3623,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 31.75) (xy 171.45 31.75)
+			(xy 133.35 30.48) (xy 140.97 30.48)
 		)
 		(stroke
 			(width 0)
@@ -4010,7 +3693,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 59.69) (xy 199.39 62.23)
+			(xy 168.91 58.42) (xy 168.91 60.96)
 		)
 		(stroke
 			(width 0)
@@ -4090,7 +3773,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 31.75) (xy 186.69 46.99)
+			(xy 156.21 30.48) (xy 156.21 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4220,7 +3903,7 @@
 	)
 	(wire
 		(pts
-			(xy 198.12 46.99) (xy 200.66 46.99)
+			(xy 167.64 45.72) (xy 170.18 45.72)
 		)
 		(stroke
 			(width 0)
@@ -4270,7 +3953,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 50.8) (xy 163.83 50.8)
+			(xy 110.49 49.53) (xy 133.35 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4320,7 +4003,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 49.53) (xy 166.37 50.8)
+			(xy 135.89 48.26) (xy 135.89 49.53)
 		)
 		(stroke
 			(width 0)
@@ -4350,7 +4033,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 44.45) (xy 167.64 44.45)
+			(xy 135.89 43.18) (xy 137.16 43.18)
 		)
 		(stroke
 			(width 0)
@@ -4380,7 +4063,7 @@
 	)
 	(wire
 		(pts
-			(xy 212.09 59.69) (xy 217.17 59.69)
+			(xy 181.61 58.42) (xy 186.69 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4400,7 +4083,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 69.85) (xy 199.39 71.12)
+			(xy 168.91 68.58) (xy 168.91 69.85)
 		)
 		(stroke
 			(width 0)
@@ -4520,6 +4203,16 @@
 	)
 	(wire
 		(pts
+			(xy 228.6 55.88) (xy 228.6 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8e0362c1-187a-4546-9c59-f006d06aedf1")
+	)
+	(wire
+		(pts
 			(xy 52.07 38.1) (xy 59.69 38.1)
 		)
 		(stroke
@@ -4527,6 +4220,16 @@
 			(type default)
 		)
 		(uuid "919a4c12-fd41-4f2a-8666-b4bf1559224f")
+	)
+	(wire
+		(pts
+			(xy 228.6 36.83) (xy 228.6 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "920c6070-ad08-4f13-9071-5c649e8741e4")
 	)
 	(wire
 		(pts
@@ -4560,7 +4263,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 59.69) (xy 217.17 49.53)
+			(xy 186.69 58.42) (xy 186.69 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4577,6 +4280,16 @@
 			(type default)
 		)
 		(uuid "9750fc06-7a45-434d-ada2-b9582140485e")
+	)
+	(wire
+		(pts
+			(xy 228.6 54.61) (xy 228.6 55.88)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "989d4f44-df93-498f-8386-ced27f7d14f8")
 	)
 	(wire
 		(pts
@@ -4620,7 +4333,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 44.45) (xy 166.37 43.18)
+			(xy 135.89 43.18) (xy 135.89 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4630,7 +4343,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 49.53) (xy 215.9 49.53)
+			(xy 186.69 48.26) (xy 185.42 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4680,7 +4393,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 43.18) (xy 163.83 43.18)
+			(xy 110.49 41.91) (xy 133.35 41.91)
 		)
 		(stroke
 			(width 0)
@@ -4700,7 +4413,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 59.69) (xy 204.47 59.69)
+			(xy 168.91 58.42) (xy 173.99 58.42)
 		)
 		(stroke
 			(width 0)
@@ -4900,7 +4613,7 @@
 	)
 	(wire
 		(pts
-			(xy 163.83 31.75) (xy 163.83 43.18)
+			(xy 133.35 30.48) (xy 133.35 41.91)
 		)
 		(stroke
 			(width 0)
@@ -5000,7 +4713,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 49.53) (xy 166.37 49.53)
+			(xy 137.16 48.26) (xy 135.89 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5010,7 +4723,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 63.5) (xy 228.6 71.12)
+			(xy 198.12 62.23) (xy 198.12 69.85)
 		)
 		(stroke
 			(width 0)
@@ -5080,7 +4793,7 @@
 	)
 	(wire
 		(pts
-			(xy 200.66 52.07) (xy 199.39 52.07)
+			(xy 170.18 50.8) (xy 168.91 50.8)
 		)
 		(stroke
 			(width 0)
@@ -5090,7 +4803,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 40.64) (xy 228.6 49.53)
+			(xy 198.12 39.37) (xy 198.12 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5200,7 +4913,7 @@
 	)
 	(wire
 		(pts
-			(xy 199.39 52.07) (xy 199.39 59.69)
+			(xy 168.91 50.8) (xy 168.91 58.42)
 		)
 		(stroke
 			(width 0)
@@ -5240,7 +4953,7 @@
 	)
 	(wire
 		(pts
-			(xy 186.69 46.99) (xy 190.5 46.99)
+			(xy 156.21 45.72) (xy 160.02 45.72)
 		)
 		(stroke
 			(width 0)
@@ -5360,7 +5073,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 49.53) (xy 218.44 49.53)
+			(xy 186.69 48.26) (xy 187.96 48.26)
 		)
 		(stroke
 			(width 0)
@@ -5370,7 +5083,7 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 38.1) (xy 240.03 41.91)
+			(xy 209.55 36.83) (xy 209.55 40.64)
 		)
 		(stroke
 			(width 0)
@@ -5490,6 +5203,16 @@
 	)
 	(wire
 		(pts
+			(xy 242.57 39.37) (xy 242.57 38.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f41a8ca5-8e22-459d-8051-e8676ec91e0f")
+	)
+	(wire
+		(pts
 			(xy 271.78 190.5) (xy 281.94 190.5)
 		)
 		(stroke
@@ -5500,7 +5223,7 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 50.8) (xy 163.83 50.8)
+			(xy 135.89 49.53) (xy 133.35 49.53)
 		)
 		(stroke
 			(width 0)
@@ -5540,7 +5263,7 @@
 		(uuid "254d3eb5-74ac-4dee-87bb-02dca623cf24")
 	)
 	(label "tip0_p"
-		(at 140.97 50.8 0)
+		(at 110.49 49.53 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5595,7 +5318,7 @@
 		(uuid "cb3f4a21-d344-4a38-a71b-4c7c270f4e51")
 	)
 	(label "tip0_m"
-		(at 140.97 43.18 0)
+		(at 110.49 41.91 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5681,7 +5404,7 @@
 	)
 	(hierarchical_label "T_{TIP}_{a}"
 		(shape passive)
-		(at 245.11 49.53 0)
+		(at 214.63 48.26 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -5843,15 +5566,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 199.39 66.04 0)
+		(at 168.91 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "020f4b96-a885-4cd2-824d-c336096f31b0")
-		(property "Reference" "R919"
-			(at 196.85 64.7699 0)
+		(property "Reference" "R817"
+			(at 166.37 63.4999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5860,7 +5583,7 @@
 			)
 		)
 		(property "Value" "2k7"
-			(at 196.85 67.3099 0)
+			(at 166.37 66.0399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5869,7 +5592,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 197.612 66.04 90)
+			(at 167.132 64.77 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5878,7 +5601,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 199.39 66.04 0)
+			(at 168.91 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5887,7 +5610,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 199.39 66.04 0)
+			(at 168.91 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5896,7 +5619,7 @@
 			)
 		)
 		(property "Digikey" "P2.70KHCT-ND"
-			(at 199.39 66.04 0)
+			(at 168.91 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5913,7 +5636,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R919")
+					(reference "R817")
 					(unit 1)
 				)
 			)
@@ -5928,7 +5651,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0366a530-c741-4d45-9379-03a51ffa711f")
-		(property "Reference" "#PWR0953"
+		(property "Reference" "#PWR0843"
 			(at 281.94 194.31 0)
 			(effects
 				(font
@@ -5978,7 +5701,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0953")
+					(reference "#PWR0843")
 					(unit 1)
 				)
 			)
@@ -5993,7 +5716,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "03c82d95-a586-445a-a798-e56f5633c229")
-		(property "Reference" "R925"
+		(property "Reference" "R825"
 			(at 46.99 167.6399 0)
 			(effects
 				(font
@@ -6062,7 +5785,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R925")
+					(reference "R825")
 					(unit 1)
 				)
 			)
@@ -6078,7 +5801,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "06876990-5715-420d-ab32-69bcffb384e2")
-		(property "Reference" "#PWR0922"
+		(property "Reference" "#PWR0818"
 			(at 39.37 91.44 0)
 			(effects
 				(font
@@ -6128,7 +5851,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0922")
+					(reference "#PWR0818")
 					(unit 1)
 				)
 			)
@@ -6143,7 +5866,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "106afeb2-3cc6-43c1-b696-c1f886442ddb")
-		(property "Reference" "TP904"
+		(property "Reference" "TP804"
 			(at 323.342 151.892 0)
 			(effects
 				(font
@@ -6204,7 +5927,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "TP904")
+					(reference "TP804")
 					(unit 1)
 				)
 			)
@@ -6220,7 +5943,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "11d010e2-e7f2-4f9c-9541-c643428f330f")
-		(property "Reference" "R909"
+		(property "Reference" "R805"
 			(at 42.926 41.656 90)
 			(effects
 				(font
@@ -6281,8 +6004,96 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R909")
+					(reference "R805")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mylib_ic:OPA2186")
+		(at 228.6 46.99 0)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "12e9c300-7484-4872-96e1-af48fefe269c")
+		(property "Reference" "U804"
+			(at 229.87 45.7199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "OPA2186"
+			(at 229.87 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 227.33 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 227.33 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 227.33 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "cc457bac-f707-41c3-bc7a-0418a7670aff")
+		)
+		(pin "3"
+			(uuid "2bc6f710-6d25-43f3-82ab-4ef3c9d727cc")
+		)
+		(pin "4"
+			(uuid "5a2762c4-f7e5-4463-a4c0-4114ecb79b33")
+		)
+		(pin "6"
+			(uuid "cfc19879-00a2-4377-ad57-4a3ef0721add")
+		)
+		(pin "7"
+			(uuid "a9205d78-d612-4ceb-9e8b-13e6a3d55bd4")
+		)
+		(pin "5"
+			(uuid "712705c0-b9b8-4db9-968c-5e3c06c45d9b")
+		)
+		(pin "1"
+			(uuid "edc7c304-3529-4ad2-81f3-badb657577f8")
+		)
+		(pin "2"
+			(uuid "04211e14-c9ab-4520-ac03-2b140bcd6c63")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U804")
+					(unit 3)
 				)
 			)
 		)
@@ -6297,7 +6108,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15a7e879-199c-448b-b188-7362db22f3b0")
-		(property "Reference" "F901"
+		(property "Reference" "F801"
 			(at 254 187.9599 0)
 			(effects
 				(font
@@ -6360,7 +6171,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "F901")
+					(reference "F801")
 					(unit 1)
 				)
 			)
@@ -6376,7 +6187,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "15acb41b-5906-4a53-ab3a-07b4eaf20c67")
-		(property "Reference" "#PWR0946"
+		(property "Reference" "#PWR0836"
 			(at 287.02 189.23 0)
 			(effects
 				(font
@@ -6426,7 +6237,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0946")
+					(reference "#PWR0836")
 					(unit 1)
 				)
 			)
@@ -6441,7 +6252,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "15ca2a76-413f-4a85-9365-5ae02f30a253")
-		(property "Reference" "#PWR0941"
+		(property "Reference" "#PWR0831"
 			(at 154.94 163.83 0)
 			(effects
 				(font
@@ -6491,7 +6302,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0941")
+					(reference "#PWR0831")
 					(unit 1)
 				)
 			)
@@ -6507,7 +6318,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "16c21861-fdc5-4985-bc60-cd08df3ef013")
-		(property "Reference" "#PWR0904"
+		(property "Reference" "#PWR0804"
 			(at 396.24 66.04 0)
 			(effects
 				(font
@@ -6557,7 +6368,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0904")
+					(reference "#PWR0804")
 					(unit 1)
 				)
 			)
@@ -6572,7 +6383,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "17327072-4eff-421b-abfa-84f8e9fba05b")
-		(property "Reference" "R914"
+		(property "Reference" "R815"
 			(at 42.926 62.484 90)
 			(effects
 				(font
@@ -6633,7 +6444,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R914")
+					(reference "R815")
 					(unit 1)
 				)
 			)
@@ -6648,7 +6459,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "19290083-5db4-493d-8c6c-a1702f17df6a")
-		(property "Reference" "#PWR0933"
+		(property "Reference" "#PWR0825"
 			(at 281.94 144.78 0)
 			(effects
 				(font
@@ -6699,7 +6510,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0933")
+					(reference "#PWR0825")
 					(unit 1)
 				)
 			)
@@ -6707,15 +6518,15 @@
 	)
 	(symbol
 		(lib_id "mylib_diodes:BAT54SFILM")
-		(at 240.03 49.53 90)
+		(at 209.55 48.26 90)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "1d89aa19-a40f-454b-8966-904df2246f1a")
-		(property "Reference" "D901"
-			(at 240.538 44.196 90)
+		(property "Reference" "D801"
+			(at 210.058 42.926 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6724,7 +6535,7 @@
 			)
 		)
 		(property "Value" "BAT54SFILM"
-			(at 241.046 55.88 90)
+			(at 210.566 54.61 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6733,7 +6544,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23"
-			(at 240.03 49.53 0)
+			(at 209.55 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6742,7 +6553,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 49.53 0)
+			(at 209.55 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6751,7 +6562,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 240.03 49.53 0)
+			(at 209.55 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6760,7 +6571,7 @@
 			)
 		)
 		(property "Digikey" "497-2522-1-ND"
-			(at 240.03 49.53 0)
+			(at 209.55 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6780,7 +6591,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "D901")
+					(reference "D801")
 					(unit 1)
 				)
 			)
@@ -6796,7 +6607,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1ef561f2-3e31-4812-8e47-59b957590344")
-		(property "Reference" "#PWR0943"
+		(property "Reference" "#PWR0833"
 			(at 124.46 185.42 0)
 			(effects
 				(font
@@ -6846,7 +6657,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0943")
+					(reference "#PWR0833")
 					(unit 1)
 				)
 			)
@@ -6862,7 +6673,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "200e603d-3ae2-46f2-a2e0-ccf48003d75a")
-		(property "Reference" "R928"
+		(property "Reference" "R828"
 			(at 262.89 168.9099 0)
 			(effects
 				(font
@@ -6925,40 +6736,39 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R928")
+					(reference "R828")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "mylib_ic:OPA4186")
-		(at 297.18 53.34 0)
-		(mirror x)
-		(unit 1)
+		(lib_id "mylib_ic:OPA2186")
+		(at 330.2 55.88 0)
+		(unit 2)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "28c25f04-0f98-48c4-970f-f980267c50b3")
-		(property "Reference" "U807"
-			(at 298.45 63.5 0)
+		(uuid "2ca5cc1d-3fec-435c-983b-66356489316a")
+		(property "Reference" "U801"
+			(at 330.2 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "OPA4186"
-			(at 298.45 60.96 0)
+		(property "Value" "OPA2186"
+			(at 330.2 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 295.91 53.34 0)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 328.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6966,8 +6776,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4186.pdf"
-			(at 295.91 53.34 0)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 328.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6976,7 +6786,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 295.91 53.34 0)
+			(at 328.93 55.88 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6984,52 +6794,121 @@
 				(hide yes)
 			)
 		)
-		(pin "12"
-			(uuid "08732a76-d50e-414b-ac72-62ae0c506339")
-		)
-		(pin "13"
-			(uuid "fff76934-c6d4-4fe0-adca-a6e807620909")
-		)
-		(pin "8"
-			(uuid "dac0d507-e8a1-4239-ac27-1d7bbb83a746")
-		)
-		(pin "10"
-			(uuid "5d8b5973-430a-42a9-9034-bdd742800ca8")
-		)
-		(pin "14"
-			(uuid "6ddf82c6-cb67-414b-b1dd-be82f2b33f1e")
+		(pin "5"
+			(uuid "c1f19801-c816-4107-8480-b0705405f087")
 		)
 		(pin "3"
-			(uuid "cde34154-3601-42e2-9b20-125293f56fc0")
-		)
-		(pin "1"
-			(uuid "f25c20d5-f87e-46ec-8118-ee219ac0d45d")
+			(uuid "f095d6aa-7e38-4d02-a5a6-21c9994feb04")
 		)
 		(pin "2"
-			(uuid "f3ee9c13-b423-484d-931c-0486ab3e54a9")
+			(uuid "d1ae0969-78b1-4106-b65e-76c8b7e03b7a")
 		)
-		(pin "11"
-			(uuid "41bded56-7fe0-4a48-a45d-b6bb467437c7")
-		)
-		(pin "9"
-			(uuid "ee605880-695b-4619-aec2-ea3856a94e9e")
-		)
-		(pin "5"
-			(uuid "4613ef01-c9cb-47cc-93d7-0bd8c8fcc9a0")
-		)
-		(pin "6"
-			(uuid "5312c811-822f-45fb-9d0d-bf5edf739d9e")
+		(pin "1"
+			(uuid "49b53e1f-d08c-48b9-880f-07085e14ea3c")
 		)
 		(pin "7"
-			(uuid "c23155c3-1e4c-4966-b307-fbde421ba922")
+			(uuid "01691a44-1191-4daa-a7d2-504cd1fa1d16")
 		)
 		(pin "4"
-			(uuid "68311300-81fe-4d2a-9a23-5ae82046ffe9")
+			(uuid "4b04a98c-05d4-49b0-961a-bc5db028520f")
+		)
+		(pin "6"
+			(uuid "38005089-5e23-4bb0-84d5-1a33038b3b2f")
+		)
+		(pin "8"
+			(uuid "7d1775e0-c0ae-4d95-ba35-984111bba6cf")
 		)
 		(instances
 			(project ""
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U807")
+					(reference "U801")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mylib_ic:OPA2186")
+		(at 143.51 45.72 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "2ff53d85-3472-4a02-bba8-0831316f8b70")
+		(property "Reference" "U804"
+			(at 144.78 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA2186"
+			(at 144.78 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 142.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 142.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 142.24 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "cc457bac-f707-41c3-bc7a-0418a7670aff")
+		)
+		(pin "3"
+			(uuid "2bc6f710-6d25-43f3-82ab-4ef3c9d727cc")
+		)
+		(pin "4"
+			(uuid "5a2762c4-f7e5-4463-a4c0-4114ecb79b33")
+		)
+		(pin "6"
+			(uuid "cfc19879-00a2-4377-ad57-4a3ef0721add")
+		)
+		(pin "7"
+			(uuid "a9205d78-d612-4ceb-9e8b-13e6a3d55bd4")
+		)
+		(pin "5"
+			(uuid "712705c0-b9b8-4db9-968c-5e3c06c45d9b")
+		)
+		(pin "1"
+			(uuid "edc7c304-3529-4ad2-81f3-badb657577f8")
+		)
+		(pin "2"
+			(uuid "04211e14-c9ab-4520-ac03-2b140bcd6c63")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U804")
 					(unit 1)
 				)
 			)
@@ -7044,7 +6923,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "31b2af0f-eb1f-4ba6-8451-06b670b7e7cb")
-		(property "Reference" "D902"
+		(property "Reference" "D802"
 			(at 363.728 50.546 90)
 			(effects
 				(font
@@ -7110,7 +6989,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "D902")
+					(reference "D802")
 					(unit 1)
 				)
 			)
@@ -7118,15 +6997,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 163.83 60.96 0)
+		(at 133.35 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "35674dbc-dd53-4ecb-afc4-9d64aaafe364")
-		(property "Reference" "R917"
-			(at 161.29 59.6899 0)
+		(property "Reference" "R816"
+			(at 130.81 58.4199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7135,7 +7014,7 @@
 			)
 		)
 		(property "Value" "590k"
-			(at 161.29 62.2299 0)
+			(at 130.81 60.9599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7144,7 +7023,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 162.052 60.96 90)
+			(at 131.572 59.69 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7153,7 +7032,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 60.96 0)
+			(at 133.35 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7162,7 +7041,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 163.83 60.96 0)
+			(at 133.35 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7171,7 +7050,7 @@
 			)
 		)
 		(property "Digikey" "311-590KHRCT-ND"
-			(at 163.83 60.96 0)
+			(at 133.35 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7188,7 +7067,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R917")
+					(reference "R816")
 					(unit 1)
 				)
 			)
@@ -7203,7 +7082,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "37f9c2b8-046f-4469-bcb8-1fe786a01ca5")
-		(property "Reference" "#PWR0944"
+		(property "Reference" "#PWR0834"
 			(at 154.94 176.53 0)
 			(effects
 				(font
@@ -7253,7 +7132,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0944")
+					(reference "#PWR0834")
 					(unit 1)
 				)
 			)
@@ -7268,7 +7147,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3907d76d-3762-4f16-a18e-4af840571f1b")
-		(property "Reference" "#PWR0908"
+		(property "Reference" "#PWR0809"
 			(at 36.83 73.66 0)
 			(effects
 				(font
@@ -7318,7 +7197,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0908")
+					(reference "#PWR0809")
 					(unit 1)
 				)
 			)
@@ -7334,7 +7213,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b17f46f-da47-465e-b852-5e2f51a8303c")
-		(property "Reference" "C907"
+		(property "Reference" "C807"
 			(at 43.18 74.9299 0)
 			(effects
 				(font
@@ -7397,7 +7276,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C907")
+					(reference "C807")
 					(unit 1)
 				)
 			)
@@ -7413,7 +7292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3b536faf-c566-4ebc-9f73-dd6430437175")
-		(property "Reference" "R929"
+		(property "Reference" "R829"
 			(at 303.53 163.83 90)
 			(effects
 				(font
@@ -7474,7 +7353,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R929")
+					(reference "R829")
 					(unit 1)
 				)
 			)
@@ -7490,7 +7369,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3c89b0d8-c3b1-41bb-8e45-c25c3eab2791")
-		(property "Reference" "#PWR0916"
+		(property "Reference" "#PWR0816"
 			(at 396.24 83.82 0)
 			(effects
 				(font
@@ -7540,7 +7419,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0916")
+					(reference "#PWR0816")
 					(unit 1)
 				)
 			)
@@ -7556,7 +7435,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3cee53e6-1606-41c4-b29e-885eab2cf410")
-		(property "Reference" "R932"
+		(property "Reference" "R832"
 			(at 264.16 187.9599 0)
 			(effects
 				(font
@@ -7619,7 +7498,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R932")
+					(reference "R832")
 					(unit 1)
 				)
 			)
@@ -7635,7 +7514,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "41d19a46-593b-4ff9-bdef-27323145ea00")
-		(property "Reference" "R923"
+		(property "Reference" "R823"
 			(at 312.42 161.2899 0)
 			(effects
 				(font
@@ -7698,7 +7577,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R923")
+					(reference "R823")
 					(unit 1)
 				)
 			)
@@ -7714,7 +7593,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "42141dbf-24a2-4b42-84b3-7353a7cc07f5")
-		(property "Reference" "R930"
+		(property "Reference" "R830"
 			(at 60.96 167.64 90)
 			(effects
 				(font
@@ -7775,7 +7654,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R930")
+					(reference "R830")
 					(unit 1)
 				)
 			)
@@ -7790,7 +7669,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "50064bf8-987d-4a6f-af60-2174a51e7ccf")
-		(property "Reference" "R918"
+		(property "Reference" "R819"
 			(at 284.48 66.0399 0)
 			(effects
 				(font
@@ -7853,7 +7732,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R918")
+					(reference "R819")
 					(unit 1)
 				)
 			)
@@ -7868,7 +7747,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "552d28d9-9636-4c85-8afd-c4858ef60f10")
-		(property "Reference" "R908"
+		(property "Reference" "R811"
 			(at 317.5 50.8 90)
 			(effects
 				(font
@@ -7929,7 +7808,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R908")
+					(reference "R811")
 					(unit 1)
 				)
 			)
@@ -7944,7 +7823,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "55d0cf56-a3d1-4f7a-8e60-5e42a6764693")
-		(property "Reference" "#PWR0814"
+		(property "Reference" "#PWR0808"
 			(at 382.27 63.5 0)
 			(effects
 				(font
@@ -7994,7 +7873,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0814")
+					(reference "#PWR0808")
 					(unit 1)
 				)
 			)
@@ -8002,15 +7881,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 194.31 46.99 90)
+		(at 163.83 45.72 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "56a5cda9-d522-44f7-abaf-81d08b620dc3")
-		(property "Reference" "R907"
-			(at 194.31 44.45 90)
+		(property "Reference" "R807"
+			(at 163.83 43.18 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8018,7 +7897,7 @@
 			)
 		)
 		(property "Value" "2k7"
-			(at 194.31 49.53 90)
+			(at 163.83 48.26 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8026,7 +7905,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 194.31 48.768 90)
+			(at 163.83 47.498 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8035,7 +7914,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 194.31 46.99 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8044,7 +7923,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 194.31 46.99 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8053,7 +7932,7 @@
 			)
 		)
 		(property "Digikey" "P2.70KHCT-ND"
-			(at 194.31 46.99 0)
+			(at 163.83 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8070,7 +7949,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R907")
+					(reference "R807")
 					(unit 1)
 				)
 			)
@@ -8086,7 +7965,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "59e59aae-347f-4ae0-929b-0f7c52c5f889")
-		(property "Reference" "C912"
+		(property "Reference" "C810"
 			(at 95.25 76.1999 0)
 			(effects
 				(font
@@ -8149,7 +8028,72 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C912")
+					(reference "C810")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:-5V")
+		(at 228.6 57.15 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5a029b2b-74e6-4c91-9076-3586bd95c954")
+		(property "Reference" "#PWR0823"
+			(at 228.6 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "-5V"
+			(at 228.6 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"-5V\""
+			(at 228.6 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c7926252-c18e-4b54-9f0e-858a55208351")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0823")
 					(unit 1)
 				)
 			)
@@ -8164,7 +8108,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5a6a495a-e1b0-41a6-aff1-8ade157820aa")
-		(property "Reference" "R906"
+		(property "Reference" "R810"
 			(at 42.926 54.864 90)
 			(effects
 				(font
@@ -8225,7 +8169,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R906")
+					(reference "R810")
 					(unit 1)
 				)
 			)
@@ -8233,15 +8177,15 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 228.6 40.64 0)
+		(at 198.12 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "5a92cd78-8ac9-4c12-818a-bd096ab3f2c5")
-		(property "Reference" "TP901"
-			(at 225.552 35.052 0)
+		(property "Reference" "TP801"
+			(at 195.072 33.782 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8250,7 +8194,7 @@
 			)
 		)
 		(property "Value" "T_{TIP}"
-			(at 231.14 38.6079 0)
+			(at 200.66 37.3379 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8260,7 +8204,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Keystone_5015_Micro-Minature"
-			(at 233.68 40.64 0)
+			(at 203.2 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8269,7 +8213,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 233.68 40.64 0)
+			(at 203.2 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8278,7 +8222,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 228.6 40.64 0)
+			(at 198.12 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8287,7 +8231,7 @@
 			)
 		)
 		(property "Digikey" "36-5015CT-ND"
-			(at 228.6 40.64 0)
+			(at 198.12 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8301,7 +8245,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "TP901")
+					(reference "TP801")
 					(unit 1)
 				)
 			)
@@ -8317,7 +8261,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5ba765d0-ff94-4f9f-845b-1ff3b7f83653")
-		(property "Reference" "#PWR0924"
+		(property "Reference" "#PWR0820"
 			(at 82.55 91.44 0)
 			(effects
 				(font
@@ -8367,7 +8311,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0924")
+					(reference "#PWR0820")
 					(unit 1)
 				)
 			)
@@ -8383,7 +8327,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5c3d08d8-e269-4d0d-be83-fec3c27499d8")
-		(property "Reference" "R922"
+		(property "Reference" "R822"
 			(at 116.84 161.2899 0)
 			(effects
 				(font
@@ -8446,7 +8390,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R922")
+					(reference "R822")
 					(unit 1)
 				)
 			)
@@ -8461,7 +8405,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "5cebcd64-3313-4cfb-b2d3-4dd007e6a7e3")
-		(property "Reference" "D903"
+		(property "Reference" "D803"
 			(at 124.968 163.83 90)
 			(effects
 				(font
@@ -8528,7 +8472,73 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "D903")
+					(reference "D803")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 242.57 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "600abc0e-bf1c-4dd2-87d5-d5a3b238f838")
+		(property "Reference" "#PWR0824"
+			(at 242.57 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 242.57 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 242.57 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a94769b9-42be-4382-a3ef-5929e92383d1")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0824")
 					(unit 1)
 				)
 			)
@@ -8543,7 +8553,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "60989420-24fe-4da1-8b34-050835775e6d")
-		(property "Reference" "D904"
+		(property "Reference" "D804"
 			(at 320.548 165.1 90)
 			(effects
 				(font
@@ -8610,112 +8620,8 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "D904")
+					(reference "D804")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mylib_ic:OPA4186")
-		(at 330.2 55.88 0)
-		(unit 4)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "62930285-2e7b-43ed-a56f-524565f972e8")
-		(property "Reference" "U807"
-			(at 331.47 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA4186"
-			(at 331.47 48.26 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 328.93 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4186.pdf"
-			(at 328.93 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 328.93 55.88 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "08732a76-d50e-414b-ac72-62ae0c506339")
-		)
-		(pin "13"
-			(uuid "fff76934-c6d4-4fe0-adca-a6e807620909")
-		)
-		(pin "8"
-			(uuid "dac0d507-e8a1-4239-ac27-1d7bbb83a746")
-		)
-		(pin "10"
-			(uuid "5d8b5973-430a-42a9-9034-bdd742800ca8")
-		)
-		(pin "14"
-			(uuid "6ddf82c6-cb67-414b-b1dd-be82f2b33f1e")
-		)
-		(pin "3"
-			(uuid "cde34154-3601-42e2-9b20-125293f56fc0")
-		)
-		(pin "1"
-			(uuid "f25c20d5-f87e-46ec-8118-ee219ac0d45d")
-		)
-		(pin "2"
-			(uuid "f3ee9c13-b423-484d-931c-0486ab3e54a9")
-		)
-		(pin "11"
-			(uuid "41bded56-7fe0-4a48-a45d-b6bb467437c7")
-		)
-		(pin "9"
-			(uuid "ee605880-695b-4619-aec2-ea3856a94e9e")
-		)
-		(pin "5"
-			(uuid "4613ef01-c9cb-47cc-93d7-0bd8c8fcc9a0")
-		)
-		(pin "6"
-			(uuid "5312c811-822f-45fb-9d0d-bf5edf739d9e")
-		)
-		(pin "7"
-			(uuid "c23155c3-1e4c-4966-b307-fbde421ba922")
-		)
-		(pin "4"
-			(uuid "68311300-81fe-4d2a-9a23-5ae82046ffe9")
-		)
-		(instances
-			(project ""
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U807")
-					(unit 4)
 				)
 			)
 		)
@@ -8730,7 +8636,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "656f5069-7ece-440c-b512-f6c33804539b")
-		(property "Reference" "R926"
+		(property "Reference" "R826"
 			(at 105.41 162.56 90)
 			(effects
 				(font
@@ -8791,7 +8697,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R926")
+					(reference "R826")
 					(unit 1)
 				)
 			)
@@ -8807,7 +8713,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "66cbd89c-255e-4906-8cc3-03e07e8b1f45")
-		(property "Reference" "#PWR0948"
+		(property "Reference" "#PWR0838"
 			(at 320.04 191.77 0)
 			(effects
 				(font
@@ -8857,7 +8763,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0948")
+					(reference "#PWR0838")
 					(unit 1)
 				)
 			)
@@ -8872,7 +8778,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "6d2785e1-0453-461a-ac9c-7dafce3420f9")
-		(property "Reference" "#PWR0939"
+		(property "Reference" "#PWR0829"
 			(at 309.88 160.02 0)
 			(effects
 				(font
@@ -8922,93 +8828,8 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0939")
+					(reference "#PWR0829")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OPA2277")
-		(at 208.28 49.53 0)
-		(unit 2)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d662891-a910-4eea-9121-ab4bfb3303a2")
-		(property "Reference" "U808"
-			(at 208.28 42.164 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA2277"
-			(at 208.28 39.624 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 208.28 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2277.pdf"
-			(at 208.28 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Precision Operational Amplifiers, DIP-8/SOIC-8"
-			(at 208.28 49.53 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "b88ddf16-6fc8-49ac-85a8-b75b7939bc11")
-		)
-		(pin "8"
-			(uuid "92b17cba-f446-4b07-93d3-f3ed87b147b1")
-		)
-		(pin "5"
-			(uuid "744f2735-c983-4672-bdf5-239fa7389283")
-		)
-		(pin "2"
-			(uuid "39551c35-3e48-46d6-a8af-ee686a557c86")
-		)
-		(pin "6"
-			(uuid "bf90962a-9c64-4919-ab24-3111c14689b6")
-		)
-		(pin "3"
-			(uuid "e7840f42-c6e6-44ef-bc82-f754a83ee0b2")
-		)
-		(pin "1"
-			(uuid "1a9bb2b7-646d-4530-9c36-9cc7b84b7c56")
-		)
-		(pin "4"
-			(uuid "d0ba700c-89f0-4610-a2d5-50e5f54d6ee2")
-		)
-		(instances
-			(project ""
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U808")
-					(unit 2)
 				)
 			)
 		)
@@ -9023,7 +8844,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7264537c-d931-4512-b92f-b2e91fa4f1f9")
-		(property "Reference" "#PWR0951"
+		(property "Reference" "#PWR0841"
 			(at 163.83 198.12 0)
 			(effects
 				(font
@@ -9073,7 +8894,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0951")
+					(reference "#PWR0841")
 					(unit 1)
 				)
 			)
@@ -9088,7 +8909,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "75e9588e-be1e-44c3-87a1-4b5c119f7b75")
-		(property "Reference" "R905"
+		(property "Reference" "R803"
 			(at 42.926 39.624 90)
 			(effects
 				(font
@@ -9149,7 +8970,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R905")
+					(reference "R803")
 					(unit 1)
 				)
 			)
@@ -9165,7 +8986,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "77dd5e9c-31d1-40e5-bc89-faf8ce57e26c")
-		(property "Reference" "C906"
+		(property "Reference" "C806"
 			(at 400.05 69.8499 0)
 			(effects
 				(font
@@ -9228,7 +9049,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C906")
+					(reference "C806")
 					(unit 1)
 				)
 			)
@@ -9244,7 +9065,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "782946e3-5992-45d9-8ba9-ccfb638933a4")
-		(property "Reference" "#PWR0919"
+		(property "Reference" "#PWR0814"
 			(at 322.58 83.82 0)
 			(effects
 				(font
@@ -9294,7 +9115,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0919")
+					(reference "#PWR0814")
 					(unit 1)
 				)
 			)
@@ -9309,7 +9130,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "7a646889-6eb9-48a0-8a84-36fa6bed269a")
-		(property "Reference" "#PWR0914"
+		(property "Reference" "#PWR0810"
 			(at 82.55 73.66 0)
 			(effects
 				(font
@@ -9359,7 +9180,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0914")
+					(reference "#PWR0810")
 					(unit 1)
 				)
 			)
@@ -9367,7 +9188,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 240.03 60.96 0)
+		(at 209.55 59.69 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9375,8 +9196,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bae269b-ce01-4d49-8e92-fa848cbfc66e")
-		(property "Reference" "#PWR0906"
-			(at 240.03 67.31 0)
+		(property "Reference" "#PWR0805"
+			(at 209.55 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9385,7 +9206,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 66.04 0)
+			(at 209.55 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9393,7 +9214,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 60.96 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9402,7 +9223,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 60.96 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9411,7 +9232,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 240.03 60.96 0)
+			(at 209.55 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9425,7 +9246,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0906")
+					(reference "#PWR0805")
 					(unit 1)
 				)
 			)
@@ -9441,7 +9262,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7e57c09a-10fd-4987-abd4-d6f7141613a8")
-		(property "Reference" "C921"
+		(property "Reference" "C815"
 			(at 69.85 167.6399 0)
 			(effects
 				(font
@@ -9504,7 +9325,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C921")
+					(reference "C815")
 					(unit 1)
 				)
 			)
@@ -9520,7 +9341,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "82fbf73f-423a-4a66-89a1-23186b04802b")
-		(property "Reference" "#PWR0952"
+		(property "Reference" "#PWR0842"
 			(at 251.46 201.93 0)
 			(effects
 				(font
@@ -9570,7 +9391,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0952")
+					(reference "#PWR0842")
 					(unit 1)
 				)
 			)
@@ -9586,7 +9407,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85766a58-1955-43c5-a8f6-db084bdba48e")
-		(property "Reference" "#PWR0947"
+		(property "Reference" "#PWR0837"
 			(at 309.88 190.5 0)
 			(effects
 				(font
@@ -9636,7 +9457,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0947")
+					(reference "#PWR0837")
 					(unit 1)
 				)
 			)
@@ -9652,7 +9473,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "85d2738e-e803-4d0a-afa5-536525f3b2c8")
-		(property "Reference" "#PWR0920"
+		(property "Reference" "#PWR0815"
 			(at 351.79 83.82 0)
 			(effects
 				(font
@@ -9702,7 +9523,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0920")
+					(reference "#PWR0815")
 					(unit 1)
 				)
 			)
@@ -9718,7 +9539,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "86ff61a4-4011-4dab-8efd-d2d8b80d6672")
-		(property "Reference" "R910"
+		(property "Reference" "R813"
 			(at 42.926 56.896 90)
 			(effects
 				(font
@@ -9779,7 +9600,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R910")
+					(reference "R813")
 					(unit 1)
 				)
 			)
@@ -9787,7 +9608,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 228.6 59.69 0)
+		(at 198.12 58.42 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -9795,8 +9616,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8734971d-0620-456d-9471-20dafacb6f74")
-		(property "Reference" "C904"
-			(at 232.41 58.4199 0)
+		(property "Reference" "C804"
+			(at 201.93 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9805,7 +9626,7 @@
 			)
 		)
 		(property "Value" "1n"
-			(at 232.41 60.9599 0)
+			(at 201.93 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9814,7 +9635,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 229.5652 63.5 0)
+			(at 199.0852 62.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9823,7 +9644,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 228.6 59.69 0)
+			(at 198.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9832,7 +9653,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 228.6 59.69 0)
+			(at 198.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9841,7 +9662,7 @@
 			)
 		)
 		(property "Digikey" "399-C0603C102K5RAC7867CT-ND"
-			(at 228.6 59.69 0)
+			(at 198.12 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9858,7 +9679,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C904")
+					(reference "C804")
 					(unit 1)
 				)
 			)
@@ -9874,7 +9695,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "87f1037a-ee48-4a26-b4c6-c2b1ada8177b")
-		(property "Reference" "#PWR0907"
+		(property "Reference" "#PWR0807"
 			(at 363.22 73.66 0)
 			(effects
 				(font
@@ -9924,7 +9745,73 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0907")
+					(reference "#PWR0807")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+8V")
+		(at 228.6 36.83 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "87f31685-ff9f-4c64-9103-92a6de0c84e7")
+		(property "Reference" "#PWR0817"
+			(at 228.6 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+8V"
+			(at 226.568 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 228.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 228.6 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ec3d4c8d-43de-4beb-af09-f18d4a852662")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0817")
 					(unit 1)
 				)
 			)
@@ -9940,7 +9827,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a687048-6703-4903-bbab-9e4e27160363")
-		(property "Reference" "C920"
+		(property "Reference" "C814"
 			(at 167.64 165.0999 0)
 			(effects
 				(font
@@ -10003,7 +9890,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C920")
+					(reference "C814")
 					(unit 1)
 				)
 			)
@@ -10018,7 +9905,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8b52ff7a-2d67-4d03-8cb5-5596dd21abb5")
-		(property "Reference" "#PWR0938"
+		(property "Reference" "#PWR0828"
 			(at 124.46 160.02 0)
 			(effects
 				(font
@@ -10068,7 +9955,86 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0938")
+					(reference "#PWR0828")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 242.57 43.18 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8c46a9a5-8abe-4a2b-bc9f-9829c11ab826")
+		(property "Reference" "C811"
+			(at 246.38 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 246.38 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 243.5352 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 242.57 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 242.57 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6d8cefa4-516d-46e7-aeca-b2d085f3b57a")
+		)
+		(pin "2"
+			(uuid "931c51a5-2ebd-47d4-b348-cd5b362cb431")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "C811")
 					(unit 1)
 				)
 			)
@@ -10084,7 +10050,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ecaa2d5-cc93-4589-9ca6-113334c7ac38")
-		(property "Reference" "#PWR0913"
+		(property "Reference" "#PWR0813"
 			(at 287.02 80.01 0)
 			(effects
 				(font
@@ -10134,7 +10100,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0913")
+					(reference "#PWR0813")
 					(unit 1)
 				)
 			)
@@ -10150,7 +10116,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8f30c21d-0a29-40ce-8f22-dae259f324b1")
-		(property "Reference" "U806"
+		(property "Reference" "U803"
 			(at 69.85 29.21 0)
 			(effects
 				(font
@@ -10264,7 +10230,7 @@
 		(instances
 			(project ""
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U806")
+					(reference "U803")
 					(unit 1)
 				)
 			)
@@ -10280,7 +10246,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9402445b-f8c7-43f8-b53d-0e4778b997eb")
-		(property "Reference" "#PWR0923"
+		(property "Reference" "#PWR0819"
 			(at 52.07 91.44 0)
 			(effects
 				(font
@@ -10330,7 +10296,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0923")
+					(reference "#PWR0819")
 					(unit 1)
 				)
 			)
@@ -10338,15 +10304,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 222.25 49.53 90)
+		(at 191.77 48.26 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "94c0d067-fbc8-4b4b-9553-d6413f17252a")
-		(property "Reference" "R911"
-			(at 222.25 46.99 90)
+		(property "Reference" "R808"
+			(at 191.77 45.72 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10354,7 +10320,7 @@
 			)
 		)
 		(property "Value" "2k2"
-			(at 222.25 52.07 90)
+			(at 191.77 50.8 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10362,7 +10328,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 222.25 51.308 90)
+			(at 191.77 50.038 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10371,7 +10337,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 222.25 49.53 0)
+			(at 191.77 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10380,7 +10346,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 222.25 49.53 0)
+			(at 191.77 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10389,7 +10355,7 @@
 			)
 		)
 		(property "Digikey" "A129692CT-ND"
-			(at 222.25 49.53 0)
+			(at 191.77 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10406,7 +10372,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R911")
+					(reference "R808")
 					(unit 1)
 				)
 			)
@@ -10421,7 +10387,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "952e6d3e-487f-4831-88cc-29d334425ddb")
-		(property "Reference" "R903"
+		(property "Reference" "R802"
 			(at 42.926 34.29 90)
 			(effects
 				(font
@@ -10482,7 +10448,86 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R903")
+					(reference "R802")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 242.57 60.96 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "95707246-056b-46db-a99f-29bc21291af1")
+		(property "Reference" "C812"
+			(at 246.38 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100n"
+			(at 246.38 62.2299 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 243.5352 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 242.57 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 242.57 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "1276-1000-1-ND"
+			(at 242.57 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "353d4e40-f551-4162-be80-06146300d0ab")
+		)
+		(pin "2"
+			(uuid "541a0fb2-1648-4f5d-a6bd-6821005af178")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "C812")
 					(unit 1)
 				)
 			)
@@ -10498,7 +10543,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9637efbd-b8ee-4212-9f2a-e978c8110e3b")
-		(property "Reference" "C905"
+		(property "Reference" "C805"
 			(at 355.6 64.7699 0)
 			(effects
 				(font
@@ -10561,7 +10606,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C905")
+					(reference "C805")
 					(unit 1)
 				)
 			)
@@ -10577,7 +10622,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9d81682a-87ff-4049-8aa9-59e5002fdb8a")
-		(property "Reference" "#PWR0949"
+		(property "Reference" "#PWR0839"
 			(at 66.04 193.04 0)
 			(effects
 				(font
@@ -10627,7 +10672,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0949")
+					(reference "#PWR0839")
 					(unit 1)
 				)
 			)
@@ -10635,7 +10680,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 163.83 46.99 0)
+		(at 133.35 45.72 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -10643,8 +10688,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "9d9feb88-75dc-4018-ac04-adb7dca7c8cc")
-		(property "Reference" "C902"
-			(at 160.02 45.7199 0)
+		(property "Reference" "C801"
+			(at 129.54 44.4499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10653,7 +10698,7 @@
 			)
 		)
 		(property "Value" "47p"
-			(at 160.02 48.2599 0)
+			(at 129.54 46.9899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10662,7 +10707,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 162.8648 50.8 0)
+			(at 132.3848 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10671,7 +10716,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 163.83 46.99 0)
+			(at 133.35 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10680,7 +10725,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 163.83 46.99 0)
+			(at 133.35 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10689,7 +10734,7 @@
 			)
 		)
 		(property "Digikey" "1276-1037-1-ND"
-			(at 163.83 46.99 0)
+			(at 133.35 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10706,7 +10751,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C902")
+					(reference "C801")
 					(unit 1)
 				)
 			)
@@ -10722,7 +10767,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "9dd2de50-5f70-4d0c-92ff-cd1035b63752")
-		(property "Reference" "#PWR0945"
+		(property "Reference" "#PWR0835"
 			(at 114.3 187.96 0)
 			(effects
 				(font
@@ -10772,7 +10817,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0945")
+					(reference "#PWR0835")
 					(unit 1)
 				)
 			)
@@ -10788,7 +10833,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a36b1225-20fc-49dc-8228-3f2e956aaf4e")
-		(property "Reference" "C923"
+		(property "Reference" "C817"
 			(at 313.69 176.5299 0)
 			(effects
 				(font
@@ -10851,7 +10896,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C923")
+					(reference "C817")
 					(unit 1)
 				)
 			)
@@ -10866,7 +10911,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "a370385a-cbbd-4ede-bce1-b253a6f02126")
-		(property "Reference" "R916"
+		(property "Reference" "R818"
 			(at 328.93 64.008 90)
 			(effects
 				(font
@@ -10929,7 +10974,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R916")
+					(reference "R818")
 					(unit 1)
 				)
 			)
@@ -10945,7 +10990,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a7cbbbd8-052c-4d7b-b2b5-9616359da052")
-		(property "Reference" "#PWR0942"
+		(property "Reference" "#PWR0832"
 			(at 163.83 179.07 0)
 			(effects
 				(font
@@ -10995,7 +11040,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0942")
+					(reference "#PWR0832")
 					(unit 1)
 				)
 			)
@@ -11011,7 +11056,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "add9a855-05c0-4821-af91-08850ce5f3df")
-		(property "Reference" "R931"
+		(property "Reference" "R831"
 			(at 68.58 179.0699 0)
 			(effects
 				(font
@@ -11074,7 +11119,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R931")
+					(reference "R831")
 					(unit 1)
 				)
 			)
@@ -11091,7 +11136,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "b2c5c579-ce79-4d09-b8be-84233fde3c74")
-		(property "Reference" "#PWR0936"
+		(property "Reference" "#PWR0826"
 			(at 293.37 161.29 0)
 			(effects
 				(font
@@ -11141,7 +11186,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0936")
+					(reference "#PWR0826")
 					(unit 1)
 				)
 			)
@@ -11156,7 +11201,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ba0a8dbd-7e97-47b2-bf3f-95d0763c1492")
-		(property "Reference" "#PWR0903"
+		(property "Reference" "#PWR0803"
 			(at 382.27 50.8 0)
 			(effects
 				(font
@@ -11207,7 +11252,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0903")
+					(reference "#PWR0803")
 					(unit 1)
 				)
 			)
@@ -11223,7 +11268,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "ba5af5c7-c7bb-42a0-b0b9-e998748bcbb6")
-		(property "Reference" "R924"
+		(property "Reference" "R824"
 			(at 60.96 157.48 90)
 			(effects
 				(font
@@ -11284,7 +11329,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R924")
+					(reference "R824")
 					(unit 1)
 				)
 			)
@@ -11299,7 +11344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "baa5cfd8-c5b4-47f9-a729-4579bce5f1f6")
-		(property "Reference" "R920"
+		(property "Reference" "R820"
 			(at 320.04 71.1199 0)
 			(effects
 				(font
@@ -11362,7 +11407,73 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R920")
+					(reference "R820")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 242.57 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "bc3f1ce0-1c0e-43b1-b2cf-fb7d414b312a")
+		(property "Reference" "#PWR0822"
+			(at 242.57 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 242.57 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 242.57 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6379d4de-fa98-4e2b-b40a-0829babb797c")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "#PWR0822")
 					(unit 1)
 				)
 			)
@@ -11378,7 +11489,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "be77ee4f-2d03-4063-8117-577cdfa0cbae")
-		(property "Reference" "C903"
+		(property "Reference" "C802"
 			(at 283.21 52.0699 0)
 			(effects
 				(font
@@ -11441,15 +11552,103 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C903")
+					(reference "C802")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "mylib_ic:OPA2186")
+		(at 382.27 57.15 0)
+		(mirror x)
+		(unit 3)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c2619dff-311f-4881-8c23-2543aa0e12b5")
+		(property "Reference" "U801"
+			(at 389.636 56.896 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "OPA2186"
+			(at 391.922 59.436 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 381 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 381 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 381 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "c1f19801-c816-4107-8480-b0705405f087")
+		)
+		(pin "3"
+			(uuid "f095d6aa-7e38-4d02-a5a6-21c9994feb04")
+		)
+		(pin "2"
+			(uuid "d1ae0969-78b1-4106-b65e-76c8b7e03b7a")
+		)
+		(pin "1"
+			(uuid "49b53e1f-d08c-48b9-880f-07085e14ea3c")
+		)
+		(pin "7"
+			(uuid "01691a44-1191-4daa-a7d2-504cd1fa1d16")
+		)
+		(pin "4"
+			(uuid "4b04a98c-05d4-49b0-961a-bc5db028520f")
+		)
+		(pin "6"
+			(uuid "38005089-5e23-4bb0-84d5-1a33038b3b2f")
+		)
+		(pin "8"
+			(uuid "7d1775e0-c0ae-4d95-ba35-984111bba6cf")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U801")
+					(unit 3)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
-		(at 175.26 31.75 90)
+		(at 144.78 30.48 90)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -11457,8 +11656,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c2f275f6-920c-4d58-962b-cfb55031847f")
-		(property "Reference" "R901"
-			(at 173.9899 29.21 0)
+		(property "Reference" "R801"
+			(at 143.5099 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11467,7 +11666,7 @@
 			)
 		)
 		(property "Value" "590k"
-			(at 176.5299 29.21 0)
+			(at 146.0499 27.94 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11476,7 +11675,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 175.26 29.972 90)
+			(at 144.78 28.702 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11485,7 +11684,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 175.26 31.75 0)
+			(at 144.78 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11494,7 +11693,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 175.26 31.75 0)
+			(at 144.78 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11503,7 +11702,7 @@
 			)
 		)
 		(property "Digikey" "311-590KHRCT-ND"
-			(at 175.26 31.75 0)
+			(at 144.78 30.48 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11520,7 +11719,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R901")
+					(reference "R801")
 					(unit 1)
 				)
 			)
@@ -11536,7 +11735,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c47f78b8-3aa6-41ec-a8b7-c0d41ccc1640")
-		(property "Reference" "U906"
+		(property "Reference" "U805"
 			(at 88.392 164.084 0)
 			(effects
 				(font
@@ -11615,7 +11814,7 @@
 		(instances
 			(project ""
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U906")
+					(reference "U805")
 					(unit 1)
 				)
 			)
@@ -11631,7 +11830,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c78db032-f523-44c2-8a61-14b892674f2a")
-		(property "Reference" "C901"
+		(property "Reference" "C803"
 			(at 400.05 52.0699 0)
 			(effects
 				(font
@@ -11694,7 +11893,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C901")
+					(reference "C803")
 					(unit 1)
 				)
 			)
@@ -11709,7 +11908,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c82dec62-db46-4136-ada3-e4f3ffeee742")
-		(property "Reference" "R912"
+		(property "Reference" "R812"
 			(at 345.44 53.34 90)
 			(effects
 				(font
@@ -11770,7 +11969,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R912")
+					(reference "R812")
 					(unit 1)
 				)
 			)
@@ -11786,7 +11985,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c96cedfb-c27a-4ce5-a6f0-366a0aeb5353")
-		(property "Reference" "R902"
+		(property "Reference" "R804"
 			(at 297.1799 35.56 0)
 			(effects
 				(font
@@ -11849,7 +12048,93 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R902")
+					(reference "R804")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mylib_ic:OPA2186")
+		(at 297.18 53.34 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ca2d9f60-3bee-4b4e-b7e7-2ab9f949faaa")
+		(property "Reference" "U801"
+			(at 298.45 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA2186"
+			(at 298.45 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 295.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 295.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 295.91 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "c1f19801-c816-4107-8480-b0705405f087")
+		)
+		(pin "3"
+			(uuid "f095d6aa-7e38-4d02-a5a6-21c9994feb04")
+		)
+		(pin "2"
+			(uuid "d1ae0969-78b1-4106-b65e-76c8b7e03b7a")
+		)
+		(pin "1"
+			(uuid "49b53e1f-d08c-48b9-880f-07085e14ea3c")
+		)
+		(pin "7"
+			(uuid "01691a44-1191-4daa-a7d2-504cd1fa1d16")
+		)
+		(pin "4"
+			(uuid "4b04a98c-05d4-49b0-961a-bc5db028520f")
+		)
+		(pin "6"
+			(uuid "38005089-5e23-4bb0-84d5-1a33038b3b2f")
+		)
+		(pin "8"
+			(uuid "7d1775e0-c0ae-4d95-ba35-984111bba6cf")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U801")
 					(unit 1)
 				)
 			)
@@ -11864,7 +12149,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ca872506-87b8-4d1e-911b-6fa99cdef9e2")
-		(property "Reference" "R913"
+		(property "Reference" "R806"
 			(at 42.926 47.244 90)
 			(effects
 				(font
@@ -11925,7 +12210,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R913")
+					(reference "R806")
 					(unit 1)
 				)
 			)
@@ -11941,7 +12226,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "caef6465-8e52-496a-aa10-14b27cd6cf92")
-		(property "Reference" "#PWR0950"
+		(property "Reference" "#PWR0840"
 			(at 49.53 196.85 0)
 			(effects
 				(font
@@ -11991,7 +12276,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0950")
+					(reference "#PWR0840")
 					(unit 1)
 				)
 			)
@@ -12007,7 +12292,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "cd803fa4-cc02-4a4d-b3ec-1bf533958d5e")
-		(property "Reference" "#PWR0954"
+		(property "Reference" "#PWR0844"
 			(at 271.78 207.01 0)
 			(effects
 				(font
@@ -12057,7 +12342,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0954")
+					(reference "#PWR0844")
 					(unit 1)
 				)
 			)
@@ -12072,7 +12357,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d21b2e41-325b-43ff-bfd7-83e80a05bb00")
-		(property "Reference" "TP903"
+		(property "Reference" "TP803"
 			(at 130.302 151.892 0)
 			(effects
 				(font
@@ -12133,7 +12418,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "TP903")
+					(reference "TP803")
 					(unit 1)
 				)
 			)
@@ -12149,7 +12434,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d9c3c3d7-8176-47bc-a18e-69c1a90986b7")
-		(property "Reference" "R921"
+		(property "Reference" "R821"
 			(at 85.09 143.51 90)
 			(effects
 				(font
@@ -12210,7 +12495,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R921")
+					(reference "R821")
 					(unit 1)
 				)
 			)
@@ -12226,7 +12511,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dc91234a-cdc8-4caa-9660-f62f88ffaf9a")
-		(property "Reference" "C911"
+		(property "Reference" "C809"
 			(at 86.36 76.1999 0)
 			(effects
 				(font
@@ -12290,7 +12575,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C911")
+					(reference "C809")
 					(unit 1)
 				)
 			)
@@ -12305,7 +12590,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc931150-6c79-4f85-83ab-17d06a8be473")
-		(property "Reference" "TP902"
+		(property "Reference" "TP802"
 			(at 348.742 41.402 0)
 			(effects
 				(font
@@ -12366,7 +12651,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "TP902")
+					(reference "TP802")
 					(unit 1)
 				)
 			)
@@ -12382,7 +12667,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dd2a314b-c507-4dc0-8bd9-dccea5571492")
-		(property "Reference" "C922"
+		(property "Reference" "C816"
 			(at 110.49 173.9899 0)
 			(effects
 				(font
@@ -12445,7 +12730,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C922")
+					(reference "C816")
 					(unit 1)
 				)
 			)
@@ -12461,7 +12746,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ddc993e1-8e7c-4a04-a77a-017d4db4fbe3")
-		(property "Reference" "C919"
+		(property "Reference" "C813"
 			(at 289.56 148.5899 0)
 			(effects
 				(font
@@ -12524,7 +12809,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C919")
+					(reference "C813")
 					(unit 1)
 				)
 			)
@@ -12532,7 +12817,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 163.83 67.31 0)
+		(at 133.35 66.04 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12540,8 +12825,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "dfb8578a-f168-42b6-ab0c-83e76e55835e")
-		(property "Reference" "#PWR0912"
-			(at 163.83 73.66 0)
+		(property "Reference" "#PWR0806"
+			(at 133.35 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12550,7 +12835,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 163.83 72.39 0)
+			(at 133.35 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12558,7 +12843,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 163.83 67.31 0)
+			(at 133.35 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12567,7 +12852,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 163.83 67.31 0)
+			(at 133.35 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12576,7 +12861,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 163.83 67.31 0)
+			(at 133.35 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12590,114 +12875,8 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0912")
+					(reference "#PWR0806")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "mylib_ic:OPA4186")
-		(at 382.27 57.15 0)
-		(unit 5)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "e1e382f6-1414-4fa7-ab37-d773d2634ef9")
-		(property "Reference" "U807"
-			(at 383.54 55.8799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "OPA4186"
-			(at 383.54 58.4199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-14_3.9x8.7mm_P1.27mm"
-			(at 381 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa4186.pdf"
-			(at 381 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" ""
-			(at 381 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "12"
-			(uuid "08732a76-d50e-414b-ac72-62ae0c506339")
-		)
-		(pin "13"
-			(uuid "fff76934-c6d4-4fe0-adca-a6e807620909")
-		)
-		(pin "8"
-			(uuid "dac0d507-e8a1-4239-ac27-1d7bbb83a746")
-		)
-		(pin "10"
-			(uuid "5d8b5973-430a-42a9-9034-bdd742800ca8")
-		)
-		(pin "14"
-			(uuid "6ddf82c6-cb67-414b-b1dd-be82f2b33f1e")
-		)
-		(pin "3"
-			(uuid "cde34154-3601-42e2-9b20-125293f56fc0")
-		)
-		(pin "1"
-			(uuid "f25c20d5-f87e-46ec-8118-ee219ac0d45d")
-		)
-		(pin "2"
-			(uuid "f3ee9c13-b423-484d-931c-0486ab3e54a9")
-		)
-		(pin "11"
-			(uuid "41bded56-7fe0-4a48-a45d-b6bb467437c7")
-		)
-		(pin "9"
-			(uuid "ee605880-695b-4619-aec2-ea3856a94e9e")
-		)
-		(pin "5"
-			(uuid "4613ef01-c9cb-47cc-93d7-0bd8c8fcc9a0")
-		)
-		(pin "6"
-			(uuid "5312c811-822f-45fb-9d0d-bf5edf739d9e")
-		)
-		(pin "7"
-			(uuid "c23155c3-1e4c-4966-b307-fbde421ba922")
-		)
-		(pin "4"
-			(uuid "68311300-81fe-4d2a-9a23-5ae82046ffe9")
-		)
-		(instances
-			(project ""
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U807")
-					(unit 5)
 				)
 			)
 		)
@@ -12712,7 +12891,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e3f98142-41db-4071-93c9-6026002f31f7")
-		(property "Reference" "#PWR0925"
+		(property "Reference" "#PWR0821"
 			(at 91.44 91.44 0)
 			(effects
 				(font
@@ -12762,7 +12941,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0925")
+					(reference "#PWR0821")
 					(unit 1)
 				)
 			)
@@ -12778,7 +12957,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e5a1f82a-7425-4984-9898-1f1030da313e")
-		(property "Reference" "#PWR0902"
+		(property "Reference" "#PWR0802"
 			(at 363.22 48.26 0)
 			(effects
 				(font
@@ -12828,7 +13007,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0902")
+					(reference "#PWR0802")
 					(unit 1)
 				)
 			)
@@ -12843,7 +13022,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e6972bdd-fcfb-4af8-a96a-872386837a72")
-		(property "Reference" "R904"
+		(property "Reference" "R809"
 			(at 42.926 49.53 90)
 			(effects
 				(font
@@ -12904,7 +13083,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R904")
+					(reference "R809")
 					(unit 1)
 				)
 			)
@@ -12912,7 +13091,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 199.39 71.12 0)
+		(at 168.91 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -12920,8 +13099,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "e89847f3-1824-4826-8487-5ec6f111c72e")
-		(property "Reference" "#PWR0917"
-			(at 199.39 77.47 0)
+		(property "Reference" "#PWR0811"
+			(at 168.91 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12930,7 +13109,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 199.39 76.2 0)
+			(at 168.91 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12938,7 +13117,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 199.39 71.12 0)
+			(at 168.91 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12947,7 +13126,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 199.39 71.12 0)
+			(at 168.91 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12956,7 +13135,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 199.39 71.12 0)
+			(at 168.91 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -12970,7 +13149,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0917")
+					(reference "#PWR0811")
 					(unit 1)
 				)
 			)
@@ -12985,7 +13164,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e9f70779-0857-4f56-a2ed-ba73f62c8382")
-		(property "Reference" "U907"
+		(property "Reference" "U806"
 			(at 286.766 162.306 0)
 			(effects
 				(font
@@ -13064,8 +13243,94 @@
 		(instances
 			(project ""
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U907")
+					(reference "U806")
 					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mylib_ic:OPA2186")
+		(at 176.53 48.26 0)
+		(unit 2)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ec3dddf1-ec5e-4c21-a4ae-1d254a065060")
+		(property "Reference" "U804"
+			(at 177.8 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "OPA2186"
+			(at 177.8 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
+			(at 175.26 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2186.pdf"
+			(at 175.26 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 175.26 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "8"
+			(uuid "cc457bac-f707-41c3-bc7a-0418a7670aff")
+		)
+		(pin "3"
+			(uuid "2bc6f710-6d25-43f3-82ab-4ef3c9d727cc")
+		)
+		(pin "4"
+			(uuid "5a2762c4-f7e5-4463-a4c0-4114ecb79b33")
+		)
+		(pin "6"
+			(uuid "cfc19879-00a2-4377-ad57-4a3ef0721add")
+		)
+		(pin "7"
+			(uuid "a9205d78-d612-4ceb-9e8b-13e6a3d55bd4")
+		)
+		(pin "5"
+			(uuid "712705c0-b9b8-4db9-968c-5e3c06c45d9b")
+		)
+		(pin "1"
+			(uuid "edc7c304-3529-4ad2-81f3-badb657577f8")
+		)
+		(pin "2"
+			(uuid "04211e14-c9ab-4520-ac03-2b140bcd6c63")
+		)
+		(instances
+			(project ""
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "U804")
+					(unit 2)
 				)
 			)
 		)
@@ -13079,7 +13344,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f120340f-8d90-448f-91ba-a2689a458059")
-		(property "Reference" "C925"
+		(property "Reference" "C819"
 			(at 275.59 194.3099 0)
 			(effects
 				(font
@@ -13142,7 +13407,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C925")
+					(reference "C819")
 					(unit 1)
 				)
 			)
@@ -13158,7 +13423,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f3300f25-7893-4ccd-bc4f-3389e6cac0a6")
-		(property "Reference" "R927"
+		(property "Reference" "R827"
 			(at 248.92 168.9099 0)
 			(effects
 				(font
@@ -13221,94 +13486,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R927")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Amplifier_Operational:OPA2277")
-		(at 175.26 46.99 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "f37943bf-a647-444f-a6d9-9a9b77323845")
-		(property "Reference" "U808"
-			(at 175.26 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "OPA2277"
-			(at 175.26 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm"
-			(at 175.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/opa2277.pdf"
-			(at 175.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual High Precision Operational Amplifiers, DIP-8/SOIC-8"
-			(at 175.26 46.99 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "7"
-			(uuid "b88ddf16-6fc8-49ac-85a8-b75b7939bc11")
-		)
-		(pin "8"
-			(uuid "92b17cba-f446-4b07-93d3-f3ed87b147b1")
-		)
-		(pin "5"
-			(uuid "744f2735-c983-4672-bdf5-239fa7389283")
-		)
-		(pin "2"
-			(uuid "39551c35-3e48-46d6-a8af-ee686a557c86")
-		)
-		(pin "6"
-			(uuid "bf90962a-9c64-4919-ab24-3111c14689b6")
-		)
-		(pin "3"
-			(uuid "e7840f42-c6e6-44ef-bc82-f754a83ee0b2")
-		)
-		(pin "1"
-			(uuid "1a9bb2b7-646d-4530-9c36-9cc7b84b7c56")
-		)
-		(pin "4"
-			(uuid "d0ba700c-89f0-4610-a2d5-50e5f54d6ee2")
-		)
-		(instances
-			(project ""
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U808")
+					(reference "R827")
 					(unit 1)
 				)
 			)
@@ -13316,7 +13494,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 228.6 71.12 0)
+		(at 198.12 69.85 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13324,8 +13502,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f38a6e29-46e0-4330-a6c0-da8c03d529d0")
-		(property "Reference" "#PWR0918"
-			(at 228.6 77.47 0)
+		(property "Reference" "#PWR0812"
+			(at 198.12 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13334,7 +13512,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 228.6 76.2 0)
+			(at 198.12 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13342,7 +13520,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 71.12 0)
+			(at 198.12 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13351,7 +13529,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 71.12 0)
+			(at 198.12 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13360,7 +13538,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 228.6 71.12 0)
+			(at 198.12 69.85 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13374,7 +13552,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0918")
+					(reference "#PWR0812")
 					(unit 1)
 				)
 			)
@@ -13389,7 +13567,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f3a12a4e-4d10-49d3-b027-3b77014c2e6f")
-		(property "Reference" "#PWR0937"
+		(property "Reference" "#PWR0827"
 			(at 114.3 160.02 0)
 			(effects
 				(font
@@ -13439,7 +13617,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0937")
+					(reference "#PWR0827")
 					(unit 1)
 				)
 			)
@@ -13454,7 +13632,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "f6d47c01-1ae3-46bb-90d6-65b1e0638f73")
-		(property "Reference" "#PWR0940"
+		(property "Reference" "#PWR0830"
 			(at 320.04 160.02 0)
 			(effects
 				(font
@@ -13504,7 +13682,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0940")
+					(reference "#PWR0830")
 					(unit 1)
 				)
 			)
@@ -13520,7 +13698,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f763bd27-1cd2-4cb9-b76c-e71041d074c8")
-		(property "Reference" "C924"
+		(property "Reference" "C818"
 			(at 167.64 184.1499 0)
 			(effects
 				(font
@@ -13583,7 +13761,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C924")
+					(reference "C818")
 					(unit 1)
 				)
 			)
@@ -13599,7 +13777,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f9458778-96c9-479f-baa0-ce7d2ad723be")
-		(property "Reference" "C908"
+		(property "Reference" "C808"
 			(at 55.88 74.9299 0)
 			(effects
 				(font
@@ -13662,7 +13840,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "C908")
+					(reference "C808")
 					(unit 1)
 				)
 			)
@@ -13670,7 +13848,7 @@
 	)
 	(symbol
 		(lib_id "power:+3V3")
-		(at 240.03 38.1 0)
+		(at 209.55 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13678,8 +13856,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "fb0bbc9a-331d-456d-86c9-caefb6ebdc53")
-		(property "Reference" "#PWR0901"
-			(at 240.03 41.91 0)
+		(property "Reference" "#PWR0801"
+			(at 209.55 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13688,7 +13866,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 240.03 33.02 0)
+			(at 209.55 31.75 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13696,7 +13874,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 240.03 38.1 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13705,7 +13883,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 240.03 38.1 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13714,7 +13892,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 240.03 38.1 0)
+			(at 209.55 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13728,7 +13906,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "#PWR0901")
+					(reference "#PWR0801")
 					(unit 1)
 				)
 			)
@@ -13744,7 +13922,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fcf93f26-79c8-4976-9017-173e805467aa")
-		(property "Reference" "U906"
+		(property "Reference" "U805"
 			(at 150.622 167.132 0)
 			(effects
 				(font
@@ -13823,7 +14001,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "U906")
+					(reference "U805")
 					(unit 2)
 				)
 			)
@@ -13831,15 +14009,15 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 208.28 59.69 90)
+		(at 177.8 58.42 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(uuid "fda268a3-f947-4c76-892e-5d965dd6d534")
-		(property "Reference" "R915"
-			(at 205.74 57.658 90)
+		(property "Reference" "R814"
+			(at 175.26 56.388 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13848,7 +14026,7 @@
 			)
 		)
 		(property "Value" "22k6"
-			(at 206.502 61.722 90)
+			(at 176.022 60.452 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13857,7 +14035,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 208.28 61.468 90)
+			(at 177.8 60.198 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13866,7 +14044,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 208.28 59.69 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13875,7 +14053,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 208.28 59.69 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13884,7 +14062,7 @@
 			)
 		)
 		(property "Digikey" "P22.6KHCT-ND"
-			(at 208.28 59.69 0)
+			(at 177.8 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13901,7 +14079,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R915")
+					(reference "R814")
 					(unit 1)
 				)
 			)
