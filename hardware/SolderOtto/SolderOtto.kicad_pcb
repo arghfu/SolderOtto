@@ -30437,7 +30437,7 @@
 				)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "296-TMUX6234PWRCT-ND"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
