@@ -6731,6 +6731,10 @@
 		(uuid "0063107a-262e-447e-aeb9-cfbdfc421890")
 	)
 	(no_connect
+		(at 212.09 77.47)
+		(uuid "027507da-c9c6-401c-a122-e08596c112e3")
+	)
+	(no_connect
 		(at 144.78 184.15)
 		(uuid "0c1acdb9-6db0-4188-90a7-2455cf07b1cf")
 	)
@@ -6823,6 +6827,10 @@
 		(uuid "58211f17-3f58-4809-9f10-783d111fa0f5")
 	)
 	(no_connect
+		(at 161.29 102.87)
+		(uuid "5dcd1dd9-ec33-48fd-a248-74af6ff598e6")
+	)
+	(no_connect
 		(at 228.6 67.31)
 		(uuid "6931e653-232a-4917-a3b1-b0a18ccf59c0")
 	)
@@ -6863,6 +6871,10 @@
 		(uuid "8d2c0222-c916-433f-bdc4-135f38035e9c")
 	)
 	(no_connect
+		(at 161.29 100.33)
+		(uuid "957fa2bc-0b57-439a-bd61-7d9b59e62bf3")
+	)
+	(no_connect
 		(at 143.51 133.35)
 		(uuid "a36e4882-f7aa-4525-9bfe-874d64a11181")
 	)
@@ -6879,7 +6891,7 @@
 		(uuid "c069749e-7f06-460a-9176-5f1a2e0f2577")
 	)
 	(no_connect
-		(at 143.51 67.31)
+		(at 143.51 69.85)
 		(uuid "c3c581cc-180d-46f4-9bef-33633a060888")
 	)
 	(no_connect
@@ -6959,7 +6971,7 @@
 		(uuid "f96cefaa-ace5-4503-a7f9-4d5b11066658")
 	)
 	(no_connect
-		(at 228.6 102.87)
+		(at 143.51 67.31)
 		(uuid "fe73dfa1-ee27-4e4a-a913-ad4e9cfaffb6")
 	)
 	(no_connect
@@ -7395,16 +7407,6 @@
 			(type default)
 		)
 		(uuid "2f608827-c3c6-4498-a5bb-3d61582bfa62")
-	)
-	(wire
-		(pts
-			(xy 212.09 77.47) (xy 228.6 77.47)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2fcf9934-f8f5-4e5c-882f-3ffb8f930143")
 	)
 	(wire
 		(pts
@@ -9978,13 +9980,13 @@
 	)
 	(hierarchical_label "Channel0_LOAD0_SW"
 		(shape output)
-		(at 228.6 179.07 0)
+		(at 143.51 105.41 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "135db688-ba6d-4e66-8916-c61253b4cb57")
 	)
@@ -10014,7 +10016,7 @@
 	)
 	(hierarchical_label "Channel0_T_{TIP}_{b}"
 		(shape passive)
-		(at 228.6 153.67 0)
+		(at 228.6 151.13 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10326,13 +10328,13 @@
 	)
 	(hierarchical_label "Channel0_COM_SW"
 		(shape output)
-		(at 143.51 110.49 180)
+		(at 228.6 179.07 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "66111501-25e2-497b-9ef8-7cd88a5a6666")
 	)
@@ -10347,18 +10349,6 @@
 			(justify right)
 		)
 		(uuid "71933f53-1387-4e24-a5eb-c1310236e506")
-	)
-	(hierarchical_label "Channel0_iron"
-		(shape input)
-		(at 228.6 77.47 0)
-		(fields_autoplaced yes)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "737bdfa7-8431-4d8e-bba8-7b23ba7ffb79")
 	)
 	(hierarchical_label "Channel2_SEL2_{b}"
 		(shape output)
@@ -10386,13 +10376,13 @@
 	)
 	(hierarchical_label "ZCD"
 		(shape input)
-		(at 143.51 69.85 180)
+		(at 228.6 102.87 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
 		(uuid "7c59d852-69e0-402f-9bd5-063afe69ca16")
 	)
@@ -10482,7 +10472,7 @@
 	)
 	(hierarchical_label "Channel0_T_{TIP}_{a}"
 		(shape passive)
-		(at 228.6 151.13 0)
+		(at 228.6 153.67 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -10638,7 +10628,7 @@
 	)
 	(hierarchical_label "Channel0_LOW_SIDE_COM"
 		(shape output)
-		(at 143.51 105.41 180)
+		(at 143.51 110.49 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
