@@ -1,0 +1,11 @@
+LTspice 24.0.9 for Windows
+Circuit: * C:\workspace\SolderOtto\simulations\JBC Soldering Station Simulations\Current Sense.asc
+Start Time: Sun Mar 10 22:02:00 2024
+solver = Normal
+Maximum thread count: 32
+tnom = 27
+temp = 27
+method = modified trap
+Per .tran options, skipping operating point for transient analysis.
+Total elapsed time: 0.046 seconds.
+
