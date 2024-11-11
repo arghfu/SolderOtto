@@ -1285,7 +1285,7 @@
 				)
 			)
 		)
-		(symbol "power:+12V"
+		(symbol "power:+8V"
 			(power)
 			(pin_numbers hide)
 			(pin_names
@@ -1302,7 +1302,7 @@
 					(hide yes)
 				)
 			)
-			(property "Value" "+12V"
+			(property "Value" "+8V"
 				(at 0 3.556 0)
 				(effects
 					(font
@@ -1328,7 +1328,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(property "Description" "Power symbol creates a global label with name \"+8V\""
 				(at 0 0 0)
 				(effects
 					(font
@@ -1346,7 +1346,7 @@
 					(hide yes)
 				)
 			)
-			(symbol "+12V_0_1"
+			(symbol "+8V_0_1"
 				(polyline
 					(pts
 						(xy -0.762 1.27) (xy 0 2.54)
@@ -1384,7 +1384,7 @@
 					)
 				)
 			)
-			(symbol "+12V_1_1"
+			(symbol "+8V_1_1"
 				(pin power_in line
 					(at 0 0 90)
 					(length 0)
@@ -1503,128 +1503,146 @@
 		)
 	)
 	(junction
-		(at 162.56 54.61)
+		(at 124.46 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0fadf3ef-d84c-4834-99a5-144205f205b7")
 	)
 	(junction
-		(at 162.56 66.04)
+		(at 124.46 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "25563e01-e73a-46d9-ad04-add17c93ce35")
 	)
 	(junction
-		(at 162.56 29.21)
+		(at 81.28 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "3d2eaa8a-068b-48eb-9913-78dfe8e2076d")
+		(uuid "31491f25-7f4d-4643-b5ac-9bee0e5953f8")
 	)
 	(junction
-		(at 162.56 102.87)
+		(at 124.46 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "400cf8bb-7374-47b0-8018-75652d58ea2c")
 	)
 	(junction
-		(at 113.03 88.9)
+		(at 74.93 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47cf379c-ef19-4754-a4d7-1738dac1a77d")
 	)
 	(junction
-		(at 162.56 77.47)
+		(at 124.46 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4ef914d6-25db-451d-9a87-7ff67e7bfa77")
 	)
 	(junction
-		(at 142.24 29.21)
+		(at 251.46 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6f6cbce4-63e8-4665-95b8-611f42792fe5")
+		(uuid "691aefde-f491-456e-99e7-fedb5bd81b4c")
 	)
 	(junction
-		(at 171.45 88.9)
+		(at 259.08 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "720db877-169c-4037-b891-5584b4571d87")
+	)
+	(junction
+		(at 133.35 113.03)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "74b23198-21cd-4b2e-b74f-c74af7660759")
 	)
 	(junction
-		(at 121.92 91.44)
+		(at 83.82 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "81fb6844-f5b0-47c7-bb18-b6a9b5a2730a")
 	)
 	(junction
-		(at 121.92 77.47)
+		(at 83.82 101.6)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8344e46d-0cdb-4498-ad93-1bee5ae49248")
 	)
 	(junction
-		(at 111.76 40.64)
+		(at 73.66 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "85d49167-df89-41f9-9a7c-76990e267ecc")
 	)
 	(junction
-		(at 172.72 40.64)
+		(at 134.62 64.77)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9849617a-38e8-45d5-a3bc-43f8882eb910")
 	)
 	(junction
-		(at 121.92 54.61)
+		(at 261.62 53.34)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aaf965de-f09f-4a7b-9b01-0d2f08dd3885")
+	)
+	(junction
+		(at 83.82 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "b61b58d8-36f9-455e-ba88-872b68f63f91")
 	)
 	(junction
-		(at 121.92 29.21)
+		(at 127 53.34)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "b7f60592-926d-4afb-bd6f-7602c555a514")
+		(uuid "bb78d419-46f9-40b2-87b6-4b0e638712e9")
 	)
 	(junction
-		(at 142.24 106.68)
+		(at 104.14 143.51)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d15f6072-090b-4054-9f42-e1b6bf24f50c")
 	)
 	(junction
-		(at 165.1 43.18)
+		(at 127 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da1eb24a-71ca-44b1-b5e6-d17fa538c658")
 	)
 	(junction
-		(at 121.92 102.87)
+		(at 83.82 127)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e44d86ab-e8f8-40e2-afa9-16696afefd10")
 	)
 	(junction
-		(at 119.38 43.18)
+		(at 261.62 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eac722ac-9286-493f-b341-607c14b573cc")
+	)
+	(junction
+		(at 81.28 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ef22faec-2fdb-46d9-a2db-f549e54cfac0")
 	)
 	(junction
-		(at 121.92 66.04)
+		(at 83.82 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "efaf9776-e317-48eb-a9d8-bacb7e13ebcb")
 	)
 	(junction
-		(at 162.56 91.44)
+		(at 124.46 115.57)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f0174080-9b6b-4c7f-b035-d642bb4dc62e")
 	)
 	(wire
 		(pts
-			(xy 90.17 44.45) (xy 81.28 44.45)
+			(xy 52.07 68.58) (xy 43.18 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1634,7 +1652,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 104.14) (xy 203.2 105.41)
+			(xy 161.29 128.27) (xy 161.29 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1644,7 +1662,17 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 85.09) (xy 107.95 85.09)
+			(xy 247.65 64.77) (xy 251.46 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "029383ec-cbbc-4d0d-a4d2-cdba403c2367")
+	)
+	(wire
+		(pts
+			(xy 67.31 109.22) (xy 69.85 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1654,7 +1682,17 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 92.71) (xy 203.2 92.71)
+			(xy 261.62 78.74) (xy 259.08 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "086dc3ca-54c4-47f7-b470-da02379853c8")
+	)
+	(wire
+		(pts
+			(xy 154.94 116.84) (xy 161.29 116.84)
 		)
 		(stroke
 			(width 0)
@@ -1664,7 +1702,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 36.83) (xy 176.53 36.83)
+			(xy 139.7 60.96) (xy 138.43 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1674,7 +1712,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 106.68) (xy 162.56 106.68)
+			(xy 104.14 143.51) (xy 124.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1684,7 +1722,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 87.63) (xy 81.28 86.36)
+			(xy 43.18 111.76) (xy 43.18 110.49)
 		)
 		(stroke
 			(width 0)
@@ -1694,17 +1732,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 29.21) (xy 162.56 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "147370f7-dc30-4554-8f2d-95d67b9fa659")
-	)
-	(wire
-		(pts
-			(xy 90.17 87.63) (xy 81.28 87.63)
+			(xy 52.07 111.76) (xy 43.18 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1714,7 +1742,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 66.04) (xy 121.92 77.47)
+			(xy 83.82 90.17) (xy 83.82 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1724,7 +1752,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 88.9) (xy 107.95 85.09)
+			(xy 69.85 113.03) (xy 69.85 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1734,7 +1762,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 92.71) (xy 81.28 93.98)
+			(xy 43.18 116.84) (xy 43.18 118.11)
 		)
 		(stroke
 			(width 0)
@@ -1744,7 +1772,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 43.18) (xy 107.95 46.99)
+			(xy 69.85 67.31) (xy 69.85 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1754,7 +1782,27 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 21.59) (xy 142.24 29.21)
+			(xy 127 45.72) (xy 127 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1a550f6a-f1d1-4b02-8d7d-3a8d2cb04532")
+	)
+	(wire
+		(pts
+			(xy 261.62 78.74) (xy 261.62 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "21585077-efd0-4871-8efe-2446ee94d30f")
+	)
+	(wire
+		(pts
+			(xy 81.28 45.72) (xy 81.28 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1764,7 +1812,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 77.47) (xy 160.02 77.47)
+			(xy 124.46 101.6) (xy 121.92 101.6)
 		)
 		(stroke
 			(width 0)
@@ -1774,7 +1822,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 39.37) (xy 81.28 39.37)
+			(xy 52.07 63.5) (xy 43.18 63.5)
 		)
 		(stroke
 			(width 0)
@@ -1784,7 +1832,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 55.88) (xy 81.28 57.15)
+			(xy 245.11 71.12) (xy 247.65 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29f14ff5-8226-45ea-bc13-2a996524eb32")
+	)
+	(wire
+		(pts
+			(xy 43.18 80.01) (xy 43.18 81.28)
 		)
 		(stroke
 			(width 0)
@@ -1794,7 +1852,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 104.14) (xy 81.28 105.41)
+			(xy 43.18 128.27) (xy 43.18 129.54)
 		)
 		(stroke
 			(width 0)
@@ -1804,7 +1862,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 88.9) (xy 171.45 97.79)
+			(xy 133.35 113.03) (xy 133.35 121.92)
 		)
 		(stroke
 			(width 0)
@@ -1814,7 +1872,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 91.44) (xy 176.53 95.25)
+			(xy 138.43 115.57) (xy 138.43 119.38)
 		)
 		(stroke
 			(width 0)
@@ -1824,7 +1882,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 39.37) (xy 81.28 38.1)
+			(xy 43.18 63.5) (xy 43.18 62.23)
 		)
 		(stroke
 			(width 0)
@@ -1834,7 +1892,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 87.63) (xy 203.2 87.63)
+			(xy 154.94 111.76) (xy 161.29 111.76)
 		)
 		(stroke
 			(width 0)
@@ -1844,7 +1902,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 34.29) (xy 111.76 40.64)
+			(xy 73.66 58.42) (xy 73.66 64.77)
 		)
 		(stroke
 			(width 0)
@@ -1854,7 +1912,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 106.68) (xy 142.24 115.57)
+			(xy 104.14 143.51) (xy 104.14 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1864,7 +1922,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 91.44) (xy 121.92 91.44)
+			(xy 69.85 115.57) (xy 83.82 115.57)
 		)
 		(stroke
 			(width 0)
@@ -1874,7 +1932,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 39.37) (xy 165.1 43.18)
+			(xy 127 63.5) (xy 127 67.31)
 		)
 		(stroke
 			(width 0)
@@ -1884,7 +1942,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 29.21) (xy 121.92 29.21)
+			(xy 81.28 53.34) (xy 83.82 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1894,7 +1952,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 29.21) (xy 162.56 29.21)
+			(xy 127 53.34) (xy 124.46 53.34)
 		)
 		(stroke
 			(width 0)
@@ -1904,7 +1962,17 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 102.87) (xy 160.02 102.87)
+			(xy 229.87 63.5) (xy 220.98 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d5f6ccc-6121-45c8-b7c3-69e29215b7d2")
+	)
+	(wire
+		(pts
+			(xy 124.46 127) (xy 121.92 127)
 		)
 		(stroke
 			(width 0)
@@ -1914,7 +1982,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 106.68) (xy 142.24 106.68)
+			(xy 83.82 143.51) (xy 104.14 143.51)
 		)
 		(stroke
 			(width 0)
@@ -1924,7 +1992,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 40.64) (xy 111.76 49.53)
+			(xy 73.66 64.77) (xy 73.66 73.66)
 		)
 		(stroke
 			(width 0)
@@ -1934,7 +2002,17 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 66.04) (xy 162.56 66.04)
+			(xy 220.98 80.01) (xy 220.98 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d8fae02-2a02-42be-a48f-90b1059e36f1")
+	)
+	(wire
+		(pts
+			(xy 111.76 90.17) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
@@ -1944,7 +2022,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 88.9) (xy 176.53 85.09)
+			(xy 138.43 113.03) (xy 138.43 109.22)
 		)
 		(stroke
 			(width 0)
@@ -1954,7 +2032,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 44.45) (xy 203.2 44.45)
+			(xy 154.94 68.58) (xy 161.29 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1964,7 +2042,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 43.18) (xy 119.38 44.45)
+			(xy 81.28 67.31) (xy 81.28 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1974,7 +2052,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 46.99) (xy 107.95 46.99)
+			(xy 67.31 71.12) (xy 69.85 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1984,7 +2062,17 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 43.18) (xy 165.1 44.45)
+			(xy 220.98 63.5) (xy 220.98 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5a707e0e-557d-42f6-8aa7-3de2d1b13d4f")
+	)
+	(wire
+		(pts
+			(xy 127 67.31) (xy 127 68.58)
 		)
 		(stroke
 			(width 0)
@@ -1994,7 +2082,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 44.45) (xy 203.2 45.72)
+			(xy 161.29 68.58) (xy 161.29 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2004,7 +2092,17 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 99.06) (xy 212.09 99.06)
+			(xy 247.65 67.31) (xy 247.65 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5df8a07b-8b7c-46d1-8499-d7e45bb31dbb")
+	)
+	(wire
+		(pts
+			(xy 173.99 123.19) (xy 170.18 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2014,7 +2112,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 102.87) (xy 162.56 106.68)
+			(xy 124.46 127) (xy 124.46 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2024,7 +2122,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 46.99) (xy 176.53 46.99)
+			(xy 139.7 71.12) (xy 138.43 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2034,7 +2132,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 43.18) (xy 119.38 43.18)
+			(xy 69.85 67.31) (xy 81.28 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2044,7 +2142,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 82.55) (xy 113.03 88.9)
+			(xy 74.93 106.68) (xy 74.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2054,7 +2152,17 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 40.64) (xy 107.95 36.83)
+			(xy 261.62 49.53) (xy 261.62 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70ee2e6f-479a-4960-9f07-ed7f1cc6fb27")
+	)
+	(wire
+		(pts
+			(xy 69.85 64.77) (xy 69.85 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2064,7 +2172,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 55.88) (xy 203.2 57.15)
+			(xy 161.29 80.01) (xy 161.29 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2074,7 +2182,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 54.61) (xy 162.56 66.04)
+			(xy 124.46 78.74) (xy 124.46 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2084,7 +2192,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 54.61) (xy 121.92 54.61)
+			(xy 229.87 68.58) (xy 220.98 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79138c18-ca47-401d-b082-91fa8206e035")
+	)
+	(wire
+		(pts
+			(xy 81.28 78.74) (xy 83.82 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2094,7 +2212,7 @@
 	)
 	(wire
 		(pts
-			(xy 165.1 54.61) (xy 162.56 54.61)
+			(xy 127 78.74) (xy 124.46 78.74)
 		)
 		(stroke
 			(width 0)
@@ -2104,7 +2222,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 66.04) (xy 133.35 66.04)
+			(xy 83.82 90.17) (xy 95.25 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2114,7 +2232,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 40.64) (xy 111.76 40.64)
+			(xy 69.85 64.77) (xy 73.66 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2124,7 +2242,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 34.29) (xy 172.72 40.64)
+			(xy 259.08 67.31) (xy 259.08 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8710ad18-fc43-4177-b039-2eb364ee397c")
+	)
+	(wire
+		(pts
+			(xy 134.62 58.42) (xy 134.62 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2134,7 +2262,17 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 82.55) (xy 113.03 82.55)
+			(xy 247.65 67.31) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a5a776d-a536-4aaa-a57c-c5b8e09340a5")
+	)
+	(wire
+		(pts
+			(xy 76.2 106.68) (xy 74.93 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2144,7 +2282,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 88.9) (xy 113.03 97.79)
+			(xy 74.93 113.03) (xy 74.93 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2154,7 +2292,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 91.44) (xy 107.95 95.25)
+			(xy 69.85 115.57) (xy 69.85 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2164,7 +2302,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 43.18) (xy 176.53 46.99)
+			(xy 138.43 67.31) (xy 138.43 71.12)
 		)
 		(stroke
 			(width 0)
@@ -2174,7 +2312,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 40.64) (xy 172.72 40.64)
+			(xy 138.43 64.77) (xy 134.62 64.77)
 		)
 		(stroke
 			(width 0)
@@ -2184,7 +2322,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 40.64) (xy 176.53 36.83)
+			(xy 138.43 64.77) (xy 138.43 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2194,7 +2332,17 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 102.87) (xy 121.92 106.68)
+			(xy 259.08 63.5) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9958b654-09a5-4177-be70-7687a26c76cb")
+	)
+	(wire
+		(pts
+			(xy 83.82 127) (xy 83.82 143.51)
 		)
 		(stroke
 			(width 0)
@@ -2204,7 +2352,17 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 39.37) (xy 203.2 39.37)
+			(xy 251.46 58.42) (xy 251.46 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9cebd102-01cf-4ab4-b423-3a9056b5da71")
+	)
+	(wire
+		(pts
+			(xy 154.94 63.5) (xy 161.29 63.5)
 		)
 		(stroke
 			(width 0)
@@ -2214,7 +2372,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 82.55) (xy 171.45 82.55)
+			(xy 132.08 106.68) (xy 133.35 106.68)
 		)
 		(stroke
 			(width 0)
@@ -2224,17 +2382,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 29.21) (xy 121.92 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a1f4fce2-9138-455b-beff-05f7325580de")
-	)
-	(wire
-		(pts
-			(xy 90.17 92.71) (xy 81.28 92.71)
+			(xy 52.07 116.84) (xy 43.18 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2244,7 +2392,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 99.06) (xy 72.39 99.06)
+			(xy 31.75 123.19) (xy 34.29 123.19)
 		)
 		(stroke
 			(width 0)
@@ -2254,7 +2402,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 66.04) (xy 162.56 77.47)
+			(xy 124.46 90.17) (xy 124.46 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2264,7 +2412,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 97.79) (xy 170.18 97.79)
+			(xy 133.35 121.92) (xy 132.08 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2274,7 +2422,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 91.44) (xy 162.56 92.71)
+			(xy 124.46 115.57) (xy 124.46 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2284,7 +2432,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 88.9) (xy 113.03 88.9)
+			(xy 69.85 113.03) (xy 74.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2294,7 +2442,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 39.37) (xy 203.2 38.1)
+			(xy 161.29 63.5) (xy 161.29 62.23)
 		)
 		(stroke
 			(width 0)
@@ -2304,7 +2452,17 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 50.8) (xy 72.39 50.8)
+			(xy 209.55 74.93) (xy 212.09 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af30acbb-3343-42f8-a28b-4f3c20fc83da")
+	)
+	(wire
+		(pts
+			(xy 31.75 74.93) (xy 34.29 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2314,7 +2472,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 87.63) (xy 162.56 91.44)
+			(xy 124.46 111.76) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2324,7 +2482,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 43.18) (xy 165.1 43.18)
+			(xy 138.43 67.31) (xy 127 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2334,7 +2492,17 @@
 	)
 	(wire
 		(pts
-			(xy 172.72 40.64) (xy 172.72 49.53)
+			(xy 251.46 64.77) (xy 251.46 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b391b87d-e837-4e1e-9d1f-6dd03d16aff8")
+	)
+	(wire
+		(pts
+			(xy 134.62 64.77) (xy 134.62 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2344,7 +2512,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 87.63) (xy 121.92 91.44)
+			(xy 83.82 111.76) (xy 83.82 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2354,7 +2522,17 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 29.21) (xy 203.2 30.48)
+			(xy 247.65 64.77) (xy 247.65 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b736eb4f-abb3-4089-b96b-135b0e0cf36e")
+	)
+	(wire
+		(pts
+			(xy 161.29 53.34) (xy 161.29 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2364,7 +2542,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 29.21) (xy 81.28 30.48)
+			(xy 43.18 53.34) (xy 43.18 54.61)
 		)
 		(stroke
 			(width 0)
@@ -2374,7 +2552,17 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 88.9) (xy 171.45 88.9)
+			(xy 220.98 68.58) (xy 220.98 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bc0b759f-996c-4fff-9a77-f55613553bd9")
+	)
+	(wire
+		(pts
+			(xy 138.43 113.03) (xy 133.35 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2384,7 +2572,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 77.47) (xy 203.2 78.74)
+			(xy 161.29 101.6) (xy 161.29 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2394,7 +2582,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 95.25) (xy 176.53 95.25)
+			(xy 139.7 119.38) (xy 138.43 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2404,7 +2592,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 85.09) (xy 176.53 85.09)
+			(xy 139.7 109.22) (xy 138.43 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2414,7 +2602,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 102.87) (xy 124.46 102.87)
+			(xy 83.82 127) (xy 86.36 127)
 		)
 		(stroke
 			(width 0)
@@ -2424,7 +2612,7 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 82.55) (xy 171.45 88.9)
+			(xy 133.35 106.68) (xy 133.35 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2434,7 +2622,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 92.71) (xy 203.2 93.98)
+			(xy 161.29 116.84) (xy 161.29 118.11)
 		)
 		(stroke
 			(width 0)
@@ -2444,7 +2632,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 97.79) (xy 114.3 97.79)
+			(xy 74.93 121.92) (xy 76.2 121.92)
 		)
 		(stroke
 			(width 0)
@@ -2454,7 +2642,7 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 95.25) (xy 107.95 95.25)
+			(xy 67.31 119.38) (xy 69.85 119.38)
 		)
 		(stroke
 			(width 0)
@@ -2464,7 +2652,7 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 44.45) (xy 81.28 45.72)
+			(xy 43.18 68.58) (xy 43.18 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2474,7 +2662,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 39.37) (xy 119.38 43.18)
+			(xy 81.28 63.5) (xy 81.28 67.31)
 		)
 		(stroke
 			(width 0)
@@ -2484,7 +2672,17 @@
 	)
 	(wire
 		(pts
-			(xy 105.41 36.83) (xy 107.95 36.83)
+			(xy 261.62 90.17) (xy 273.05 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e29942c9-0be9-48a7-8b27-2ada11b515d0")
+	)
+	(wire
+		(pts
+			(xy 67.31 60.96) (xy 69.85 60.96)
 		)
 		(stroke
 			(width 0)
@@ -2494,7 +2692,17 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 91.44) (xy 162.56 91.44)
+			(xy 259.08 53.34) (xy 261.62 53.34)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e442c49e-7b04-4581-8048-769d8dcd5790")
+	)
+	(wire
+		(pts
+			(xy 138.43 115.57) (xy 124.46 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2504,7 +2712,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 54.61) (xy 121.92 66.04)
+			(xy 83.82 78.74) (xy 83.82 90.17)
 		)
 		(stroke
 			(width 0)
@@ -2514,7 +2722,17 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 77.47) (xy 124.46 77.47)
+			(xy 245.11 60.96) (xy 247.65 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eee4a60f-f73d-40d5-961c-aea2bdf8c841")
+	)
+	(wire
+		(pts
+			(xy 83.82 101.6) (xy 86.36 101.6)
 		)
 		(stroke
 			(width 0)
@@ -2524,7 +2742,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 91.44) (xy 121.92 92.71)
+			(xy 83.82 115.57) (xy 83.82 116.84)
 		)
 		(stroke
 			(width 0)
@@ -2534,7 +2752,7 @@
 	)
 	(wire
 		(pts
-			(xy 203.2 87.63) (xy 203.2 86.36)
+			(xy 161.29 111.76) (xy 161.29 110.49)
 		)
 		(stroke
 			(width 0)
@@ -2544,7 +2762,17 @@
 	)
 	(wire
 		(pts
-			(xy 81.28 77.47) (xy 81.28 78.74)
+			(xy 220.98 53.34) (xy 220.98 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7f08300-cb96-40b0-8ce9-abc8bfe086df")
+	)
+	(wire
+		(pts
+			(xy 43.18 101.6) (xy 43.18 102.87)
 		)
 		(stroke
 			(width 0)
@@ -2554,7 +2782,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 50.8) (xy 212.09 50.8)
+			(xy 173.99 74.93) (xy 170.18 74.93)
 		)
 		(stroke
 			(width 0)
@@ -2564,7 +2792,7 @@
 	)
 	(hierarchical_label "LOAD_SW_LOW"
 		(shape input)
-		(at 55.88 99.06 180)
+		(at 31.75 123.19 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2574,9 +2802,9 @@
 		)
 		(uuid "149d5a81-9550-4f0d-b298-95087f0268b5")
 	)
-	(hierarchical_label "LOAD"
+	(hierarchical_label "LOAD0"
 		(shape input)
-		(at 133.35 66.04 0)
+		(at 95.25 90.17 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2589,7 +2817,7 @@
 	)
 	(hierarchical_label "CURRENT"
 		(shape output)
-		(at 142.24 115.57 270)
+		(at 104.14 152.4 270)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2601,7 +2829,7 @@
 	)
 	(hierarchical_label "COM_SW_HIGH"
 		(shape input)
-		(at 228.6 50.8 0)
+		(at 173.99 74.93 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2611,9 +2839,9 @@
 		)
 		(uuid "1ae2a4b6-ce16-4af1-b736-9b0a5eeea850")
 	)
-	(hierarchical_label "LOAD_SW_HIGH"
+	(hierarchical_label "LOAD0_SW_HIGH"
 		(shape input)
-		(at 55.88 50.8 180)
+		(at 31.75 74.93 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2623,9 +2851,21 @@
 		)
 		(uuid "60615c02-6901-450f-8af8-67623bfde43c")
 	)
+	(hierarchical_label "LOAD1_SW_HIGH"
+		(shape input)
+		(at 209.55 74.93 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "6bec4c78-b0e2-4240-ae32-ff229249d3ee")
+	)
 	(hierarchical_label "COM_SW_LOW"
 		(shape input)
-		(at 228.6 99.06 0)
+		(at 173.99 123.19 0)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2637,7 +2877,7 @@
 	)
 	(hierarchical_label "COM"
 		(shape input)
-		(at 149.86 66.04 180)
+		(at 111.76 90.17 180)
 		(fields_autoplaced yes)
 		(effects
 			(font
@@ -2648,9 +2888,22 @@
 		)
 		(uuid "7e7b2aab-61c7-4f14-8111-2028b8e765f8")
 	)
+	(hierarchical_label "LOAD1"
+		(shape input)
+		(at 273.05 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+				(color 255 153 0 1)
+			)
+			(justify left)
+		)
+		(uuid "dc0f86a7-3c22-45e7-8d21-e91e0fb4ee70")
+	)
 	(symbol
 		(lib_id "mylib_power:24VAC")
-		(at 142.24 21.59 0)
+		(at 81.28 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2658,8 +2911,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "0adae828-3b90-46fc-a0fb-61b66987e669")
-		(property "Reference" "#PWR0801"
-			(at 142.24 25.4 0)
+		(property "Reference" "#PWR0701"
+			(at 81.28 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2668,7 +2921,7 @@
 			)
 		)
 		(property "Value" "24V_{AC}"
-			(at 142.24 16.51 0)
+			(at 81.28 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2676,7 +2929,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 142.24 21.59 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2685,7 +2938,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 142.24 21.59 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2694,7 +2947,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"24VAC\""
-			(at 142.24 21.59 0)
+			(at 81.28 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2703,12 +2956,77 @@
 			)
 		)
 		(pin "1"
-			(uuid "2e9ddb18-4b8a-4ec1-9941-bf61cfa38e85")
+			(uuid "57566458-bbbd-40ec-b8d6-2712f24dbe8f")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0801")
+					(reference "#PWR0701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+8V")
+		(at 161.29 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "0d2f15eb-be16-4d3b-9abf-45de4d283822")
+		(property "Reference" "#PWR0705"
+			(at 161.29 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+8V"
+			(at 161.29 49.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 161.29 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5cee2025-0055-4a49-aab8-289c67d6e53b")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0705")
 					(unit 1)
 				)
 			)
@@ -2716,7 +3034,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:DTD123E")
-		(at 78.74 99.06 0)
+		(at 40.64 123.19 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -2724,8 +3042,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "110666d1-1acb-4da2-a644-dda5b9e7a970")
-		(property "Reference" "Q807"
-			(at 83.82 97.7899 0)
+		(property "Reference" "Q709"
+			(at 45.72 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2734,7 +3052,7 @@
 			)
 		)
 		(property "Value" "DTD123EK"
-			(at 83.82 100.3299 0)
+			(at 45.72 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2743,7 +3061,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 78.74 99.06 0)
+			(at 40.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2753,7 +3071,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/dtd123ekt146-e.pdf"
-			(at 78.74 99.06 0)
+			(at 40.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2763,7 +3081,7 @@
 			)
 		)
 		(property "Description" "Digital NPN Transistor, 2k2/2k2, SOT-23"
-			(at 78.74 99.06 0)
+			(at 40.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2772,7 +3090,7 @@
 			)
 		)
 		(property "Digikey" "DTD123EKT146CT-ND"
-			(at 78.74 99.06 0)
+			(at 40.64 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2781,18 +3099,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "6b74dfda-e669-46c8-9bd0-23958b6566ce")
+			(uuid "06425e50-344a-4a2a-a342-fe63d514450b")
 		)
 		(pin "2"
-			(uuid "1816b457-9678-429b-a553-92603101fcb8")
+			(uuid "afa3c8be-c9d8-4276-b8a2-83da302bd410")
 		)
 		(pin "1"
-			(uuid "95718325-90d0-4e27-b251-25157205d70b")
+			(uuid "851ef7ee-7d7b-476f-9919-cd203910db0b")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q807")
+					(reference "Q709")
 					(unit 1)
 				)
 			)
@@ -2800,7 +3118,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 116.84 49.53 0)
+		(at 78.74 73.66 0)
 		(mirror x)
 		(unit 2)
 		(exclude_from_sim yes)
@@ -2809,8 +3127,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "1890a127-e830-46c0-95c9-698fe6e1fe77")
-		(property "Reference" "Q801"
-			(at 123.19 48.2599 0)
+		(property "Reference" "Q701"
+			(at 85.09 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2819,7 +3137,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 123.19 50.7999 0)
+			(at 85.09 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2828,7 +3146,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 121.92 49.53 0)
+			(at 83.82 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2837,7 +3155,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 49.53 0)
+			(at 83.82 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2846,7 +3164,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 116.84 49.53 0)
+			(at 78.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2855,7 +3173,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 116.84 49.53 0)
+			(at 78.74 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2864,16 +3182,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "27439e93-d14e-498b-95e5-06ee7953bd55")
+			(uuid "770e4eee-4ddf-44f0-a16d-a07f5599f6b8")
 		)
 		(pin "7"
 			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33a")
 		)
 		(pin "3"
-			(uuid "9667f162-b169-49cf-af78-468874c649b3")
+			(uuid "8a6966fa-86f7-421b-b1a9-e6e54e60e09e")
 		)
 		(pin "6"
-			(uuid "40a3bb12-37bb-4ca7-8a3c-df95fdf4f89a")
+			(uuid "adc90ffc-a8a3-43c7-84e3-c8b36f0a9e4c")
 		)
 		(pin "2"
 			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a1")
@@ -2882,7 +3200,7 @@
 			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f113")
 		)
 		(pin "5"
-			(uuid "a1820880-d375-49e6-a633-cd3095cf508c")
+			(uuid "5fa6053b-e1c5-43b8-a083-4605e51e467b")
 		)
 		(pin "8"
 			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbde6")
@@ -2890,7 +3208,7 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q801")
+					(reference "Q701")
 					(unit 2)
 				)
 			)
@@ -2898,7 +3216,7 @@
 	)
 	(symbol
 		(lib_id "mylib_diodes:VOM1271")
-		(at 97.79 41.91 0)
+		(at 59.69 66.04 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -2906,8 +3224,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "385ed156-5d0b-4d30-8051-d61d4bb29144")
-		(property "Reference" "U801"
-			(at 97.79 30.48 0)
+		(property "Reference" "U701"
+			(at 59.69 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2915,7 +3233,7 @@
 			)
 		)
 		(property "Value" "VOM1271"
-			(at 97.79 33.02 0)
+			(at 59.69 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2923,7 +3241,7 @@
 			)
 		)
 		(property "Footprint" "mylib_ic:SOP-4_3.8x4.1mm_P2.54mm"
-			(at 92.71 35.56 0)
+			(at 54.61 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2932,7 +3250,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/83469/vom1271.pdf"
-			(at 92.71 35.56 0)
+			(at 54.61 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2941,7 +3259,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 35.56 0)
+			(at 54.61 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2950,7 +3268,7 @@
 			)
 		)
 		(property "Digikey" "VOM1271TCT-ND"
-			(at 97.79 41.91 0)
+			(at 59.69 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2959,21 +3277,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "b80ee3ea-69ef-434a-b51a-ae5067117f73")
+			(uuid "b6c5e2de-d19d-4180-bc9d-ea10cd5b4b7e")
 		)
 		(pin "3"
-			(uuid "6125dd16-9988-4682-9d95-cdd47678b654")
+			(uuid "c703d0bb-dda8-4fa4-8da0-dd66a579150a")
 		)
 		(pin "4"
-			(uuid "4323e6ff-9bda-428c-8a0b-24282926ff95")
+			(uuid "1970d2e2-01ec-4813-b6c9-394ce94abd87")
 		)
 		(pin "2"
-			(uuid "b7b1f55f-3e75-42ba-aacf-b37f3cb699e9")
+			(uuid "f3148da6-0ff0-4db2-9f80-1f790380a1cb")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U801")
+					(reference "U701")
 					(unit 1)
 				)
 			)
@@ -2981,7 +3299,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 165.1 82.55 0)
+		(at 127 106.68 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -2990,8 +3308,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3a2e4e9d-b046-45cf-8371-14ab0b813aa7")
-		(property "Reference" "Q806"
-			(at 158.75 81.2799 0)
+		(property "Reference" "Q708"
+			(at 120.65 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3000,7 +3318,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 158.75 83.8199 0)
+			(at 120.65 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3009,7 +3327,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 160.02 82.55 0)
+			(at 121.92 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3018,7 +3336,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 82.55 0)
+			(at 121.92 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3027,7 +3345,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 165.1 82.55 0)
+			(at 127 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3036,7 +3354,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 165.1 82.55 0)
+			(at 127 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3048,7 +3366,7 @@
 			(uuid "3013eab8-2e99-48c5-a544-83388611cd39")
 		)
 		(pin "7"
-			(uuid "d10b4c9c-603d-422a-857f-f805cb192844")
+			(uuid "28f74f7e-a52b-4407-bdea-5735b4ea1fb6")
 		)
 		(pin "3"
 			(uuid "62c94368-d201-4913-aed6-288b8cd1b7de")
@@ -3057,21 +3375,21 @@
 			(uuid "ff655893-31d0-4ab7-ad43-aaebb4ef4ea0")
 		)
 		(pin "2"
-			(uuid "93b8ef16-de65-4986-ab88-91d9443c610a")
+			(uuid "a88c4a0f-c54e-4a01-8ff7-7ccb84e399e8")
 		)
 		(pin "1"
-			(uuid "bb9b5f3b-04ad-45b1-a499-11afe7fea375")
+			(uuid "b0aa3c07-56fe-40af-b5de-a5d773f5c704")
 		)
 		(pin "5"
 			(uuid "09d27ba5-d050-4b0d-b839-33a3a3f19e83")
 		)
 		(pin "8"
-			(uuid "2877e5a0-74b9-41a8-b743-0d0a024a77f5")
+			(uuid "9e4b2b30-7d13-4b75-8f2f-8343bcac4cd3")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q806")
+					(reference "Q708")
 					(unit 1)
 				)
 			)
@@ -3079,17 +3397,17 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 167.64 34.29 0)
-		(mirror y)
-		(unit 1)
+		(at 256.54 73.66 0)
+		(mirror x)
+		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "44d48d52-f724-4621-b183-e71b75e932c0")
-		(property "Reference" "Q802"
-			(at 161.29 33.0199 0)
+		(uuid "4328b238-6ef7-4a84-ac72-e32f25998fc1")
+		(property "Reference" "Q703"
+			(at 262.89 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3098,7 +3416,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 161.29 35.5599 0)
+			(at 262.89 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3107,7 +3425,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 162.56 34.29 0)
+			(at 261.62 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3116,7 +3434,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 34.29 0)
+			(at 261.62 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3125,7 +3443,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 167.64 34.29 0)
+			(at 256.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3134,7 +3452,105 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 167.64 34.29 0)
+			(at 256.54 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "1db11668-06f7-4978-a83a-c7b990bd3a36")
+		)
+		(pin "7"
+			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33b")
+		)
+		(pin "3"
+			(uuid "d74fefd0-0a6f-4c2c-8cba-961ac0dd9411")
+		)
+		(pin "6"
+			(uuid "c1b02783-55c4-48d7-bf6c-0f8bcf5aec19")
+		)
+		(pin "2"
+			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a2")
+		)
+		(pin "1"
+			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f114")
+		)
+		(pin "5"
+			(uuid "399ae795-f2b1-4b3d-a6cc-8271d513ca68")
+		)
+		(pin "8"
+			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbde7")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "Q703")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
+		(at 129.54 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "44d48d52-f724-4621-b183-e71b75e932c0")
+		(property "Reference" "Q702"
+			(at 123.19 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_Dual_NMOS"
+			(at 123.19 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 124.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 124.46 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NMOS transistor, 8 pin package"
+			(at 129.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
+			(at 129.54 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3146,7 +3562,7 @@
 			(uuid "3013eab8-2e99-48c5-a544-83388611cd38")
 		)
 		(pin "7"
-			(uuid "acde5b92-673e-4b1c-9914-4fe75c7f859a")
+			(uuid "e5d0c628-9cc8-46d0-9aee-c61ab3e2bad0")
 		)
 		(pin "3"
 			(uuid "62c94368-d201-4913-aed6-288b8cd1b7dd")
@@ -3155,21 +3571,21 @@
 			(uuid "ff655893-31d0-4ab7-ad43-aaebb4ef4e9f")
 		)
 		(pin "2"
-			(uuid "68b8c472-6577-4987-a99e-be6c5e201b32")
+			(uuid "29411bf4-51e6-47bf-81a9-c0374aabe559")
 		)
 		(pin "1"
-			(uuid "4ec9ff40-db68-47a5-a37f-62463c22c91d")
+			(uuid "c999fbde-b6f6-4fe7-a832-0dff7993d245")
 		)
 		(pin "5"
 			(uuid "09d27ba5-d050-4b0d-b839-33a3a3f19e82")
 		)
 		(pin "8"
-			(uuid "04030531-246a-4d6f-925e-b17ace279bc0")
+			(uuid "fb127d0d-5478-4759-9021-d59ba9495d24")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q802")
+					(reference "Q702")
 					(unit 1)
 				)
 			)
@@ -3177,17 +3593,16 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:DTD123E")
-		(at 205.74 50.8 0)
-		(mirror y)
+		(at 218.44 74.93 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "4bba7611-152e-46dd-860d-971f15e8c53b")
-		(property "Reference" "Q804"
-			(at 200.66 49.5299 0)
+		(uuid "4b655536-2c3e-4029-89b5-adda4e9915a8")
+		(property "Reference" "Q706"
+			(at 223.52 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3196,7 +3611,7 @@
 			)
 		)
 		(property "Value" "DTD123EK"
-			(at 200.66 52.0699 0)
+			(at 223.52 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3205,7 +3620,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 205.74 50.8 0)
+			(at 218.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3215,7 +3630,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/dtd123ekt146-e.pdf"
-			(at 205.74 50.8 0)
+			(at 218.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3225,7 +3640,7 @@
 			)
 		)
 		(property "Description" "Digital NPN Transistor, 2k2/2k2, SOT-23"
-			(at 205.74 50.8 0)
+			(at 218.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3234,7 +3649,7 @@
 			)
 		)
 		(property "Digikey" "DTD123EKT146CT-ND"
-			(at 205.74 50.8 0)
+			(at 218.44 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3243,18 +3658,103 @@
 			)
 		)
 		(pin "3"
-			(uuid "7964b5c5-8bd8-4ccd-960b-27ca461696ad")
+			(uuid "ffa45a33-41bc-46db-85f5-419e544b7166")
 		)
 		(pin "2"
-			(uuid "21650458-a3ea-48ab-8053-cef8eb3ca176")
+			(uuid "c9c0a974-411d-4d5b-a52a-57e3406bcec9")
 		)
 		(pin "1"
-			(uuid "eaa37c56-ba89-49de-8e5f-a29fe9200040")
+			(uuid "c6e05184-4699-4725-9e66-2f1a65d12967")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q804")
+					(reference "Q706")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Transistor_BJT:DTD123E")
+		(at 163.83 74.93 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4bba7611-152e-46dd-860d-971f15e8c53b")
+		(property "Reference" "Q705"
+			(at 158.75 73.6599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "DTD123EK"
+			(at 158.75 76.1999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
+			(at 163.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/dtd123ekt146-e.pdf"
+			(at 163.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Description" "Digital NPN Transistor, 2k2/2k2, SOT-23"
+			(at 163.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "DTD123EKT146CT-ND"
+			(at 163.83 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "cf9b07c2-950d-4414-b431-7aa822b89e19")
+		)
+		(pin "2"
+			(uuid "b3e35c01-0e05-49ef-a88f-414b3ba834dc")
+		)
+		(pin "1"
+			(uuid "05b74122-b688-4300-8cc6-4c903a5f7df0")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "Q705")
 					(unit 1)
 				)
 			)
@@ -3262,7 +3762,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 116.84 34.29 0)
+		(at 78.74 58.42 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3270,8 +3770,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "5d540fc3-dcc2-4c63-80f7-31def098b497")
-		(property "Reference" "Q801"
-			(at 123.19 33.0199 0)
+		(property "Reference" "Q701"
+			(at 85.09 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3280,7 +3780,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 123.19 35.5599 0)
+			(at 85.09 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3289,7 +3789,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 121.92 34.29 0)
+			(at 83.82 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3298,7 +3798,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 121.92 34.29 0)
+			(at 83.82 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3307,7 +3807,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 116.84 34.29 0)
+			(at 78.74 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3316,7 +3816,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 116.84 34.29 0)
+			(at 78.74 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3328,7 +3828,7 @@
 			(uuid "3013eab8-2e99-48c5-a544-83388611cd3a")
 		)
 		(pin "7"
-			(uuid "7a501e4a-0dcc-4de5-819a-4c4e1594661e")
+			(uuid "8c4ca0e6-7822-4ef4-86a3-70b7a0c986e6")
 		)
 		(pin "3"
 			(uuid "62c94368-d201-4913-aed6-288b8cd1b7df")
@@ -3337,37 +3837,37 @@
 			(uuid "ff655893-31d0-4ab7-ad43-aaebb4ef4ea1")
 		)
 		(pin "2"
-			(uuid "a023529f-fb36-478d-ad08-c96a4ddb830a")
+			(uuid "1ace9132-9a7e-4c14-bd68-2931f531a0f0")
 		)
 		(pin "1"
-			(uuid "e11e0796-fa40-4dae-acf7-8195fd9b1eba")
+			(uuid "188ad544-a9b5-4b58-bc44-a2a0e3124745")
 		)
 		(pin "5"
 			(uuid "09d27ba5-d050-4b0d-b839-33a3a3f19e84")
 		)
 		(pin "8"
-			(uuid "8385d0a2-e45f-4949-abde-e0b31662edea")
+			(uuid "4b18d64c-7ca0-4c99-9b31-740446967251")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q801")
+					(reference "Q701")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 81.28 57.15 0)
+		(lib_id "power:+8V")
+		(at 43.18 101.6 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "6026dc32-117c-405c-9da9-217232a3e323")
-		(property "Reference" "#PWR0804"
-			(at 81.28 63.5 0)
+		(uuid "5e41a5df-0c53-4d70-84e8-129776a3a85d")
+		(property "Reference" "#PWR0710"
+			(at 43.18 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3375,8 +3875,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 81.28 62.23 0)
+		(property "Value" "+8V"
+			(at 43.18 97.282 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3384,7 +3884,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 57.15 0)
+			(at 43.18 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3393,7 +3893,72 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 57.15 0)
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 43.18 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "00bd623d-ab75-4751-974a-adf85b91c819")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0710")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6026dc32-117c-405c-9da9-217232a3e323")
+		(property "Reference" "#PWR0707"
+			(at 43.18 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3402,7 +3967,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 57.15 0)
+			(at 43.18 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3411,12 +3976,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4bfc3877-34c8-40ce-b212-1a768a68aa5f")
+			(uuid "6084173a-0632-4198-9157-03514519d558")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0804")
+					(reference "#PWR0707")
 					(unit 1)
 				)
 			)
@@ -3424,7 +3989,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 165.1 97.79 180)
+		(at 127 121.92 180)
 		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3432,8 +3997,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "6c1e928d-a931-4a76-8d93-52fc87fb1463")
-		(property "Reference" "Q806"
-			(at 158.75 96.5199 0)
+		(property "Reference" "Q708"
+			(at 120.65 120.6499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3442,7 +4007,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 158.75 99.0599 0)
+			(at 120.65 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3451,7 +4016,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 160.02 97.79 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3460,7 +4025,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.02 97.79 0)
+			(at 121.92 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3469,7 +4034,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 165.1 97.79 0)
+			(at 127 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3478,7 +4043,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 165.1 97.79 0)
+			(at 127 121.92 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3487,16 +4052,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "29cae192-3489-4bca-8074-1ba437348a7c")
+			(uuid "f834de3f-4647-4f27-bee4-bb6e4f522af1")
 		)
 		(pin "7"
 			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33c")
 		)
 		(pin "3"
-			(uuid "d3399501-c293-4562-ac33-6e975a3bd0af")
+			(uuid "6d3eb259-fc6e-4e23-b260-769f07738e32")
 		)
 		(pin "6"
-			(uuid "45e1ff97-11ba-4070-8b4e-ac4755be294c")
+			(uuid "d1c1148c-c65a-4f19-a304-9ce183300100")
 		)
 		(pin "2"
 			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a3")
@@ -3505,7 +4070,7 @@
 			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f115")
 		)
 		(pin "5"
-			(uuid "26edf522-bc97-41b2-9ae9-f18ca0237a81")
+			(uuid "84a09ace-52c3-4afc-87dc-9f24a80e70ef")
 		)
 		(pin "8"
 			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbde8")
@@ -3513,15 +4078,81 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q806")
+					(reference "Q708")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "mylib_power:24VAC")
+		(at 261.62 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6e96b1fe-db31-42e7-b31f-699c66f9d115")
+		(property "Reference" "#PWR0703"
+			(at 261.62 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "24V_{AC}"
+			(at 261.62 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 261.62 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 261.62 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"24VAC\""
+			(at 261.62 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7ea71966-206c-4f18-916d-49a42bd79de2")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 119.38 82.55 0)
+		(at 81.28 106.68 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3529,8 +4160,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "72a448b7-eece-444f-a7ac-e94ec3cfd3e5")
-		(property "Reference" "Q805"
-			(at 125.73 81.2799 0)
+		(property "Reference" "Q707"
+			(at 87.63 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3539,7 +4170,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 125.73 83.8199 0)
+			(at 87.63 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3548,7 +4179,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 124.46 82.55 0)
+			(at 86.36 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3557,7 +4188,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 124.46 82.55 0)
+			(at 86.36 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3566,7 +4197,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 119.38 82.55 0)
+			(at 81.28 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3575,7 +4206,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 119.38 82.55 0)
+			(at 81.28 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +4218,7 @@
 			(uuid "3013eab8-2e99-48c5-a544-83388611cd3b")
 		)
 		(pin "7"
-			(uuid "0fc9885a-e144-4007-b7c2-81df9748b744")
+			(uuid "87670719-9a0c-4da7-abc5-fc5cbb3ff596")
 		)
 		(pin "3"
 			(uuid "62c94368-d201-4913-aed6-288b8cd1b7e0")
@@ -3596,38 +4227,38 @@
 			(uuid "ff655893-31d0-4ab7-ad43-aaebb4ef4ea2")
 		)
 		(pin "2"
-			(uuid "665cef6a-5834-460c-a7ab-f3ff883a6a06")
+			(uuid "d0220903-966d-4b5a-a922-933f18a046e1")
 		)
 		(pin "1"
-			(uuid "0fa4244a-a24f-4ee0-9d7f-a8ab23f908f7")
+			(uuid "bc45d26d-d390-48c9-bc0d-08d5d003138a")
 		)
 		(pin "5"
 			(uuid "09d27ba5-d050-4b0d-b839-33a3a3f19e85")
 		)
 		(pin "8"
-			(uuid "bbcadf87-bbe0-4b31-b77f-121849f1770e")
+			(uuid "bbf50cc4-4344-45cd-b12d-a1b6d69ae46c")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q805")
+					(reference "Q707")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "power:+12V")
-		(at 81.28 77.47 0)
+		(lib_id "mylib_power:24VAC")
+		(at 127 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "78a1a220-8075-4aa5-b367-318579911e15")
-		(property "Reference" "#PWR0806"
-			(at 81.28 81.28 0)
+		(uuid "749276ce-fdba-4e6f-af4e-65d8dcfa7016")
+		(property "Reference" "#PWR0702"
+			(at 127 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3635,8 +4266,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 81.28 72.39 0)
+		(property "Value" "24V_{AC}"
+			(at 127 40.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3644,7 +4275,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 77.47 0)
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3653,7 +4284,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 77.47 0)
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3661,8 +4292,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 81.28 77.47 0)
+		(property "Description" "Power symbol creates a global label with name \"24VAC\""
+			(at 127 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3671,12 +4302,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b127b78-9ade-4ecf-8379-41d731968064")
+			(uuid "3052585c-538d-4907-b36c-360b8791605e")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0806")
+					(reference "#PWR0702")
 					(unit 1)
 				)
 			)
@@ -3684,7 +4315,7 @@
 	)
 	(symbol
 		(lib_id "mylib_diodes:VOM1271")
-		(at 186.69 90.17 0)
+		(at 147.32 114.3 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -3693,8 +4324,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7bc999db-fe5b-4cab-b51f-9e0b89219601")
-		(property "Reference" "U804"
-			(at 186.69 78.74 0)
+		(property "Reference" "U705"
+			(at 147.32 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3702,7 +4333,7 @@
 			)
 		)
 		(property "Value" "VOM1271"
-			(at 186.69 81.28 0)
+			(at 147.32 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3710,7 +4341,7 @@
 			)
 		)
 		(property "Footprint" "mylib_ic:SOP-4_3.8x4.1mm_P2.54mm"
-			(at 191.77 83.82 0)
+			(at 152.4 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3719,7 +4350,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/83469/vom1271.pdf"
-			(at 191.77 83.82 0)
+			(at 152.4 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3728,7 +4359,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 191.77 83.82 0)
+			(at 152.4 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3737,7 +4368,7 @@
 			)
 		)
 		(property "Digikey" "VOM1271TCT-ND"
-			(at 186.69 90.17 0)
+			(at 147.32 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3746,21 +4377,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "d8abde20-5809-46a0-8d48-143abe7fcb09")
+			(uuid "9484c105-6573-43f7-9c11-d5cfcfdbe57f")
 		)
 		(pin "3"
-			(uuid "4dcd867c-c3be-499a-a6fc-48e3e18bbf76")
+			(uuid "574155d0-e781-4c47-85f7-e5ad12f8ba87")
 		)
 		(pin "4"
-			(uuid "9b727f63-88df-43be-9b27-bfee69202984")
+			(uuid "6e4c1fd5-b89c-4ef8-8c77-6dcbfd95bc44")
 		)
 		(pin "2"
-			(uuid "f8cd05b6-2f04-44a6-8a6a-23af4e05d6cb")
+			(uuid "2fc9e5f5-fa89-4124-ab53-57af4789ac31")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U804")
+					(reference "U705")
 					(unit 1)
 				)
 			)
@@ -3768,7 +4399,7 @@
 	)
 	(symbol
 		(lib_id "Transistor_BJT:DTD123E")
-		(at 78.74 50.8 0)
+		(at 40.64 74.93 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3776,8 +4407,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "84bfb9e5-1a33-41ba-833a-fa89d6a5988c")
-		(property "Reference" "Q803"
-			(at 83.82 49.5299 0)
+		(property "Reference" "Q704"
+			(at 45.72 73.6599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3786,7 +4417,7 @@
 			)
 		)
 		(property "Value" "DTD123EK"
-			(at 83.82 52.0699 0)
+			(at 45.72 76.1999 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3795,7 +4426,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 78.74 50.8 0)
+			(at 40.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3805,7 +4436,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/dtd123ekt146-e.pdf"
-			(at 78.74 50.8 0)
+			(at 40.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3815,7 +4446,7 @@
 			)
 		)
 		(property "Description" "Digital NPN Transistor, 2k2/2k2, SOT-23"
-			(at 78.74 50.8 0)
+			(at 40.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3824,7 +4455,7 @@
 			)
 		)
 		(property "Digikey" "DTD123EKT146CT-ND"
-			(at 78.74 50.8 0)
+			(at 40.64 74.93 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3833,18 +4464,18 @@
 			)
 		)
 		(pin "3"
-			(uuid "91807d25-8e4a-47f8-a343-325837a637b4")
+			(uuid "10d1a2ff-f416-4c46-982a-f948f9e96aef")
 		)
 		(pin "2"
-			(uuid "4518b5e9-aef6-43f6-9110-27a7881452fe")
+			(uuid "ff4ed7da-e25a-4b30-b92b-9d939011814f")
 		)
 		(pin "1"
-			(uuid "c00a0d03-905b-44dd-88a3-3a00bca0942d")
+			(uuid "03cf92ec-21a1-4fb3-a867-8e8814465e49")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q803")
+					(reference "Q704")
 					(unit 1)
 				)
 			)
@@ -3852,7 +4483,7 @@
 	)
 	(symbol
 		(lib_id "mylib_diodes:VOM1271")
-		(at 97.79 90.17 0)
+		(at 59.69 114.3 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -3860,8 +4491,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8a84463b-244d-447e-aeb3-6ec98c9d788c")
-		(property "Reference" "U803"
-			(at 97.79 78.74 0)
+		(property "Reference" "U704"
+			(at 59.69 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3869,7 +4500,7 @@
 			)
 		)
 		(property "Value" "VOM1271"
-			(at 97.79 81.28 0)
+			(at 59.69 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3877,7 +4508,7 @@
 			)
 		)
 		(property "Footprint" "mylib_ic:SOP-4_3.8x4.1mm_P2.54mm"
-			(at 92.71 83.82 0)
+			(at 54.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3886,7 +4517,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/83469/vom1271.pdf"
-			(at 92.71 83.82 0)
+			(at 54.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3895,7 +4526,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 83.82 0)
+			(at 54.61 107.95 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3904,7 +4535,7 @@
 			)
 		)
 		(property "Digikey" "VOM1271TCT-ND"
-			(at 97.79 90.17 0)
+			(at 59.69 114.3 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3913,154 +4544,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "7e336b5b-c142-45a9-80c3-7021e405b3e9")
+			(uuid "db8faf81-7077-49d0-a309-d1c7b96feaaa")
 		)
 		(pin "3"
-			(uuid "c044ecbc-d100-4615-88ca-345630be43c4")
+			(uuid "6eb55740-e446-45f7-8820-0f30cdfccc5e")
 		)
 		(pin "4"
-			(uuid "1e14814f-986f-4767-b84e-fb08aa7bc861")
+			(uuid "0b0bbefd-e3b7-45b2-9b01-ec0e4a1cb8ff")
 		)
 		(pin "2"
-			(uuid "4896dafe-50de-4f31-93ae-e664fd3d468c")
+			(uuid "87d03121-f31e-4b40-ba4a-fa06d025d6ba")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U803")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 203.2 29.21 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8d0ffcf8-d8db-4f4f-82b6-2dc94dfbd527")
-		(property "Reference" "#PWR0803"
-			(at 203.2 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 203.2 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 203.2 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "71a9796c-78b3-4de9-af3a-d09b4e0b4fe4")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0803")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 81.28 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8fb28bfa-c3d1-49cd-b4ec-ee7fc372fe88")
-		(property "Reference" "#PWR0802"
-			(at 81.28 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 81.28 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 81.28 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 81.28 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 81.28 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "393b6b7c-06a0-4d53-9569-464bfe1da4cd")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0802")
+					(reference "U704")
 					(unit 1)
 				)
 			)
@@ -4068,7 +4566,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 81.28 82.55 0)
+		(at 43.18 106.68 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -4077,8 +4575,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8ff7178a-94e7-4f85-92fc-0b6200e0c7eb")
-		(property "Reference" "R803"
-			(at 78.74 81.2799 0)
+		(property "Reference" "R704"
+			(at 40.64 105.4099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4087,7 +4585,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 78.74 83.8199 0)
+			(at 40.64 107.9499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4096,7 +4594,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.058 82.55 90)
+			(at 44.958 106.68 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4105,7 +4603,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 81.28 82.55 0)
+			(at 43.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4114,7 +4612,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 81.28 82.55 0)
+			(at 43.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4123,7 +4621,7 @@
 			)
 		)
 		(property "Digikey" "A129684CT-ND"
-			(at 81.28 82.55 0)
+			(at 43.18 106.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4132,15 +4630,15 @@
 			)
 		)
 		(pin "1"
-			(uuid "22dddd4c-97f7-427a-8fb0-a02d16f55c94")
+			(uuid "b463c457-1415-4616-95f2-278eeb67f06e")
 		)
 		(pin "2"
-			(uuid "39f25f4d-790a-447f-a0f4-706c69c929ef")
+			(uuid "31323cfe-73a0-408f-b888-5b04bf340e1d")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R803")
+					(reference "R704")
 					(unit 1)
 				)
 			)
@@ -4148,7 +4646,7 @@
 	)
 	(symbol
 		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 167.64 49.53 180)
+		(at 129.54 73.66 180)
 		(unit 2)
 		(exclude_from_sim yes)
 		(in_bom yes)
@@ -4156,8 +4654,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "91b50b8c-45ef-4290-923b-17bc5fe0cd83")
-		(property "Reference" "Q802"
-			(at 161.29 48.2599 0)
+		(property "Reference" "Q702"
+			(at 123.19 72.3899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4166,7 +4664,7 @@
 			)
 		)
 		(property "Value" "Q_Dual_NMOS"
-			(at 161.29 50.7999 0)
+			(at 123.19 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4175,7 +4673,7 @@
 			)
 		)
 		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 162.56 49.53 0)
+			(at 124.46 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4184,7 +4682,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 162.56 49.53 0)
+			(at 124.46 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4193,7 +4691,7 @@
 			)
 		)
 		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 167.64 49.53 0)
+			(at 129.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4202,7 +4700,7 @@
 			)
 		)
 		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 167.64 49.53 0)
+			(at 129.54 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4211,16 +4709,16 @@
 			)
 		)
 		(pin "4"
-			(uuid "d2df4688-ac24-4f01-8f6c-7b050aed001b")
+			(uuid "32f235d0-1462-426a-8453-15ffece273e4")
 		)
 		(pin "7"
 			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33d")
 		)
 		(pin "3"
-			(uuid "f59f7ad8-cb6f-4782-835d-d72ef0ead974")
+			(uuid "ef491e5a-8961-47a4-8e14-4f1abf51b98b")
 		)
 		(pin "6"
-			(uuid "18ba2bee-d9e1-4779-9797-c130f1bacac2")
+			(uuid "c6dd09cb-e656-4127-bd49-599aebe3330e")
 		)
 		(pin "2"
 			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a4")
@@ -4229,7 +4727,7 @@
 			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f116")
 		)
 		(pin "5"
-			(uuid "a55c91af-ce51-4a75-b3c5-7dffeb042724")
+			(uuid "98d14347-247a-43bd-9164-8dae88663bb2")
 		)
 		(pin "8"
 			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbde9")
@@ -4237,15 +4735,95 @@
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q802")
+					(reference "Q702")
 					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 220.98 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "97583fab-1d7e-4c20-85ba-5847e037157f")
+		(property "Reference" "R703"
+			(at 218.44 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 218.44 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 222.758 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 220.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 220.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "A129684CT-ND"
+			(at 220.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a27c83a2-343c-438c-83d1-827b1a41216d")
+		)
+		(pin "2"
+			(uuid "af621eed-8ebf-49c6-a75b-2e41a9db32e7")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "R703")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Transistor_BJT:DTD123E")
-		(at 205.74 99.06 0)
+		(at 163.83 123.19 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -4254,8 +4832,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a89d9ec5-42ba-47b2-92c2-1f95431aaa2f")
-		(property "Reference" "Q808"
-			(at 200.66 97.7899 0)
+		(property "Reference" "Q710"
+			(at 158.75 121.9199 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4264,7 +4842,7 @@
 			)
 		)
 		(property "Value" "DTD123EK"
-			(at 200.66 100.3299 0)
+			(at 158.75 124.4599 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4273,7 +4851,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SC-59"
-			(at 205.74 99.06 0)
+			(at 163.83 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4283,7 +4861,7 @@
 			)
 		)
 		(property "Datasheet" "https://fscdn.rohm.com/en/products/databook/datasheet/discrete/transistor/digital/dtd123ekt146-e.pdf"
-			(at 205.74 99.06 0)
+			(at 163.83 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4293,7 +4871,7 @@
 			)
 		)
 		(property "Description" "Digital NPN Transistor, 2k2/2k2, SOT-23"
-			(at 205.74 99.06 0)
+			(at 163.83 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4302,7 +4880,7 @@
 			)
 		)
 		(property "Digikey" "DTD123EKT146CT-ND"
-			(at 205.74 99.06 0)
+			(at 163.83 123.19 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4311,114 +4889,34 @@
 			)
 		)
 		(pin "3"
-			(uuid "9ce64283-b857-49a3-8ed8-2a12f6f5a029")
+			(uuid "9a268fc4-e60b-4981-9f2c-38f1c89fb8da")
 		)
 		(pin "2"
-			(uuid "ead6cf94-88cf-477d-ae6b-a469f6df9ba2")
+			(uuid "571fb125-e6f8-4103-8ee0-a011d547fc9b")
 		)
 		(pin "1"
-			(uuid "389720dc-9b75-4120-9a38-4133440bbf66")
+			(uuid "6853bbd5-1f93-43f2-b2bf-459b40707d71")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q808")
+					(reference "Q710")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 81.28 34.29 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "b95d5c45-9830-4e2d-aa47-16ce5bf87ed5")
-		(property "Reference" "R801"
-			(at 78.74 33.0199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470"
-			(at 78.74 35.5599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 83.058 34.29 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 81.28 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 81.28 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "A129684CT-ND"
-			(at 81.28 34.29 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "281d4803-1dbf-4549-aa1d-c3ac620cf67c")
-		)
-		(pin "2"
-			(uuid "999cbbdb-8a6d-4d0c-9995-7eeb40b1a625")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R801")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 203.2 105.41 0)
+		(lib_id "power:+8V")
+		(at 220.98 53.34 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "bf06a918-80b9-4293-8f88-2bec2a7f5eba")
-		(property "Reference" "#PWR0809"
-			(at 203.2 111.76 0)
+		(uuid "b61dd7ff-78dd-43a4-a067-1a75c012eeed")
+		(property "Reference" "#PWR0706"
+			(at 220.98 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4426,8 +4924,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 203.2 110.49 0)
+		(property "Value" "+8V"
+			(at 220.98 49.022 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4435,7 +4933,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 105.41 0)
+			(at 220.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4444,7 +4942,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 105.41 0)
+			(at 220.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4452,8 +4950,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 105.41 0)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 220.98 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,275 +4960,29 @@
 			)
 		)
 		(pin "1"
-			(uuid "53f7bdde-b16a-4294-a2b9-b62a6063dd73")
+			(uuid "dc239a98-ab2a-4a20-a3c5-7943cce2f3d8")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0809")
+					(reference "#PWR0706")
 					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+12V")
-		(at 203.2 77.47 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1cef2ff-b446-4c73-982e-7a3d754fed0f")
-		(property "Reference" "#PWR0807"
-			(at 203.2 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+12V"
-			(at 203.2 72.39 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 203.2 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 203.2 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+12V\""
-			(at 203.2 77.47 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "731bf96c-a829-4490-aeb6-f620d997d467")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0807")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 203.2 82.55 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c1d8dc83-275a-468a-8387-16cd533d6b8a")
-		(property "Reference" "R804"
-			(at 200.66 81.2799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "470"
-			(at 200.66 83.8199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.978 82.55 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 203.2 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 203.2 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "A129684CT-ND"
-			(at 203.2 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f794dee9-5acf-4c69-a1ff-1c771293f5e2")
-		)
-		(pin "2"
-			(uuid "0478ff53-f9a7-4fa0-a0b4-0cdfb147cf20")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R804")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
-		(at 119.38 97.79 0)
-		(mirror x)
-		(unit 2)
-		(exclude_from_sim yes)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc3cf2c6-ea30-40cb-a383-e7837e0cbd46")
-		(property "Reference" "Q805"
-			(at 125.73 96.5199 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Q_Dual_NMOS"
-			(at 125.73 99.0599 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 124.46 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Dual NMOS transistor, 8 pin package"
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
-			(at 119.38 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "8c2344cd-5475-471d-94db-be6a37eb3330")
-		)
-		(pin "7"
-			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33b")
-		)
-		(pin "3"
-			(uuid "97b57ede-24ba-4dff-9711-3b5640017115")
-		)
-		(pin "6"
-			(uuid "92541298-71b3-4f83-9a41-3ba8e519cad2")
-		)
-		(pin "2"
-			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a2")
-		)
-		(pin "1"
-			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f114")
-		)
-		(pin "5"
-			(uuid "52f374e3-e618-4881-a91c-ead3f449fc78")
-		)
-		(pin "8"
-			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbde7")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "Q805")
-					(unit 2)
 				)
 			)
 		)
 	)
 	(symbol
 		(lib_id "mylib_diodes:VOM1271")
-		(at 186.69 41.91 0)
-		(mirror y)
+		(at 237.49 66.04 0)
 		(unit 1)
 		(exclude_from_sim yes)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "d419a717-3745-4dc3-b70c-a1e808d0a058")
-		(property "Reference" "U802"
-			(at 186.69 30.48 0)
+		(uuid "b64bd03e-f311-47ee-ba99-982d62cd4f03")
+		(property "Reference" "U703"
+			(at 237.49 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4738,7 +4990,7 @@
 			)
 		)
 		(property "Value" "VOM1271"
-			(at 186.69 33.02 0)
+			(at 237.49 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4746,7 +4998,7 @@
 			)
 		)
 		(property "Footprint" "mylib_ic:SOP-4_3.8x4.1mm_P2.54mm"
-			(at 191.77 35.56 0)
+			(at 232.41 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4755,7 +5007,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.vishay.com/docs/83469/vom1271.pdf"
-			(at 191.77 35.56 0)
+			(at 232.41 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +5016,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 191.77 35.56 0)
+			(at 232.41 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4773,7 +5025,7 @@
 			)
 		)
 		(property "Digikey" "VOM1271TCT-ND"
-			(at 186.69 41.91 0)
+			(at 237.49 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,21 +5034,21 @@
 			)
 		)
 		(pin "1"
-			(uuid "e697e589-f548-43b8-9552-e923b300fc61")
+			(uuid "ce672fb4-c799-41e3-9522-e27613a7f337")
 		)
 		(pin "3"
-			(uuid "cb2b30f2-6dbe-484a-a734-07e12da03636")
+			(uuid "8a14ffe2-193b-40dd-a866-97419c92f2bc")
 		)
 		(pin "4"
-			(uuid "6e4a3af0-c367-4b31-93f9-b85a41a00c8e")
+			(uuid "9cc4c414-84b5-46be-8a4f-336a682b178b")
 		)
 		(pin "2"
-			(uuid "4783aaa9-e229-4f0f-b259-43ff6980825c")
+			(uuid "1984a31a-c2f6-4672-9684-a4b3a4b298de")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "U802")
+					(reference "U703")
 					(unit 1)
 				)
 			)
@@ -4804,7 +5056,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 203.2 34.29 0)
+		(at 43.18 58.42 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim yes)
@@ -4812,9 +5064,9 @@
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "eeab7c89-3114-4cb4-90bb-e5931c4aa2fe")
-		(property "Reference" "R802"
-			(at 200.66 33.0199 0)
+		(uuid "b95d5c45-9830-4e2d-aa47-16ce5bf87ed5")
+		(property "Reference" "R701"
+			(at 40.64 57.1499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4823,7 +5075,7 @@
 			)
 		)
 		(property "Value" "470"
-			(at 200.66 35.5599 0)
+			(at 40.64 59.6899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4832,7 +5084,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 204.978 34.29 90)
+			(at 44.958 58.42 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,7 +5093,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 203.2 34.29 0)
+			(at 43.18 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4850,7 +5102,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 203.2 34.29 0)
+			(at 43.18 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4859,7 +5111,7 @@
 			)
 		)
 		(property "Digikey" "A129684CT-ND"
-			(at 203.2 34.29 0)
+			(at 43.18 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4868,15 +5120,112 @@
 			)
 		)
 		(pin "1"
-			(uuid "4c1d8217-4c22-43c7-bfc0-470fdeaa44cf")
+			(uuid "20220c9c-e1da-425f-a485-3a79e896d3d4")
 		)
 		(pin "2"
-			(uuid "6a24905f-8713-413f-9f7c-8a8c2dffe204")
+			(uuid "d8f354b2-1155-413d-886c-d9cbb6798f0d")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "R802")
+					(reference "R701")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
+		(at 256.54 58.42 0)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "beb98399-4b78-420d-9820-e5445daf7f3d")
+		(property "Reference" "Q703"
+			(at 262.89 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_Dual_NMOS"
+			(at 262.89 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 261.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 261.62 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NMOS transistor, 8 pin package"
+			(at 256.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
+			(at 256.54 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "3013eab8-2e99-48c5-a544-83388611cd3c")
+		)
+		(pin "7"
+			(uuid "0b4906b9-77b4-4177-9ad3-298e7dbef2ed")
+		)
+		(pin "3"
+			(uuid "62c94368-d201-4913-aed6-288b8cd1b7e1")
+		)
+		(pin "6"
+			(uuid "ff655893-31d0-4ab7-ad43-aaebb4ef4ea3")
+		)
+		(pin "2"
+			(uuid "23eb0d50-7d2b-4163-9f5a-7a8d8813fd77")
+		)
+		(pin "1"
+			(uuid "502a7a58-03f2-4c33-b403-c0bf268a5b00")
+		)
+		(pin "5"
+			(uuid "09d27ba5-d050-4b0d-b839-33a3a3f19e86")
+		)
+		(pin "8"
+			(uuid "743ffe3b-508a-4464-93b9-9cb3e26e8e0b")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "Q703")
 					(unit 1)
 				)
 			)
@@ -4884,15 +5233,15 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 81.28 105.41 0)
+		(at 161.29 129.54 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "fa27dd86-0a9a-4fbe-9fab-98ba6a71bb3b")
-		(property "Reference" "#PWR0808"
-			(at 81.28 111.76 0)
+		(uuid "bf06a918-80b9-4293-8f88-2bec2a7f5eba")
+		(property "Reference" "#PWR0713"
+			(at 161.29 135.89 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4901,7 +5250,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 81.28 110.49 0)
+			(at 161.29 134.62 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4909,7 +5258,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 81.28 105.41 0)
+			(at 161.29 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4918,7 +5267,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 81.28 105.41 0)
+			(at 161.29 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4927,7 +5276,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 81.28 105.41 0)
+			(at 161.29 129.54 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4936,12 +5285,338 @@
 			)
 		)
 		(pin "1"
-			(uuid "0107f425-dd6b-4b99-9339-2f0f580bc6ea")
+			(uuid "040fe4f1-96e7-442d-a3c2-57f16caee15a")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0808")
+					(reference "#PWR0713")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 161.29 106.68 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c1d8dc83-275a-468a-8387-16cd533d6b8a")
+		(property "Reference" "R705"
+			(at 158.75 105.4099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 158.75 107.9499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 163.068 106.68 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "A129684CT-ND"
+			(at 161.29 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "42f75c4d-045e-4eeb-ad00-a6298a27cb3f")
+		)
+		(pin "2"
+			(uuid "6a978b40-f5ff-4fce-841e-c6e36156933a")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "R705")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:Q_Dual_NMOS_S1G1S2G2D2D2D1D1")
+		(at 81.28 121.92 0)
+		(mirror x)
+		(unit 2)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cc3cf2c6-ea30-40cb-a383-e7837e0cbd46")
+		(property "Reference" "Q707"
+			(at 87.63 120.6499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "Q_Dual_NMOS"
+			(at 87.63 123.1899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_SO:SO-8_3.9x4.9mm_P1.27mm"
+			(at 86.36 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 86.36 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Dual NMOS transistor, 8 pin package"
+			(at 81.28 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "742-SQ4946CEY-T1_GE3CT-ND"
+			(at 81.28 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "4"
+			(uuid "a5c05c66-8962-451e-b52b-3bee072fe7f6")
+		)
+		(pin "7"
+			(uuid "ab5811bd-1a55-4c9a-a1b3-b78473b7d33f")
+		)
+		(pin "3"
+			(uuid "4c85710f-dcaa-4369-aed4-853a18368d9d")
+		)
+		(pin "6"
+			(uuid "10efc2ae-7f2e-46f0-950e-9a3d46ef2cff")
+		)
+		(pin "2"
+			(uuid "20444e5f-9312-4860-b5a4-410a3e9726a6")
+		)
+		(pin "1"
+			(uuid "9068a7d5-cde2-47d5-93b6-b850d935f118")
+		)
+		(pin "5"
+			(uuid "3625f451-c6c4-4812-b5aa-559971753efd")
+		)
+		(pin "8"
+			(uuid "4994dd4c-7fa1-4f19-87bd-d7cbf05cbdeb")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "Q707")
+					(unit 2)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+8V")
+		(at 161.29 101.6 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cf8118ad-816e-4520-9aef-b049c1666ad5")
+		(property "Reference" "#PWR0711"
+			(at 161.29 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+8V"
+			(at 161.29 97.282 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 161.29 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "a74aeebd-d412-41fe-800b-a0040b924135")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0711")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "mylib_diodes:VOM1271")
+		(at 147.32 66.04 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "d419a717-3745-4dc3-b70c-a1e808d0a058")
+		(property "Reference" "U702"
+			(at 147.32 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VOM1271"
+			(at 147.32 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "mylib_ic:SOP-4_3.8x4.1mm_P2.54mm"
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.vishay.com/docs/83469/vom1271.pdf"
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 152.4 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "VOM1271TCT-ND"
+			(at 147.32 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "956e7677-625e-484d-87e6-8c084af30241")
+		)
+		(pin "3"
+			(uuid "bb56b9cc-626b-4026-a79e-260b6119047a")
+		)
+		(pin "4"
+			(uuid "2af467b6-2216-49b5-a52e-00658e8d0a5c")
+		)
+		(pin "2"
+			(uuid "0a1ff73f-b1cd-40a8-b567-db2095ac10ba")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "U702")
 					(unit 1)
 				)
 			)
@@ -4949,7 +5624,282 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 203.2 57.15 0)
+		(at 220.98 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "da9c25a7-b858-40c7-8c33-8e469eb7ee69")
+		(property "Reference" "#PWR0709"
+			(at 220.98 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 220.98 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 220.98 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1633c3ba-21b0-46ba-8cee-b525979d0e10")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0709")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+8V")
+		(at 43.18 53.34 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e3f4518f-b564-49d7-bc72-f39c914d08b7")
+		(property "Reference" "#PWR0704"
+			(at 43.18 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+8V"
+			(at 43.18 49.022 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+8V\""
+			(at 43.18 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "af6e25c9-7ee9-454e-8713-2eea0f02c66e")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0704")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 161.29 58.42 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim yes)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "eeab7c89-3114-4cb4-90bb-e5931c4aa2fe")
+		(property "Reference" "R702"
+			(at 158.75 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 158.75 59.6899 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 163.068 58.42 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "A129684CT-ND"
+			(at 161.29 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c23a19ab-6869-480b-8a8d-179fed154184")
+		)
+		(pin "2"
+			(uuid "974be26f-f530-4fb2-a626-c90002e42540")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "R702")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 43.18 129.54 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "fa27dd86-0a9a-4fbe-9fab-98ba6a71bb3b")
+		(property "Reference" "#PWR0712"
+			(at 43.18 135.89 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 43.18 134.62 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 43.18 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 43.18 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 43.18 129.54 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bfdc218c-222b-4f22-b2d0-f1e2d3f8f610")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
+					(reference "#PWR0712")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 161.29 81.28 0)
 		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4957,8 +5907,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "fb1c0b28-de6a-4b37-bb86-b8565ff1894b")
-		(property "Reference" "#PWR0805"
-			(at 203.2 63.5 0)
+		(property "Reference" "#PWR0708"
+			(at 161.29 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4967,7 +5917,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 203.2 62.23 0)
+			(at 161.29 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4975,7 +5925,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 203.2 57.15 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4984,7 +5934,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 203.2 57.15 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4993,7 +5943,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 203.2 57.15 0)
+			(at 161.29 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5002,12 +5952,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "3d006125-d2fe-49e6-9801-b60e1bb53c00")
+			(uuid "65d1aa5f-4870-4b8e-b737-6e3a77eac683")
 		)
 		(instances
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/62201fa0-ed5d-4773-9b2f-d2f1b9c97a45"
-					(reference "#PWR0805")
+					(reference "#PWR0708")
 					(unit 1)
 				)
 			)

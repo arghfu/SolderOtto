@@ -1,5 +1,11 @@
-05-01 14:17:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'linux'
-05-01 14:17:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.12.3 (main, Apr 23 2024, 09:16:07) [GCC 13.2.1 20240417]'
-05-01 14:17:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.2
-05-01 14:17:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
-05-01 14:17:15 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x71598e594290>
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 647:Plugin executed on: 'linux'
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 648:Plugin executed with python version: '3.12.4 (main, Jun  7 2024, 06:33:07) [GCC 14.1.1 20240522]'
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 649:KiCad build version: 8.0.3
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 650:Plugin version: 3.0.0
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 651:Frame repr: <wx._core.Frame object at 0x71731e16d370>
+06-23 11:01:36 com_github_MitjaNemec_PlaceFootprints.place_footprints 121:getting a list of all footprints on board
+06-23 11:01:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 830:Reference designator is: C
+06-23 11:01:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 831:Reference number is: 303
+06-23 11:01:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 863:Sorted and filtered list:
+['C301', 'C302', 'C303', 'C304', 'C305', 'C306', 'C307', 'C308', 'C309', 'C310', 'C311', 'C312', 'C313', 'C314', 'C315', 'C316', 'C317']
+06-23 11:01:42 com_github_MitjaNemec_PlaceFootprints.action_place_footprints 359:wx.Colour(42, 46, 50, 255)

@@ -1,32 +1,32 @@
-# Prerequisites
-*.d
+# editors
+.vscode
+*.swp
+*~
+.idea
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+# python
+.venv
 
-# Precompiled Headers
-*.gch
-*.pch
+# build
+**/build*
+**/twister-out*
+**/.west
+deps/
+__pycache__/
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# docs
+/doc/_build*
 
-# Fortran module files
-*.mod
-*.smod
+# misc
+.directory
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
+# KI-CAD
+**/*-backups*/
+*.lck
+*.kicad_prl
+*.xml
+*.csv
+*.net
+fp-info-cache
+_autosave-*
+\#auto_saved_files\#

@@ -1,0 +1,19 @@
+# FT8xx Embedded Video Engine configuration options
+
+# Copyright (c) 2020-2021 Hubert Miś <hubert.mis@gmail.com>
+# SPDX-License-Identifier: Apache-2.0
+
+config BT81X
+	bool "BT81x Embedded Video Engine driver"
+	default y
+	depends on DT_HAS_BRIDGETEK_BT81X_ENABLED
+	select SPI
+	help
+	  Enable driver for BT81X controller.
+
+config BT81X_INIT_PRIORITY
+	int "BT81X init priority"
+	default 90
+	depends on BT81X
+	help
+	  BT81X driver initialization priority in POST_KERNEL.
