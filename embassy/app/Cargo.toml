@@ -1,0 +1,43 @@
+[package]
+edition = "2021"
+name = "solderotto-app"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+embassy-stm32 = { version = "0.1.0", features = ["stm32g474qe", "time-driver-tim1", "exti"]  }
+embassy-boot-stm32 = { version = "0.2.0", features = [] }
+embassy-executor = { version = "0.6.3", features = ["task-arena-size-8192", "arch-cortex-m", "executor-thread", "integrated-timers"] }
+embassy-sync = { version = "0.6.1" }
+embassy-time = { version = "0.3.2", features = [ "tick-hz-32_768"] }
+embassy-embedded-hal = { version = "0.2.0" }
+embassy-usb = { version = "0.3.0" }
+embassy-usb-dfu = { version = "0.1.0", features = ["application", "cortex-m"] }
+
+defmt = { version = "0.3", optional = true }
+defmt-rtt = { version = "0.4", optional = true }
+panic-reset = { version = "0.1.1" }
+embedded-hal = { version = "1.0.0" }
+
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+cortex-m-rt = "0.7.5"
+
+[patch.crates-io]
+embassy-stm32 = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-boot-stm32 = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-usb = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-usb-dfu = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-futures = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-sync = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-executor = { git = 'https://github.com/embassy-rs/embassy.git' }
+embassy-time = { git = 'https://github.com/embassy-rs/embassy.git' }
+
+
+[features]
+defmt = [
+    "dep:defmt",
+    "dep:defmt-rtt",
+    "embassy-stm32/defmt",
+    "embassy-boot-stm32/defmt",
+    "embassy-sync/defmt",
+]

@@ -62,10 +62,10 @@ int main(void)
 		cnt++;
 
 		/* Display the hello message */
-		bt81x_copro_cmd_text(20, 70, 46, 0, "Hello,");
+		bt81x_copro_cmd_text(20, 70, 29, 0, "Hello,");
 		/* Set Zephyr color */
 		bt81x_copro_cmd(FT8XX_COLOR_RGB(0x78, 0x29, 0xd2));
-		bt81x_copro_cmd_text(20, 105, 46, 0, "Zephyr!");
+		bt81x_copro_cmd_text(20, 105, 29, 0, "Zephyr!");
 
 		/* Display value set with buttons */
 		bt81x_copro_cmd(FT8XX_COLOR_RGB(0xff, 0xff, 0xff));
@@ -73,9 +73,9 @@ int main(void)
 					FT8XX_OPT_SIGNED | FT8XX_OPT_RIGHTX,
 					val);
 		bt81x_copro_cmd(FT8XX_TAG(TAG_PLUS));
-		bt81x_copro_cmd_text(90, 160, 31, 0, "+");
+		bt81x_copro_cmd_text(140, 160, 29, 0, "+");
 		bt81x_copro_cmd(FT8XX_TAG(TAG_MINUS));
-		bt81x_copro_cmd_text(20, 160, 31, 0, "-");
+		bt81x_copro_cmd_text(40, 160, 29, 0, "-");
 
 		/* Finish Display List */
 		bt81x_copro_cmd(FT8XX_DISPLAY());

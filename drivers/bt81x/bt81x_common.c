@@ -41,7 +41,7 @@ uint8_t bt81x_rd8(uint32_t address)
 	int err = bt81x_drv_read(address, &data, sizeof(data));
 	__ASSERT(err == 0, "Reading BT81x data from 0x%x failed", address);
 
-	return data;
+	 	return data;
 }
 
 uint16_t bt81x_rd16(uint32_t address)
