@@ -40,7 +40,7 @@ fn main() -> ! {
         let driver = Driver::new(p.USB, Irqs, p.PA12, p.PA11);
         let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
         config.manufacturer = Some("FireWaterBurn");
-        config.product = Some("USB-DFU Runtime example");
+        config.product = Some("SolderOtto-DFU Runtime");
         config.serial_number = Some("08151337");
 
         let fw_config = FirmwareUpdaterConfig::from_linkerfile_blocking(&flash, &flash);
