@@ -8,3 +8,7 @@ target = "thumbv7em-none-eabihf"
 
 [env]
 DEFMT_LOG = "info"
+
+[unstable]
+build-std = ["core"]
+build-std-features = ["panic_immediate_abort"]
