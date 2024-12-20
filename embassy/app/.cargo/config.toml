@@ -7,7 +7,7 @@ runner = 'probe-rs run --chip STM32G474QETx'
 target = "thumbv7em-none-eabihf"
 
 [env]
-DEFMT_LOG = "info"
+DEFMT_LOG = "debug"
 
 [unstable]
 build-std = ["core"]

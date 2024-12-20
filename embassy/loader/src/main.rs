@@ -1,6 +1,7 @@
 #![no_std]
 #![no_main]
 
+use embassy_stm32::Config;
 use core::cell::RefCell;
 #[cfg(feature = "defmt")]
 use defmt_rtt as _;
@@ -21,7 +22,21 @@ bind_interrupts!(struct Irqs {
 
 #[entry]
 fn main() -> ! {
-    let config = embassy_stm32::Config::default();
+    let mut config = Config::default();
+    {
+        use embassy_stm32::rcc::*;
+        config.rcc.hsi = true;
+        config.rcc.pll = Some(Pll {
+            source: PllSource::HSI,
+            prediv: PllPreDiv::DIV4,
+            mul: PllMul::MUL85,
+            // Main system clock at 170 MHz
+            divr: Some(PllRDiv::DIV2),
+            divq: Some(PllQDiv::DIV4),
+            divp: Some(PllPDiv::DIV4),
+        });
+        config.rcc.sys = Sysclk::PLL1_R;
+    }
     let p = embassy_stm32::init(config);
 
     // Prevent a hard fault when accessing flash 'too early' after boot.

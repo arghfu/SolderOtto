@@ -2,3 +2,6 @@
 
 [default.general]
 chip = "STM32G474QETx"
+
+[default.rtt]
+enabled = true

@@ -3,18 +3,13 @@ use embassy_stm32::peripherals::ADC1;
 
 pub struct Handle {
     pub handle_type: Option<HandleType>,
-
 }
 
 impl Handle {
     pub fn new() -> Handle {
-        
-        Self { 
-            handle_type: None,
-        }
+        Self { handle_type: None }
     }
 }
-
 
 #[allow(unused)]
 pub enum HandleType {
@@ -22,5 +17,3 @@ pub enum HandleType {
     T245,
     AM120,
 }
-
-
