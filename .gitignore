@@ -1,21 +1,10 @@
 # editors
 .vscode
 *.swp
-*~
 .idea
 
 # python
 .venv
-
-# build
-**/build*
-**/twister-out*
-**/.west
-deps/
-__pycache__/
-
-# docs
-/doc/_build*
 
 # misc
 .directory

@@ -1,0 +1,63 @@
+[package]
+edition = "2021"
+name = "solderotto-app"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+embassy-stm32 = { version = "0.1.0", features = ["stm32g474qe", "time-driver-tim1", "exti", "unstable-pac", "memory-x"] }
+embassy-boot-stm32 = { version = "0.2.0", features = [] }
+embassy-executor = { version = "0.6.3", features = ["task-arena-size-8192", "arch-cortex-m", "executor-thread", "executor-interrupt"] }
+embassy-sync = { version = "0.6.1" }
+embassy-time = { version = "0.3.2", features = ["tick-hz-1_000_000"] }
+embassy-embedded-hal = { version = "0.2.0" }
+embassy-usb = { version = "0.3.0" }
+embassy-usb-dfu = { version = "0.1.0", features = ["application", "cortex-m"] }
+
+defmt = { version = "0.3", optional = true }
+defmt-rtt = { version = "0.4", optional = true }
+panic-probe = { version = "0.3" }
+embedded-hal = { version = "1.0.0" }
+
+cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
+cortex-m-rt = "0.7.5"
+static_cell = "2"
+
+assign-resources = { git = "https://github.com/adamgreig/assign-resources", branch = "main" }
+log = "0.4.22"
+
+[patch.crates-io]
+embassy-stm32 = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-boot-stm32 = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-usb = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-usb-dfu = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-futures = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-sync = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-executor = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+embassy-time = { git = 'https://github.com/embassy-rs/embassy.git', branch = "main" }
+
+
+[features]
+defmt = [
+    "dep:defmt",
+    "dep:defmt-rtt",
+    "embassy-stm32/defmt",
+    "embassy-boot-stm32/defmt",
+    "embassy-sync/defmt",
+]
+
+[profile.dev]
+debug = 2
+debug-assertions = true
+incremental = false
+opt-level = 'z'
+overflow-checks = true
+
+[profile.release]
+codegen-units = 1
+debug = 2
+debug-assertions = false
+incremental = false
+lto = 'fat'
+opt-level = 'z'
+overflow-checks = false
