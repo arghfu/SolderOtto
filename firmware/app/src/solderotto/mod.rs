@@ -2,8 +2,24 @@
 
 use super::OutputResource;
 #[cfg(feature = "defmt")]
-use defmt::{warn, trace};
+use defmt::{trace, warn};
+use embassy_stm32::adc::{Adc, Instance};
 use embassy_stm32::gpio::{Level, Output, Speed};
+use embassy_stm32::peripherals::{ADC1, DMA1_CH1};
+
+pub struct TipAdc<'d, T: Instance> {
+    pub adc: Adc<'d, T>,
+    pub dma: DMA1_CH1,
+}
+
+impl<'d, T: Instance> TipAdc<'d, T> {
+    pub fn new(adc: T, dma: DMA1_CH1) -> Self {
+        Self {
+            adc: Adc::new(adc),
+            dma,
+        }
+    }
+}
 
 pub(crate) mod handle;
 
