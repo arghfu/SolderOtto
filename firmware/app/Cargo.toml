@@ -13,6 +13,7 @@ embassy-time = { version = "0.3.2", features = ["tick-hz-1_000_000"] }
 embassy-embedded-hal = { version = "0.2.0" }
 embassy-usb = { version = "0.3.0" }
 embassy-usb-dfu = { version = "0.1.0", features = ["application", "cortex-m"] }
+embassy-futures = "0.1.1"
 
 defmt = { version = "0.3", optional = true }
 defmt-rtt = { version = "0.4", optional = true }
@@ -22,6 +23,7 @@ embedded-hal = { version = "1.0.0" }
 cortex-m = { version = "0.7.7", features = ["inline-asm", "critical-section-single-core"] }
 cortex-m-rt = "0.7.5"
 static_cell = "2"
+heapless = "0.8.0"
 
 assign-resources = { git = "https://github.com/adamgreig/assign-resources", branch = "main" }
 log = "0.4.22"

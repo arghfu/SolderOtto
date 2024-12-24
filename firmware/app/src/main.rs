@@ -1,33 +1,39 @@
 #![no_std]
 #![no_main]
-
+#![allow(dead_code)]
+#![allow(unused_imports)]
 use assign_resources::assign_resources;
 
 use core::iter::IntoIterator;
 use core::ops::DerefMut;
+use cortex_m_rt::entry;
 use panic_probe as _;
 #[cfg(feature = "defmt")]
 use {defmt::*, defmt_rtt as _};
 
-// use solderotto::{BridgeState, WaveControl};
-use embassy_executor::{Executor, InterruptExecutor, Spawner};
+use embassy_executor::{Executor, InterruptExecutor};
+use embassy_futures::select::{select, Either4};
 use embassy_stm32::adc::{Adc, AdcChannel, AnyAdcChannel, SampleTime};
+use embassy_stm32::dma::WritableRingBuffer;
 use embassy_stm32::exti::ExtiInput;
 use embassy_stm32::gpio::{Level, OutputOpenDrain, Pull, Speed};
-use embassy_stm32::peripherals;
+use embassy_stm32::interrupt::{InterruptExt, Priority};
 use embassy_stm32::peripherals::{ADC1, DMA1, DMA1_CH1};
-use embassy_stm32::usart::UartTx;
-use embassy_stm32::usb;
 use embassy_stm32::Config;
+use embassy_stm32::{interrupt, peripherals};
 use embassy_sync::blocking_mutex::raw::CriticalSectionRawMutex;
 use embassy_sync::mutex;
 use embassy_time::{Duration, Timer};
+use heapless::Vec;
 use static_cell::StaticCell;
-
-type TipAdcAsyncMutex = mutex::Mutex<CriticalSectionRawMutex, TipAdc<'static, ADC1>>;
 mod dfu;
 mod solderotto;
-use solderotto::TipAdc;
+use solderotto::*;
+
+type TipAdcAsyncMutex = mutex::Mutex<CriticalSectionRawMutex, TipAdc<'static, ADC1>>;
+
+static EXECUTOR_HI: InterruptExecutor = InterruptExecutor::new();
+static EXECUTOR_LOW: StaticCell<Executor> = StaticCell::new();
 
 assign_resources! {
     dfu: DfuResources {
@@ -59,9 +65,6 @@ assign_resources! {
 
     temp: TempResources {
         tip0: PC3,
-    }
-
-    temp1: TempResources1 {
         tip1: PC2,
     }
 
@@ -71,69 +74,48 @@ assign_resources! {
     }
 }
 
-// #[embassy_executor::task]
-// async fn zero_crossing(zcd: ZcdResources, driver: OutputResource, temp: TempResources) {
-//     let mut zcd = ExtiInput::new(zcd.zcd, zcd.int, Pull::None);
-//     let mut control = WaveControl::new(driver, 100);
-//     control.set_point(0);
-//
-//     let mut read_buffer: [u16; 3] = [0; 3];
-//     let mut adc = Adc::new(temp.adc);
-//
-//     let mut dma = temp.dma;
-//     let mut vrefint = adc.enable_vrefint().degrade_adc();
-//     let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
-//     let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
-//
-//     loop {
-//         zcd.wait_for_falling_edge().await;
-//         control.drive_low();
-//
-//         let now = embassy_time::Instant::now();
-//
-//         adc.read(
-//             &mut dma,
-//             [
-//                 (&mut vrefint, SampleTime::CYCLES247_5),
-//                 (&mut tip0, SampleTime::CYCLES247_5),
-//                 (&mut tip1, SampleTime::CYCLES247_5),
-//             ]
-//             .into_iter(),
-//             &mut read_buffer,
-//         )
-//         .await;
-//
-//         let dur = embassy_time::Instant::now().duration_since(now);
-//
-//         let convert_to_millivolts = |sample: u16| {
-//             const VREF_CALIB: u32 = 1648;
-//             const VREF_CHARA: u32 = 3000;
-//
-//             ((u32::from(sample) * VREF_CHARA * VREF_CALIB) / (read_buffer[0] as u32 * 4095)) as u16
-//         };
-//
-//         info!("vref: {}mV", adc.blocking_read(&mut vrefint));
-//         info!("tio0: {}mV", convert_to_millivolts(read_buffer[1]));
-//         info!("tip1: {}mV", convert_to_millivolts(read_buffer[2]));
-//
-//         zcd.wait_for_rising_edge().await;
-//         control.drive_high(BridgeState::Com);
-//     }
-// }
+#[interrupt]
+unsafe fn I2C1_EV() {
+    EXECUTOR_HI.on_interrupt()
+}
 
 #[embassy_executor::task]
-async fn zero_crossing(tip_adc: &'static TipAdcAsyncMutex, zcd: ZcdResources, temp: TempResources) {
-    let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
+async fn zero_crossing(
+    tip_adc: &'static TipAdcAsyncMutex,
+    zcd: ZcdResources,
+    temp: TempResources,
+    driver: OutputResource,
+) {
+    // let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
 
-    let mut read_buffer: [u16; 2] = [0; 2];
+    let mut read_buffer: [u16; 3] = [0; 3];
+    let mut control = WaveControl::new(driver, 1000);
+    control.set_point(0);
 
     let mut zcd = ExtiInput::new(zcd.zcd, zcd.int, Pull::None);
     let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
+    // let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
 
     loop {
         zcd.wait_for_falling_edge().await;
+        control.drive_low();
 
         let now = embassy_time::Instant::now();
+
+        match select(
+            zcd.wait_for_falling_edge(),
+            Timer::after(Duration::from_secs(8)),
+            self.pin.wait_for_falling_edge(),
+        )
+        .await
+        {
+            Either4::First(_) => {
+                if self.pin.is_high() {
+                    cortex_m::peripheral::SCB::sys_reset();
+                }
+            }
+            Either4::Second(_) => {}
+        }
 
         {
             let mut locked_adc = tip_adc.lock().await;
@@ -143,39 +125,27 @@ async fn zero_crossing(tip_adc: &'static TipAdcAsyncMutex, zcd: ZcdResources, te
                 .adc
                 .read(
                     &mut tip_adc.dma,
-                    [
-                        (&mut vref, SampleTime::CYCLES247_5),
-                        (&mut tip0, SampleTime::CYCLES247_5),
-                    ]
-                    .into_iter(),
-                    &mut read_buffer,
+                    [(&mut tip0, SampleTime::CYCLES247_5)].into_iter(),
+                    &mut read_buffer[0..1],
                 )
                 .await;
         }
         let dur = embassy_time::Instant::now().duration_since(now);
 
-        // let convert_to_millivolts = |sample: u16| {
-        //     const VREF_CALIB: u32 = 1648;
-        //     const VREF_CHARA: u32 = 3000;
-        //
-        //     ((u32::from(sample) * VREF_CHARA * VREF_CALIB) / (read_buffer[0] as u32 * 4095)) as u16
-        // };
-
-        info!("vref: {}mV", read_buffer[0]);
-        info!("tio0: {}mV", read_buffer[1]);
-        // info!("tip1: {}mV", read_buffer[2]);
+        info!("tip0: {}mV", read_buffer[0]);
 
         zcd.wait_for_rising_edge().await;
+        control.drive_high(BridgeState::Com);
     }
 }
 
 #[embassy_executor::task]
-async fn check_connection(tip_adc: &'static TipAdcAsyncMutex, tips: TempResources1) {
+async fn check_connection(tip_adc: &'static TipAdcAsyncMutex) {
     let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
 
-    let mut read_buffer: [u16; 2] = [0; 2];
+    let mut read_buffer: [u16; 8] = [0; 8];
 
-    let mut tip1 = AdcChannel::degrade_adc(tips.tip1);
+    // let mut tip1 = AdcChannel::degrade_adc(tips.tip1);
     loop {
         {
             let mut locked_adc = tip_adc.lock().await;
@@ -185,38 +155,16 @@ async fn check_connection(tip_adc: &'static TipAdcAsyncMutex, tips: TempResource
                 .adc
                 .read(
                     &mut tip_adc.dma,
-                    [
-                        (&mut vref, SampleTime::CYCLES247_5),
-                        (&mut tip1, SampleTime::CYCLES247_5),
-                    ]
-                    .into_iter(),
-                    &mut read_buffer,
+                    [(&mut vref, SampleTime::CYCLES247_5)].into_iter(),
+                    &mut read_buffer[0..1],
                 )
                 .await;
         }
-        info!("vref: {}", read_buffer[0]);
-        info!("tip1: {}", read_buffer[1]);
     }
 }
 
-// #[embassy_executor::task]
-// async fn external_pins(r: SysResource) {
-//     let mut ext0 = OutputOpenDrain::new(r.ext0, Level::Low, Speed::Low);
-//     let mut ext1 = OutputOpenDrain::new(r.ext1, Level::Low, Speed::Low);
-//     let mut ext2 = OutputOpenDrain::new(r.ext2, Level::Low, Speed::Low);
-//     let mut ext3 = OutputOpenDrain::new(r.ext3, Level::Low, Speed::Low);
-//
-//     loop {
-//         ext0.toggle();
-//         ext1.toggle();
-//         ext2.toggle();
-//         ext3.toggle();
-//         Timer::after_millis(40).await;
-//     }
-// }
-
-#[embassy_executor::main]
-async fn main(spawner: Spawner) {
+#[entry]
+fn main() -> ! {
     #[cfg(feature = "defmt")]
     info!("Hello, World!");
 
@@ -244,11 +192,15 @@ async fn main(spawner: Spawner) {
     static ADC: StaticCell<TipAdcAsyncMutex> = StaticCell::new();
     let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
 
-    spawner.must_spawn(zero_crossing(adc, r.zcd, r.temp));
-    spawner.must_spawn(check_connection(adc, r.temp1));
+    interrupt::I2C1_EV.set_priority(Priority::P4);
+    let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
+    spawner
+        .spawn(zero_crossing(adc, r.zcd, r.temp, r.driver))
+        .unwrap();
 
-    // spawner.spawn(dfu::dfu(r.dfu)).unwrap();
-    // spawner
-    //     .spawn(zero_crossing(r.zcd, r.driver, r.temp))
-    //     .unwrap();
+    let executor = EXECUTOR_LOW.init(Executor::new());
+    executor.run(|spawner| {
+        // spawner.spawn(check_connection(adc)).unwrap();
+        spawner.spawn(dfu::dfu(r.dfu)).unwrap()
+    });
 }
