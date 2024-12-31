@@ -1,0 +1,874 @@
+INFO  set_point: 1, read_buffer: 46
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 48
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 46
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 47
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 41
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 40
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 52
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 47
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 53
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 43
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 36
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 1, read_buffer: 46
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 2
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 2, read_buffer: 61
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 0
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 64
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 4095
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 72
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 53
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 74
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 60
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 76
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 71
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 82
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 2, read_buffer: 69
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 3
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 3, read_buffer: 90
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 82
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 101
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 86
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 105
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 99
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 113
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 108
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 125
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 112
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 131
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 3, read_buffer: 116
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 4
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 4, read_buffer: 135
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 129
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 147
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 139
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 163
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 158
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 173
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 158
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 187
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 175
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 201
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 4, read_buffer: 184
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 5
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 5, read_buffer: 200
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 189
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 222
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 214
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 235
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 226
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 239
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 230
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 256
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 245
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 264
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 5, read_buffer: 261
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 6
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 6, read_buffer: 270
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 267
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 296
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 284
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 307
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 300
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 320
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 311
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 328
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 328
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 343
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 6, read_buffer: 333
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 7
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 7, read_buffer: 356
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 351
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 357
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 357
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 377
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 379
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 397
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 391
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 407
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 400
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 417
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 7, read_buffer: 413
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 8
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 8, read_buffer: 422
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 424
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 444
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 451
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 444
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 463
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 471
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 475
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 472
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 486
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 494
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 8, read_buffer: 496
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 9
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 9, read_buffer: 505
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 512
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 512
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 522
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 534
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 549
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 538
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 557
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 558
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 569
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 555
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 9, read_buffer: 587
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 10
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 10, read_buffer: 568
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 591
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 591
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 611
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 606
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 629
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 613
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 636
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 620
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 646
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 644
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 10, read_buffer: 653
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 11
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 11, read_buffer: 648
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 675
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 665
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 690
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 673
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 699
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 688
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 715
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 700
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 725
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 704
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 11, read_buffer: 740
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 12
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 12, read_buffer: 711
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 746
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 734
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 765
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 749
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 771
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 751
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 796
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 764
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 795
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 779
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 12, read_buffer: 816
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 13
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 13, read_buffer: 791
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 818
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 798
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 840
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 810
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 842
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 821
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 857
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 827
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 861
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 841
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 13, read_buffer: 873
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 14
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 14, read_buffer: 842
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 883
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 875
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 898
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 870
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 916
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 887
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 928
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 889
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 937
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 896
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 14, read_buffer: 944
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 15
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 15, read_buffer: 910
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 963
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 914
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 975
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 940
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 980
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 953
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 985
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 953
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 1004
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 971
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 15, read_buffer: 1010
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 16
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 16, read_buffer: 971
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1029
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 990
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1037
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 999
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1047
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1011
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1060
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1012
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1075
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1028
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 16, read_buffer: 1082
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 17
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 17, read_buffer: 1033
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1091
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1047
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1105
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1063
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1113
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1069
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1126
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1071
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1145
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1082
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 17, read_buffer: 1136
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 18
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 18, read_buffer: 1087
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1152
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1103
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1161
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1114
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1176
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1126
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1179
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1131
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1191
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1141
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 18, read_buffer: 1195
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 19
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 19, read_buffer: 1151
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1217
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1169
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1228
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1176
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1222
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1181
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1250
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1194
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1259
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1207
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 19, read_buffer: 1261
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 20
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 20, read_buffer: 1218
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1276
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1221
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1291
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1228
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1293
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1240
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1304
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1248
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1314
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1261
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 20, read_buffer: 1324
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 21
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 21, read_buffer: 1268
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1336
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1273
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1344
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1285
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1357
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1296
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1355
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1301
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1375
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1316
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 21, read_buffer: 1389
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 22
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 22, read_buffer: 1326
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1397
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1332
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1414
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1349
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1422
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1360
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1439
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1363
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1451
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1375
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 22, read_buffer: 1453
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 23
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 23, read_buffer: 1388
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1472
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1403
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1480
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1407
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1487
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1419
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1506
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1429
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1510
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1438
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 23, read_buffer: 1515
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 24
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 24, read_buffer: 1437
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1534
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1451
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1534
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1466
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1552
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1477
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1566
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1480
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1571
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1489
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 24, read_buffer: 1576
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 25
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 25, read_buffer: 1499
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1585
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1507
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1603
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1520
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1612
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1529
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1623
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1544
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1630
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1547
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 25, read_buffer: 1635
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 26
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 26, read_buffer: 1559
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1652
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1575
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1670
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1574
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1673
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1591
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1691
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1597
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1689
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1601
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 26, read_buffer: 1693
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 27
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 27, read_buffer: 1609
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1704
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1627
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1725
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1634
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1731
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1630
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1734
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1642
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1745
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1657
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 27, read_buffer: 1754
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 28
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 28, read_buffer: 1657
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1768
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1669
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1775
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1677
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1782
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1685
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1800
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1693
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1805
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1699
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 28, read_buffer: 1817
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 29
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 29, read_buffer: 1714
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1832
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1730
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1829
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1734
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1840
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1745
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1857
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1745
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1864
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1755
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 29, read_buffer: 1860
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 30
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 30, read_buffer: 1760
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1875
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1771
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1883
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1767
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1893
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1785
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1903
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1791
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1905
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1798
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 30, read_buffer: 1912
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 31
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 31, read_buffer: 1806
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1918
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1807
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1933
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1823
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1942
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1822
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1941
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1831
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1959
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1840
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 31, read_buffer: 1967
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 32
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 32, read_buffer: 1850
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1981
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1859
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1978
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1858
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1982
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1866
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1981
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1864
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1994
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1867
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 32, read_buffer: 1993
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 33
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 33, read_buffer: 1867
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2004
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 1876
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2008
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 1886
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2006
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 1892
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2027
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 1899
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2033
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 1911
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 33, read_buffer: 2038
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  adjust setpoint to 34
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:153 
+INFO  set_point: 34, read_buffer: 1917
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 2059
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 1925
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 2061
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 1939
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 2067
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 1939
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
+INFO  set_point: 34, read_buffer: 2083
+└─ solderotto_app::__zero_crossing_task::{async_fn#0} @ src/main.rs:145 
