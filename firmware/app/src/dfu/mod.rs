@@ -25,8 +25,8 @@ pub async fn dfu(r: DfuResources) {
 
     let driver = Driver::new(r.usb, Irqs, r.dp, r.dm);
     let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
-    config.manufacturer = Some("FireWaterBurn");
-    config.product = Some("USB-DFU Runtime example");
+    config.manufacturer = Some("Solderotto");
+    config.product = Some("USB-DFU Runtime");
     config.serial_number = Some("08151337");
 
     let mut config_descriptor = [0; 256];

@@ -25466,6 +25466,7 @@
 		(property "Value" "USB_C_Plug_USB2.0"
 			(at 0 8.725 90)
 			(layer "F.Fab")
+			(hide yes)
 			(uuid "a57c35b9-583b-414f-8e93-879f7909ed20")
 			(effects
 				(font
@@ -58692,11 +58693,11 @@
 		(layer "F.Fab")
 		(uuid "339a748e-f6f6-4730-a18e-9f38de88a8c4")
 		(pts
-			(xy 225 48) (xy 225 132)
+			(xy 219 50) (xy 219 110)
 		)
 		(height -19.7)
-		(gr_text "84.0000 mm"
-			(at 243.55 90 90)
+		(gr_text "60.0000 mm"
+			(at 237.55 80 90)
 			(layer "F.Fab")
 			(uuid "339a748e-f6f6-4730-a18e-9f38de88a8c4")
 			(effects
@@ -58725,11 +58726,11 @@
 		(layer "F.Fab")
 		(uuid "7fa22608-af80-4bef-81cb-f81be85f9992")
 		(pts
-			(xy 60.4 55) (xy 230 55)
+			(xy 89 55) (xy 224 55)
 		)
 		(height -17.2)
-		(gr_text "169.6000 mm"
-			(at 145.2 36.65 0)
+		(gr_text "135.0000 mm"
+			(at 156.5 36.65 0)
 			(layer "F.Fab")
 			(uuid "7fa22608-af80-4bef-81cb-f81be85f9992")
 			(effects
