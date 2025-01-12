@@ -105,7 +105,7 @@ async fn zero_crossing(
     let mut read_buffer: [u16; 2] = [0; 2];
     let mut control = WaveControl::new(driver, 1000);
 
-    let mut set_point = 2;
+    let mut set_point = 0;
     let mut dur: Duration = Duration::default();
 
     control.set_point(set_point);
@@ -149,7 +149,8 @@ async fn zero_crossing(
                 }
             },
             Either3::Second(_) => {
-                info!("temp: {:?}", calc_temp(read_buffer[0]));
+                info!("tip0: {:?}", calc_temp(read_buffer[0]));
+                info!("tip1: {:?}", calc_temp(read_buffer[1]));
             }
             Either3::Third(_) => {
                 // if set_point > 40 {

@@ -77,6 +77,7 @@ impl<'d> OutputStage<'d> {
         if !self.low_load.is_set_high() {
             self.low_com.set_high();
             self.high_load0.set_high();
+            // self.high_load1.set_high();
         }
     }
 
@@ -98,10 +99,10 @@ impl<'d> OutputStage<'d> {
     }
 
     fn set_low(&mut self) {
-        self.low_com.set_low();
-        self.low_load.set_low();
+        // self.low_com.set_low();
+        // self.low_load.set_low();
         self.high_load0.set_low();
-        // self.high_load1.set_low();
+        self.high_load1.set_low();
         self.high_com.set_low();
     }
 }
