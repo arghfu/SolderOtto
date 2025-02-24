@@ -2739,12 +2739,6 @@
 		(uuid "1a52ca50-526d-42d9-a16f-2f79fdffbda2")
 	)
 	(junction
-		(at 251.46 184.15)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1adfa162-c9dd-4b26-a6da-514d6d087901")
-	)
-	(junction
 		(at 100.33 57.15)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -2827,12 +2821,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "685fc428-7110-4321-a790-00ebe9422554")
-	)
-	(junction
-		(at 251.46 156.21)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "68fd11c2-2b46-41c0-af98-efcb4524dd9a")
 	)
 	(junction
 		(at 236.22 87.63)
@@ -3608,7 +3596,7 @@
 	)
 	(wire
 		(pts
-			(xy 247.65 156.21) (xy 251.46 156.21)
+			(xy 247.65 156.21) (xy 271.78 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3678,16 +3666,6 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 173.99) (xy 251.46 184.15)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e3f8d90-1ac8-46e8-8830-19630396ce92")
-	)
-	(wire
-		(pts
 			(xy 289.56 50.8) (xy 289.56 49.53)
 		)
 		(stroke
@@ -3705,16 +3683,6 @@
 			(type default)
 		)
 		(uuid "4f0ca6af-50b2-4428-a179-b1baa8e52aac")
-	)
-	(wire
-		(pts
-			(xy 271.78 156.21) (xy 251.46 156.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4f806c9f-2620-4f9f-b429-3b159d634220")
 	)
 	(wire
 		(pts
@@ -5095,16 +5063,6 @@
 			(type default)
 		)
 		(uuid "d6648f7b-e46f-452b-b61f-f179fb8424b2")
-	)
-	(wire
-		(pts
-			(xy 251.46 156.21) (xy 251.46 166.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d68967cb-711a-4fce-8b5b-dc23244760db")
 	)
 	(wire
 		(pts
@@ -8935,6 +8893,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 218.44 156.21 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5d553822-3d32-49fc-a926-ac580eaefeb3")
+		(property "Reference" "R833"
+			(at 215.9 154.9399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220m"
+			(at 215.9 157.4799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 220.218 156.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "118-CRM2512-FX-R220ELFCT-ND"
+			(at 218.44 156.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ad5f679b-7ffa-462c-9258-b4d2d479fa9a")
+		)
+		(pin "1"
+			(uuid "ef72be32-07c4-41e2-b525-50247891bdf6")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "R833")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Amplifier_Operational:LM358")
 		(at 386.08 134.62 0)
 		(unit 3)
@@ -10039,6 +10076,85 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "#PWR0806")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 218.44 168.91 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7c894d09-fc97-4a7c-b586-5411ee940331")
+		(property "Reference" "R834"
+			(at 215.9 167.6399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220m"
+			(at 215.9 170.1799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_2512_6332Metric"
+			(at 220.218 168.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 218.44 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 218.44 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "118-CRM2512-FX-R220ELFCT-ND"
+			(at 218.44 168.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "95dc43a6-aa9d-4e3d-9e92-fc782b21cab4")
+		)
+		(pin "1"
+			(uuid "eac96e04-7aca-476f-8166-07240204db40")
+		)
+		(instances
+			(project "SolderOtto"
+				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
+					(reference "R834")
 					(unit 1)
 				)
 			)
@@ -14656,85 +14772,6 @@
 			(project "SolderOtto"
 				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
 					(reference "#PWR0809")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 251.46 170.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f3300f25-7893-4ccd-bc4f-3389e6cac0a6")
-		(property "Reference" "R827"
-			(at 248.92 168.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "150m"
-			(at 248.92 171.4499 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_1206_3216Metric"
-			(at 253.238 170.18 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 251.46 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 251.46 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Digikey" "283-MFHA1206R1500FCCT-ND"
-			(at 251.46 170.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8c03cde8-45e0-4629-ade1-98869e2370a9")
-		)
-		(pin "1"
-			(uuid "48857492-3340-42f6-933e-2d56b640f9bf")
-		)
-		(instances
-			(project "SolderOtto"
-				(path "/04e99464-bf33-4a4f-8397-d26b5ec904f3/57a4c2b0-a7ab-4dc9-9bcc-6bd7e1b882d1/1807ce44-453b-46b0-b8fc-698b650e1609"
-					(reference "R827")
 					(unit 1)
 				)
 			)
