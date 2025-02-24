@@ -16,7 +16,7 @@ use embassy_futures::select::{select, select3, Either, Either3};
 use embassy_stm32::adc::{Adc, AdcChannel, AnyAdcChannel, SampleTime};
 use embassy_stm32::dma::WritableRingBuffer;
 use embassy_stm32::exti::ExtiInput;
-use embassy_stm32::gpio::{Level, OutputOpenDrain, Pull, Speed};
+use embassy_stm32::gpio::{Level, Output, OutputOpenDrain, Pull, Speed};
 use embassy_stm32::interrupt::{InterruptExt, Priority};
 use embassy_stm32::peripherals::{ADC1, DMA1, DMA1_CH1};
 use embassy_stm32::Config;
@@ -105,7 +105,7 @@ async fn zero_crossing(
     let mut read_buffer: [u16; 2] = [0; 2];
     let mut control = WaveControl::new(driver, 1000);
 
-    let mut set_point = 0;
+    let mut set_point = 2;
     let mut dur: Duration = Duration::default();
 
     control.set_point(set_point);
@@ -229,9 +229,12 @@ fn main() -> ! {
     static ADC: StaticCell<TipAdcAsyncMutex> = StaticCell::new();
     let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
 
-    let foobar = p.PC1;
+    let sel1_a = Output::new(p.PF8, Level::Low, Speed::Low);
+    let sel2_a = Output::new(p.PF10, Level::Low, Speed::Low);
 
-    interrupt::I2C1_EV.set_priority(Priority::P4);
+    let sel1_b = Output::new(p.PF9, Level::Low, Speed::Low);
+    let sel2_b = Output::new(p.PF0, Level::Low, Speed::Low);
+
     let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
     spawner
         .spawn(zero_crossing(
