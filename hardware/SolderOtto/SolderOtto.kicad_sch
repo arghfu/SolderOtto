@@ -319,7 +319,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 87.63) (xy 88.9 87.63)
+			(xy 76.2 90.17) (xy 88.9 90.17)
 		)
 		(stroke
 			(width 0)
@@ -509,7 +509,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 85.09) (xy 88.9 85.09)
+			(xy 76.2 87.63) (xy 88.9 87.63)
 		)
 		(stroke
 			(width 0)
@@ -669,7 +669,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 90.17) (xy 88.9 90.17)
+			(xy 76.2 92.71) (xy 88.9 92.71)
 		)
 		(stroke
 			(width 0)
@@ -686,6 +686,16 @@
 			(type default)
 		)
 		(uuid "c9afc993-7647-4fe6-a45b-279ed42e9333")
+	)
+	(wire
+		(pts
+			(xy 76.2 82.55) (xy 88.9 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c9d79b7f-d3b9-4ab0-a190-fedaf76dd2cd")
 	)
 	(wire
 		(pts
@@ -809,7 +819,7 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 92.71) (xy 88.9 92.71)
+			(xy 76.2 95.25) (xy 88.9 95.25)
 		)
 		(stroke
 			(width 0)
@@ -920,7 +930,7 @@
 	)
 	(sheet
 		(at 48.26 53.34)
-		(size 27.94 43.18)
+		(size 27.94 45.72)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -944,7 +954,7 @@
 			)
 		)
 		(property "Sheetfile" "channel.kicad_sch"
-			(at 48.26 97.1046 0)
+			(at 48.26 99.6446 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -953,7 +963,7 @@
 			)
 		)
 		(pin "I_{LEAK}" passive
-			(at 76.2 90.17 0)
+			(at 76.2 92.71 0)
 			(uuid "03914802-6869-4a31-8086-88fe2a179d8e")
 			(effects
 				(font
@@ -963,7 +973,7 @@
 			)
 		)
 		(pin "I_{LOAD}" passive
-			(at 76.2 92.71 0)
+			(at 76.2 95.25 0)
 			(uuid "1a050403-182f-4306-9de3-29bc43e959df")
 			(effects
 				(font
@@ -1063,7 +1073,7 @@
 			)
 		)
 		(pin "T_{TIP}_{a}" passive
-			(at 76.2 85.09 0)
+			(at 76.2 87.63 0)
 			(uuid "abc3d416-39b0-4f21-8c12-e069f5e00263")
 			(effects
 				(font
@@ -1073,8 +1083,18 @@
 			)
 		)
 		(pin "T_{TIP}_{b}" passive
-			(at 76.2 87.63 0)
+			(at 76.2 90.17 0)
 			(uuid "96ce5961-2da9-438c-95d3-2b3fd01be7da")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "DET" output
+			(at 76.2 82.55 0)
+			(uuid "eb2a88e0-65b2-4eab-a8d0-b2bb82204705")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1235,7 +1255,7 @@
 			)
 		)
 		(pin "Channel0_I_{LEAK}" passive
-			(at 88.9 90.17 180)
+			(at 88.9 92.71 180)
 			(uuid "97a9d684-42be-4eb9-b9be-2917f2544fd3")
 			(effects
 				(font
@@ -1245,7 +1265,7 @@
 			)
 		)
 		(pin "Channel0_I_{LOAD}" passive
-			(at 88.9 92.71 180)
+			(at 88.9 95.25 180)
 			(uuid "87457114-9d0c-418d-8e28-3754088bfdd7")
 			(effects
 				(font
@@ -1545,7 +1565,7 @@
 			)
 		)
 		(pin "Channel0_T_{TIP}_{b}" passive
-			(at 88.9 87.63 180)
+			(at 88.9 90.17 180)
 			(uuid "a0c6fcb0-fd03-4849-8bed-58efb304544d")
 			(effects
 				(font
@@ -1555,7 +1575,7 @@
 			)
 		)
 		(pin "Channel0_T_{TIP}_{a}" passive
-			(at 88.9 85.09 180)
+			(at 88.9 87.63 180)
 			(uuid "c6c7c8e0-2074-48fc-9421-42df05d8de5f")
 			(effects
 				(font
@@ -1782,6 +1802,16 @@
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "Channel0_det" input
+			(at 88.9 82.55 180)
+			(uuid "d27dad7a-fba7-43b3-9953-d89627dbdcc6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

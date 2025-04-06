@@ -1,6 +1,6 @@
 LTspice 24.0.11 for Windows
 Circuit: * Z:\home\arghfu\workspace\solderotto\hardware\simulations\JBC Soldering Station Simulations\AC MOSFET Driver.asc
-Start Time: Sun Jan 19 10:40:06 2025
+Start Time: Sat Mar 22 10:01:07 2025
 solver = Normal
 Maximum thread count: 32
 tnom = 27
@@ -261,5 +261,5 @@ Changing Tseed to 0.0001
 Changing Tseed to 1e-16
 +Changing Tseed to 1e-09
 to 1.125e-09
-Total elapsed time: 0.343 seconds.
+Total elapsed time: 0.344 seconds.
 
