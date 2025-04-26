@@ -10330,6 +10330,14 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "497-STM32G474RET6-ND"
+			(at 187.96 144.78 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "41"
 			(uuid "b13d05d3-7dd6-4308-9a09-685a0b6842df")
 		)
@@ -11342,7 +11350,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "900-2171790001CT-ND"
 			(at 43.18 77.47 0)
 			(effects
 				(font

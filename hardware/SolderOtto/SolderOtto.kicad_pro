@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.3,
-          "height": 0.5,
-          "width": 0.5
+          "drill": 0.0,
+          "height": 0.7874,
+          "width": 0.7874
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -58,7 +58,44 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_issues|139350000|111025000|2449a86e-3f10-42d4-9494-6aa1b2cf8ee0|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_issues|161500000|96950000|04caf0da-195b-4b47-8f74-914bc59e154d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|104962500|78887500|1f65a50b-771e-48f2-87a5-747d2ed477d7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|120600000|91772500|171fbd49-b68a-4df3-9684-29340bacf64d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|124750000|107500000|20833e58-31d2-4e1b-8b48-9d2e6b4078fe|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|167737500|108625000|2a744b17-bd4a-4cf5-ae3d-9891d506df87|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|173905893|62675000|2c7dabb2-f185-475e-b021-f84d6aaeb6c6|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|183500000|100765000|127bfac4-787b-47ca-9b10-574695c86496|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|95600000|63212500|130f7719-8040-471b-9da2-d6541b16ca96|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -711,7 +748,7 @@
       "include_excluded_from_bom": false,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Value"
+      "sort_field": "Digikey"
     },
     "connection_grid_size": 50.0,
     "drawing": {

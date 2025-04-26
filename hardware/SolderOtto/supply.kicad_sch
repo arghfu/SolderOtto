@@ -12329,6 +12329,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "WM16865-ND"
+			(at 76.2 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b48258b4-145a-45de-813f-de18daf6f327")
 		)
@@ -12502,7 +12511,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx08_2x04_P2.50mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-0812_2x04_P3.00mm_Vertical"
 			(at 35.56 40.64 0)
 			(effects
 				(font
@@ -12529,7 +12538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "WM17932-ND"
+		(property "Digikey" "WM15063-ND"
 			(at 35.56 40.64 0)
 			(effects
 				(font

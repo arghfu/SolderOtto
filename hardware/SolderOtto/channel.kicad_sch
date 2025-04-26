@@ -13799,6 +13799,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
+			(at 318.77 40.64 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "22772a24-5054-44aa-909b-a7a398c86935")
 		)
@@ -14040,7 +14049,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-47.0KHRCT-ND"
 			(at 165.1 120.65 0)
 			(effects
 				(font
@@ -15013,7 +15022,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "P4.75KHCT-ND"
 			(at 157.48 224.79 0)
 			(effects
 				(font
@@ -15090,7 +15099,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "P4.75KHCT-ND"
 			(at 157.48 247.65 0)
 			(effects
 				(font
@@ -15158,6 +15167,15 @@
 			)
 		)
 		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOIC-8"
+			(at 351.79 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
 			(at 351.79 43.18 0)
 			(effects
 				(font
@@ -15252,7 +15270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-200KHRCT-ND"
 			(at 181.61 224.79 0)
 			(effects
 				(font
@@ -16862,7 +16880,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-47.0KHRCT-ND"
 			(at 205.74 113.03 0)
 			(effects
 				(font
@@ -17075,6 +17093,15 @@
 			)
 		)
 		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOIC-8"
+			(at 181.61 236.22 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
 			(at 181.61 236.22 0)
 			(effects
 				(font
@@ -18714,6 +18741,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
+			(at 213.36 238.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "b387c157-47f7-4ff7-bb4e-33d2fbd5a4fa")
 		)
@@ -18794,6 +18830,15 @@
 			)
 		)
 		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOIC-8"
+			(at 158.75 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
 			(at 158.75 175.26 0)
 			(effects
 				(font
@@ -19690,7 +19735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-10.0MFRCT-ND"
 			(at 100.33 52.07 0)
 			(effects
 				(font
@@ -21120,6 +21165,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
+			(at 351.79 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "aaeb5edc-0595-478b-ab47-70d675afaea6")
 		)
@@ -21484,7 +21538,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-200KHRCT-ND"
 			(at 172.72 256.54 0)
 			(effects
 				(font
@@ -21562,7 +21616,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "P187KHCT-ND"
 			(at 214.63 250.19 0)
 			(effects
 				(font
@@ -22460,7 +22514,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-10.0MFRCT-ND"
 			(at 194.31 52.07 0)
 			(effects
 				(font
@@ -24308,7 +24362,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "1276-1008-1-ND"
 			(at 175.26 128.27 0)
 			(effects
 				(font
@@ -25285,6 +25339,15 @@
 				(hide yes)
 			)
 		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
+			(at 134.62 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "22772a24-5054-44aa-909b-a7a398c86937")
 		)
@@ -25430,6 +25493,15 @@
 			)
 		)
 		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOIC-8"
+			(at 209.55 175.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
 			(at 209.55 175.26 0)
 			(effects
 				(font
@@ -26325,7 +26397,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" ""
+		(property "Digikey" "311-470KHRCT-ND"
 			(at 160.02 111.76 0)
 			(effects
 				(font
@@ -27230,6 +27302,15 @@
 			)
 		)
 		(property "Description" "Dual, Low-Power, Low Offset Voltage, Rail-to-Rail Operational Amplifier, SOIC-8"
+			(at 318.77 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "296-OPA2186DRCT-ND"
 			(at 318.77 105.41 0)
 			(effects
 				(font
