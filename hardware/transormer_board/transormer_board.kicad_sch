@@ -503,19 +503,19 @@
 		)
 	)
 	(junction
-		(at 177.8 71.12)
+		(at 160.02 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "10bde012-361d-4669-aab2-1f5beb74820d")
 	)
 	(junction
-		(at 160.02 68.58)
+		(at 177.8 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "3b887e5c-211b-4dd1-8e43-2d9afcf7dc5e")
 	)
 	(junction
-		(at 144.78 68.58)
+		(at 193.04 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4845fbc5-c0e8-4c41-9bd4-8abe4beba447")
@@ -527,38 +527,38 @@
 		(uuid "6eef0af6-d3c2-47d1-a3a0-bc054f4a0af2")
 	)
 	(junction
-		(at 193.04 68.58)
+		(at 144.78 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "722042b4-6ae4-41c9-9be4-4b2935da9a03")
 	)
 	(junction
-		(at 160.02 71.12)
+		(at 177.8 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "87c5991c-2ad9-4d3f-b2f5-395d1ac9edfc")
 	)
 	(junction
-		(at 177.8 73.66)
+		(at 160.02 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "892e2b36-00ca-4769-baff-5f61c0e4d7a3")
 	)
 	(junction
-		(at 160.02 73.66)
+		(at 177.8 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8f3955ce-0b3a-44fd-8ca9-b1dc6f0d0abc")
 	)
 	(junction
-		(at 177.8 68.58)
+		(at 160.02 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "fd0d5752-9486-4b3b-852c-9c971fa3d3e1")
 	)
 	(wire
 		(pts
-			(xy 175.26 73.66) (xy 177.8 73.66)
+			(xy 162.56 73.66) (xy 160.02 73.66)
 		)
 		(stroke
 			(width 0)
@@ -568,17 +568,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 73.66) (xy 162.56 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0eda7111-e38a-43ee-ac45-1f9b36b6a843")
-	)
-	(wire
-		(pts
-			(xy 177.8 76.2) (xy 175.26 76.2)
+			(xy 160.02 76.2) (xy 162.56 76.2)
 		)
 		(stroke
 			(width 0)
@@ -588,7 +578,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 193.04 68.58)
+			(xy 177.8 73.66) (xy 175.26 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "263ea15c-ace6-4d52-9c31-06ebf13cdd07")
+	)
+	(wire
+		(pts
+			(xy 160.02 68.58) (xy 144.78 68.58)
 		)
 		(stroke
 			(width 0)
@@ -608,7 +608,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 162.56 71.12)
+			(xy 177.8 71.12) (xy 175.26 71.12)
 		)
 		(stroke
 			(width 0)
@@ -618,7 +618,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 68.58) (xy 177.8 71.12)
+			(xy 160.02 68.58) (xy 160.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -638,7 +638,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 73.66) (xy 177.8 76.2)
+			(xy 160.02 73.66) (xy 160.02 76.2)
 		)
 		(stroke
 			(width 0)
@@ -648,7 +648,7 @@
 	)
 	(wire
 		(pts
-			(xy 193.04 68.58) (xy 193.04 76.2)
+			(xy 144.78 68.58) (xy 144.78 76.2)
 		)
 		(stroke
 			(width 0)
@@ -668,7 +668,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 68.58) (xy 144.78 76.2)
+			(xy 193.04 68.58) (xy 193.04 76.2)
 		)
 		(stroke
 			(width 0)
@@ -678,7 +678,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 71.12) (xy 160.02 73.66)
+			(xy 177.8 71.12) (xy 177.8 73.66)
 		)
 		(stroke
 			(width 0)
@@ -698,7 +698,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 68.58) (xy 177.8 68.58)
+			(xy 162.56 68.58) (xy 160.02 68.58)
 		)
 		(stroke
 			(width 0)
@@ -708,7 +708,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 73.66) (xy 160.02 76.2)
+			(xy 177.8 73.66) (xy 177.8 76.2)
 		)
 		(stroke
 			(width 0)
@@ -728,7 +728,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 76.2) (xy 162.56 76.2)
+			(xy 177.8 76.2) (xy 175.26 76.2)
 		)
 		(stroke
 			(width 0)
@@ -738,7 +738,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 73.66) (xy 177.8 71.12)
+			(xy 160.02 73.66) (xy 160.02 71.12)
 		)
 		(stroke
 			(width 0)
@@ -758,7 +758,7 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 68.58) (xy 144.78 68.58)
+			(xy 177.8 68.58) (xy 193.04 68.58)
 		)
 		(stroke
 			(width 0)
@@ -768,7 +768,7 @@
 	)
 	(wire
 		(pts
-			(xy 162.56 68.58) (xy 160.02 68.58)
+			(xy 175.26 68.58) (xy 177.8 68.58)
 		)
 		(stroke
 			(width 0)
@@ -778,7 +778,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 71.12) (xy 175.26 71.12)
+			(xy 160.02 71.12) (xy 162.56 71.12)
 		)
 		(stroke
 			(width 0)
@@ -788,141 +788,13 @@
 	)
 	(wire
 		(pts
-			(xy 160.02 68.58) (xy 160.02 71.12)
+			(xy 177.8 68.58) (xy 177.8 71.12)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f286d7a8-42b6-41b4-a586-c752ea2feda9")
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 139.7 68.58 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "34a18164-7413-469d-b057-19e54d2200fb")
-		(property "Reference" "J1"
-			(at 140.335 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "orange"
-			(at 140.335 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD3.6mm"
-			(at 139.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 139.7 68.58 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "81a89d20-1076-4739-a1b6-db5b8b4fd03d")
-		)
-		(instances
-			(project "transormer_board"
-				(path "/4a061520-ae8c-4b04-801b-8bed979841f8"
-					(reference "J1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:Conn_01x01_Pin")
-		(at 139.7 76.2 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "445d2ce4-543b-4d78-abb2-48284c6f373a")
-		(property "Reference" "J2"
-			(at 140.335 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "black"
-			(at 140.335 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD3.6mm"
-			(at 139.7 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 139.7 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 139.7 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "7691462a-e24f-41e2-bc96-577fbaec0587")
-		)
-		(instances
-			(project "transormer_board"
-				(path "/4a061520-ae8c-4b04-801b-8bed979841f8"
-					(reference "J2")
-					(unit 1)
-				)
-			)
-		)
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
@@ -933,8 +805,8 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5128fbb2-bce0-440a-88a7-959de201f56a")
-		(property "Reference" "J5"
+		(uuid "34a18164-7413-469d-b057-19e54d2200fb")
+		(property "Reference" "J1"
 			(at 197.485 63.5 0)
 			(effects
 				(font
@@ -942,7 +814,7 @@
 				)
 			)
 		)
-		(property "Value" "red"
+		(property "Value" "orange"
 			(at 197.485 66.04 0)
 			(effects
 				(font
@@ -970,6 +842,135 @@
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
 			(at 198.12 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "81a89d20-1076-4739-a1b6-db5b8b4fd03d")
+		)
+		(instances
+			(project "transormer_board"
+				(path "/4a061520-ae8c-4b04-801b-8bed979841f8"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 198.12 76.2 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "445d2ce4-543b-4d78-abb2-48284c6f373a")
+		(property "Reference" "J2"
+			(at 197.485 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "black"
+			(at 197.485 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD3.6mm"
+			(at 198.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 198.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 198.12 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7691462a-e24f-41e2-bc96-577fbaec0587")
+		)
+		(instances
+			(project "transormer_board"
+				(path "/4a061520-ae8c-4b04-801b-8bed979841f8"
+					(reference "J2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 139.7 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5128fbb2-bce0-440a-88a7-959de201f56a")
+		(property "Reference" "J5"
+			(at 140.335 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "red"
+			(at 140.335 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD3.6mm"
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 139.7 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 139.7 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1055,8 +1056,7 @@
 	)
 	(symbol
 		(lib_id "Connector:Conn_01x01_Pin")
-		(at 198.12 76.2 0)
-		(mirror y)
+		(at 139.7 76.2 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1064,7 +1064,7 @@
 		(dnp no)
 		(uuid "a12cdf2e-b657-4d30-ad1e-f38ce7e55ced")
 		(property "Reference" "J6"
-			(at 197.485 71.12 0)
+			(at 140.335 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1072,7 +1072,7 @@
 			)
 		)
 		(property "Value" "grey"
-			(at 197.485 73.66 0)
+			(at 140.335 73.66 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1080,7 +1080,7 @@
 			)
 		)
 		(property "Footprint" "Connector_Wire:SolderWire-2.5sqmm_1x01_D2.4mm_OD3.6mm"
-			(at 198.12 76.2 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1089,7 +1089,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 198.12 76.2 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1098,7 +1098,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x01, script generated"
-			(at 198.12 76.2 0)
+			(at 139.7 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1144,7 +1144,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx10_2x05_P2.50mm_Vertical"
+		(property "Footprint" "Connector_Molex:Molex_Micro-Fit_3.0_43045-1012_2x05_P3.00mm_Vertical"
 			(at 167.64 73.66 0)
 			(effects
 				(font

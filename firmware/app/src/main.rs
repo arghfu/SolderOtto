@@ -3,6 +3,7 @@
 #![allow(dead_code)]
 #![allow(unused_imports)]
 use assign_resources::assign_resources;
+use embassy_stm32::Peri;
 
 use core::iter::IntoIterator;
 use core::ops::DerefMut;
@@ -111,8 +112,8 @@ async fn zero_crossing(
     control.set_point(set_point);
 
     let mut zcd = ExtiInput::new(zcd.zcd, zcd.int, Pull::None);
-    let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
-    let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
+    // let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
+    // let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
 
     let mut foo = Ticker::every(Duration::from_secs(1));
     let mut bar = Ticker::every(Duration::from_secs(60));
@@ -128,18 +129,18 @@ async fn zero_crossing(
                         let mut locked_adc = tip_adc.lock().await;
                         let tip_adc = locked_adc.deref_mut();
 
-                        tip_adc
-                            .adc
-                            .read(
-                                &mut tip_adc.dma,
-                                [
-                                    (&mut tip0, SampleTime::CYCLES247_5),
-                                    (&mut tip1, SampleTime::CYCLES247_5),
-                                ]
-                                .into_iter(),
-                                &mut read_buffer,
-                            )
-                            .await;
+                        // tip_adc
+                        //     .adc
+                        //     .read(
+                        //         &mut tip_adc.dma,
+                        //         [
+                        //             (&mut tip0, SampleTime::CYCLES247_5),
+                        //             (&mut tip1, SampleTime::CYCLES247_5),
+                        //         ]
+                        //         .into_iter(),
+                        //         &mut read_buffer,
+                        //     )
+                        //     .await;
                     }
                     // dur = embassy_time::Instant::now().duration_since(now);
                 }
@@ -167,7 +168,7 @@ async fn zero_crossing(
 
 #[embassy_executor::task]
 async fn check_connection(tip_adc: &'static TipAdcAsyncMutex) {
-    let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
+    // let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
 
     let mut read_buffer: [u16; 8] = [0; 8];
 
@@ -177,14 +178,14 @@ async fn check_connection(tip_adc: &'static TipAdcAsyncMutex) {
             let mut locked_adc = tip_adc.lock().await;
             let tip_adc = locked_adc.deref_mut();
 
-            tip_adc
-                .adc
-                .read(
-                    &mut tip_adc.dma,
-                    [(&mut vref, SampleTime::CYCLES247_5)].into_iter(),
-                    &mut read_buffer[0..1],
-                )
-                .await;
+            // tip_adc
+            //     .adc
+            //     .read(
+            //         &mut tip_adc.dma,
+            //         [(&mut vref, SampleTime::CYCLES247_5)].into_iter(),
+            //         &mut read_buffer[0..1],
+            //     )
+            //     .await;
         }
     }
 }
@@ -227,7 +228,7 @@ fn main() -> ! {
     let r = split_resources!(p);
 
     static ADC: StaticCell<TipAdcAsyncMutex> = StaticCell::new();
-    let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
+    // let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
 
     let sel1_a = Output::new(p.PF8, Level::Low, Speed::Low);
     let sel2_a = Output::new(p.PF10, Level::Low, Speed::Low);
@@ -235,16 +236,16 @@ fn main() -> ! {
     let sel1_b = Output::new(p.PF9, Level::Low, Speed::Low);
     let sel2_b = Output::new(p.PF0, Level::Low, Speed::Low);
 
-    let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
-    spawner
-        .spawn(zero_crossing(
-            adc,
-            CHANNEL.sender(),
-            r.zcd,
-            r.temp,
-            r.driver,
-        ))
-        .unwrap();
+    // let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
+    // spawner
+    //     .spawn(zero_crossing(
+    //         adc,
+    //         CHANNEL.sender(),
+    //         r.zcd,
+    //         r.temp,
+    //         r.driver,
+    //     ))
+    //     .unwrap();
 
     let executor = EXECUTOR_LOW.init(Executor::new());
     executor.run(|spawner| {
