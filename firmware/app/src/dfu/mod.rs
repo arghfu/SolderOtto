@@ -32,7 +32,7 @@ pub async fn dfu(r: DfuResources) {
     let mut config_descriptor = [0; 256];
     let mut bos_descriptor = [0; 256];
     let mut control_buf = [0; 64];
-    let mut state = Control::new(firmware_state, DfuAttributes::CAN_DOWNLOAD /* reset */);
+    let mut state = Control::new(firmware_state, DfuAttributes::CAN_DOWNLOAD, ResetImmediate);
     let mut builder = Builder::new(
         driver,
         config,

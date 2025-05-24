@@ -1,2 +1,2 @@
 [default.general]
-chip = "STM32G474QETx"
+chip = "STM32G474RETx"

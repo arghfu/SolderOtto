@@ -1,24 +1,29 @@
 #![no_std]
 #![no_main]
 
-use embassy_stm32::Config;
 use core::cell::RefCell;
+use cortex_m_rt::{entry, exception};
+#[cfg(feature = "defmt")]
+use defmt::info;
 #[cfg(feature = "defmt")]
 use defmt_rtt as _;
-use cortex_m_rt::{entry, exception};
+use embassy_stm32::Config;
 
 use embassy_boot_stm32::*;
 use embassy_stm32::flash::{Flash, BANK1_REGION, WRITE_SIZE};
 use embassy_stm32::usb::Driver;
 use embassy_stm32::{bind_interrupts, peripherals, usb};
 use embassy_sync::blocking_mutex::Mutex;
-use embassy_usb::Builder;
+use embassy_usb::{msos, Builder};
 use embassy_usb_dfu::consts::DfuAttributes;
 use embassy_usb_dfu::{usb_dfu, Control, ResetImmediate};
 
 bind_interrupts!(struct Irqs {
     USB_LP => usb::InterruptHandler<peripherals::USB>;
 });
+
+// This is a randomly generated GUID to allow clients on Windows to find our device
+const DEVICE_INTERFACE_GUIDS: &[&str] = &["{EAA9A5DC-30BA-44BC-9232-606CDC875321}"];
 
 #[entry]
 fn main() -> ! {
@@ -38,13 +43,6 @@ fn main() -> ! {
         config.rcc.sys = Sysclk::PLL1_R;
     }
     let p = embassy_stm32::init(config);
-
-    // Prevent a hard fault when accessing flash 'too early' after boot.
-    #[cfg(feature = "defmt")]
-    for _ in 0..10000000 {
-        cortex_m::asm::nop();
-    }
-
     let layout = Flash::new_blocking(p.FLASH).into_blocking_regions();
     let flash = Mutex::new(RefCell::new(layout.bank1_region));
 
@@ -54,9 +52,9 @@ fn main() -> ! {
     if bl.state == State::DfuDetach {
         let driver = Driver::new(p.USB, Irqs, p.PA12, p.PA11);
         let mut config = embassy_usb::Config::new(0xc0de, 0xcafe);
-        config.manufacturer = Some("FireWaterBurn");
-        config.product = Some("SolderOtto-DFU Runtime");
-        config.serial_number = Some("08151337");
+        config.manufacturer = Some("Embassy");
+        config.product = Some("USB-DFU Bootloader example");
+        config.serial_number = Some("1235678");
 
         let fw_config = FirmwareUpdaterConfig::from_linkerfile_blocking(&flash, &flash);
         let mut buffer = AlignedBuffer([0; WRITE_SIZE]);
@@ -65,7 +63,7 @@ fn main() -> ! {
         let mut config_descriptor = [0; 256];
         let mut bos_descriptor = [0; 256];
         let mut control_buf = [0; 4096];
-        let mut state = Control::new(updater, DfuAttributes::CAN_DOWNLOAD);
+        let mut state = Control::new(updater, DfuAttributes::CAN_DOWNLOAD, ResetImmediate);
         let mut builder = Builder::new(
             driver,
             config,
@@ -75,12 +73,23 @@ fn main() -> ! {
             &mut control_buf,
         );
 
-        usb_dfu::<_, _, _, ResetImmediate, 4096>(&mut builder, &mut state);
+        // We add MSOS headers so that the device automatically gets assigned the WinUSB driver on Windows.
+        // Otherwise users need to do this manually using a tool like Zadig.
+        //
+        // It seems it is important for the DFU class that these headers be on the Device level.
+        //
+        builder.msos_descriptor(msos::windows_version::WIN8_1, 2);
+        builder.msos_feature(msos::CompatibleIdFeatureDescriptor::new("WINUSB", ""));
+        builder.msos_feature(msos::RegistryPropertyFeatureDescriptor::new(
+            "DeviceInterfaceGUIDs",
+            msos::PropertyData::RegMultiSz(DEVICE_INTERFACE_GUIDS),
+        ));
+
+        usb_dfu::<_, _, _, _, 4096>(&mut builder, &mut state);
 
         let mut dev = builder.build();
         embassy_futures::block_on(dev.run());
     }
-
     unsafe { bl.load(BANK1_REGION.base + active_offset) }
 }
 

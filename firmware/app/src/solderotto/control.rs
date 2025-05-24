@@ -57,9 +57,6 @@ impl<'d> WaveControl<'d> {
 struct OutputStage<'d> {
     high_load0: Output<'d>,
     high_load1: Output<'d>,
-    high_com: Output<'d>,
-    low_load: Output<'d>,
-    low_com: Output<'d>,
 }
 
 impl<'d> OutputStage<'d> {
@@ -67,42 +64,27 @@ impl<'d> OutputStage<'d> {
         Self {
             high_load0: Output::new(res.high_side_load0, Level::Low, Speed::Low),
             high_load1: Output::new(res.high_side_load1, Level::Low, Speed::Low),
-            high_com: Output::new(res.high_side_com, Level::Low, Speed::Low),
-            low_load: Output::new(res.low_side_load, Level::Low, Speed::Low),
-            low_com: Output::new(res.low_side_com, Level::Low, Speed::Low),
         }
     }
 
     fn set_load_high(&mut self) {
-        if !self.low_load.is_set_high() {
-            // self.low_com.set_high();
-            self.high_load0.set_high();
-            // self.high_load1.set_high();
-        }
+        self.high_load0.set_high();
     }
 
     fn set_com_high(&mut self) {
-        if !self.low_com.is_set_high() {
-            // self.low_load.set_high();
-            self.high_com.set_high();
-        }
+        self.high_load0.set_high();
     }
 
     fn set_load_low(&mut self) {
         self.high_load0.set_low();
-        self.low_com.set_low();
     }
 
     fn set_com_low(&mut self) {
-        self.high_com.set_low();
-        self.low_load.set_low();
+        self.high_load0.set_low();
     }
 
     fn set_low(&mut self) {
-        self.low_com.set_low();
-        self.low_load.set_low();
         self.high_load0.set_low();
         self.high_load1.set_low();
-        self.high_com.set_low();
     }
 }

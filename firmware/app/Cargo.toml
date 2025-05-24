@@ -9,7 +9,7 @@ embassy-stm32 = { version = "0.2.0", features = ["stm32g474qe", "time-driver-tim
 embassy-boot-stm32 = { version = "0.2.0", features = [] }
 embassy-executor = { version = "0.7.0", features = ["arch-cortex-m", "executor-thread", "executor-interrupt"] }
 embassy-sync = { version = "0.6.2" }
-embassy-time = { version = "0.4.0", features = ["tick-hz-1_000_000"] }
+embassy-time = { version = "0.4.0", features = ["tick-hz-1_048_576"] }
 embassy-embedded-hal = { version = "0.3.0" }
 embassy-usb = { version = "0.4.0" }
 embassy-usb-dfu = { version = "0.1.0", features = ["application", "cortex-m"] }
