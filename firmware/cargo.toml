@@ -1,4 +1,8 @@
 [workspace]
+edition = "2021"
+name = "solderotto"
+version = "0.1.0"
+license = "MIT OR Apache-2.0"
 members = [
     "app", "loader", "mx25r"
 ]

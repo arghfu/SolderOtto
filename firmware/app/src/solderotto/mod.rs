@@ -1,18 +1,17 @@
 #![allow(dead_code)]
 
-use super::OutputResource;
-#[cfg(feature = "defmt")]
-use defmt::{trace, warn};
 use embassy_stm32::adc::{Adc, Instance};
 use embassy_stm32::gpio::{Level, Output, Speed};
+use embassy_stm32::peripherals::DMA1_CH1;
+use embassy_stm32::Peri;
 
-pub struct TipAdc<'d, T: Instance, U> {
+pub struct TipAdc<'d, T: Instance, U: embassy_stm32::PeripheralType> {
     pub adc: Adc<'d, T>,
-    pub dma: U,
+    pub dma: Peri<'d, U>,
 }
 
-impl<'d, T: Instance, U> TipAdc<'d, T, U> {
-    pub fn new(adc: T, dma: U) -> Self {
+impl<'d, T: Instance, U: embassy_stm32::PeripheralType> TipAdc<'d, T, U> {
+    pub fn new(adc: Peri<'static, T>, dma: Peri<'static, U>) -> Self {
         Self {
             adc: Adc::new(adc),
             dma,

@@ -54,14 +54,14 @@ assign_resources! {
     }
 
     ext: SysResource {
-        ext3: PA15,
-        ext2: PC10,
-        ext1: PC11,
-        ext0: PC12,
+        ext3: PC6,
+        ext2: PC7,
+        ext1: PC8,
+        ext0: PC9,
     }
 
     zcd: ZcdResources {
-        zcd: PB0,
+        zcd: PC0,
         int: EXTI0,
     }
 
@@ -74,8 +74,8 @@ assign_resources! {
     }
 
     temp: TempResources {
-        tip0: PC3,
-        tip1: PC2,
+        tip0: PC2,
+        tip1: PC3,
     }
 
     tip_adc: TipAdcResources {
@@ -109,11 +109,11 @@ async fn zero_crossing(
     let mut set_point = 2;
     let mut dur: Duration = Duration::default();
 
-    control.set_point(set_point);
+    // control.set_point(set_point);
 
     let mut zcd = ExtiInput::new(zcd.zcd, zcd.int, Pull::None);
-    // let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
-    // let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
+    let mut tip0 = AdcChannel::degrade_adc(temp.tip0);
+    let mut tip1 = AdcChannel::degrade_adc(temp.tip1);
 
     let mut foo = Ticker::every(Duration::from_secs(1));
     let mut bar = Ticker::every(Duration::from_secs(60));
@@ -122,30 +122,29 @@ async fn zero_crossing(
         match select3(zcd.wait_for_any_edge(), foo.next(), bar.next()).await {
             Either3::First(_) => match zcd.get_level() {
                 Level::Low => {
-                    control.drive_low();
-                    // let now = embassy_time::Instant::now();
+                    let now = embassy_time::Instant::now();
                     {
                         dbg_control.send(DebugState::Toggle).await;
                         let mut locked_adc = tip_adc.lock().await;
                         let tip_adc = locked_adc.deref_mut();
 
-                        // tip_adc
-                        //     .adc
-                        //     .read(
-                        //         &mut tip_adc.dma,
-                        //         [
-                        //             (&mut tip0, SampleTime::CYCLES247_5),
-                        //             (&mut tip1, SampleTime::CYCLES247_5),
-                        //         ]
-                        //         .into_iter(),
-                        //         &mut read_buffer,
-                        //     )
-                        //     .await;
+                        tip_adc
+                            .adc
+                            .read(
+                                tip_adc.dma.reborrow(),
+                                [
+                                    (&mut tip0, SampleTime::CYCLES247_5),
+                                    (&mut tip1, SampleTime::CYCLES247_5),
+                                ]
+                                .into_iter(),
+                                &mut read_buffer,
+                            )
+                            .await;
                     }
-                    // dur = embassy_time::Instant::now().duration_since(now);
+                    dur = embassy_time::Instant::now().duration_since(now);
                 }
                 Level::High => {
-                    control.drive_high(BridgeState::Load);
+                    // control.drive_high(BridgeState::Load);
                     dbg_control.send(DebugState::Toggle).await;
                 }
             },
@@ -167,36 +166,17 @@ async fn zero_crossing(
 }
 
 #[embassy_executor::task]
-async fn check_connection(tip_adc: &'static TipAdcAsyncMutex) {
-    // let mut vref = tip_adc.lock().await.adc.enable_vrefint().degrade_adc();
-
-    let mut read_buffer: [u16; 8] = [0; 8];
-
-    // let mut tip1 = AdcChannel::degrade_adc(tips.tip1);
-    loop {
-        {
-            let mut locked_adc = tip_adc.lock().await;
-            let tip_adc = locked_adc.deref_mut();
-
-            // tip_adc
-            //     .adc
-            //     .read(
-            //         &mut tip_adc.dma,
-            //         [(&mut vref, SampleTime::CYCLES247_5)].into_iter(),
-            //         &mut read_buffer[0..1],
-            //     )
-            //     .await;
-        }
-    }
-}
-
-#[embassy_executor::task]
 async fn debug_task(ext: SysResource) {
-    let mut dbg0 = OutputOpenDrain::new(ext.ext0, Level::High, Speed::Low);
+    let mut dbg0 = OutputOpenDrain::new(ext.ext0, Level::Low, Speed::Low);
+    // let mut dbg1 = OutputOpenDrain::new(ext.ext1, Level::Low, Speed::Low);
+    // let mut dbg2 = OutputOpenDrain::new(ext.ext2, Level::Low, Speed::Low);
+    // let mut dbg3 = OutputOpenDrain::new(ext.ext3, Level::Low, Speed::Low);
 
     loop {
         match CHANNEL.receive().await {
-            DebugState::Toggle => dbg0.toggle(),
+            DebugState::Toggle => {
+                dbg0.toggle();
+            }
         }
     }
 }
@@ -228,7 +208,7 @@ fn main() -> ! {
     let r = split_resources!(p);
 
     static ADC: StaticCell<TipAdcAsyncMutex> = StaticCell::new();
-    // let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
+    let adc = ADC.init(mutex::Mutex::new(TipAdc::new(r.tip_adc.adc, r.tip_adc.dma)));
 
     let sel1_a = Output::new(p.PF8, Level::Low, Speed::Low);
     let sel2_a = Output::new(p.PF10, Level::Low, Speed::Low);
@@ -236,16 +216,16 @@ fn main() -> ! {
     let sel1_b = Output::new(p.PF9, Level::Low, Speed::Low);
     let sel2_b = Output::new(p.PF0, Level::Low, Speed::Low);
 
-    // let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
-    // spawner
-    //     .spawn(zero_crossing(
-    //         adc,
-    //         CHANNEL.sender(),
-    //         r.zcd,
-    //         r.temp,
-    //         r.driver,
-    //     ))
-    //     .unwrap();
+    let spawner = EXECUTOR_HI.start(interrupt::I2C1_EV);
+    spawner
+        .spawn(zero_crossing(
+            adc,
+            CHANNEL.sender(),
+            r.zcd,
+            r.temp,
+            r.driver,
+        ))
+        .unwrap();
 
     let executor = EXECUTOR_LOW.init(Executor::new());
     executor.run(|spawner| {
