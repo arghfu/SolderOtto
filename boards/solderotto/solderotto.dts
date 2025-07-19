@@ -239,18 +239,18 @@
 	status = "okay";
 };
 
-&spi4 {
-	pinctrl-0 = <&spi4_nss_pe4 &spi4_sck_pe2 &spi4_miso_pe5 &spi4_mosi_pe6>;
+&spi3 {
+	pinctrl-0 = <&spi3_nss_pa15 &spi3_sck_pc10 &spi3_miso_pc11 &spi3_mosi_pc12>;
 	pinctrl-names = "default";
 
 	status = "okay";
 
 	bt81x: bt81x@0 {
-		compatible = "bridgetek,bt81x";
+		compatible = "bt81x";
 
 		reg = <0x0>;
 		spi-max-frequency = <30000000>;
-		irq-gpios = <&gpioe 1 GPIO_ACTIVE_LOW>;
+		irq-gpios = <&gpiod 2 GPIO_ACTIVE_LOW>;
 
 		hsize = <800>;
 		vsize = <480>;

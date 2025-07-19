@@ -334,7 +334,7 @@ void zcd_callback(const struct device *dev,
 
     diff = k_cyc_to_us_floor64(diff);
 
-    LOG_("half wave time: %"PRId64" us", diff);
+    LOG_DBG("half wave time: %"PRId64" us", diff);
 }
 
 int main(void)
