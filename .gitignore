@@ -3,6 +3,9 @@
 *.swp
 .idea
 
+# c/c++
+**.west
+
 # python
 .venv
 
@@ -19,6 +22,3 @@
 fp-info-cache
 _autosave-*
 \#auto_saved_files\#
-
-# rust
-**/target

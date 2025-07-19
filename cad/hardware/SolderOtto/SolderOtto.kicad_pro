@@ -319,6 +319,15 @@
     "viewports": []
   },
   "boards": [],
+  "component_class_settings": {
+    "assignments": [],
+    "meta": {
+      "version": 0
+    },
+    "sheet_component_classes": {
+      "enabled": false
+    }
+  },
   "cvpcb": {
     "equivalence_files": []
   },
@@ -824,5 +833,11 @@
       "Channel0"
     ]
   ],
-  "text_variables": {}
+  "text_variables": {},
+  "time_domain_parameters": {
+    "delay_profiles_user_defined": [],
+    "meta": {
+      "version": 0
+    }
+  }
 }
