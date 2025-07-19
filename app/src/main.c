@@ -306,7 +306,7 @@ int main(void)
 
     printk("Zephyr Example Application %s\n", APP_VERSION_STRING);
 
-
+    LOG_INF("Starting proximity sensor example...");
 
 
     printk("Use the sensor to change LED blinking period\n");

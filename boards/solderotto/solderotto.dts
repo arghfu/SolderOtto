@@ -13,56 +13,75 @@
 	compatible = "st,solderotto";
 
 	chosen {
-		zephyr,console = &usart1;
-		zephyr,shell-uart = &usart1;
+		zephyr,console = &rtt0;
+		zephyr,shell-uart = &rtt0;
 		zephyr,sram = &sram0;
 		zephyr,flash = &flash0;
 		zephyr,code-partition = &slot0_partition;
 	};
 
+	rtt0: rtt_chan0 {
+		compatible = "segger,rtt-uart";
+		status = "okay";
+	};
+
 	channel_out {
 		compatible = "gpio-leds";
-		sel1: sel_1 {
-			gpios = <&gpiof 8 GPIO_ACTIVE_HIGH>;
+		sel_1a: sel_1a{
+			gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>;
 		};
-		sel2: sel_2 {
-			gpios = <&gpiof 9 GPIO_ACTIVE_HIGH>;
+		sel_2a: sel_2a {
+			gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>;
 		};
-		sel3: sel_3 {
-			gpios = <&gpiof 10 GPIO_ACTIVE_HIGH>;
+		sel_1b: sel_1b {
+			gpios = <&gpiob 7 GPIO_ACTIVE_HIGH>;
+		};
+		sel_2b: sel_2b {
+			gpios = <&gpiob 9 GPIO_ACTIVE_HIGH>;
 		};
 		load_0: load0 {
-			gpios = <&gpioa 1 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpioc 13 GPIO_ACTIVE_HIGH>;
 		};
 		load_1: load1 {
-			gpios = <&gpioa 2 GPIO_ACTIVE_HIGH>;
-		};
-		com: com {
-			gpios = <&gpioa 0 GPIO_ACTIVE_HIGH>;
-		};
-		load_low: low_load {
-			gpios = <&gpiof 2 GPIO_ACTIVE_HIGH>;
-		};
-		com_low: low_com {
-			gpios = <&gpioa 3 GPIO_ACTIVE_HIGH>;
+			gpios = <&gpioc 14 GPIO_ACTIVE_HIGH>;
 		};
 		dbg_0: dbg_0 {
-			gpios = <&gpioc 12 GPIO_OPEN_DRAIN>;
+			gpios = <&gpioc 9 GPIO_OPEN_DRAIN>;
+		};
+		dbg_1: dbg_1 {
+			gpios = <&gpioc 8 GPIO_OPEN_DRAIN>;
+		};
+		dbg_2: dbg_2 {
+			gpios = <&gpioc 7 GPIO_OPEN_DRAIN>;
+		};
+		dbg_3: dbg_3 {
+			gpios = <&gpioc 6 GPIO_OPEN_DRAIN>;
+		};
+	};
+
+	buttons {
+		compatible = "gpio-keys";
+
+		zcd0: zcd_0 {
+			gpios = <&gpiod 2 GPIO_ACTIVE_LOW>;
+			label = "zcd";
 		};
 	};
 
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-//		ch0-sel1 = &sel1;
-//		ch0-sel2 = &sel2;
-//		ch0-sel3 = &sel3;
-//		ch0-load0 = &load_0;
-//		ch0-load1 = &load_1;
-//		ch0-com = &com;
-//		ch0-low-load = &load_low;
-//		ch0-low-com = &com_low;
+		ch0-sel-1a = &sel_1a;
+		ch0-sel-2a = &sel_2a;
+		ch0-sel-1b = &sel_1b;
+		ch0-sel-2b = &sel_2b;
+		ch0-load-a = &load_0;
+		ch0-load-b = &load_1;
+		zcd = &zcd0;
 		dbg-0 = &dbg_0;
+		dbg-1 = &dbg_1;
+		dbg-2 = &dbg_2;
+		dbg-3 = &dbg_3;
 	};
 
 	soc {
