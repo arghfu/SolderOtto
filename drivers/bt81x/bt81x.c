@@ -4,7 +4,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-#define DT_DRV_COMPAT bridgetek_bt81x
+#define DT_DRV_COMPAT bt81x
 
 #include <stddef.h>
 #include <stdint.h>
@@ -13,16 +13,18 @@
 #include <zephyr/kernel.h>
 #include <zephyr/logging/log.h>
 
-#include <app/drivers/bt81x/bt81x.h>
-#include <app/drivers/bt81x/bt81x_copro.h>
-#include <app/drivers/bt81x/bt81x_common.h>
-#include <app/drivers/bt81x/bt81x_dl.h>
-#include <app/drivers/bt81x/bt81x_memory.h>
+#include <drivers/bt81x/bt81x.h>
+#include <drivers/bt81x/bt81x_copro.h>
+#include <drivers/bt81x/bt81x_common.h>
+#include <drivers/bt81x/bt81x_dl.h>
+#include <drivers/bt81x/bt81x_memory.h>
 
 #include "bt81x_drv.h"
 #include "bt81x_host_commands.h"
 
-LOG_MODULE_REGISTER(bt81x, CONFIG_DISPLAY_LOG_LEVEL);
+#define LOG_LEVEL CONFIG_BT81X_LOG_LEVEL
+
+LOG_MODULE_REGISTER(bt81x, CONFIG_BT81X_LOG_LEVEL);
 
 #define FT8XX_DLSWAP_FRAME 0x02
 

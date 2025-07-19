@@ -5,8 +5,8 @@
 
 config BT81X
 	bool "BT81x Embedded Video Engine driver"
-	default y
-	depends on DT_HAS_BRIDGETEK_BT81X_ENABLED
+	default n
+	depends on DT_HAS_BT81X_ENABLED
 	select SPI
 	help
 	  Enable driver for BT81X controller.
@@ -17,3 +17,8 @@ config BT81X_INIT_PRIORITY
 	depends on BT81X
 	help
 	  BT81X driver initialization priority in POST_KERNEL.
+
+
+module = BT81X
+module-str = bt81x
+source "subsys/logging/Kconfig.template.log_config"

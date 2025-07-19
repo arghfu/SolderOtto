@@ -14,7 +14,7 @@
 #define LOG_MODULE_NAME bt81x_drv
 LOG_MODULE_REGISTER(LOG_MODULE_NAME);
 
-#define DT_DRV_COMPAT bridgetek_bt81x
+#define DT_DRV_COMPAT bt81x
 #define NODE_ID DT_INST(0, DT_DRV_COMPAT)
 
 /* SPI device */

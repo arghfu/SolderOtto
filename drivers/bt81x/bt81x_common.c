@@ -6,7 +6,7 @@
 
 #include <zephyr/sys/byteorder.h>
 
-#include <app/drivers/bt81x/bt81x_common.h>
+#include <drivers/bt81x/bt81x_common.h>
 
 #include "bt81x_drv.h"
 

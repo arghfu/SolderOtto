@@ -7,9 +7,9 @@
 #include <stdint.h>
 #include <string.h>
 
-#include <app/drivers/bt81x/bt81x_copro.h>
-#include <app/drivers/bt81x/bt81x_common.h>
-#include <app/drivers/bt81x/bt81x_memory.h>
+#include <drivers/bt81x/bt81x_copro.h>
+#include <drivers/bt81x/bt81x_common.h>
+#include <drivers/bt81x/bt81x_memory.h>
 
 #include "bt81x_drv.h"
 
