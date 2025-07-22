@@ -105,47 +105,64 @@
 			compatible = "st,stm32-qspi";
 			#address-cells = <1>;
 			#size-cells = <0>;
-			reg = <0xa0001000 0x400>;
-			interrupts = <71 0>;
-			clocks = <&rcc STM32_CLOCK_BUS_AHB3 0x00000100>;
+			reg = <0xa0001000 0x1000>, <0x90000000 DT_SIZE_M(256)>;
+			interrupts = <95 0>;
+			clocks = <&rcc STM32_CLOCK(AHB3, 8U)>;
+
 			status = "disabled";
 		};
 	};
+
+	zephyr,user {
+		/* adjust channel number according to pinmux in board.dts */
+		io-channels = <&adc1 1>, <&adc1 2>, <&adc1 7>, <&adc1 8>, <&adc1 9>, <&adc4 3>, <&adc4 4>;
+		io-channel-names = "ch0-handle", "ch0-leak", "ch0-load", "ch0-tipa", "ch0-tipb", "t-amb", "v-ana";
+	};
+};
+
+&dma1 {
+	status = "okay";
 };
 
 &dma2 {
 	status = "okay";
 };
 
-//&quadspi {
-//	pinctrl-0 = <&quadspi1_clk_pe10 &quadspi1_bk1_ncs_pe11
-//				 &quadspi1_bk1_io3_pe15 &quadspi1_bk1_io2_pe14
-//				 &quadspi1_bk1_io1_pe13 &quadspi1_bk1_io0_pe12>;
-//	pinctrl-names = "default";
-//
-//	status = "okay";
-//
-//	mx25r6435f: qspi-nor-flash@90000000 {
-//		compatible = "st,stm32-qspi-nor";
-//		reg = <0x90000000 DT_SIZE_M(8)>; /* 64 Mbits */
-//		qspi-max-frequency = <80000000>;
-//		reset-gpios = <&gpiod 3 GPIO_ACTIVE_LOW>;
-//		reset-gpios-duration = <1>;
-//		spi-bus-width = <4>;
-//		status = "okay";
-//
-//		foobar: partitions {
-//			compatible = "fixed-partitions";
-//			#address-cells = <1>;
-//			#size-cells = <1>;
-//
-//			partition@0 {
-//				label = "nor";
-//				reg = <0x00000000 DT_SIZE_M(4)>;
-//			};
-//		};
-//	};
-//};
+&dmamux1 {
+	status = "okay";
+};
+
+&quadspi {
+	pinctrl-0 = <&quadspi1_clk_pb10 &quadspi1_bk1_ncs_pb11
+				 &quadspi1_bk1_io0_pb1 &quadspi1_bk1_io1_pb0
+				 &quadspi1_bk1_io2_pa7 &quadspi1_bk1_io3_pa6>;
+	pinctrl-names = "default";
+
+	dmas = <&dma1 5 5 0x0000>;
+	dma-names = "tx_rx";
+
+	flash-id = <1>;
+	status = "okay";
+
+	mx25r3235: qspi-nor-flash@0 {
+		compatible = "st,stm32-qspi-nor";
+		reg = <0>;
+		size = <DT_SIZE_M(32)>; /* 128 Mbits */
+		qspi-max-frequency = <80000000>;
+		status = "okay";
+
+		partitions {
+			compatible = "fixed-partitions";
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+			slot3_partition: partition@0 {
+				label = "storage_ext";
+				reg = <0x00000000 DT_SIZE_M(4)>;
+			};
+		};
+	};
+};
 
 &clk_lsi {
 	status = "okay";
@@ -224,11 +241,81 @@
 };
 
 &adc1 {
-	pinctrl-0 = <&adc1_in8_pc2>;
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+	pinctrl-0 = <&adc1_in1_pa0 &adc1_in2_pa1 &adc1_in7_pc1 &adc1_in8_pc2 &adc1_in9_pc3>;
 	pinctrl-names = "default";
 	st,adc-clock-source = "SYNC";
 	st,adc-prescaler = <4>;
 	status = "okay";
+
+	channel@1 {
+		reg = <1>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
+	channel@2 {
+		reg = <2>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
+	channel@7 {
+		reg = <7>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
+	channel@8 {
+		reg = <8>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
+	channel@9 {
+		reg = <9>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+};
+
+&adc4 {
+	pinctrl-0 = <&adc4_in3_pb12 &adc4_in4_pb14>;
+	pinctrl-names = "default";
+	st,adc-clock-source = "SYNC";
+	st,adc-prescaler = <4>;
+	status = "okay";
+	#address-cells = <1>;
+	#size-cells = <0>;
+
+
+	channel@3 {
+		reg = <3>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
+
+	channel@4 {
+		reg = <4>;
+		zephyr,gain = "ADC_GAIN_1";
+		zephyr,reference = "ADC_REF_INTERNAL";
+		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
+		zephyr,resolution = <12>;
+	};
 };
 
 &vref {
