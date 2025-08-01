@@ -30,3 +30,7 @@ CONFIG_ADC=y
 
 # enable
 CONFIG_FLASH=y
+
+# BT81x config
+CONFIG_SPI=y
+CONFIG_BT81X=y

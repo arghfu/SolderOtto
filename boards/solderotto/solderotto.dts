@@ -105,7 +105,7 @@
 			compatible = "st,stm32-qspi";
 			#address-cells = <1>;
 			#size-cells = <0>;
-			reg = <0xa0001000 0x1000>, <0x90000000 DT_SIZE_M(256)>;
+			reg = <0xa0001000 0x400>, <0x90000000 DT_SIZE_M(256)>;
 			interrupts = <95 0>;
 			clocks = <&rcc STM32_CLOCK(AHB3, 8U)>;
 
@@ -132,14 +132,34 @@
 	status = "okay";
 };
 
+&flash0 {
+	partitions {
+		compatible = "fixed-partitions";
+		#address-cells = <1>;
+		#size-cells = <1>;
+
+		boot_partition: partition@0 {
+			label = "mcuboot";
+			reg = <0x00000000 DT_SIZE_K(34)>;
+		};
+
+		slot0_partition: partition@8800 {
+			label = "image-0";
+			reg = <0x00008800 DT_SIZE_K(462)>;
+		};
+
+		scratch_partition: partition@7C000 {
+			label = "image-scratch";
+			reg = <0x0007c000 DT_SIZE_K(16)>;
+		};
+	};
+};
+
 &quadspi {
 	pinctrl-0 = <&quadspi1_clk_pb10 &quadspi1_bk1_ncs_pb11
 				 &quadspi1_bk1_io0_pb1 &quadspi1_bk1_io1_pb0
 				 &quadspi1_bk1_io2_pa7 &quadspi1_bk1_io3_pa6>;
 	pinctrl-names = "default";
-
-	dmas = <&dma1 5 5 0x0000>;
-	dma-names = "tx_rx";
 
 	flash-id = <1>;
 	status = "okay";
@@ -147,8 +167,11 @@
 	mx25r3235: qspi-nor-flash@0 {
 		compatible = "st,stm32-qspi-nor";
 		reg = <0>;
-		size = <DT_SIZE_M(32)>; /* 128 Mbits */
-		qspi-max-frequency = <80000000>;
+		size = <DT_SIZE_M(32)>; /* 32 Mbits */
+		qspi-max-frequency = <8000000>;
+		spi-bus-width = <4>;
+		jedec-id = [c2 28 16];
+
 		status = "okay";
 
 		partitions {
@@ -156,9 +179,13 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 
-			slot3_partition: partition@0 {
+			slot1_partition: partition@0 {
+				label = "image-1";
+				reg = <0x00000000 DT_SIZE_K(462)>;
+			};
+			storage: partition@73800 {
 				label = "storage_ext";
-				reg = <0x00000000 DT_SIZE_M(4)>;
+				reg = <0x00073800 DT_SIZE_K(3634)>;
 			};
 		};
 	};
@@ -201,35 +228,6 @@
 	stop-bits = "1";
 	data-bits = <8>;
 	status = "okay";
-};
-
-&flash0 {
-	partitions {
-		compatible = "fixed-partitions";
-		#address-cells = <1>;
-		#size-cells = <1>;
-
-		boot_partition: partition@0 {
-			label = "mcuboot";
-			reg = <0x00000000 DT_SIZE_K(34)>;
-		};
-
-		slot0_partition: partition@8800 {
-			label = "image-0";
-			reg = <0x00008800 DT_SIZE_K(234)>;
-		};
-
-		slot1_partition: partition@44800 {
-			label = "image-1";
-			reg = <0x00044800 DT_SIZE_K(234)>;
-		};
-
-		/* Set 10Kb of storage at the end of the 512Kb of flash */
-		storage_partition: partition@7f000 {
-			label = "storage";
-			reg = <0x0007f000 DT_SIZE_K(10)>;
-		};
-	};
 };
 
 &iwdg {
@@ -331,6 +329,10 @@
 	pinctrl-names = "default";
 
 	status = "okay";
+
+	dmas = <&dma1 4 15 STM32_DMA_PERIPH_TX
+			&dma1 5 14 STM32_DMA_PERIPH_RX>;
+	dma-names = "tx", "rx";
 
 	bt81x: bt81x@0 {
 		compatible = "bt81x";

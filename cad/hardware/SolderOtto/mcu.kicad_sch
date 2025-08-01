@@ -6910,7 +6910,7 @@
 		(uuid "44bf88b2-ae1a-4307-8dc9-e962ffbddbba")
 	)
 	(label "QSPI_NCS"
-		(at 67.31 156.21 180)
+		(at 67.31 153.67 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7000,7 +7000,7 @@
 		(uuid "7a8fbb7b-b467-4d6f-a226-232721aec95b")
 	)
 	(label "QSPI_CLK"
-		(at 67.31 153.67 180)
+		(at 67.31 156.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
