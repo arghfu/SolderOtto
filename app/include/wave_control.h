@@ -1,5 +1,5 @@
-#ifndef SOLDEROTTO_H
-#define SOLDEROTTO_H
+#pragma once
+#include <stdint.h>
 
 struct wave_control {
     uint16_t ton;
@@ -8,5 +8,3 @@ struct wave_control {
 };
 
 int wave_control_init();
-
-#endif

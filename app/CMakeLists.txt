@@ -6,6 +6,10 @@ project(app LANGUAGES C)
 target_sources(app PRIVATE
         src/main.c
         src/wave_control.c
-        src/display.c)
+        src/display.c
+        src/flash.c
+        src/pid.c
+        src/debug.c
+)
 
 target_include_directories(app PRIVATE include)

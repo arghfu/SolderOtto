@@ -2,31 +2,122 @@
 #include <zephyr/drivers/gpio.h>
 
 #include "wave_control.h"
+#include "debug.h"
 
 #include <zephyr/logging/log.h>
 
+#define ZCD_BEGIN GPIO_PIN_RESET
+#define ZCD_END GPIO_PIN_SET
+
 LOG_MODULE_REGISTER(wave_control);
 
-static const struct gpio_dt_spec zcd =
+static const struct gpio_dt_spec zcd = // NOLINT(*-interfaces-global-init)
     GPIO_DT_SPEC_GET_OR(DT_NODELABEL(zcd0), gpios, {0});
 
-
-static const struct adc_dt_spec adc_tip_a_temp =
+static const struct adc_dt_spec adc_tip_a_temp = // NOLINT(*-interfaces-global-init)
     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
 
-static const struct adc_dt_spec adc_tip_b_temp =
+static const struct adc_dt_spec adc_tip_b_temp = // NOLINT(*-interfaces-global-init)
     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
 
 struct gpio_callback zcd_cb_data;
 
 struct wave_control control = {
-    .ton = 0,
-    .tperiod = 1000,
+    .ton = 7,
+    .tperiod = 10,
     .count = 0
 };
 
-void zcd_callback(const struct device* dev,
-                  struct gpio_callback* cb, uint32_t pins);
+uint16_t ana_buf;
+
+struct adc_sequence ana_sequence = {
+    .buffer = &ana_buf,
+    /* buffer size in bytes, not number of samples */
+    .buffer_size = sizeof(ana_buf),
+};
+
+static void zcd_callback(const struct device* dev,
+                         struct gpio_callback* cb, uint32_t pins);
+
+static int wave_control_init_tip(struct adc_dt_spec* adc_spec);
+
+// Define message structure
+struct zcd_event
+{
+    uint64_t timestamp;
+    int pin_state;
+    uint64_t period_us;
+};
+
+// Create message queue
+K_MSGQ_DEFINE(zcd_msgq, sizeof(struct zcd_event), 10, 4);
+
+// High priority thread
+void zcd_processing_thread(void)
+{
+    struct zcd_event event;
+
+    while (1)
+    {
+        // Wait for message from ISR
+        if (k_msgq_get(&zcd_msgq, &event, K_FOREVER) == 0)
+        {
+            // // Process the event data
+            // LOG_INF("ZCD event: state=%d, period=%llu us",
+            //        event.pin_state, event.period_us);
+
+            switch (event.pin_state)
+            {
+            case ZCD_BEGIN:
+                if (control.count < control.ton)
+                {
+                    dbg_set_pin(0, GPIO_PIN_SET);
+                }
+                ++control.count;
+
+                if (control.count >= control.tperiod)
+                {
+                    control.count = 0;
+                }
+
+                int32_t val_mv;
+
+                int err = adc_read_dt(&adc_tip_a_temp, &ana_sequence);
+                if (err < 0)
+                {
+                    LOG_ERR("Could not read (%d)", err);
+                    return;
+                }
+
+                val_mv = (int32_t)ana_buf;
+
+                err = adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
+                if (err < 0)
+                {
+                    LOG_WRN("Conversion to mV not available");
+                }
+                else
+                {
+                    LOG_INF("Analog voltage: %"PRId32" mV", val_mv);
+                }
+
+                break;
+            case ZCD_END:
+                dbg_set_pin(0, GPIO_PIN_RESET);
+                break;
+            default:
+                break;
+            }
+
+
+        }
+    }
+}
+
+// Create high priority thread
+K_THREAD_DEFINE(zcd_thread_id, 1024, zcd_processing_thread,
+                NULL, NULL, NULL, 1, 0, 0);
+
 
 int wave_control_init()
 {
@@ -35,67 +126,69 @@ int wave_control_init()
     gpio_pin_configure_dt(&zcd, GPIO_INPUT);
     gpio_pin_interrupt_configure_dt(&zcd, GPIO_INT_EDGE_BOTH);
 
-    int err = adc_is_ready_dt(&adc_v_analog);
+    int err = wave_control_init_tip(&adc_tip_a_temp);
+    err |= wave_control_init_tip(&adc_tip_b_temp);
 
-    if (err < 0)
+    gpio_init_callback(&zcd_cb_data, zcd_callback, BIT(zcd.pin));
+    gpio_add_callback_dt(&zcd, &zcd_cb_data);
+
+    /* Configure channel individually prior to sampling. */
+    if (!adc_is_ready_dt(&adc_tip_a_temp))
     {
-        LOG_ERR("ADC controller device %s not ready", adc_v_analog.dev->name);
+        printk("ADC controller device %s not ready\n", adc_tip_a_temp.dev->name);
         return 0;
     }
 
-    err = adc_channel_setup_dt(&adc_v_analog);
+    err = adc_channel_setup_dt(&adc_tip_a_temp);
+    if (err < 0)
+    {
+        printk("Could not setup channel Ch0-tip (%d)\n", err);
+        return 0;
+    }
+
+
+    // (void)adc_sequence_init_dt(&adc_tip_b_temp, &ana_sequence);
+    (void)adc_sequence_init_dt(&adc_tip_a_temp, &ana_sequence);
+
+    return err;
+}
+
+// Modified ISR callback
+static void zcd_callback(const struct device* dev,
+                         struct gpio_callback* cb, uint32_t pins)
+{
+    static uint64_t time_last = 0;
+    struct zcd_event event;
+
+    int state = gpio_pin_get_dt(&zcd);
+    uint64_t time_now = k_cycle_get_64();
+    uint64_t diff = time_now - time_last;
+    time_last = time_now;
+
+    // Prepare event data
+    event.timestamp = time_now;
+    event.pin_state = state;
+    event.period_us = k_cyc_to_us_floor64(diff);
+
+    // Send to thread (non-blocking from ISR)
+    k_msgq_put(&zcd_msgq, &event, K_NO_WAIT);
+}
+
+static int wave_control_init_tip(struct adc_dt_spec* adc_spec)
+{
+    int err = adc_is_ready_dt(adc_spec);
+    if (err < 0)
+    {
+        LOG_ERR("ADC controller device %s not ready", adc_spec->dev->name);
+        return 0;
+    }
+
+    err = adc_channel_setup_dt(adc_spec);
     if (err < 0)
     {
         LOG_ERR("Could not setup channel (%d)", err);
         return 0;
     }
 
-
-    return 0;
-}
-
-// int wave_control_add_zcd_callback(gpio_callback_handler_t handler, void *user_data)
-// {
-//     // gpio_init_callback(&zcd_cb_data, zcd_callback, BIT(zcd.pin));
-//     // gpio_add_callback_dt(&zcd, &zcd_cb_data);
-// }
-
-void zcd_callback(const struct device* dev,
-                  struct gpio_callback* cb, uint32_t pins)
-{
-    static uint64_t time_last = 0;
-    int state = gpio_pin_get_dt(&zcd);
-    uint64_t time_now = k_cycle_get_64();
-
-    uint64_t diff = time_now - time_last;
-    time_last = time_now;
-
-    if (state == GPIO_PIN_RESET)
-    {
-        if (control.count < control.ton)
-        {
-            // gpio_pin_set_dt(&dbg0_pin, GPIO_PIN_SET);
-            // gpio_pin_set_dt(&load0_switch, GPIO_PIN_SET);
-        }
-        else
-        {
-            // gpio_pin_set_dt(&dbg0_pin, GPIO_PIN_RESET);
-            // gpio_pin_set_dt(&load0_switch, GPIO_PIN_RESET);
-        }
-        ++control.count;
-    }
-    else
-    {
-        // gpio_pin_set_dt(&dbg0_pin, GPIO_PIN_RESET);
-    }
-
-
-    if (control.count >= control.tperiod)
-    {
-        control.count = 0;
-    }
-
-    diff = k_cyc_to_us_floor64(diff);
-
-    LOG_DBG("half wave time: %"PRId64" us", diff);
+    return 1;
 }

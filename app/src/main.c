@@ -5,11 +5,9 @@
 #include <zephyr/drivers/flash.h>
 
 #include "wave_control.h"
+#include "debug.h"
 
 LOG_MODULE_REGISTER(main);
-
-#define BLINK_PERIOD_MS_STEP 100U
-#define BLINK_PERIOD_MS_MAX  1000U
 
 #define SPI_FLASH_TEST_REGION_OFFSET 0xff000
 
@@ -43,29 +41,6 @@ static const struct adc_dt_spec adc_t_ambient =
 
 static const struct adc_dt_spec adc_v_analog =
     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), v_ana);
-
-
-
-static const struct gpio_dt_spec dbg_pins[] = {
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_0), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_1), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_2), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_3), gpios),
-};
-
-
-uint16_t ana_buf;
-
-
-
-struct adc_sequence ana_sequence = {
-    .buffer = &ana_buf,
-    /* buffer size in bytes, not number of samples */
-    .buffer_size = sizeof(ana_buf),
-};
-
-
-
 
 // void measure_v_ana(struct k_work* work)
 // {
@@ -114,7 +89,6 @@ int main(void)
 {
     LOG_INF("Starting Solderotto %s", APP_VERSION_STRING);
 
-    wave_control_init();
 
     const struct device *flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
 
@@ -123,73 +97,11 @@ int main(void)
         return 0;
     }
 
-
-    // gpio_pin_configure_dt(&load0_switch, GPIO_OUTPUT);
-    // gpio_pin_set_dt(&load0_switch, GPIO_PIN_RESET);
-    //
-    // uint16_t buf;
-    //
-    // struct adc_sequence sequence = {
-    //     .buffer = &buf,
-    //     /* buffer size in bytes, not number of samples */
-    //     .buffer_size = sizeof(buf),
-    // };
-    //
-    // /* Configure channel individually prior to sampling. */
-    // if (!adc_is_ready_dt(&adc_tip_a_temp))
-    // {
-    //     printk("ADC controller device %s not ready\n", adc_tip_a_temp.dev->name);
-    //     return 0;
-    // }
-    //
-    // int err = adc_channel_setup_dt(&adc_tip_a_temp);
-    // if (err < 0)
-    // {
-    //     printk("Could not setup channel Ch0-tip (%d)\n", err);
-    //     return 0;
-    // }
-    //
-    //
-    // (void)adc_sequence_init_dt(&adc_tip_a_temp, &sequence);
-
-
-    for (int i = 0; i < ARRAY_SIZE(dbg_pins); i++)
-    {
-        gpio_pin_configure_dt(&dbg_pins[i], GPIO_OUTPUT |	GPIO_ACTIVE_LOW  | GPIO_OPEN_DRAIN);
-        gpio_pin_set_dt(&dbg_pins[i], GPIO_PIN_RESET);
-    }
-
-    // (void)adc_sequence_init_dt(&adc_v_analog, &ana_sequence);
-
-    // LOG_INF("Starting measurement timer");
-    // k_timer_start(&measure_v_ana_timer, K_MSEC(0), K_MSEC(5));
+    dbg_init();
+    wave_control_init();
 
     while (1)
     {
-        // int32_t val_mv;
-        //
-        // uint64_t begin = k_cycle_get_64();
-        // int err = adc_read_dt(&adc_tip_a_temp, &sequence);
-        // uint64_t end = k_cycle_get_64();
-        // uint64_t diff = k_cyc_to_us_floor64(end - begin);
-        //
-        // if (err < 0)
-        // {
-        //     printk("Could not read (%d)\n", err);
-        // }
-
-
-        // LOG_DBG("time to convert: %"PRId64" \n", diff);
-        // val_mv = (int32_t)buf;
-        //
-        // err = adc_raw_to_millivolts_dt(&adc_tip_a_temp,
-        //                                &val_mv);
-        // /* conversion to mV may not be supported, skip if not */
-        // if (err < 0) {
-        //     printk(" (value in mV not available)\n");
-        // } else {
-        //     printk(" = %"PRId32" mV\n", val_mv);
-        // }
 
         k_sleep(K_MSEC(20));
     }
