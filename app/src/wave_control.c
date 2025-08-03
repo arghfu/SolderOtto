@@ -23,8 +23,8 @@ static const struct adc_dt_spec adc_tip_b_temp = // NOLINT(*-interfaces-global-i
 struct gpio_callback zcd_cb_data;
 
 struct wave_control control = {
-    .ton = 7,
-    .tperiod = 10,
+    .ton = 1,
+    .tperiod = 5,
     .count = 0
 };
 
@@ -44,9 +44,7 @@ static int wave_control_init_tip(struct adc_dt_spec* adc_spec);
 // Define message structure
 struct zcd_event
 {
-    uint64_t timestamp;
     int pin_state;
-    uint64_t period_us;
 };
 
 // Create message queue
@@ -56,22 +54,22 @@ K_MSGQ_DEFINE(zcd_msgq, sizeof(struct zcd_event), 10, 4);
 void zcd_processing_thread(void)
 {
     struct zcd_event event;
+    uint64_t diff = 0;
+    int32_t val_mv = 0;
+    bool enable_output = false;
 
     while (1)
     {
         // Wait for message from ISR
         if (k_msgq_get(&zcd_msgq, &event, K_FOREVER) == 0)
         {
-            // // Process the event data
-            // LOG_INF("ZCD event: state=%d, period=%llu us",
-            //        event.pin_state, event.period_us);
-
             switch (event.pin_state)
             {
             case ZCD_BEGIN:
+                dbg_pin_set(0, GPIO_PIN_SET);
                 if (control.count < control.ton)
                 {
-                    dbg_set_pin(0, GPIO_PIN_SET);
+                    enable_output = true;
                 }
                 ++control.count;
 
@@ -80,30 +78,25 @@ void zcd_processing_thread(void)
                     control.count = 0;
                 }
 
-                int32_t val_mv;
-
-                int err = adc_read_dt(&adc_tip_a_temp, &ana_sequence);
-                if (err < 0)
-                {
-                    LOG_ERR("Could not read (%d)", err);
-                    return;
-                }
+                uint64_t time_begin = k_cycle_get_64();
+                adc_read_dt(&adc_tip_a_temp, &ana_sequence);
 
                 val_mv = (int32_t)ana_buf;
 
-                err = adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
-                if (err < 0)
-                {
-                    LOG_WRN("Conversion to mV not available");
-                }
-                else
-                {
-                    LOG_INF("Analog voltage: %"PRId32" mV", val_mv);
-                }
+                adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
+                uint64_t time_end = k_cycle_get_64();
 
+                diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
             case ZCD_END:
-                dbg_set_pin(0, GPIO_PIN_RESET);
+
+                if (enable_output)
+                {
+                    dbg_pin_set(0, GPIO_PIN_RESET);
+                }
+
+                LOG_INF("Analog voltage: %"PRId32" mV    Measurement time: %"PRId64" us", val_mv, diff);
+
                 break;
             default:
                 break;
@@ -115,8 +108,8 @@ void zcd_processing_thread(void)
 }
 
 // Create high priority thread
-K_THREAD_DEFINE(zcd_thread_id, 1024, zcd_processing_thread,
-                NULL, NULL, NULL, 1, 0, 0);
+K_THREAD_DEFINE(zcd_thread_id, WAVE_CTRL_TASK_STACK_SIZE, zcd_processing_thread,
+                NULL, NULL, NULL, WAVE_CTRL_TASK_PRIORITY, 0, 0);
 
 
 int wave_control_init()
@@ -147,8 +140,8 @@ int wave_control_init()
     }
 
 
-    // (void)adc_sequence_init_dt(&adc_tip_b_temp, &ana_sequence);
     (void)adc_sequence_init_dt(&adc_tip_a_temp, &ana_sequence);
+    // (void)adc_sequence_init_dt(&adc_tip_b_temp, &ana_sequence);
 
     return err;
 }
@@ -165,10 +158,7 @@ static void zcd_callback(const struct device* dev,
     uint64_t diff = time_now - time_last;
     time_last = time_now;
 
-    // Prepare event data
-    event.timestamp = time_now;
     event.pin_state = state;
-    event.period_us = k_cyc_to_us_floor64(diff);
 
     // Send to thread (non-blocking from ISR)
     k_msgq_put(&zcd_msgq, &event, K_NO_WAIT);

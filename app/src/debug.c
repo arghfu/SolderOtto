@@ -27,7 +27,7 @@ int dbg_init()
     return 0;
 }
 
-int dbg_set_pin(int pin, int value)
+int dbg_pin_set(int pin, int value)
 {
     if (pin < 0 || pin >= ARRAY_SIZE(dbg_pins))
     {
@@ -35,4 +35,14 @@ int dbg_set_pin(int pin, int value)
     }
 
     return gpio_pin_set_dt(&dbg_pins[pin], value);;
+}
+
+int dbg_pin_toggle(int pin)
+{
+    if (pin < 0 || pin >= ARRAY_SIZE(dbg_pins))
+    {
+        return -EINVAL;
+    }
+
+    return gpio_pin_toggle_dt(&dbg_pins[pin]);;
 }

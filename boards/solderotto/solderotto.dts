@@ -278,6 +278,7 @@
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
+		zephyr,oversampling = <5>;
 	};
 
 	channel@9 {
@@ -286,6 +287,7 @@
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
+		zephyr,oversampling = <5>;
 	};
 };
 
