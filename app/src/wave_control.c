@@ -1,45 +1,78 @@
+#include <zephyr/kernel.h>
 #include <zephyr/drivers/adc.h>
 #include <zephyr/drivers/gpio.h>
+#include <zephyr/logging/log.h>
 
+#include "moving_average.h"
 #include "wave_control.h"
 #include "debug.h"
 
-#include <zephyr/logging/log.h>
+#include "pid.h"
 
 #define ZCD_BEGIN GPIO_PIN_RESET
 #define ZCD_END GPIO_PIN_SET
 
 LOG_MODULE_REGISTER(wave_control);
 
-static const struct gpio_dt_spec zcd = // NOLINT(*-interfaces-global-init)
-    GPIO_DT_SPEC_GET_OR(DT_NODELABEL(zcd0), gpios, {0});
-
 static const struct adc_dt_spec adc_tip_a_temp = // NOLINT(*-interfaces-global-init)
     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
 
-static const struct adc_dt_spec adc_tip_b_temp = // NOLINT(*-interfaces-global-init)
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
+
+// Debounce delay in milliseconds
+#define DEBOUNCE_DELAY_MS 20
+
+static const struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_ALIAS(zcd), gpios);
+static const struct gpio_dt_spec tip_change = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_tip), gpios);
+static const struct gpio_dt_spec stand = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_stand), gpios);
+
+static const struct device* adc = DEVICE_DT_GET(DT_ALIAS(adc_1));
+
+static const struct adc_channel_cfg channel_cfgs[] = {
+    ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_8)),
+    ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_9))
+};
 
 struct gpio_callback zcd_cb_data;
+struct gpio_callback tip_cb_data;
+struct gpio_callback stand_cb_data;
 
 struct wave_control control = {
     .ton = 1,
     .tperiod = 5,
     .count = 0
 };
+#define CHANNEL_COUNT 2
+uint16_t ana_buf[CHANNEL_COUNT] = {0, 0};
 
-uint16_t ana_buf;
-
-struct adc_sequence ana_sequence = {
+static struct adc_sequence ana_sequence = {
     .buffer = &ana_buf,
     /* buffer size in bytes, not number of samples */
     .buffer_size = sizeof(ana_buf),
+    .resolution = 12,
 };
 
-static void zcd_callback(const struct device* dev,
+static pid_t pid;
+static moving_average_t avg;
+
+static void wave_control_zcd_callback(const struct device* dev,
+                                      struct gpio_callback* cb, uint32_t pins);
+
+static void tip_callback(const struct device* dev,
                          struct gpio_callback* cb, uint32_t pins);
 
-static int wave_control_init_tip(struct adc_dt_spec* adc_spec);
+static void stand_callback(const struct device* dev,
+                           struct gpio_callback* cb, uint32_t pins);
+
+// Work item for debounced processing
+static struct k_work_delayable tip_debounce_work;
+static struct k_work_delayable stand_debounce_work;
+
+// Store last pin states
+static int last_tip_state = -1;
+static int last_stand_state = -1;
+
+static void tip_debounce_handler(struct k_work* work);
+static void stand_debounce_handler(struct k_work* work);
 
 // Define message structure
 struct zcd_event
@@ -58,6 +91,10 @@ void zcd_processing_thread(void)
     int32_t val_mv = 0;
     bool enable_output = false;
 
+    pid_init(&pid, KP_T210, KI_T210, KD_T210, -5000, 5000, -500, 500);
+    pid_set_time_function(&pid, k_cycle_get_64);
+    float temp = 0.0f;
+    float output = 0.0f;
     while (1)
     {
         // Wait for message from ISR
@@ -79,13 +116,22 @@ void zcd_processing_thread(void)
                 }
 
                 uint64_t time_begin = k_cycle_get_64();
-                adc_read_dt(&adc_tip_a_temp, &ana_sequence);
 
-                val_mv = (int32_t)ana_buf;
+                adc_read(adc, &ana_sequence);
 
-                adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
+                val_mv = (int32_t)ana_buf[0];
+
+                // adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
+
+                temp = val_mv * val_mv * TC_COMPENSATION_X2_T210 + val_mv * TC_COMPENSATION_X1_T210 +
+                    TC_COMPENSATION_X0_T210;
+
+
+                temp = moving_average_add_value(&avg, temp);
+
+                output = pid_process(&pid, temp);
+
                 uint64_t time_end = k_cycle_get_64();
-
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
             case ZCD_END:
@@ -95,7 +141,10 @@ void zcd_processing_thread(void)
                     dbg_pin_set(0, GPIO_PIN_RESET);
                 }
 
-                LOG_INF("Analog voltage: %"PRId32" mV    Measurement time: %"PRId64" us", val_mv, diff);
+                LOG_INF("Analog voltage: %"PRId32" mV", val_mv);
+                // LOG_INF("Measurement time: %"PRId64" us", diff);
+                // LOG_INF("Analog voltage: %f degC", temp);
+                // LOG_INF("Control output: %f", output);
 
                 break;
             default:
@@ -119,36 +168,50 @@ int wave_control_init()
     gpio_pin_configure_dt(&zcd, GPIO_INPUT);
     gpio_pin_interrupt_configure_dt(&zcd, GPIO_INT_EDGE_BOTH);
 
-    int err = wave_control_init_tip(&adc_tip_a_temp);
-    err |= wave_control_init_tip(&adc_tip_b_temp);
-
-    gpio_init_callback(&zcd_cb_data, zcd_callback, BIT(zcd.pin));
+    gpio_init_callback(&zcd_cb_data, wave_control_zcd_callback, BIT(zcd.pin));
     gpio_add_callback_dt(&zcd, &zcd_cb_data);
 
-    /* Configure channel individually prior to sampling. */
-    if (!adc_is_ready_dt(&adc_tip_a_temp))
+
+    gpio_pin_configure_dt(&tip_change, GPIO_INPUT);
+    gpio_pin_interrupt_configure_dt(&tip_change, GPIO_INT_EDGE_BOTH);
+
+    gpio_init_callback(&tip_cb_data, tip_callback, BIT(tip_change.pin));
+    gpio_add_callback_dt(&tip_change, &tip_cb_data);
+
+
+    gpio_pin_configure_dt(&stand, GPIO_INPUT);
+    gpio_pin_interrupt_configure_dt(&stand, GPIO_INT_EDGE_BOTH);
+
+    gpio_init_callback(&stand_cb_data, stand_callback, BIT(stand.pin));
+    gpio_add_callback_dt(&stand, &stand_cb_data);
+
+
+    // Initialize debounce work items
+    k_work_init_delayable(&tip_debounce_work, tip_debounce_handler);
+    k_work_init_delayable(&stand_debounce_work, stand_debounce_handler);
+
+    for (size_t i = 0U; i < CHANNEL_COUNT; i++)
     {
-        printk("ADC controller device %s not ready\n", adc_tip_a_temp.dev->name);
-        return 0;
+        ana_sequence.channels |= BIT(channel_cfgs[i].channel_id);
+        int err = adc_channel_setup(adc, &channel_cfgs[i]);
+
+        if (err < 0)
+        {
+            printf("Could not setup channel #%d (%d)\n", i, err);
+            return 0;
+        }
+
+
     }
 
-    err = adc_channel_setup_dt(&adc_tip_a_temp);
-    if (err < 0)
-    {
-        printk("Could not setup channel Ch0-tip (%d)\n", err);
-        return 0;
-    }
 
-
-    (void)adc_sequence_init_dt(&adc_tip_a_temp, &ana_sequence);
-    // (void)adc_sequence_init_dt(&adc_tip_b_temp, &ana_sequence);
-
-    return err;
+    moving_average_init(&avg, 200);
+    return 0;
 }
 
-// Modified ISR callback
-static void zcd_callback(const struct device* dev,
-                         struct gpio_callback* cb, uint32_t pins)
+// Callback function for ZCD pin state change
+static void wave_control_zcd_callback(const struct device* dev,
+                                      struct gpio_callback* cb, uint32_t pins)
 {
     static uint64_t time_last = 0;
     struct zcd_event event;
@@ -164,21 +227,46 @@ static void zcd_callback(const struct device* dev,
     k_msgq_put(&zcd_msgq, &event, K_NO_WAIT);
 }
 
-static int wave_control_init_tip(struct adc_dt_spec* adc_spec)
+// Callback function for ZCD pin state change
+static void tip_callback(const struct device* dev,
+                         struct gpio_callback* cb, uint32_t pins)
 {
-    int err = adc_is_ready_dt(adc_spec);
-    if (err < 0)
-    {
-        LOG_ERR("ADC controller device %s not ready", adc_spec->dev->name);
-        return 0;
-    }
+    // Cancel any pending work and reschedule
+    k_work_cancel_delayable(&tip_debounce_work);
+    k_work_reschedule(&tip_debounce_work, K_MSEC(DEBOUNCE_DELAY_MS));
+}
 
-    err = adc_channel_setup_dt(adc_spec);
-    if (err < 0)
-    {
-        LOG_ERR("Could not setup channel (%d)", err);
-        return 0;
-    }
+// Callback function for ZCD pin state change
+static void stand_callback(const struct device* dev,
+                           struct gpio_callback* cb, uint32_t pins)
+{
+    // Cancel any pending work and reschedule
+    k_work_cancel_delayable(&stand_debounce_work);
+    k_work_reschedule(&stand_debounce_work, K_MSEC(DEBOUNCE_DELAY_MS));
+}
 
-    return 1;
+static void tip_debounce_handler(struct k_work* work)
+{
+    int current_state = gpio_pin_get_dt(&tip_change);
+
+    // Only process if state is stable
+    if (current_state != last_tip_state)
+    {
+        last_tip_state = current_state;
+        LOG_INF("Tip callback - debounced state: %d", current_state);
+        // Add your actual tip processing logic here
+    }
+}
+
+static void stand_debounce_handler(struct k_work* work)
+{
+    int current_state = gpio_pin_get_dt(&stand);
+
+    // Only process if state is stable
+    if (current_state != last_stand_state)
+    {
+        last_stand_state = current_state;
+        LOG_INF("Stand callback - debounced state: %d", current_state);
+        // Add your actual stand processing logic here
+    }
 }

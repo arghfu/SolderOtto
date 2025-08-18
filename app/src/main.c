@@ -15,32 +15,32 @@ LOG_MODULE_REGISTER(main);
 #define SPI_FLASH_MULTI_SECTOR_TEST
 #define SPI_FLASH_COMPAT st_stm32_qspi_nor
 
-static const struct gpio_dt_spec load0_switch =
-    GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load0), gpios, {0});
-
-static const struct gpio_dt_spec load1_switch =
-    GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load1), gpios, {0});
-
-static const struct adc_dt_spec adc_handle =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-
-static const struct adc_dt_spec adc_leak =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
-
-static const struct adc_dt_spec adc_load =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-
-static const struct adc_dt_spec adc_tip_a_temp =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-
-static const struct adc_dt_spec adc_tip_b_temp =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
-
-static const struct adc_dt_spec adc_t_ambient =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), t_amb);
-
-static const struct adc_dt_spec adc_v_analog =
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), v_ana);
+// static const struct gpio_dt_spec load0_switch =
+//     GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load0), gpios, {0});
+//
+// static const struct gpio_dt_spec load1_switch =
+//     GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load1), gpios, {0});
+//
+// static const struct adc_dt_spec adc_handle =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
+//
+// static const struct adc_dt_spec adc_leak =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
+//
+// static const struct adc_dt_spec adc_load =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
+//
+// static const struct adc_dt_spec adc_tip_a_temp =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
+//
+// static const struct adc_dt_spec adc_tip_b_temp =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
+//
+// static const struct adc_dt_spec adc_t_ambient =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), t_amb);
+//
+// static const struct adc_dt_spec adc_v_analog =
+//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), v_ana);
 
 // void measure_v_ana(struct k_work* work)
 // {

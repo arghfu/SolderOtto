@@ -10,6 +10,8 @@ target_sources(app PRIVATE
         src/flash.c
         src/pid.c
         src/debug.c
+        src/moving_average.c
+        src/solder_channel.c
 )
 
 target_include_directories(app PRIVATE include)

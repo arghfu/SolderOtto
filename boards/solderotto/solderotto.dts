@@ -82,6 +82,16 @@
 			gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
 			label = "zcd";
 		};
+
+		ch0tip: ch0_tip {
+			gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
+
+		ch0stand: ch0_stand {
+			gpios = <&gpioa 4 GPIO_ACTIVE_LOW>;
+			label = "zcd";
+		};
 	};
 
 	aliases {
@@ -94,10 +104,13 @@
 		ch0-load-a = &load0;
 		ch0-load-b = &load1;
 		zcd = &zcd0;
+		ch0-tip = &ch0tip;
+		ch0-stand = &ch0stand;
 		dbg-0 = &dbg0;
 		dbg-1 = &dbg1;
 		dbg-2 = &dbg2;
 		dbg-3 = &dbg3;
+		adc-1 = &adc1;
 	};
 
 	soc {

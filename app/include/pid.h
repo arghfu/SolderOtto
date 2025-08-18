@@ -1,83 +1,48 @@
 #pragma once
 
-typedef struct pid {
+// #define KP_T210         196
+// #define KI_T210         38
+// #define KD_T210         172.8
+// #define MAX_I_T210      300
+
+#define KP_T210 		7
+#define KI_T210 		4
+#define KD_T210 		0.3
+#define MAX_I_T210 		300
+
+#define KP_T245         8
+#define KI_T245         2
+#define KD_T245         0.5
+#define MAX_I_T245      300
+#include <stddef.h>
+#include <stdint.h>
+
+typedef struct pid_limit
+{
+    float limit_low;
+    float limit_high;
+} pid_limit_t;
+
+typedef struct pid
+{
     float Kp;
     float Ki;
     float Kd;
-    float error;
-    float lastError;
-    float integralError;
-    float derivativeError;
-    float setPoint;
-    float output;
-}pid_t;
+    float last_time;
+    float last_error;
+    float last_command;
+    float proportional_error;
+    float integral_error;
+    float derivative_error;
+    float set_point;
+    pid_limit_t output_limit;
+    pid_limit_t integral_limit;
+    uint64_t (*get_time)(void);
+} pid_t;
 
-
-int pid_init(pid_t *pid, float Kp, float Ki, float Kd);
-int pid_set_gains(pid_t *pid, float Kp, float Ki, float Kd);
-int pid_set_setpoint(pid_t *pid, float setPoint);
-int pid_process(pid_t *pid, float actual, float actualTime);
-
-// class PID
-// {
-// private:
-//     double _proportionalGain = 0;
-//     double _integralGain = 0;
-//     double _derivativeGain = 0;
-//
-//     uint16_t * _input;
-//     uint16_t* _output;
-//
-//     int _error = 0;
-//     int _proportionalError = 0;
-//     int _integralError = 0;
-//     int _derivativeError = 0;
-//     int _lastError = 0;
-//     int _setPoint = 0;
-//     int _maxIntError = 2500;
-//     uint32_t _lastTime = 0;
-//
-//     bool _outputBounded = false;
-//     int _outputLowerBound = 0;
-//     int _outputUpperBound = 0;
-//
-//     bool _enabled = false;
-//
-// public:
-//     PID();
-//     PID(double Kp);
-//     PID(double Kp, double Ki);
-//     PID(double Kp, double Ki, double Kd);
-//     PID(double Kp, uint16_t *input, uint16_t *output);
-//     PID(double Kp, double Ki, uint16_t *input, uint16_t *output);
-//     PID(double Kp, double Ki, double Kd, uint16_t *input, uint16_t *output);
-//     virtual ~PID();
-//
-//     double getProportionalGain() const;
-//     double getIntegralGain() const;
-//     double getDerivativeGain() const;
-//     void setProportionalGain(double Kp);
-//     void setIntegralGain(double Ki);
-//     void setDerivativeGain(double Kd);
-//
-//     void setInput(uint16_t *input);
-//     void setOutput(uint16_t *output);
-//     uint16_t *getInput() const;
-//     uint16_t *getOutput() const;
-//
-//     int getSetPoint() const;
-//     void setSetPoint(int setPoint);
-//
-//     bool isEnabled() const;
-//     bool enableControl();
-//     bool disableControl();
-//     bool toggleControl();
-//
-//     void setOutputBounds(int lower, int upper);
-//     bool isOutputBounded() const;
-//
-//     int getOutputLowerBound() const;
-//     int getOutputUpperBound() const;
-//
-//     void processData(uint32_t actualTime);
-// };
+int pid_init(pid_t* pid, float Kp, float Ki, float Kd, float lim_low, float lim_high,
+             float int_lim_low, float int_lim_high);
+int pid_set_gains(pid_t* pid, float Kp, float Ki, float Kd);
+int pid_set_setpoint(pid_t* pid, float set_point);
+float pid_process(pid_t* pid, float temp);
+int pid_set_time_function(pid_t* pid, uint64_t (*timer_func)(void));
