@@ -196,6 +196,7 @@
 				label = "image-1";
 				reg = <0x00000000 DT_SIZE_K(462)>;
 			};
+
 			storage: partition@73800 {
 				label = "storage_ext";
 				reg = <0x00073800 DT_SIZE_K(3634)>;
@@ -312,7 +313,6 @@
 	status = "okay";
 	#address-cells = <1>;
 	#size-cells = <0>;
-
 
 	channel@3 {
 		reg = <3>;

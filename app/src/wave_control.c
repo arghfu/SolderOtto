@@ -49,6 +49,7 @@ static struct adc_sequence ana_sequence = {
     /* buffer size in bytes, not number of samples */
     .buffer_size = sizeof(ana_buf),
     .resolution = 12,
+    .oversampling = 5,
 };
 
 static pid_t pid;
@@ -119,9 +120,11 @@ void zcd_processing_thread(void)
 
                 adc_read(adc, &ana_sequence);
 
-                val_mv = (int32_t)ana_buf[0];
+                val_mv = (int32_t)ana_buf[1];
 
-                // adc_raw_to_millivolts_dt(&adc_tip_a_temp, &val_mv);
+                adc_raw_to_millivolts(adc_ref_internal(adc),
+                channel_cfgs[0].gain,
+                12, &val_mv);
 
                 temp = val_mv * val_mv * TC_COMPENSATION_X2_T210 + val_mv * TC_COMPENSATION_X1_T210 +
                     TC_COMPENSATION_X0_T210;
@@ -141,8 +144,10 @@ void zcd_processing_thread(void)
                     dbg_pin_set(0, GPIO_PIN_RESET);
                 }
 
+                LOG_INF("Raw voltage: %"PRId32"", ana_buf[0]);
+                LOG_INF("Raw voltage: %"PRId32"", ana_buf[1]);
                 LOG_INF("Analog voltage: %"PRId32" mV", val_mv);
-                // LOG_INF("Measurement time: %"PRId64" us", diff);
+                LOG_INF("Measurement time: %"PRId64" us", diff);
                 // LOG_INF("Analog voltage: %f degC", temp);
                 // LOG_INF("Control output: %f", output);
 
@@ -200,10 +205,7 @@ int wave_control_init()
             printf("Could not setup channel #%d (%d)\n", i, err);
             return 0;
         }
-
-
     }
-
 
     moving_average_init(&avg, 200);
     return 0;
