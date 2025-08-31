@@ -1,4 +1,5 @@
-#pragma once
+#ifndef PID_H
+#define PID_H
 
 // #define KP_T210         196
 // #define KI_T210         38
@@ -14,7 +15,7 @@
 #define KI_T245         2
 #define KD_T245         0.5
 #define MAX_I_T245      300
-#include <stddef.h>
+
 #include <stdint.h>
 
 typedef struct pid_limit
@@ -46,3 +47,5 @@ int pid_set_gains(pid_t* pid, float Kp, float Ki, float Kd);
 int pid_set_setpoint(pid_t* pid, float set_point);
 float pid_process(pid_t* pid, float temp);
 int pid_set_time_function(pid_t* pid, uint64_t (*timer_func)(void));
+
+#endif // PID_H

@@ -13,10 +13,10 @@ void moving_average_init(moving_average_t* ma, uint32_t window_length)
 
     ma->act_value = &ma->history[0];
     ma->window_length = window_length;
-    ma->sum = 0.0f;
+    ma->sum = 0;
 }
 
-float moving_average_add_value(moving_average_t* ma, float value)
+uint32_t moving_average_add_value(moving_average_t* ma, uint32_t value)
 {
     ma->sum += value;
     ma->sum -= *ma->act_value;
@@ -28,5 +28,5 @@ float moving_average_add_value(moving_average_t* ma, float value)
         ma->act_value = &ma->history[0];
     }
 
-    return ma->sum / (float)ma->window_length;
+    return ma->sum / ma->window_length;
 }

@@ -11,7 +11,8 @@ target_sources(app PRIVATE
         src/pid.c
         src/debug.c
         src/moving_average.c
-        src/solder_channel.c
+        src/channel.c
+        src/detect.c
 )
 
 target_include_directories(app PRIVATE include)

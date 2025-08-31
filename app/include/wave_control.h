@@ -1,4 +1,6 @@
-#pragma once
+#ifndef WAVE_CONTROL_H
+#define WAVE_CONTROL_H
+
 #include <stdint.h>
 
 #define WAVE_CTRL_TASK_PRIORITY 0
@@ -19,3 +21,6 @@ typedef struct wave_control {
 } wave_control_t;
 
 int wave_control_init();
+void wave_control_run();
+
+#endif // WAVE_CONTROL_H

@@ -1,5 +1,4 @@
 #include <zephyr/kernel.h>
-
 #include "display.h"
 
 #include <zephyr/logging/log.h>
@@ -8,7 +7,6 @@
 #include "drivers/bt81x/bt81x_copro.h"
 #include "drivers/bt81x/bt81x_dl.h"
 
-#define SLEEPTIME  100
 
 /* touch tags */
 #define TAG_PLUS 1
@@ -23,7 +21,7 @@ static void touch_irq(void)
     process_touch = true;
 }
 
-int display_run()
+void display_run()
 {
     int cnt;
     int val;
@@ -89,11 +87,6 @@ int display_run()
 
             process_touch = false;
         }
-        /* Wait a while */
-        k_msleep(SLEEPTIME);
+        k_sleep(K_MSEC(100));
     }
 }
-
-
-K_THREAD_DEFINE(display_id, DISPLAY_TASK_STACK_SIZE, display_run, NULL, NULL, NULL,
-                DISPLAY_TASK_PRIORITY, 0, 0);

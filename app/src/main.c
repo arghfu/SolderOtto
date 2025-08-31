@@ -4,8 +4,10 @@
 #include <zephyr/drivers/adc.h>
 #include <zephyr/drivers/flash.h>
 
-#include "wave_control.h"
+#include "detect.h"
 #include "debug.h"
+#include "display.h"
+#include "wave_control.h"
 
 LOG_MODULE_REGISTER(main);
 
@@ -15,75 +17,13 @@ LOG_MODULE_REGISTER(main);
 #define SPI_FLASH_MULTI_SECTOR_TEST
 #define SPI_FLASH_COMPAT st_stm32_qspi_nor
 
-// static const struct gpio_dt_spec load0_switch =
-//     GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load0), gpios, {0});
-//
-// static const struct gpio_dt_spec load1_switch =
-//     GPIO_DT_SPEC_GET_OR(DT_NODELABEL(load1), gpios, {0});
-//
-// static const struct adc_dt_spec adc_handle =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-//
-// static const struct adc_dt_spec adc_leak =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
-//
-// static const struct adc_dt_spec adc_load =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-//
-// static const struct adc_dt_spec adc_tip_a_temp =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
-//
-// static const struct adc_dt_spec adc_tip_b_temp =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipb);
-//
-// static const struct adc_dt_spec adc_t_ambient =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), t_amb);
-//
-// static const struct adc_dt_spec adc_v_analog =
-//     ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), v_ana);
+K_THREAD_STACK_DEFINE(wave_control_task_stack, WAVE_CTRL_TASK_STACK_SIZE);
+K_THREAD_STACK_DEFINE(display_task_stack, DISPLAY_TASK_STACK_SIZE);
+K_THREAD_STACK_DEFINE(channel_detect_task_stack, CHANNEL_TASK_STACK_SIZE);
 
-// void measure_v_ana(struct k_work* work)
-// {
-//     int32_t val_mv;
-//
-//     int err = adc_read_dt(&adc_v_analog, &ana_sequence);
-//     if (err < 0)
-//     {
-//         LOG_ERR("Could not read (%d)", err);
-//         return;
-//     }
-//
-//     val_mv = (int32_t)ana_buf;
-//
-//     err = adc_raw_to_millivolts_dt(&adc_v_analog, &val_mv);
-//     if (err < 0)
-//     {
-//         LOG_WRN("Conversion to mV not available");
-//     }
-//     else
-//     {
-//         LOG_INF("Analog voltage: %"PRId32" mV", val_mv);
-//     }
-// }
-//
-// void sample_timer(struct k_timer* timer)
-// {
-//     static uint64_t time_last;
-//     // LOG_INF("measurement timer expired, starting work");
-//
-//     uint64_t time_now = k_cycle_get_64();
-//     uint64_t diff = k_cyc_to_us_floor64(time_now - time_last);
-//
-//     // LOG_INF("measurement time: %"PRId64" us", diff);
-//
-//     time_last = time_now;
-// }
-
-
-// K_WORK_DEFINE(measure_v_ana_work, measure_v_ana);
-//
-// K_TIMER_DEFINE(measure_v_ana_timer, sample_timer, NULL);
-
+struct k_thread display_thread;
+struct k_thread wave_control_thread;
+struct k_thread channel_thread;
 
 int main(void)
 {
@@ -98,13 +38,27 @@ int main(void)
     }
 
     dbg_init();
-    wave_control_init();
 
-    while (1)
-    {
+    k_thread_create(&wave_control_thread, wave_control_task_stack,
+                K_THREAD_STACK_SIZEOF(wave_control_task_stack),
+                wave_control_run, NULL, NULL, NULL,
+                WAVE_CTRL_TASK_PRIORITY, 0, K_NO_WAIT);
 
-        k_sleep(K_MSEC(20));
-    }
+    k_thread_name_set(&wave_control_thread, "wave_control");
+
+    k_thread_create(&display_thread, display_task_stack,
+            K_THREAD_STACK_SIZEOF(display_task_stack),
+            display_run, NULL, NULL, NULL,
+            DISPLAY_TASK_PRIORITY, 0, K_NO_WAIT);
+
+    k_thread_name_set(&display_thread, "display");
+
+    k_thread_create(&channel_thread, channel_detect_task_stack,
+                K_THREAD_STACK_SIZEOF(channel_detect_task_stack),
+                channel_detect_run, NULL, NULL, NULL,
+                CHANNEL_TASK_PRIORITY, 0, K_NO_WAIT);
+
+    k_thread_name_set(&channel_thread, "channel_detect");
 
     return 0;
 }
