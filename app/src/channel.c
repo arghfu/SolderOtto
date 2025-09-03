@@ -22,8 +22,6 @@ static int last_stand_state = -1;
 static const struct gpio_dt_spec tip_change = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_tip), gpios);
 static const struct gpio_dt_spec stand = GPIO_DT_SPEC_GET(DT_ALIAS(ch0_stand), gpios);
 
-static struct channel channel = {0};
-
 static void tip_debounce_handler(struct k_work* work);
 static void stand_debounce_handler(struct k_work* work);
 
@@ -34,19 +32,19 @@ static void stand_callback(const struct device* dev,
                            struct gpio_callback* cb, uint32_t pins);
 
 
-int channel_init()
+int channel_init(struct channel *self, struct adc_channel_cfg* channel_cfg)
 {
-    channel.state = CHANNEL_DISCONNECTED;
-    channel.type = CHANNEL_TYPE_NONE;
-    channel.enabled = false;
+    self->state = CHANNEL_DISCONNECTED;
+    self->type = CHANNEL_TYPE_NONE;
+    self->enabled = false;
 
-    channel.adc_dev = DEVICE_DT_GET(DT_ALIAS(adc_1));
+    self->adc_dev = DEVICE_DT_GET(DT_ALIAS(adc_1));
 
-    channel.tip = (channel_tip_t){
+    self->tip = (channel_tip_t){
         .buffer = {0, 0},
         .sequence = {
-            .buffer = channel.tip.buffer,
-            .buffer_size = sizeof(channel.tip.buffer),
+            .buffer = self->tip.buffer,
+            .buffer_size = sizeof(self->tip.buffer),
             .resolution = 12,
             .oversampling = 5,
         },
@@ -56,10 +54,12 @@ int channel_init()
         },
     };
 
+
+    self->tip.sequence.channels = 0;
     for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
     {
-        channel.tip.sequence.channels |= BIT(channel.tip.adc_cfg[i].channel_id);
-        int err = adc_channel_setup(channel.adc_dev, &channel.tip.adc_cfg[i]);
+        self->tip.sequence.channels |= BIT(self->tip.adc_cfg[i].channel_id);
+        int err = adc_channel_setup(self->adc_dev, &self->tip.adc_cfg[i]);
 
         if (err < 0)
         {
@@ -70,11 +70,11 @@ int channel_init()
 
     for (int i = 0; i < CHANNEL_TIPS_CNT; i++)
     {
-        channel.filter[i] = (moving_average_t){0};
-        moving_average_init(&channel.filter[i], 200);
+        self->filter[i] = (moving_average_t){0};
+        moving_average_init(&self->filter[i], 200);
 
-        channel.pid[i] = (pid_t){0};
-        pid_init(&channel.pid[i], 0, 0, 0, -5000, 5000, -500, 500);
+        self->pid[i] = (struct pid){0};
+        pid_init(&self->pid[i], 0, 0, 0, -5000, 5000, -500, 500);
     }
 
     gpio_pin_configure_dt(&tip_change, GPIO_INPUT);
@@ -98,27 +98,47 @@ int channel_init()
     return 0;
 }
 
-int channel_detect()
+int channel_detect(struct channel *self)
 {
-    float foo[2] = {0, 0};
-    if (channel.state == CHANNEL_DISCONNECTED)
-    {
-        adc_read(channel.adc_dev, &channel.tip.sequence);
-
-        for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
-        {
-
-            adc_raw_to_millivolts(adc_ref_internal(channel.adc_dev),
-                                  channel.tip.adc_cfg[i].gain,
-                                  channel.tip.sequence.resolution,
-                                  (int32_t*)channel.tip.buffer[i]);
-
-            foo[i] = moving_average_add_value(&channel.filter[i], channel.tip.buffer[i]);
-        }
+    // float foo[2] = {0, 0};
+    // if (self->state == CHANNEL_DISCONNECTED)
+    // {
+    //     adc_read(self->adc_dev, &self->tip.sequence);
+    //
+    //     for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
+    //     {
+    //
+    //         adc_raw_to_millivolts(adc_ref_internal(self->adc_dev),
+    //                               self->tip.adc_cfg[i].gain,
+    //                               self->tip.sequence.resolution,
+    //                               (int32_t*)self->tip.buffer[i]);
+    //
+    //         foo[i] = moving_average_add_value(&self->filter[i], self->tip.buffer[i]);
+    //     }
 
         // LOG_INF("Raw voltage_0 %"PRId32"", foo[0]);
         // LOG_INF("Raw voltage_1 %"PRId32"", foo[1]);
+    // }
+    return 0;
+}
+
+int channel_read_tip(struct channel* self)
+{
+    adc_read(self->adc_dev, &self->tip.sequence);
+
+    for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
+    {
+
+        self->tip_data[i].raw = (int32_t)self->tip.buffer[i];
+
+        adc_raw_to_millivolts(adc_ref_internal(self->adc_dev),
+                              self->tip.adc_cfg[0].gain,
+                              12, &self->tip_data[i].mv);
+
+        self->tip_data[i].filtered = (int32_t)moving_average_add_value(&self->filter[i],
+            (uint32_t)self->tip_data[i].mv);
     }
+
     return 0;
 }
 

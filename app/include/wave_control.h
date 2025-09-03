@@ -21,6 +21,6 @@ typedef struct wave_control {
 } wave_control_t;
 
 int wave_control_init();
-void wave_control_run();
+void wave_control_run(void* channel, void* p2, void* p3);
 
 #endif // WAVE_CONTROL_H

@@ -20,7 +20,7 @@ static float pid_constrain(const float val, const pid_limit_t* limit)
     return val;
 }
 
-int pid_init(pid_t* pid, const float Kp, const float Ki, const float Kd, const float lim_low, const float lim_high,
+int pid_init(struct pid* pid, const float Kp, const float Ki, const float Kd, const float lim_low, const float lim_high,
              const float int_lim_low, const float int_lim_high)
 {
     pid->Kp = Kp;
@@ -44,7 +44,7 @@ int pid_init(pid_t* pid, const float Kp, const float Ki, const float Kd, const f
     return 0;
 }
 
-int pid_set_gains(pid_t* pid, float Kp, float Ki, float Kd)
+int pid_set_gains(struct pid* pid, float Kp, float Ki, float Kd)
 {
     pid->Kp = Kp;
     pid->Ki = Ki;
@@ -53,19 +53,19 @@ int pid_set_gains(pid_t* pid, float Kp, float Ki, float Kd)
     return 0;
 }
 
-int pid_set_setpoint(pid_t* pid, const float set_point)
+int pid_set_setpoint(struct pid* pid, const float set_point)
 {
     pid->set_point = set_point;
     return 0;
 }
 
-int pid_set_time_function(pid_t* pid, uint64_t (*timer_func)(void))
+int pid_set_time_function(struct pid* pid, uint64_t (*timer_func)(void))
 {
     pid->get_time = timer_func;
     return 0;
 }
 
-float pid_process(pid_t* pid, const float temp)
+float pid_process(struct pid* pid, const float temp)
 {
     float command = 0;
     __ASSERT(getime != NULL, "getime function pointer is null");

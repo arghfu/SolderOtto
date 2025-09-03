@@ -8,7 +8,7 @@
 #include "debug.h"
 #include "display.h"
 #include "wave_control.h"
-
+#include "channel.h"
 LOG_MODULE_REGISTER(main);
 
 #define SPI_FLASH_TEST_REGION_OFFSET 0xff000
@@ -29,37 +29,39 @@ int main(void)
 {
     LOG_INF("Starting Solderotto %s", APP_VERSION_STRING);
 
+    const struct device* flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
 
-    const struct device *flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
-
-    if (!device_is_ready(flash_dev)) {
+    if (!device_is_ready(flash_dev))
+    {
         printk("%s: device not ready.", flash_dev->name);
         return 0;
     }
 
     dbg_init();
 
+    wave_control_init();
+
+
+
     k_thread_create(&wave_control_thread, wave_control_task_stack,
-                K_THREAD_STACK_SIZEOF(wave_control_task_stack),
-                wave_control_run, NULL, NULL, NULL,
-                WAVE_CTRL_TASK_PRIORITY, 0, K_NO_WAIT);
+                    K_THREAD_STACK_SIZEOF(wave_control_task_stack),
+                    wave_control_run, NULL, NULL, NULL,
+                    WAVE_CTRL_TASK_PRIORITY, 0, K_NO_WAIT);
 
     k_thread_name_set(&wave_control_thread, "wave_control");
 
     k_thread_create(&display_thread, display_task_stack,
-            K_THREAD_STACK_SIZEOF(display_task_stack),
-            display_run, NULL, NULL, NULL,
-            DISPLAY_TASK_PRIORITY, 0, K_NO_WAIT);
+                    K_THREAD_STACK_SIZEOF(display_task_stack),
+                    display_run, NULL, NULL, NULL,
+                    DISPLAY_TASK_PRIORITY, 0, K_NO_WAIT);
 
     k_thread_name_set(&display_thread, "display");
 
     k_thread_create(&channel_thread, channel_detect_task_stack,
-                K_THREAD_STACK_SIZEOF(channel_detect_task_stack),
-                channel_detect_run, NULL, NULL, NULL,
-                CHANNEL_TASK_PRIORITY, 0, K_NO_WAIT);
+                    K_THREAD_STACK_SIZEOF(channel_detect_task_stack),
+                    channel_detect_run, NULL, NULL, NULL,
+                    CHANNEL_TASK_PRIORITY, 0, K_NO_WAIT);
 
     k_thread_name_set(&channel_thread, "channel_detect");
-
     return 0;
 }
-

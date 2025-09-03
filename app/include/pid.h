@@ -24,7 +24,7 @@ typedef struct pid_limit
     float limit_high;
 } pid_limit_t;
 
-typedef struct pid
+struct pid
 {
     float Kp;
     float Ki;
@@ -39,13 +39,13 @@ typedef struct pid
     pid_limit_t output_limit;
     pid_limit_t integral_limit;
     uint64_t (*get_time)(void);
-} pid_t;
+};
 
-int pid_init(pid_t* pid, float Kp, float Ki, float Kd, float lim_low, float lim_high,
+int pid_init(struct pid* pid, float Kp, float Ki, float Kd, float lim_low, float lim_high,
              float int_lim_low, float int_lim_high);
-int pid_set_gains(pid_t* pid, float Kp, float Ki, float Kd);
-int pid_set_setpoint(pid_t* pid, float set_point);
-float pid_process(pid_t* pid, float temp);
-int pid_set_time_function(pid_t* pid, uint64_t (*timer_func)(void));
+int pid_set_gains(struct pid* pid, float Kp, float Ki, float Kd);
+int pid_set_setpoint(struct pid* pid, float set_point);
+float pid_process(struct pid* pid, float temp);
+int pid_set_time_function(struct pid* pid, uint64_t (*timer_func)(void));
 
 #endif // PID_H

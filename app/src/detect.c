@@ -8,11 +8,11 @@
 
 void channel_detect_run()
 {
-    channel_init();
+    // channel_init();
     uint64_t foobar = 0;
     while (1)
     {
-        channel_detect();
+        // channel_detect();
         k_sleep(K_MSEC(100));
     }
 }

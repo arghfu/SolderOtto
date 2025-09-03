@@ -24,6 +24,14 @@ typedef enum channel_type
     CHANNEL_TYPE_AM120,
 } channel_type_t;
 
+typedef struct tip_data
+{
+    int32_t raw;
+    int32_t mv;
+    int32_t filtered;
+    float temp;
+} tip_data_t;
+
 typedef struct channel_tip
 {
     uint16_t buffer[CHANNEL_TIPS_CNT];
@@ -41,6 +49,7 @@ typedef struct channel_load
 typedef struct channel
 {
     channel_tip_t tip;
+    tip_data_t tip_data[CHANNEL_TIPS_CNT];
     channel_load_t load;
 
     const struct device *adc_dev;
@@ -54,8 +63,8 @@ typedef struct channel
     bool enabled;
 } solder_channel_t;
 
-int channel_init();
-int channel_detect();
-
+int channel_init(struct channel *self, struct adc_channel_cfg* channel_cfg);
+int channel_detect(struct channel *self);
+int channel_read_tip(struct channel *self);
 
 #endif // CHANNEL_H
