@@ -2,6 +2,7 @@
 #define CHANNEL_H
 
 #include <zephyr/drivers/adc.h>
+#include <zephyr/drivers/gpio.h>
 
 #include "pid.h"
 #include "moving_average.h"
@@ -26,7 +27,6 @@ typedef enum channel_type
 
 typedef struct tip_data
 {
-    int32_t raw;
     int32_t mv;
     int32_t filtered;
     float temp;
@@ -52,7 +52,7 @@ typedef struct channel
     tip_data_t tip_data[CHANNEL_TIPS_CNT];
     channel_load_t load;
 
-    const struct device *adc_dev;
+    const struct device* adc_dev;
 
     connection_state_t state;
     channel_type_t type;
@@ -60,11 +60,15 @@ typedef struct channel
     moving_average_t filter[CHANNEL_TIPS_CNT];
     struct pid pid[CHANNEL_TIPS_CNT];
 
+    struct
+    struct gpio_dt_spec tip_change;
+    struct gpio_dt_spec stand;
     bool enabled;
 } solder_channel_t;
 
-int channel_init(struct channel *self, struct adc_channel_cfg* channel_cfg);
-int channel_detect(struct channel *self);
-int channel_read_tip(struct channel *self);
+int channel_init(struct channel* self, struct adc_channel_cfg* channel_cfg);
+int channel_detect(struct channel* self);
+int channel_read_tip(struct channel* self);
+int channel_is_enabled(struct channel* self);
 
 #endif // CHANNEL_H

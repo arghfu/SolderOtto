@@ -71,11 +71,14 @@ void wave_control_run(void* channel, void* p2, void* p3)
                     control.count = 0;
                 }
 
-                uint64_t time_begin = k_cycle_get_64();
+                const uint64_t time_begin = k_cycle_get_64();
 
-                channel_read_tip(&solder_channel);
-
-                uint64_t time_end = k_cycle_get_64();
+                if (channel_is_enabled(&solder_channel))
+                {
+                    channel_read_tip(&solder_channel);
+                }
+                channel_detect(&solder_channel);
+                const uint64_t time_end = k_cycle_get_64();
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
             case ZCD_END:
@@ -85,13 +88,13 @@ void wave_control_run(void* channel, void* p2, void* p3)
                     dbg_pin_set(0, GPIO_PIN_RESET);
                 }
 
-                // LOG_INF("Raw voltage: %"PRId32"", ana_buf[0]);
-                // LOG_INF("Raw voltage: %"PRId32"", ana_buf[1]);
-                // LOG_INF("Analog voltage_0: %"PRId32" mV", val_mv[0]);
-                // LOG_INF("Analog voltage_1: %"PRId32" mV", val_mv[1]);
+                LOG_INF("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
+                LOG_INF("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
+                LOG_INF("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
+                LOG_INF("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
+                LOG_INF("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
+                LOG_INF("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
                 LOG_INF("Measurement time: %"PRId64" us", diff);
-                // LOG_INF("Temperature_0: %f degC", temp[0]);
-                // LOG_INF("Temperature_1: %f degC", temp[1]);
                 // LOG_INF("Control output: %f", output);
 
                 break;
@@ -112,7 +115,6 @@ int wave_control_init()
 
     gpio_init_callback(&zcd_cb_data, wave_control_zcd_callback, BIT(zcd.pin));
     gpio_add_callback_dt(&zcd, &zcd_cb_data);
-
 
     struct adc_channel_cfg channel_cfgs[] = {
         ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_8)),
