@@ -11,23 +11,20 @@
 
 #include "pid.h"
 
-#define ZCD_BEGIN GPIO_PIN_RESET
-#define ZCD_END GPIO_PIN_SET
+#define ZCD_BEGIN GPIO_PIN_SET
+#define ZCD_END GPIO_PIN_RESET
 
 LOG_MODULE_REGISTER(wave_control);
 
 static struct channel solder_channel;
-
-static const struct adc_dt_spec adc_tip_a_temp = // NOLINT(*-interfaces-global-init)
-    ADC_DT_SPEC_GET_BY_NAME(DT_PATH(zephyr_user), ch0_tipa);
 
 static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_ALIAS(zcd), gpios);
 
 struct gpio_callback zcd_cb_data;
 
 static struct wave_control control = {
-    .ton = 1,
-    .tperiod = 5,
+    .ton = 0,
+    .tperiod = 200,
     .count = 0
 };
 
@@ -59,7 +56,8 @@ void wave_control_run(void* channel, void* p2, void* p3)
             switch (event.pin_state)
             {
             case ZCD_BEGIN:
-                dbg_pin_set(0, GPIO_PIN_SET);
+                channel_set_load(&solder_channel, TIP_A, GPIO_PIN_RESET);
+                dbg_pin_set(0, GPIO_PIN_RESET);
                 if (control.count < control.ton)
                 {
                     enable_output = true;
@@ -73,19 +71,18 @@ void wave_control_run(void* channel, void* p2, void* p3)
 
                 const uint64_t time_begin = k_cycle_get_64();
 
-                if (channel_is_enabled(&solder_channel))
-                {
-                    channel_read_tip(&solder_channel);
-                }
-                channel_detect(&solder_channel);
+                channel_read_tip(&solder_channel);
+
                 const uint64_t time_end = k_cycle_get_64();
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
             case ZCD_END:
 
+                dbg_pin_set(0, GPIO_PIN_SET);
                 if (enable_output)
                 {
-                    dbg_pin_set(0, GPIO_PIN_RESET);
+                    channel_set_load(&solder_channel, TIP_A, GPIO_PIN_SET);
+                    enable_output = false;
                 }
 
                 LOG_INF("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
@@ -95,7 +92,6 @@ void wave_control_run(void* channel, void* p2, void* p3)
                 LOG_INF("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
                 LOG_INF("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
                 LOG_INF("Measurement time: %"PRId64" us", diff);
-                // LOG_INF("Control output: %f", output);
 
                 break;
             default:
@@ -116,12 +112,8 @@ int wave_control_init()
     gpio_init_callback(&zcd_cb_data, wave_control_zcd_callback, BIT(zcd.pin));
     gpio_add_callback_dt(&zcd, &zcd_cb_data);
 
-    struct adc_channel_cfg channel_cfgs[] = {
-        ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_8)),
-        ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_9))
-    };
 
-    channel_init(&solder_channel, channel_cfgs);
+    channel_init(&solder_channel);
 
     return 0;
 }

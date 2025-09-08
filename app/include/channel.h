@@ -10,65 +10,89 @@
 #define CHANNEL_TIPS_CNT 2
 #define CHANNEL_LOAD_CNT 2
 
-typedef enum connection_state
+enum connection_state
 {
     CHANNEL_DISCONNECTED = 0,
     CHANNEL_CONNECTED,
     CHANNEL_UNKNOWN,
-} connection_state_t;
+};
 
-typedef enum channel_type
+enum channel_type
 {
     CHANNEL_TYPE_NONE = 0,
     CHANNEL_TYPE_T210,
     CHANNEL_TYPE_T245,
     CHANNEL_TYPE_AM120,
-} channel_type_t;
+};
+
+enum tip
+{
+    TIP_A = 0,
+    TIP_B = 1,
+};
+
+enum measure_config
+{
+    MEASURE_CONFIG_TIP = 0,
+    MEASURE_CONFIG_EARTH,
+    MEASURE_CONFIG_TIP_INV,
+    MEASURE_CONFIG_DIFF,
+};
 
 typedef struct tip_data
 {
     int32_t mv;
     int32_t filtered;
     float temp;
-} tip_data_t;
+};
 
 typedef struct channel_tip
 {
+    struct
+    {
+        struct gpio_dt_spec a;
+        struct gpio_dt_spec b;
+    } select[CHANNEL_TIPS_CNT];
+
+    enum measure_config config;
     uint16_t buffer[CHANNEL_TIPS_CNT];
     struct adc_sequence sequence;
     struct adc_channel_cfg adc_cfg[CHANNEL_TIPS_CNT];
-} channel_tip_t;
+};
 
-typedef struct channel_load
+struct channel_load
 {
     uint16_t buffer[CHANNEL_LOAD_CNT];
     struct adc_sequence sequence;
     struct adc_channel_cfg adc_cfg[CHANNEL_LOAD_CNT];
-} channel_load_t;
+};
 
 typedef struct channel
 {
-    channel_tip_t tip;
-    tip_data_t tip_data[CHANNEL_TIPS_CNT];
-    channel_load_t load;
+    bool enabled;
 
+    struct channel_tip tip;
+    struct channel_load load;
+    struct gpio_dt_spec load_switches[CHANNEL_TIPS_CNT];
     const struct device* adc_dev;
 
-    connection_state_t state;
-    channel_type_t type;
+    enum connection_state state;
+    enum channel_type type;
 
-    moving_average_t filter[CHANNEL_TIPS_CNT];
+    struct tip_data tip_data[CHANNEL_TIPS_CNT];
+    struct moving_average filter[CHANNEL_TIPS_CNT];
     struct pid pid[CHANNEL_TIPS_CNT];
 
-    struct
+    struct adc_dt_spec id;
     struct gpio_dt_spec tip_change;
     struct gpio_dt_spec stand;
-    bool enabled;
 } solder_channel_t;
 
-int channel_init(struct channel* self, struct adc_channel_cfg* channel_cfg);
+int channel_init(struct channel* self);
 int channel_detect(struct channel* self);
 int channel_read_tip(struct channel* self);
 int channel_is_enabled(struct channel* self);
+int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config config);
+int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state);
 
 #endif // CHANNEL_H

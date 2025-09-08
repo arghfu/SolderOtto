@@ -1,11 +1,6 @@
 #ifndef PID_H
 #define PID_H
 
-// #define KP_T210         196
-// #define KI_T210         38
-// #define KD_T210         172.8
-// #define MAX_I_T210      300
-
 #define KP_T210 		7
 #define KI_T210 		4
 #define KD_T210 		0.3

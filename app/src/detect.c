@@ -9,7 +9,6 @@
 void channel_detect_run()
 {
     // channel_init();
-    uint64_t foobar = 0;
     while (1)
     {
         // channel_detect();

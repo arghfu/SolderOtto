@@ -101,8 +101,6 @@
 		ch0-sel-2a = &sel2a;
 		ch0-sel-1b = &sel1b;
 		ch0-sel-2b = &sel2b;
-		ch0-load-a = &load0;
-		ch0-load-b = &load1;
 		zcd = &zcd0;
 		ch0-tip = &ch0tip;
 		ch0-stand = &ch0stand;
