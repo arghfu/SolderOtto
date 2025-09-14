@@ -25,16 +25,6 @@
 		status = "okay";
 	};
 
-	load0: load_0 {
-		compatible = "power-switch";
-		gpios = <&gpioc 13 GPIO_ACTIVE_HIGH>;
-	};
-
-	load1: load_1 {
-		compatible = "power-switch";
-		gpios = <&gpioc 14 GPIO_ACTIVE_HIGH>;
-	};
-
 	debug {
 		compatible = "gpio-leds";
 
@@ -55,26 +45,6 @@
 		};
 	};
 
-	channel_out {
-		compatible = "gpio-leds";
-
-		sel1a: sel_1a {
-			gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>;
-		};
-
-		sel2a: sel_2a {
-			gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>;
-		};
-
-		sel1b: sel_1b {
-			gpios = <&gpiob 7 GPIO_ACTIVE_HIGH>;
-		};
-
-		sel2b: sel_2b {
-			gpios = <&gpiob 9 GPIO_ACTIVE_HIGH>;
-		};
-	};
-
 	buttons {
 		compatible = "gpio-keys";
 
@@ -82,28 +52,37 @@
 			gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
 			label = "zcd";
 		};
+	};
 
-		ch0tip: ch0_tip {
-			gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
-			label = "zcd";
-		};
+	channel0: channel {
+		compatible = "solderotto,channel";
 
-		ch0stand: ch0_stand {
-			gpios = <&gpioa 4 GPIO_ACTIVE_LOW>;
-			label = "zcd";
-		};
+		/* ADC controller for this channel */
+		adc = <&adc1>;
+
+		/* IO channels: keep using the already defined adc1 children */
+		handle-io-channels = <&adc1 1>;
+		tip-io-channels = <&adc1 8>, <&adc1 9>;
+
+		/* GPIOs: reuse existing nodes */
+		load-switch-gpios = <&gpioc 13 GPIO_ACTIVE_HIGH>,
+		                    <&gpioc 14 GPIO_ACTIVE_HIGH>;
+
+		/* Index 0 = tip A (sel_1a, sel_2a), index 1 = tip B (sel_1b, sel_2b) */
+		tip-select-a-gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>, /* sel1a */
+		                     <&gpiob 7 GPIO_ACTIVE_HIGH>; /* sel1b */
+
+		tip-select-b-gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>, /* sel2a */
+		                     <&gpiob 9 GPIO_ACTIVE_HIGH>; /* sel2b */
+
+		tip-change-gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
+		stand-idle-gpios = <&gpioa 4 GPIO_ACTIVE_LOW>;
 	};
 
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-		ch0-sel-1a = &sel1a;
-		ch0-sel-2a = &sel2a;
-		ch0-sel-1b = &sel1b;
-		ch0-sel-2b = &sel2b;
 		zcd = &zcd0;
-		ch0-tip = &ch0tip;
-		ch0-stand = &ch0stand;
 		dbg-0 = &dbg0;
 		dbg-1 = &dbg1;
 		dbg-2 = &dbg2;
@@ -266,6 +245,7 @@
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
+		zephyr,oversampling = <5>;
 	};
 
 	channel@2 {

@@ -1,0 +1,56 @@
+# SPDX-License-Identifier: Apache-2.0
+title: Solderotto Channel
+
+description: "Solderotto channel: grouping ADC channels and GPIOs for one tool channel"
+
+compatible: "solderotto,channel"
+
+include: base.yaml
+
+properties:
+  adc:
+    type: phandle
+    required: true
+    description: ADC controller for this channel
+
+  handle-io-channels:
+    type: phandle-array
+    specifier-space: io-channel
+    required: true
+    description: Single IO channel for handle identification (e.g. &adc1 1)
+
+  tip-io-channels:
+    type: phandle-array
+    specifier-space: io-channel
+    required: true
+    description: Two IO channels for tip A and tip B (e.g. &adc1 8, &adc1 9)
+
+  load-switch-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: true
+    description: Two GPIOs controlling load switches for tip A/B
+
+  tip-select-a-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: true
+    description: Two GPIOs for A-side selector (per tip index)
+
+  tip-select-b-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: true
+    description: Two GPIOs for B-side selector (per tip index)
+
+  tip-change-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: true
+    description: GPIO for the tip-change interrupt (1 item)
+
+  stand-idle-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: true
+    description: GPIO for the stand interrupt (1 item)

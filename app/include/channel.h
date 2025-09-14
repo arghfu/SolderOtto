@@ -10,19 +10,13 @@
 #define CHANNEL_TIPS_CNT 2
 #define CHANNEL_LOAD_CNT 2
 
-enum connection_state
-{
-    CHANNEL_DISCONNECTED = 0,
-    CHANNEL_CONNECTED,
-    CHANNEL_UNKNOWN,
-};
-
 enum channel_type
 {
-    CHANNEL_TYPE_NONE = 0,
+    CHANNEL_TYPE_DISCONNECTED = 0,
     CHANNEL_TYPE_T210,
     CHANNEL_TYPE_T245,
     CHANNEL_TYPE_AM120,
+    CHANNEL_TYPE_NONE,
 };
 
 enum tip
@@ -39,14 +33,15 @@ enum measure_config
     MEASURE_CONFIG_DIFF,
 };
 
-typedef struct tip_data
+struct tip_data
 {
     int32_t mv;
     int32_t filtered;
     float temp;
+    struct moving_average filter;
 };
 
-typedef struct channel_tip
+struct channel_tip
 {
     struct
     {
@@ -60,32 +55,46 @@ typedef struct channel_tip
     struct adc_channel_cfg adc_cfg[CHANNEL_TIPS_CNT];
 };
 
-struct channel_load
+struct channel_load_current
 {
     uint16_t buffer[CHANNEL_LOAD_CNT];
     struct adc_sequence sequence;
     struct adc_channel_cfg adc_cfg[CHANNEL_LOAD_CNT];
 };
 
+struct channel_handle_id
+{
+    uint16_t buffer;
+    struct adc_sequence sequence;
+    struct adc_channel_cfg adc_cfg;
+    struct moving_average filter;
+};
+
+struct channel_interrupt
+{
+    struct k_work_delayable dwork;
+    struct gpio_callback cb;
+    struct gpio_dt_spec pin;
+    int last_pin_state;
+};
+
 typedef struct channel
 {
     bool enabled;
 
-    struct channel_tip tip;
-    struct channel_load load;
-    struct gpio_dt_spec load_switches[CHANNEL_TIPS_CNT];
-    const struct device* adc_dev;
-
-    enum connection_state state;
     enum channel_type type;
 
-    struct tip_data tip_data[CHANNEL_TIPS_CNT];
-    struct moving_average filter[CHANNEL_TIPS_CNT];
-    struct pid pid[CHANNEL_TIPS_CNT];
+    const struct device* adc_dev;
+    struct channel_interrupt tip_change;
+    struct channel_interrupt stand;
 
-    struct adc_dt_spec id;
-    struct gpio_dt_spec tip_change;
-    struct gpio_dt_spec stand;
+    struct channel_handle_id handle_id;
+    struct channel_tip tip;
+    struct channel_load_current load;
+
+    struct gpio_dt_spec load_switches[CHANNEL_TIPS_CNT];
+    struct tip_data tip_data[CHANNEL_TIPS_CNT];
+    struct pid pid[CHANNEL_TIPS_CNT];
 } solder_channel_t;
 
 int channel_init(struct channel* self);

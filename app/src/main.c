@@ -9,7 +9,8 @@
 #include "display.h"
 #include "wave_control.h"
 #include "channel.h"
-LOG_MODULE_REGISTER(main);
+#define APP_LOG_LEVEL_DBG
+LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
 #define SPI_FLASH_TEST_REGION_OFFSET 0xff000
 

@@ -85,14 +85,15 @@ void wave_control_run(void* channel, void* p2, void* p3)
                     enable_output = false;
                 }
 
-                LOG_INF("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
-                LOG_INF("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
-                LOG_INF("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
-                LOG_INF("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
-                LOG_INF("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
-                LOG_INF("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
-                LOG_INF("Measurement time: %"PRId64" us", diff);
+                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
+                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
+                LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
+                LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
+                LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
+                LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
+                LOG_DBG("Measurement time: %"PRId64" us", diff);
 
+                channel_detect(&solder_channel);
                 break;
             default:
                 break;
