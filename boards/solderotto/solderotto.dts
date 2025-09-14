@@ -45,44 +45,41 @@
 		};
 	};
 
-	buttons {
-		compatible = "gpio-keys";
+	solderotto: solderotto {
+		compatible = "solderotto,base";
+		zcd-gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
 
-		zcd0: zcd_0 {
-			gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
-			label = "zcd";
+		aux-io-channels = <&adc4 3>, <&adc4 4>;
+
+		channel0: channel {
+			compatible = "solderotto,channel";
+
+			/* ADC controller for this channel */
+			adc = <&adc1>;
+
+			/* IO channels: keep using the already defined adc1 children */
+			handle-io-channels = <&adc1 1>;
+			tip-io-channels = <&adc1 8>, <&adc1 9>;
+
+			/* GPIOs: reuse existing nodes */
+			load-switch-gpios = <&gpioc 13 GPIO_ACTIVE_HIGH>,
+								<&gpioc 14 GPIO_ACTIVE_HIGH>;
+
+			/* Index 0 = tip A (sel_1a, sel_2a), index 1 = tip B (sel_1b, sel_2b) */
+			tip-select-a-gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>, /* sel1a */
+								 <&gpiob 7 GPIO_ACTIVE_HIGH>; /* sel1b */
+
+			tip-select-b-gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>, /* sel2a */
+								 <&gpiob 9 GPIO_ACTIVE_HIGH>; /* sel2b */
+
+			tip-change-gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
+			stand-idle-gpios = <&gpioa 4 GPIO_ACTIVE_LOW>;
 		};
-	};
-
-	channel0: channel {
-		compatible = "solderotto,channel";
-
-		/* ADC controller for this channel */
-		adc = <&adc1>;
-
-		/* IO channels: keep using the already defined adc1 children */
-		handle-io-channels = <&adc1 1>;
-		tip-io-channels = <&adc1 8>, <&adc1 9>;
-
-		/* GPIOs: reuse existing nodes */
-		load-switch-gpios = <&gpioc 13 GPIO_ACTIVE_HIGH>,
-		                    <&gpioc 14 GPIO_ACTIVE_HIGH>;
-
-		/* Index 0 = tip A (sel_1a, sel_2a), index 1 = tip B (sel_1b, sel_2b) */
-		tip-select-a-gpios = <&gpiob 5 GPIO_ACTIVE_HIGH>, /* sel1a */
-		                     <&gpiob 7 GPIO_ACTIVE_HIGH>; /* sel1b */
-
-		tip-select-b-gpios = <&gpiob 6 GPIO_ACTIVE_HIGH>, /* sel2a */
-		                     <&gpiob 9 GPIO_ACTIVE_HIGH>; /* sel2b */
-
-		tip-change-gpios = <&gpioa 3 GPIO_ACTIVE_LOW>;
-		stand-idle-gpios = <&gpioa 4 GPIO_ACTIVE_LOW>;
 	};
 
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-		zcd = &zcd0;
 		dbg-0 = &dbg0;
 		dbg-1 = &dbg1;
 		dbg-2 = &dbg2;
@@ -101,12 +98,6 @@
 
 			status = "disabled";
 		};
-	};
-
-	zephyr,user {
-		/* adjust channel number according to pinmux in board.dts */
-		io-channels = <&adc1 1>, <&adc1 2>, <&adc1 7>, <&adc1 8>, <&adc1 9>, <&adc4 3>, <&adc4 4>;
-		io-channel-names = "ch0-handle", "ch0-leak", "ch0-load", "ch0-tipa", "ch0-tipb", "t-amb", "v-ana";
 	};
 };
 

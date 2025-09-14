@@ -10,6 +10,9 @@ BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_io_channels) == 2, "tip-io-
 // Debounce delay in milliseconds
 #define DEBOUNCE_DELAY_MS 20
 
+static void channel_find_handle(struct channel* self);
+static const char* channel_type_str(enum channel_type t);
+
 static void tip_debounce_handler(struct k_work* work);
 static void stand_debounce_handler(struct k_work* work);
 
@@ -19,13 +22,10 @@ static void tip_callback(const struct device* dev,
 static void stand_callback(const struct device* dev,
                            struct gpio_callback* cb, uint32_t pins);
 
-static void channel_find_handle(struct channel* self);
-static void channel_find_tip(struct channel* self);
-
 int channel_init(struct channel* self)
 {
+    self->active_tip_cnt = 0;
     self->type = CHANNEL_TYPE_DISCONNECTED;
-    self->enabled = false;
 
     self->adc_dev = DEVICE_DT_GET(DT_ALIAS(adc_1));
 
@@ -52,7 +52,6 @@ int channel_init(struct channel* self)
             },
             {GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_a_gpios, 1),
              GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_b_gpios, 1)
-
             },
         },
         .config = MEASURE_CONFIG_TIP,
@@ -83,7 +82,6 @@ int channel_init(struct channel* self)
         gpio_pin_configure_dt(&self->load_switches[i], GPIO_OUTPUT_LOW);
     }
 
-    // Initialize tip_change nested struct members
     self->tip_change = (struct channel_interrupt){
         .pin = (struct gpio_dt_spec)GPIO_DT_SPEC_GET(DT_NODELABEL(channel0), tip_change_gpios),
         .last_pin_state = -1,
@@ -132,15 +130,48 @@ int channel_init(struct channel* self)
 
 int channel_detect(struct channel* self)
 {
-    // channel_read_tip(self);
-    // self->tip_data[0].filtered = moving_average_add_value(&self->filter[0], self->tip_data[0].filtered);
-    // self->tip_data[1].filtered = moving_average_add_value(&self->filter[1], self->tip_data[1].filtered);
-    //
-    // channel_set_mesasure(self, TIP_A, MEASURE_CONFIG_DIFF);
-    // channel_set_mesasure(self, TIP_B, MEASURE_CONFIG_DIFF);
+    int err = adc_read(self->adc_dev, &self->handle_id.sequence);
+    if (err < 0)
+    {
+        LOG_ERR("Could not read handle id");
+        return -1;
+    }
+    int32_t mv = self->handle_id.buffer;
 
-    channel_find_handle(self);
-    channel_find_tip(self);
+    adc_raw_to_millivolts(adc_ref_internal(self->adc_dev),
+                          self->handle_id.adc_cfg.gain,
+                          12, &mv);
+
+    mv = (int32_t)moving_average_add_value(&self->handle_id.filter, (uint32_t)mv);
+
+    if (mv < 350)
+    {
+        self->type = CHANNEL_TYPE_T210;
+        self->active_tip_cnt = 1;
+    }
+    else if (mv > 3290)
+    {
+        self->type = CHANNEL_TYPE_T245;
+        self->active_tip_cnt = 0;
+    }
+    else if (mv > 2780 && mv < 2800)
+    {
+        self->type = CHANNEL_TYPE_AM120;
+        self->active_tip_cnt = 2;
+    }
+    else if (mv > 3120 && mv < 3280)
+    {
+        self->type = CHANNEL_TYPE_DISCONNECTED;
+        self->active_tip_cnt = 0;
+    }
+    else
+    {
+        self->type = CHANNEL_TYPE_NONE;
+        self->active_tip_cnt = 0;
+    }
+
+    LOG_DBG("Tip id voltage: %d", mv);
+    LOG_INF("Tip type: %s", channel_type_str(self->type));
 
     return 0;
 }
@@ -149,7 +180,7 @@ int channel_read_tip(struct channel* self)
 {
     adc_read(self->adc_dev, &self->tip.sequence);
 
-    for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
+    for (size_t i = 0U; i < self->active_tip_cnt; i++)
     {
 
         self->tip_data[i].mv = (int32_t)self->tip.buffer[i];
@@ -163,11 +194,6 @@ int channel_read_tip(struct channel* self)
     }
 
     return 0;
-}
-
-int channel_is_enabled(struct channel* self)
-{
-    return self->enabled;
 }
 
 int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state)
@@ -201,8 +227,6 @@ int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config
     return 0;
 }
 
-
-// Callback function for ZCD pin state change
 static void tip_callback(const struct device* dev,
                          struct gpio_callback* cb, uint32_t pins)
 {
@@ -212,7 +236,6 @@ static void tip_callback(const struct device* dev,
     k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
 }
 
-// Callback function for ZCD pin state change
 static void stand_callback(const struct device* dev,
                            struct gpio_callback* cb, uint32_t pins)
 {
@@ -222,56 +245,23 @@ static void stand_callback(const struct device* dev,
     k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
 }
 
-void channel_find_handle(struct channel* self)
+const char* channel_type_str(enum channel_type t)
 {
-    int err = adc_read(self->adc_dev, &self->handle_id.sequence);
-    if (err < 0)
+    switch (t)
     {
-        LOG_ERR("Could not read handle id");
-        return;
+    case CHANNEL_TYPE_DISCONNECTED:
+        return "DISCONNECTED";
+    case CHANNEL_TYPE_T210:
+        return "T210";
+    case CHANNEL_TYPE_T245:
+        return "T245";
+    case CHANNEL_TYPE_AM120:
+        return "AM120";
+    case CHANNEL_TYPE_NONE:
+        return "NONE";
+    default:
+        return "UNKNOWN";
     }
-    int32_t mv = self->handle_id.buffer;
-
-    adc_raw_to_millivolts(adc_ref_internal(self->adc_dev),
-                          self->handle_id.adc_cfg.gain,
-                          12, &mv);
-
-    mv = (int32_t)moving_average_add_value(&self->handle_id.filter, (uint32_t)mv);
-
-    if (mv < 350)
-    {
-        self->type = CHANNEL_TYPE_T210;
-    }
-    else if (mv > 3290)
-    {
-        self->type = CHANNEL_TYPE_T245;
-    }
-    else if (mv > 2780 && mv < 2800)
-    {
-        self->type = CHANNEL_TYPE_AM120;
-    }
-    else if (mv > 3120 && mv < 3280)
-    {
-        self->type = CHANNEL_TYPE_DISCONNECTED;
-    }
-    else
-    {
-        self->type = CHANNEL_TYPE_NONE;
-    }
-
-    LOG_DBG("Tip id voltage: %d", mv);
-    LOG_DBG("Tip type: %d", self->type);
-}
-
-void channel_find_tip(struct channel* self)
-{
-    int err = adc_read(self->adc_dev, &self->tip.sequence);
-    if (err < 0)
-    {
-        LOG_ERR("Could not read tip id");
-        return;
-    }
-    int32_t mv = self->tip.buffer[0];
 }
 
 static void tip_debounce_handler(struct k_work* work)

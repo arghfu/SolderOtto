@@ -18,7 +18,8 @@ LOG_MODULE_REGISTER(wave_control);
 
 static struct channel solder_channel;
 
-static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_ALIAS(zcd), gpios);
+static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_NODELABEL(solderotto), zcd_gpios);
+
 
 struct gpio_callback zcd_cb_data;
 
@@ -85,15 +86,14 @@ void wave_control_run(void* channel, void* p2, void* p3)
                     enable_output = false;
                 }
 
-                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
-                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
-                LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
-                LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
-                LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
-                LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
-                LOG_DBG("Measurement time: %"PRId64" us", diff);
+                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
+                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
+                // LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
+                // LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
+                // LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
+                // LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
+                // LOG_DBG("Measurement time: %"PRId64" us", diff);
 
-                channel_detect(&solder_channel);
                 break;
             default:
                 break;

@@ -13,11 +13,18 @@
 
 #include <stdint.h>
 
-typedef struct pid_limit
+struct pid_limit
 {
     float limit_low;
     float limit_high;
-} pid_limit_t;
+};
+
+struct pid_data
+{
+    float Kp;
+    float Ki;
+    float Kd;
+};
 
 struct pid
 {
@@ -31,8 +38,8 @@ struct pid
     float integral_error;
     float derivative_error;
     float set_point;
-    pid_limit_t output_limit;
-    pid_limit_t integral_limit;
+    struct pid_limit output_limit;
+    struct pid_limit integral_limit;
     uint64_t (*get_time)(void);
 };
 
@@ -42,5 +49,5 @@ int pid_set_gains(struct pid* pid, float Kp, float Ki, float Kd);
 int pid_set_setpoint(struct pid* pid, float set_point);
 float pid_process(struct pid* pid, float temp);
 int pid_set_time_function(struct pid* pid, uint64_t (*timer_func)(void));
-
+void pid_load_settings(struct pid* pid, struct pid_data* data);
 #endif // PID_H

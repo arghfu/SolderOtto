@@ -1,0 +1,21 @@
+# SPDX-License-Identifier: Apache-2.0
+title: Solderotto Container
+
+description: Logical container node to group Solderotto app properties
+
+compatible: "solderotto,base"
+
+include: base.yaml
+
+properties:
+  zcd-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: false
+    description: Zero-cross detection GPIO (1 item)
+
+  aux-io-channels:
+    type: phandle-array
+    specifier-space: io-channel
+    required: false
+    description: Auxiliary ADC channels (e.g. &adc4 3, &adc4 4)

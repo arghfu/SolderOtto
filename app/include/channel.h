@@ -23,6 +23,7 @@ enum tip
 {
     TIP_A = 0,
     TIP_B = 1,
+    TIP_ALL = 2,
 };
 
 enum measure_config
@@ -80,8 +81,7 @@ struct channel_interrupt
 
 typedef struct channel
 {
-    bool enabled;
-
+    uint8_t active_tip_cnt;
     enum channel_type type;
 
     const struct device* adc_dev;
@@ -100,7 +100,6 @@ typedef struct channel
 int channel_init(struct channel* self);
 int channel_detect(struct channel* self);
 int channel_read_tip(struct channel* self);
-int channel_is_enabled(struct channel* self);
 int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config config);
 int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state);
 
