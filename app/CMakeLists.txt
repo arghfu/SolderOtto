@@ -7,7 +7,7 @@ target_sources(app PRIVATE
         src/main.c
         src/wave_control.c
         src/display.c
-        src/flash.c
+        src/storage.c
         src/pid.c
         src/debug.c
         src/moving_average.c

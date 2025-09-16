@@ -7,7 +7,7 @@
 
 LOG_MODULE_REGISTER(pid);
 
-static float pid_constrain(const float val, const pid_limit_t* limit)
+static float pid_constrain(const float val, const struct pid_limit* limit)
 {
     if (val > limit->limit_high)
     {

@@ -5,10 +5,10 @@
 
 
 static const struct gpio_dt_spec dbg_pins[] = { // NOLINT(*-interfaces-global-init)
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_0), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_1), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_2), gpios),
-    GPIO_DT_SPEC_GET(DT_ALIAS(dbg_3), gpios),
+    GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(solderotto), debug_gpios, 0),
+    GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(solderotto), debug_gpios, 1),
+    GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(solderotto), debug_gpios, 2),
+    GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(solderotto), debug_gpios, 3),
 };
 
 int dbg_init()

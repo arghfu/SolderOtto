@@ -20,6 +20,7 @@ static struct channel solder_channel;
 
 static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_NODELABEL(solderotto), zcd_gpios);
 
+struct channel* channel_view;
 
 struct gpio_callback zcd_cb_data;
 
@@ -98,7 +99,6 @@ void wave_control_run(void* channel, void* p2, void* p3)
             default:
                 break;
             }
-
         }
     }
 }
@@ -115,7 +115,7 @@ int wave_control_init()
 
 
     channel_init(&solder_channel);
-
+    channel_view = &solder_channel;
     return 0;
 }
 

@@ -19,3 +19,9 @@ properties:
     specifier-space: io-channel
     required: false
     description: Auxiliary ADC channels (e.g. &adc4 3, &adc4 4)
+
+  debug-gpios:
+    type: phandle-array
+    specifier-space: gpio
+    required: false
+    description: Debug GPIOs (4 item)

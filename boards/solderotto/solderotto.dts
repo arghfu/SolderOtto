@@ -25,31 +25,16 @@
 		status = "okay";
 	};
 
-	debug {
-		compatible = "gpio-leds";
-
-		dbg0: dbg_0 {
-			gpios = <&gpioc 9 GPIO_OPEN_DRAIN>;
-		};
-
-		dbg1: dbg_1 {
-			gpios = <&gpioc 8 GPIO_OPEN_DRAIN>;
-		};
-
-		dbg2: dbg_2 {
-			gpios = <&gpioc 7 GPIO_OPEN_DRAIN>;
-		};
-
-		dbg3: dbg_3 {
-			gpios = <&gpioc 6 GPIO_OPEN_DRAIN>;
-		};
-	};
-
 	solderotto: solderotto {
 		compatible = "solderotto,base";
 		zcd-gpios = <&gpioc 0 GPIO_ACTIVE_LOW>;
 
 		aux-io-channels = <&adc4 3>, <&adc4 4>;
+
+		debug-gpios = <&gpioc 9 GPIO_OPEN_DRAIN>,
+					  <&gpioc 8 GPIO_OPEN_DRAIN>,
+					  <&gpioc 7 GPIO_OPEN_DRAIN>,
+					  <&gpioc 6 GPIO_OPEN_DRAIN>;
 
 		channel0: channel {
 			compatible = "solderotto,channel";
@@ -80,11 +65,6 @@
 	aliases {
 		volt-sensor0 = &vref;
 		volt-sensor1 = &vbat;
-		dbg-0 = &dbg0;
-		dbg-1 = &dbg1;
-		dbg-2 = &dbg2;
-		dbg-3 = &dbg3;
-		adc-1 = &adc1;
 	};
 
 	soc {
@@ -160,14 +140,18 @@
 			#address-cells = <1>;
 			#size-cells = <0>;
 
-			slot1_partition: partition@0 {
-				label = "image-1";
-				reg = <0x00000000 DT_SIZE_K(462)>;
-			};
+//			slot1_partition: partition@0 {
+//				label = "image-1";
+//				reg = <0x00000000 DT_SIZE_K(462)>;
+//			};
 
-			storage: partition@73800 {
+//			storage: partition@73800 {
+//				label = "storage_ext";
+//				reg = <0x00073800 DT_SIZE_K(3634)>;
+//			};
+			storage: partition@0 {
 				label = "storage_ext";
-				reg = <0x00073800 DT_SIZE_K(3634)>;
+				reg = <0x00000000 DT_SIZE_M(32)>;
 			};
 		};
 	};

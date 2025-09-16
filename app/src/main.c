@@ -9,6 +9,8 @@
 #include "display.h"
 #include "wave_control.h"
 #include "channel.h"
+#include "storage.h"
+
 #define APP_LOG_LEVEL_DBG
 LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
@@ -30,14 +32,16 @@ int main(void)
 {
     LOG_INF("Starting Solderotto %s", APP_VERSION_STRING);
 
-    const struct device* flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
+    // const struct device* flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
+    //
+    // if (!device_is_ready(flash_dev))
+    // {
+    //     printk("%s: device not ready.", flash_dev->name);
+    //     return 0;
+    // }
 
-    if (!device_is_ready(flash_dev))
-    {
-        printk("%s: device not ready.", flash_dev->name);
-        return 0;
-    }
 
+    storage_init();
     dbg_init();
 
     wave_control_init();

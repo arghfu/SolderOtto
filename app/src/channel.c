@@ -1,16 +1,22 @@
-#include "channel.h"
-
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/logging/log.h>
 
+#include "channel.h"
+#include "storage.h"
+
 LOG_MODULE_REGISTER(channel, CONFIG_APP_LOG_LEVEL);
 
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), handle_io_channels) == 1, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_io_channels) == 2, "tip-io-channels must have 2 elements");
-BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_io_channels) == 2, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), load_switch_gpios) == 2, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_select_a_gpios) == 2, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_select_b_gpios) == 2, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_change_gpios) == 1, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io-channels must have 2 elements");
+
 // Debounce delay in milliseconds
 #define DEBOUNCE_DELAY_MS 20
 
-static void channel_find_handle(struct channel* self);
 static const char* channel_type_str(enum channel_type t);
 
 static void tip_debounce_handler(struct k_work* work);
@@ -27,7 +33,7 @@ int channel_init(struct channel* self)
     self->active_tip_cnt = 0;
     self->type = CHANNEL_TYPE_DISCONNECTED;
 
-    self->adc_dev = DEVICE_DT_GET(DT_ALIAS(adc_1));
+    self->adc_dev = DEVICE_DT_GET(DT_PHANDLE(DT_NODELABEL(channel0), adc));
 
     self->load_switches[0] = (struct gpio_dt_spec)GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), load_switch_gpios, 0);
     self->load_switches[1] = (struct gpio_dt_spec)GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), load_switch_gpios, 1);
@@ -42,16 +48,19 @@ int channel_init(struct channel* self)
             .oversampling = 5,
             .channels = 0,
         },
+        // TODO change the way getting the adc channels
         .adc_cfg = {
-            ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_8)),
-            ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_9))
+            ADC_CHANNEL_CFG_DT(DT_CHILD(DT_NODELABEL(adc1), channel_8)),
+            ADC_CHANNEL_CFG_DT(DT_CHILD(DT_NODELABEL(adc1), channel_9))
         },
         .select = {
-            {GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_a_gpios, 0),
-             GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_b_gpios, 0)
+            {
+                GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_a_gpios, 0),
+                GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_b_gpios, 0)
             },
-            {GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_a_gpios, 1),
-             GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_b_gpios, 1)
+            {
+                GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_a_gpios, 1),
+                GPIO_DT_SPEC_GET_BY_IDX(DT_NODELABEL(channel0), tip_select_b_gpios, 1)
             },
         },
         .config = MEASURE_CONFIG_TIP,
@@ -117,7 +126,7 @@ int channel_init(struct channel* self)
             .buffer_size = sizeof(self->handle_id.buffer),
             .resolution = 12,
         },
-        .adc_cfg = ADC_CHANNEL_CFG_DT(DT_CHILD(DT_ALIAS(adc_1), channel_1)),
+        .adc_cfg = ADC_CHANNEL_CFG_DT(DT_CHILD(DT_NODELABEL(adc1), channel_1)),
         .filter = {0},
     };
 
@@ -182,7 +191,6 @@ int channel_read_tip(struct channel* self)
 
     for (size_t i = 0U; i < self->active_tip_cnt; i++)
     {
-
         self->tip_data[i].mv = (int32_t)self->tip.buffer[i];
 
         adc_raw_to_millivolts(adc_ref_internal(self->adc_dev),
