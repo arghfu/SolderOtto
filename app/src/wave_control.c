@@ -14,7 +14,7 @@
 #define ZCD_BEGIN GPIO_PIN_SET
 #define ZCD_END GPIO_PIN_RESET
 
-LOG_MODULE_REGISTER(wave_control);
+LOG_MODULE_REGISTER(wave_control, CONFIG_APP_LOG_LEVEL);
 
 static struct channel solder_channel;
 
@@ -25,7 +25,7 @@ struct channel* channel_view;
 struct gpio_callback zcd_cb_data;
 
 static struct wave_control control = {
-    .ton = 0,
+    .ton =00,
     .tperiod = 200,
     .count = 0
 };
@@ -73,8 +73,11 @@ void wave_control_run(void* channel, void* p2, void* p3)
 
                 const uint64_t time_begin = k_cycle_get_64();
 
-                channel_read_tip(&solder_channel);
-
+                int err = channel_read_tip(&solder_channel);
+                if (err < 0)
+                {
+                    return;
+                }
                 const uint64_t time_end = k_cycle_get_64();
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
@@ -86,9 +89,10 @@ void wave_control_run(void* channel, void* p2, void* p3)
                     channel_set_load(&solder_channel, TIP_A, GPIO_PIN_SET);
                     enable_output = false;
                 }
+                channel_detect(&solder_channel);
 
-                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
-                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
+                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
+                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
                 // LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
                 // LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
                 // LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);

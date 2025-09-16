@@ -1,7 +1,7 @@
 #include <zephyr/logging/log.h>
 #include <zephyr/drivers/flash.h>
 #include <zephyr/storage/flash_map.h>
-#include <zephyr/fs/zms.h>
+#include <zephyr/fs/nvs.h>
 #include "storage.h"
 
 
@@ -13,7 +13,7 @@ LOG_MODULE_REGISTER(storage, CONFIG_APP_LOG_LEVEL);
 #define FLASH_KEY_PID_T245 0x0102
 #define FLASH_KEY_PID_AM120 0x0103
 
-struct zms_fs fs;
+struct nvs_fs fs;
 
 int storage_init()
 {
@@ -37,15 +37,15 @@ int storage_init()
     fs.sector_size = info.size;
     fs.sector_count = 4;
 
-    rc = zms_mount(&fs);
-    if (rc)
-    {
-        LOG_ERR("Unable to mount zms, rc=%d\n", rc);
-    }
-    LOG_INF("%d", STORAGE_OFFSET);
-
-    ssize_t free_space = zms_calc_free_space(&fs);
-    printk("Free space in storage is %u bytes\n", free_space);
+    // rc = zms_mount(&fs);
+    // if (rc)
+    // {
+    //     LOG_ERR("Unable to mount zms, rc=%d\n", rc);
+    // }
+    // LOG_INF("%d", STORAGE_OFFSET);
+    //
+    // ssize_t free_space = zms_calc_free_space(&fs);
+    // printk("Free space in storage is %u bytes\n", free_space);
 
     return 0;
 }
@@ -71,7 +71,6 @@ int storage_get_pid_data(enum channel_type type, struct pid_data* data)
         data->Ki = 4.0f;
         data->Kd = 0.0f;
         break;
-    case CHANNEL_TYPE_NONE:
     case CHANNEL_TYPE_DISCONNECTED:
         data->Kp = 0.0f;
         data->Ki = 0.0f;

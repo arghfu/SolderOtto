@@ -17,7 +17,7 @@ BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io
 // Debounce delay in milliseconds
 #define DEBOUNCE_DELAY_MS 20
 
-static const char* channel_type_str(enum channel_type t);
+const char* channel_type_str(enum channel_type t);
 
 static void tip_debounce_handler(struct k_work* work);
 static void stand_debounce_handler(struct k_work* work);
@@ -153,29 +153,24 @@ int channel_detect(struct channel* self)
 
     mv = (int32_t)moving_average_add_value(&self->handle_id.filter, (uint32_t)mv);
 
-    if (mv < 350)
+    if (mv > 280 && mv < 350)
     {
         self->type = CHANNEL_TYPE_T210;
         self->active_tip_cnt = 1;
     }
-    else if (mv > 3290)
+    else if (mv > 3265)
     {
         self->type = CHANNEL_TYPE_T245;
-        self->active_tip_cnt = 0;
+        self->active_tip_cnt = 1;
     }
-    else if (mv > 2780 && mv < 2800)
+    else if (mv > 2780 && mv < 2960)
     {
         self->type = CHANNEL_TYPE_AM120;
         self->active_tip_cnt = 2;
     }
-    else if (mv > 3120 && mv < 3280)
-    {
-        self->type = CHANNEL_TYPE_DISCONNECTED;
-        self->active_tip_cnt = 0;
-    }
     else
     {
-        self->type = CHANNEL_TYPE_NONE;
+        self->type = CHANNEL_TYPE_DISCONNECTED;
         self->active_tip_cnt = 0;
     }
 
@@ -189,7 +184,7 @@ int channel_read_tip(struct channel* self)
 {
     adc_read(self->adc_dev, &self->tip.sequence);
 
-    for (size_t i = 0U; i < self->active_tip_cnt; i++)
+    for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
     {
         self->tip_data[i].mv = (int32_t)self->tip.buffer[i];
 
@@ -265,8 +260,6 @@ const char* channel_type_str(enum channel_type t)
         return "T245";
     case CHANNEL_TYPE_AM120:
         return "AM120";
-    case CHANNEL_TYPE_NONE:
-        return "NONE";
     default:
         return "UNKNOWN";
     }

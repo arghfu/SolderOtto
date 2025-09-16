@@ -16,7 +16,6 @@ enum channel_type
     CHANNEL_TYPE_T210,
     CHANNEL_TYPE_T245,
     CHANNEL_TYPE_AM120,
-    CHANNEL_TYPE_NONE,
 };
 
 enum tip

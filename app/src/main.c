@@ -4,11 +4,10 @@
 #include <zephyr/drivers/adc.h>
 #include <zephyr/drivers/flash.h>
 
-#include "detect.h"
 #include "debug.h"
 #include "display.h"
 #include "wave_control.h"
-#include "channel.h"
+#include "detection.h"
 #include "storage.h"
 
 #define APP_LOG_LEVEL_DBG
@@ -22,7 +21,7 @@ LOG_MODULE_REGISTER(main, CONFIG_APP_LOG_LEVEL);
 
 K_THREAD_STACK_DEFINE(wave_control_task_stack, WAVE_CTRL_TASK_STACK_SIZE);
 K_THREAD_STACK_DEFINE(display_task_stack, DISPLAY_TASK_STACK_SIZE);
-K_THREAD_STACK_DEFINE(channel_detect_task_stack, CHANNEL_TASK_STACK_SIZE);
+K_THREAD_STACK_DEFINE(detection_task_stack, DETECTION_TASK_STACK_SIZE);
 
 struct k_thread display_thread;
 struct k_thread wave_control_thread;
@@ -32,21 +31,10 @@ int main(void)
 {
     LOG_INF("Starting Solderotto %s", APP_VERSION_STRING);
 
-    // const struct device* flash_dev = DEVICE_DT_GET_ONE(SPI_FLASH_COMPAT);
-    //
-    // if (!device_is_ready(flash_dev))
-    // {
-    //     printk("%s: device not ready.", flash_dev->name);
-    //     return 0;
-    // }
-
-
     storage_init();
     dbg_init();
 
     wave_control_init();
-
-
 
     k_thread_create(&wave_control_thread, wave_control_task_stack,
                     K_THREAD_STACK_SIZEOF(wave_control_task_stack),
@@ -62,10 +50,10 @@ int main(void)
 
     k_thread_name_set(&display_thread, "display");
 
-    k_thread_create(&channel_thread, channel_detect_task_stack,
-                    K_THREAD_STACK_SIZEOF(channel_detect_task_stack),
-                    channel_detect_run, NULL, NULL, NULL,
-                    CHANNEL_TASK_PRIORITY, 0, K_NO_WAIT);
+    k_thread_create(&channel_thread, detection_task_stack,
+                    K_THREAD_STACK_SIZEOF(detection_task_stack),
+                    detection_run, NULL, NULL, NULL,
+                    DETECTION_TASK_PRIORITY, 0, K_NO_WAIT);
 
     k_thread_name_set(&channel_thread, "channel_detect");
     return 0;
