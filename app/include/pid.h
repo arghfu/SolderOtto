@@ -43,8 +43,7 @@ struct pid
     uint64_t (*get_time)(void);
 };
 
-int pid_init(struct pid* pid, float Kp, float Ki, float Kd, float lim_low, float lim_high,
-             float int_lim_low, float int_lim_high);
+int pid_init(struct pid* pid, float Kp, float Ki, float Kd, float lim, float int_lim);
 int pid_set_gains(struct pid* pid, float Kp, float Ki, float Kd);
 int pid_set_setpoint(struct pid* pid, float set_point);
 float pid_process(struct pid* pid, float temp);

@@ -13,3 +13,15 @@ endmenu
 module = APP
 module-str = APP
 source "subsys/logging/Kconfig.template.log_config"
+
+module = CHANNEL
+module-str = CHANNEL
+source "subsys/logging/Kconfig.template.log_config"
+
+module = DISPLAY
+module-str = DISPLAY
+source "subsys/logging/Kconfig.template.log_config"
+
+module = WAVE_CTRL
+module-str = WAVE_CTRL
+source "subsys/logging/Kconfig.template.log_config"

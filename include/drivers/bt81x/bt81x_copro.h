@@ -126,6 +126,25 @@ void bt81x_copro_cmd_number(int16_t x,
 			     int32_t n);
 
 /**
+ * @brief Draw a button with a label
+ *
+ * @param x x-coordinate of button, in pixels
+ * @param y y-coordinate of button, in pixels
+ * @param w width of button, in pixels
+ * @param h height of button, in pixels
+ * @param font Font to use for label, 0-31. 16-31 are ROM fonts
+ * @param options Options to apply
+ * @param s Null-terminated label string
+ */
+void bt81x_copro_cmd_button(int16_t x,
+                            int16_t y,
+                            uint16_t w,
+                            uint16_t h,
+                            uint16_t font,
+                            uint16_t options,
+                            const char *s);
+
+/**
  * @brief Execute the touch screen calibration routine
  *
  * The calibration procedure collects three touches from the touch screen, then

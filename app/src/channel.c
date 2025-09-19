@@ -4,7 +4,7 @@
 #include "channel.h"
 #include "storage.h"
 
-LOG_MODULE_REGISTER(channel, CONFIG_APP_LOG_LEVEL);
+LOG_MODULE_REGISTER(channel, CONFIG_CHANNEL_LOG_LEVEL);
 
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), handle_io_channels) == 1, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_io_channels) == 2, "tip-io-channels must have 2 elements");
@@ -14,9 +14,19 @@ BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_select_b_gpios) == 2, "tip-
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_change_gpios) == 1, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io-channels must have 2 elements");
 
+#define T210_X2 (-8.463368324505853e-05)
+#define T210_X1 (0.47652282213598496)
+#define T210_X0 (16.024220424035793)
+
+#define T245_X2 (4.2493480218052706e-06)
+#define T245_X1 (0.15238576620686328)
+#define T245_X0 (22.262330639396524)
+
 // Debounce delay in milliseconds
 #define DEBOUNCE_DELAY_MS 20
 
+static float channel_calc_temperature(enum channel_type type, uint16_t adc_value);
+static int channel_load_pid_data(struct channel* self);
 const char* channel_type_str(enum channel_type t);
 
 static void tip_debounce_handler(struct k_work* work);
@@ -81,9 +91,9 @@ int channel_init(struct channel* self)
         moving_average_init(&self->tip_data[i].filter, 200);
 
         self->pid[i] = (struct pid){0};
-        pid_init(&self->pid[i], 0, 0, 0, 0, 5000, -500, 500);
+        pid_init(&self->pid[i], 0, 0, 0, 600, 50);
         pid_set_time_function(&self->pid[i], k_cycle_get_64);
-        pid_set_setpoint(&self->pid[i], 350);
+        pid_set_setpoint(&self->pid[i], 300);
 
         gpio_pin_configure_dt(&self->tip.select[i].a,GPIO_OUTPUT_LOW);
         gpio_pin_configure_dt(&self->tip.select[i].b, GPIO_OUTPUT_LOW);
@@ -153,25 +163,30 @@ int channel_detect(struct channel* self)
 
     mv = (int32_t)moving_average_add_value(&self->handle_id.filter, (uint32_t)mv);
 
-    if (mv > 280 && mv < 350)
+    if (mv < 450)
     {
         self->type = CHANNEL_TYPE_T210;
         self->active_tip_cnt = 1;
+        channel_load_pid_data(self);
     }
-    else if (mv > 3265)
+    // TODO make detection for T245 more stable when inserted into stand
+    else if ((mv > 2850 && mv < 2950 && self->stand.last_pin_state == 1) || mv > 3265)
     {
         self->type = CHANNEL_TYPE_T245;
         self->active_tip_cnt = 1;
+        channel_load_pid_data(self);
     }
-    else if (mv > 2780 && mv < 2960)
+    else if (mv > 2700 && mv < 2750)
     {
         self->type = CHANNEL_TYPE_AM120;
         self->active_tip_cnt = 2;
+        channel_load_pid_data(self);
     }
     else
     {
         self->type = CHANNEL_TYPE_DISCONNECTED;
         self->active_tip_cnt = 0;
+        channel_load_pid_data(self);
     }
 
     LOG_DBG("Tip id voltage: %d", mv);
@@ -205,7 +220,18 @@ int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state)
     return 0;
 }
 
-int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config config)
+float channel_process(struct channel* self)
+{
+    channel_read_tip(self);
+
+    for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
+    {
+        self->tip_data[i].temp = channel_calc_temperature(self->type, self->tip_data[i].filtered);
+        return pid_process(&self->pid[i], self->tip_data[i].temp);
+    }
+}
+
+int channel_set_measure(struct channel* self, enum tip tip, enum measure_config config)
 {
     self->tip.config = config;
     switch (self->tip.config)
@@ -230,22 +256,52 @@ int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config
     return 0;
 }
 
-static void tip_callback(const struct device* dev,
-                         struct gpio_callback* cb, uint32_t pins)
+static float channel_calc_temperature(enum channel_type type, uint16_t adc_value)
 {
-    struct channel_interrupt* ctx = CONTAINER_OF(cb, struct channel_interrupt, cb);
-    // Cancel any pending work and reschedule
-    k_work_cancel_delayable(&ctx->dwork);
-    k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
+    switch (type)
+    {
+    case CHANNEL_TYPE_T210:
+    case CHANNEL_TYPE_AM120:
+        return T210_X2 * adc_value * adc_value + T210_X1 * adc_value + T210_X0;
+    case CHANNEL_TYPE_T245:
+        return T245_X2 * adc_value * adc_value + T245_X1 * adc_value + T245_X0;
+    default:
+        break;
+    }
 }
 
-static void stand_callback(const struct device* dev,
-                           struct gpio_callback* cb, uint32_t pins)
+int channel_load_pid_data(struct channel* self)
 {
-    struct channel_interrupt* ctx = CONTAINER_OF(cb, struct channel_interrupt, cb);
-    // Cancel any pending work and reschedule
-    k_work_cancel_delayable(&ctx->dwork);
-    k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
+    struct pid_data data = {0, 0, 0};
+
+    switch (self->type)
+    {
+    case CHANNEL_TYPE_T210:
+        data.Kp = 7.0f;
+        data.Ki = 4.0f;
+        data.Kd = 0.3f;
+        break;
+    case CHANNEL_TYPE_T245:
+        data.Kp = 120.0f;
+        data.Ki = 24.0f;
+        data.Kd = 4.0f;
+        break;
+    case CHANNEL_TYPE_AM120:
+        data.Kp = 7.0f;
+        data.Ki = 4.0f;
+        data.Kd = 0.0f;
+        break;
+    case CHANNEL_TYPE_DISCONNECTED:
+        data.Kp = 0.0f;
+        data.Ki = 0.0f;
+        data.Kd = 0.0f;
+        break;
+    }
+
+    for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
+    {
+        pid_load_settings(&self->pid[i], &data);
+    }
 }
 
 const char* channel_type_str(enum channel_type t)
@@ -265,7 +321,25 @@ const char* channel_type_str(enum channel_type t)
     }
 }
 
-static void tip_debounce_handler(struct k_work* work)
+void tip_callback(const struct device* dev,
+                  struct gpio_callback* cb, uint32_t pins)
+{
+    struct channel_interrupt* ctx = CONTAINER_OF(cb, struct channel_interrupt, cb);
+    // Cancel any pending work and reschedule
+    k_work_cancel_delayable(&ctx->dwork);
+    k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
+}
+
+void stand_callback(const struct device* dev,
+                    struct gpio_callback* cb, uint32_t pins)
+{
+    struct channel_interrupt* ctx = CONTAINER_OF(cb, struct channel_interrupt, cb);
+    // Cancel any pending work and reschedule
+    k_work_cancel_delayable(&ctx->dwork);
+    k_work_reschedule(&ctx->dwork, K_MSEC(DEBOUNCE_DELAY_MS));
+}
+
+void tip_debounce_handler(struct k_work* work)
 {
     struct k_work_delayable* dwork = k_work_delayable_from_work(work);
     struct channel_interrupt* ctx = CONTAINER_OF(dwork, struct channel_interrupt, dwork);
@@ -282,7 +356,7 @@ static void tip_debounce_handler(struct k_work* work)
     }
 }
 
-static void stand_debounce_handler(struct k_work* work)
+void stand_debounce_handler(struct k_work* work)
 {
     struct k_work_delayable* dwork = k_work_delayable_from_work(work);
     struct channel_interrupt* ctx = CONTAINER_OF(dwork, struct channel_interrupt, dwork);

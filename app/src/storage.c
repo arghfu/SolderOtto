@@ -54,28 +54,5 @@ int storage_get_pid_data(enum channel_type type, struct pid_data* data)
 {
     __ASSERT(data != NULL, "data pointer is null");
 
-    switch (type)
-    {
-    case CHANNEL_TYPE_T210:
-        data->Kp = 7.0f;
-        data->Ki = 4.0f;
-        data->Kd = 0.3f;
-        break;
-    case CHANNEL_TYPE_T245:
-        data->Kp = 8.0f;
-        data->Ki = 2.0f;
-        data->Kd = 0.5f;
-        break;
-    case CHANNEL_TYPE_AM120:
-        data->Kp = 7.0f;
-        data->Ki = 4.0f;
-        data->Kd = 0.0f;
-        break;
-    case CHANNEL_TYPE_DISCONNECTED:
-        data->Kp = 0.0f;
-        data->Ki = 0.0f;
-        data->Kd = 0.0f;
-        break;
-    }
     return 0;
 }

@@ -17,18 +17,17 @@
 LOG_MODULE_REGISTER(wave_control, CONFIG_APP_LOG_LEVEL);
 
 static struct channel solder_channel;
-
 static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_NODELABEL(solderotto), zcd_gpios);
-
 struct channel* channel_view;
-
 struct gpio_callback zcd_cb_data;
 
 static struct wave_control control = {
-    .ton =00,
-    .tperiod = 200,
+    .ton = 0,
+    .tperiod = 5,
     .count = 0
 };
+
+static uint16_t wave_control_convert_command(struct wave_control* ctrl, float command);
 
 static void wave_control_zcd_callback(const struct device* dev,
                                       struct gpio_callback* cb, uint32_t pins);
@@ -49,7 +48,8 @@ void wave_control_run(void* channel, void* p2, void* p3)
 
     uint64_t diff = 0;
     bool enable_output = false;
-
+    float command;
+    uint16_t value;
     while (1)
     {
         // Wait for message from ISR
@@ -73,11 +73,12 @@ void wave_control_run(void* channel, void* p2, void* p3)
 
                 const uint64_t time_begin = k_cycle_get_64();
 
-                int err = channel_read_tip(&solder_channel);
-                if (err < 0)
-                {
-                    return;
-                }
+                command = channel_process(&solder_channel);
+
+                value = wave_control_convert_command(&control, command);
+
+                control.ton = value;
+
                 const uint64_t time_end = k_cycle_get_64();
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
                 break;
@@ -86,16 +87,17 @@ void wave_control_run(void* channel, void* p2, void* p3)
                 dbg_pin_set(0, GPIO_PIN_SET);
                 if (enable_output)
                 {
-                    channel_set_load(&solder_channel, TIP_A, GPIO_PIN_SET);
+                    // channel_set_load(&solder_channel, TIP_A, GPIO_PIN_SET);
                     enable_output = false;
                 }
                 channel_detect(&solder_channel);
-
-                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
-                LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
+                LOG_DBG("Command: %f", command);
+                LOG_DBG("Command converted: %d", value);
+                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
+                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
                 // LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
                 // LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
-                // LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
+                LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
                 // LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
                 // LOG_DBG("Measurement time: %"PRId64" us", diff);
 
@@ -121,6 +123,11 @@ int wave_control_init()
     channel_init(&solder_channel);
     channel_view = &solder_channel;
     return 0;
+}
+
+uint16_t wave_control_convert_command(struct wave_control* ctrl, float command)
+{
+    return ctrl->tperiod * command / 600;
 }
 
 // Callback function for ZCD pin state change

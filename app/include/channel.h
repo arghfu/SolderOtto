@@ -99,7 +99,8 @@ typedef struct channel
 int channel_init(struct channel* self);
 int channel_detect(struct channel* self);
 int channel_read_tip(struct channel* self);
-int channel_set_mesasure(struct channel* self, enum tip tip, enum measure_config config);
+int channel_set_measure(struct channel* self, enum tip tip, enum measure_config config);
 int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state);
+float channel_process(struct channel* self);
 
 #endif // CHANNEL_H
