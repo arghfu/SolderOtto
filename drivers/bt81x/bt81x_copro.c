@@ -15,15 +15,6 @@
 
 #define FT800_RAM_CMD_SIZE 4096UL
 
-enum
-{
-    CMD_DLSTART = 0xFFFFFF00,
-    CMD_SWAP = 0xFFFFFF01,
-    CMD_TEXT = 0xFFFFFF0C,
-    CMD_NUMBER = 0xFFFFFF2E,
-    CMD_CALIBRATE = 0xFFFFFF15,
-    CMD_BUTTON = 0xFFFFFF0D,
-} ft8xx_cmd;
 
 static uint16_t reg_cmd_read;
 static uint16_t reg_cmd_write;
@@ -62,6 +53,23 @@ void bt81x_copro_cmd(uint32_t cmd)
 
     bt81x_wr32(BT81X_RAM_CMD + reg_cmd_write, cmd);
     increase_reg_cmd_write(sizeof(cmd));
+
+    flush_reg_cmd_write();
+}
+
+void bt81x_copro_cmd_simple(uint32_t cmd, uint32_t data)
+{
+    const uint16_t cmd_size = sizeof(cmd) + sizeof(data);
+    while (ram_cmd_freespace() < cmd_size)
+    {
+        refresh_reg_cmd_read();
+    }
+
+    bt81x_wr32(BT81X_RAM_CMD + reg_cmd_write, cmd);
+    increase_reg_cmd_write(sizeof(cmd));
+
+    bt81x_wr32(BT81X_RAM_CMD + reg_cmd_write, data);
+    increase_reg_cmd_write(sizeof(data));
 
     flush_reg_cmd_write();
 }

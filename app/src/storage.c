@@ -50,7 +50,7 @@ int storage_init()
     return 0;
 }
 
-int storage_get_pid_data(enum channel_type type, struct pid_data* data)
+int storage_get_pid_data(struct pid_data* data)
 {
     __ASSERT(data != NULL, "data pointer is null");
 

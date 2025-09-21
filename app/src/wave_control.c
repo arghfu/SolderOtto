@@ -3,9 +3,9 @@
 #include <zephyr/drivers/gpio.h>
 #include <zephyr/logging/log.h>
 
+#include "comms.h"
 #include "moving_average.h"
 #include "wave_control.h"
-
 #include "channel.h"
 #include "debug.h"
 
@@ -14,7 +14,7 @@
 #define ZCD_BEGIN GPIO_PIN_SET
 #define ZCD_END GPIO_PIN_RESET
 
-LOG_MODULE_REGISTER(wave_control, CONFIG_APP_LOG_LEVEL);
+LOG_MODULE_REGISTER(wave_control, CONFIG_WAVE_CTRL_LOG_LEVEL);
 
 static struct channel solder_channel;
 static struct gpio_dt_spec zcd = GPIO_DT_SPEC_GET(DT_NODELABEL(solderotto), zcd_gpios);
@@ -49,7 +49,6 @@ void wave_control_run(void* channel, void* p2, void* p3)
     uint64_t diff = 0;
     bool enable_output = false;
     float command;
-    uint16_t value;
     while (1)
     {
         // Wait for message from ISR
@@ -58,7 +57,7 @@ void wave_control_run(void* channel, void* p2, void* p3)
             switch (event.pin_state)
             {
             case ZCD_BEGIN:
-                channel_set_load(&solder_channel, TIP_A, GPIO_PIN_RESET);
+                // channel_set_load(&solder_channel, TIP_A, GPIO_PIN_RESET);
                 dbg_pin_set(0, GPIO_PIN_RESET);
                 if (control.count < control.ton)
                 {
@@ -73,11 +72,9 @@ void wave_control_run(void* channel, void* p2, void* p3)
 
                 const uint64_t time_begin = k_cycle_get_64();
 
-                command = channel_process(&solder_channel);
+                channel_process(&solder_channel, &command);
 
-                value = wave_control_convert_command(&control, command);
-
-                control.ton = value;
+                control.ton = wave_control_convert_command(&control, command);
 
                 const uint64_t time_end = k_cycle_get_64();
                 diff = k_cyc_to_us_floor64(time_end - time_begin);
@@ -92,15 +89,16 @@ void wave_control_run(void* channel, void* p2, void* p3)
                 }
                 channel_detect(&solder_channel);
                 LOG_DBG("Command: %f", command);
-                LOG_DBG("Command converted: %d", value);
-                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[0].mv);
-                // LOG_DBG("Analog voltage_0: %"PRId32" mV", solder_channel.tip_data[1].mv);
-                // LOG_DBG("Filtered voltage_0: %"PRId32" mV", solder_channel.tip_data[0].filtered);
-                // LOG_DBG("Filtered voltage_1: %"PRId32" mV", solder_channel.tip_data[1].filtered);
                 LOG_DBG("Temperature_0: %f degC", solder_channel.tip_data[0].temp);
-                // LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
-                // LOG_DBG("Measurement time: %"PRId64" us", diff);
+                LOG_DBG("Temperature_1: %f degC", solder_channel.tip_data[1].temp);
+                LOG_DBG("Measurement time: %"PRId64" us", diff);
 
+                struct display_msg msg = {
+                    .temperature = solder_channel.tip_data[0].temp,
+                    .set_point = solder_channel.pid[0].set_point
+                };
+
+                k_msgq_put(&control_msgq, &msg, K_NO_WAIT);
                 break;
             default:
                 break;

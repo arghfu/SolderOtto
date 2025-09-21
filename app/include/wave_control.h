@@ -14,11 +14,11 @@
 #define TC_COMPENSATION_X1_T245 0.11936452029674384
 #define TC_COMPENSATION_X0_T245 23.777399955382318
 
-typedef struct wave_control {
+struct wave_control {
     uint16_t ton;
     uint16_t tperiod;
     uint16_t count;
-} wave_control_t;
+};
 
 int wave_control_init();
 void wave_control_run(void* channel, void* p2, void* p3);

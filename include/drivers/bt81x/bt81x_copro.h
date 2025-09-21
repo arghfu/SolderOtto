@@ -16,7 +16,24 @@
 
 #ifdef __cplusplus
 extern "C" {
+
+
 #endif
+
+typedef enum
+{
+    CMD_DLSTART = 0xFFFFFF00,
+    CMD_SWAP = 0xFFFFFF01,
+    CMD_TEXT = 0xFFFFFF0C,
+    CMD_NUMBER = 0xFFFFFF2E,
+    CMD_CALIBRATE = 0xFFFFFF15,
+    CMD_BUTTON = 0xFFFFFF0D,
+    CMD_FGCOLOR = 0xFFFFFF0A,
+    CMD_BGCOLOR = 0xFFFFFF09,
+    CMD_GRADCOLOR = 0xFFFFFF34,
+    CMD_SETROTATE = 0xFFFFFF36,
+    CMD_COLDSTART = 0xFFFFFF32,
+} ft8xx_cmd;
 
 /**
  * @brief BT81x co-processor engine functions
@@ -80,6 +97,14 @@ void bt81x_copro_cmd_dlstart(void);
 void bt81x_copro_cmd_swap(void);
 
 /**
+ * @brief Execute a simple co-processor command with an additional data parameter
+ *
+ * @param cmd Co-processor command to execute
+ * @param data Data associated with the command to process
+ */
+void bt81x_copro_cmd_simple(uint32_t cmd, uint32_t data);
+
+/**
  * @brief Draw text
  *
  * By default (@p x, @p y) is the top-left pixel of the text and the value of
@@ -95,10 +120,10 @@ void bt81x_copro_cmd_swap(void);
  * @param s Character string to display, terminated with a null character
  */
 void bt81x_copro_cmd_text(int16_t x,
-			   int16_t y,
-			   int16_t font,
-			   uint16_t options,
-			   const char *s);
+                          int16_t y,
+                          int16_t font,
+                          uint16_t options,
+                          const char* s);
 
 /**
  * @brief Draw a decimal number
@@ -120,10 +145,10 @@ void bt81x_copro_cmd_text(int16_t x,
  * @param n The number to display.
  */
 void bt81x_copro_cmd_number(int16_t x,
-			     int16_t y,
-			     int16_t font,
-			     uint16_t options,
-			     int32_t n);
+                            int16_t y,
+                            int16_t font,
+                            uint16_t options,
+                            int32_t n);
 
 /**
  * @brief Draw a button with a label
@@ -142,7 +167,7 @@ void bt81x_copro_cmd_button(int16_t x,
                             uint16_t h,
                             uint16_t font,
                             uint16_t options,
-                            const char *s);
+                            const char* s);
 
 /**
  * @brief Execute the touch screen calibration routine
@@ -155,7 +180,7 @@ void bt81x_copro_cmd_button(int16_t x,
  *
  * @param result Calibration result, written with 0 on failure of calibration
  */
-void bt81x_copro_cmd_calibrate(uint32_t *result);
+void bt81x_copro_cmd_calibrate(uint32_t* result);
 
 /**
  * @}

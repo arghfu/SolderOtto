@@ -12,7 +12,7 @@ target_sources(app PRIVATE
         src/debug.c
         src/moving_average.c
         src/channel.c
-        src/detection.c
+        src/comms.c
 )
 
 target_include_directories(app PRIVATE include)

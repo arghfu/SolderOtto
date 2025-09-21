@@ -3,6 +3,7 @@
 
 #include <zephyr/logging/log.h>
 
+#include "comms.h"
 #include "drivers/bt81x/bt81x.h"
 #include "drivers/bt81x/bt81x_copro.h"
 #include "drivers/bt81x/bt81x_dl.h"
@@ -13,7 +14,6 @@
 #define TAG_MINUS 2
 #define TAG_BUTTON 3
 
-
 LOG_MODULE_REGISTER(display, CONFIG_DISPLAY_LOG_LEVEL);
 
 static volatile bool process_touch;
@@ -23,24 +23,61 @@ static void touch_irq(void)
     process_touch = true;
 }
 
+struct button_data
+{
+    bool pressed;
+    const char* text;
+    uint32_t fg_color;
+    uint32_t grad_color;
+};
+
 void display_run()
 {
-    int cnt;
-    int val;
-
     struct bt81x_touch_transform tt = {64890, 542, 868120, 3450, 63153, -243158};
 
+    int set_point = 300;
+    int temp = 100;
     bt81x_touch_transform_set(&tt);
 
     /* Get interrupts on touch event */
     bt81x_register_int(touch_irq);
 
-    /* Starting counting */
-    val = 0;
-    cnt = 0;
+    struct button_data enable_button = {false, "Off", 0x00c040, 0x000000};
+    /* Invert display Orientation */
 
+    bt81x_copro_cmd_simple(CMD_SETROTATE, 1);
     while (1)
     {
+        struct display_msg msg;
+        // Receive message from control thread (non-blocking)
+        if (k_msgq_get(&control_msgq, &msg, K_NO_WAIT) == 0)
+        {
+            temp = (int)msg.temperature;
+            set_point = (int)msg.set_point;
+        }
+
+        if (process_touch)
+        {
+            int tag = bt81x_get_touch_tag();
+
+            if (tag == TAG_PLUS)
+            {
+                set_point++;
+            }
+            else if (tag == TAG_MINUS)
+            {
+                set_point--;
+            }
+            else if (tag == TAG_BUTTON)
+            {
+                enable_button.pressed = enable_button.pressed ? false : true;
+                enable_button.text = enable_button.pressed ? "Off" : "On";
+                enable_button.fg_color = enable_button.pressed ? 0x00c040 : 0xb90007;
+                enable_button.grad_color = enable_button.pressed ? 0x00FF00: 0xFF0000;
+            }
+
+            process_touch = false;
+        }
         /* Start Display List */
         bt81x_copro_cmd_dlstart();
         bt81x_copro_cmd(FT8XX_CLEAR_COLOR_RGB(0x00, 0x00, 0x00));
@@ -68,29 +105,21 @@ void display_run()
         // bt81x_copro_cmd_text(90, 160, 31, 0, "+");
         // bt81x_copro_cmd(FT8XX_TAG(TAG_MINUS));
         // bt81x_copro_cmd_text(20, 160, 31, 0, "-");
+        bt81x_copro_cmd_number(120, 20, 31, FT8XX_OPT_SIGNED | FT8XX_OPT_RIGHTX, set_point);
+        bt81x_copro_cmd_number(120, 80, 31, FT8XX_OPT_SIGNED | FT8XX_OPT_RIGHTX, temp);
 
-        bt81x_copro_cmd_button(20, 200, 140, 100, 31, 0, "PRESS!");
+        bt81x_copro_cmd(FT8XX_TAG(TAG_BUTTON));
+        bt81x_copro_cmd_simple(CMD_FGCOLOR, enable_button.fg_color);
+        bt81x_copro_cmd_simple(CMD_GRADCOLOR, enable_button.grad_color);
+        bt81x_copro_cmd_button(20, 160, 140, 80, 31, 0, enable_button.text);
+
 
         /* Finish Display List */
         bt81x_copro_cmd(FT8XX_DISPLAY());
         /* Display created frame */
         bt81x_copro_cmd_swap();
 
-        if (process_touch)
-        {
-            int tag = bt81x_get_touch_tag();
 
-            if (tag == TAG_PLUS)
-            {
-                val++;
-            }
-            else if (tag == TAG_MINUS)
-            {
-                val--;
-            }
-
-            process_touch = false;
-        }
-        k_sleep(K_MSEC(100));
+        k_sleep(K_MSEC(20));
     }
 }
