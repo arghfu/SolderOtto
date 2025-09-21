@@ -6,13 +6,13 @@
 
 LOG_MODULE_REGISTER(channel, CONFIG_CHANNEL_LOG_LEVEL);
 
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_change_gpios) == 1, "tip-io-channels must have 2 elements");
+BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), handle_io_channels) == 1, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_io_channels) == 2, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), load_switch_gpios) == 2, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_select_a_gpios) == 2, "tip-io-channels must have 2 elements");
 BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_select_b_gpios) == 2, "tip-io-channels must have 2 elements");
-BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), tip_change_gpios) == 1, "tip-io-channels must have 2 elements");
-BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io-channels must have 2 elements");
 
 #define T210_X2 (-8.463368324505853e-05)
 #define T210_X1 (0.47652282213598496)
@@ -25,6 +25,7 @@ BUILD_ASSERT(DT_PROP_LEN(DT_NODELABEL(channel0), stand_idle_gpios) == 1, "tip-io
 // Debounce delay in milliseconds
 #define DEBOUNCE_DELAY_MS 20
 
+static int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state);
 static float channel_calc_temperature(enum channel_type type, uint16_t adc_value);
 static int channel_load_pid_data(struct channel* self);
 const char* channel_type_str(enum channel_type t);
@@ -220,14 +221,27 @@ int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state)
     return 0;
 }
 
-float channel_process(struct channel* self)
+int channel_process(struct channel* self, float* temperature)
 {
     channel_read_tip(self);
 
     for (size_t i = 0U; i < CHANNEL_TIPS_CNT; i++)
     {
         self->tip_data[i].temp = channel_calc_temperature(self->type, self->tip_data[i].filtered);
-        return pid_process(&self->pid[i], self->tip_data[i].temp);
+        *temperature = pid_process(&self->pid[i], self->tip_data[i].temp);
+    }
+}
+
+int channel_detection_init(void)
+{
+
+}
+
+void channel_detection_run()
+{
+    while (1)
+    {
+        k_sleep(K_MSEC(100));
     }
 }
 

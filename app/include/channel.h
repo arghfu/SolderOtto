@@ -10,6 +10,9 @@
 #define CHANNEL_TIPS_CNT 2
 #define CHANNEL_LOAD_CNT 2
 
+#define CHANNEL_DETECTION_TASK_PRIORITY 11
+#define CHANNEL_DETECTION_TASK_STACK_SIZE 1024
+
 enum channel_type
 {
     CHANNEL_TYPE_DISCONNECTED = 0,
@@ -78,6 +81,14 @@ struct channel_interrupt
     int last_pin_state;
 };
 
+struct channel_control
+{
+    struct channel_interrupt tip_change;
+    struct channel_interrupt stand;
+
+    struct channel_handle_id handle_id;
+};
+
 typedef struct channel
 {
     uint8_t active_tip_cnt;
@@ -100,7 +111,9 @@ int channel_init(struct channel* self);
 int channel_detect(struct channel* self);
 int channel_read_tip(struct channel* self);
 int channel_set_measure(struct channel* self, enum tip tip, enum measure_config config);
-int channel_set_load(struct channel* self, enum tip tip, GPIO_PinState state);
-float channel_process(struct channel* self);
+int channel_process(struct channel* self, float* temperature);
 
+int channel_ctrl_init(struct channel_control* self);
+int channel_detection_init(void);
+void channel_detection_run();
 #endif // CHANNEL_H
