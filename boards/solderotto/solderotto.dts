@@ -62,9 +62,8 @@
 		};
 	};
 
-	aliases {
-		volt-sensor0 = &vref;
-		volt-sensor1 = &vbat;
+	zephyr,user {
+		io-channels = <&adc1 1>;
 	};
 
 	soc {
@@ -220,7 +219,6 @@
 		zephyr,reference = "ADC_REF_INTERNAL";
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
-		zephyr,oversampling = <5>;
 	};
 
 	channel@2 {
@@ -282,14 +280,6 @@
 		zephyr,acquisition-time = <ADC_ACQ_TIME_DEFAULT>;
 		zephyr,resolution = <12>;
 	};
-};
-
-&vref {
-	status = "okay";
-};
-
-&vbat {
-	status = "okay";
 };
 
 &spi3 {
