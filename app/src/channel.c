@@ -136,6 +136,7 @@ int channel_init(struct channel* self)
             .buffer = &self->handle_id.buffer,
             .buffer_size = sizeof(self->handle_id.buffer),
             .resolution = 12,
+            .oversampling = 5,
         },
         .adc_cfg = ADC_CHANNEL_CFG_DT(DT_CHILD(DT_NODELABEL(adc1), channel_1)),
         .filter = {0},
